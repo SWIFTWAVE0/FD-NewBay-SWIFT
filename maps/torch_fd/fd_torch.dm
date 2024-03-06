@@ -238,10 +238,10 @@
 	#include "../../mods/fd_assets/_fd_assets.dme"
 
 	#include "../../mods/accent_labels/_accent_labels.dme"
-	#include "../../mods/fd_guns/_fd_guns.dme"
 	#include "../../mods/additional_biomods/_additional_biomods.dme"
 	#include "../../mods/ascent/_ascent.dme"
 	#include "../../mods/conference_holopads/_conference_holopads.dme"
+	#include "../../mods/fd_guns/_fd_guns.dme"
 	#include "../../mods/hestia_missiles/_hestia_missiles.dme"
 	#include "../../mods/landing_eye/_landing_eye.dme"
 	#include "../../mods/mob_interactions/_mob_interactions.dme"
