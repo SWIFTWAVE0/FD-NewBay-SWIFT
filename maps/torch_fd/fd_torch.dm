@@ -238,6 +238,7 @@
 	#include "../../mods/fd_assets/_fd_assets.dme"
 
 	#include "../../mods/accent_labels/_accent_labels.dme"
+	#include "../../mods/fd_guns/_fd_guns.dme"
 	#include "../../mods/additional_biomods/_additional_biomods.dme"
 	#include "../../mods/ascent/_ascent.dme"
 	#include "../../mods/conference_holopads/_conference_holopads.dme"
