@@ -235,11 +235,13 @@
 	#include "../../mods/wyccbay_optimization/_wyccbay_optimization.dme"
 
 	// NON-UPSTREAM MODS
+	#include "../../mods/runechat/_runechat.dme"
 	#include "../../mods/fd_assets/_fd_assets.dme"
 
 	#include "../../mods/accent_labels/_accent_labels.dme"
 	#include "../../mods/additional_biomods/_additional_biomods.dme"
 	#include "../../mods/ascent/_ascent.dme"
+	#include "../../mods/combat_stances/_combat_stances.dme"
 	#include "../../mods/conference_holopads/_conference_holopads.dme"
 	#include "../../mods/fd_guns/_fd_guns.dme"
 	#include "../../mods/hestia_missiles/_hestia_missiles.dme"
