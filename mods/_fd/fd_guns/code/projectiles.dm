@@ -12,6 +12,12 @@
 	agony = 70
 	embed = FALSE
 
+/obj/item/projectile/bullet/pistol/strong/rubber
+	damage_flags = 0
+	damage = 5
+	agony = 60
+	embed = FALSE
+
 /obj/item/projectile/bullet/pistol/automatic
 	damage = 45
 	armor_penetration = 10
@@ -30,10 +36,9 @@
 	pellets = 16
 	range_step = 1
 	spread_step = 65
-	knockback = 2
 
 /obj/item/projectile/bullet/rifle/fleet
-	fire_sound = 'sound/weapons/gunshot/gunshot8.ogg'
+	fire_sound = 'mods/fd_guns/sounds/gunshot8.ogg'
 	damage = 35
 	armor_penetration = 20
 	penetrating = 0
@@ -46,26 +51,26 @@
 	distance_falloff = 1.2
 
 /obj/item/projectile/bullet/rifle/iccgn
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+	fire_sound = 'mods/fd_guns/sounds/auto1.ogg'
 	damage = 40
 	armor_penetration = 35
 
 
 /obj/item/projectile/bullet/rifle/accurate
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	fire_sound = 'mods/fd_guns/sounds/auto2.ogg'
 	damage = 40
 	armor_penetration = 45
 	penetrating = 1
 	penetration_modifier = 0.8
 
 /obj/item/projectile/bullet/rifle/bolter
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	fire_sound = 'mods/fd_guns/sounds/loudbolt.ogg'
 	icon_state= "bolter"
 	damage = 40
 	armor_penetration = 50
 	penetrating = 2
 	penetration_modifier = 2
-	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE
+	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP | DAMAGE_FLAG_EDGE
 
 /obj/item/projectile/bullet/rifle/bolter/explosive
 	damage 	= 55
@@ -73,9 +78,9 @@
 	penetrating = 1
 	penetration_modifier = 1.5
 
-	on_hit(var/atom/target, var/blocked = 0)
-		cell_explosion(target, 15, 7,)
-		return 1
+/obj/item/projectile/bullet/rifle/bolter/explosive/on_hit(atom/target, blocked = 0)
+	explosion(target, 2, EX_ACT_LIGHT, 0, 0,, 0)
+	return 1
 
 /obj/item/projectile/bullet/rifle/marksman
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
@@ -108,23 +113,23 @@
 	weaken = 3
 	armor_penetration = 15
 	penetrating = 0
-	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE
+	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP | DAMAGE_FLAG_EDGE
 
-	on_hit(var/atom/target, var/blocked = 0)
-		cell_explosion(target, 5, 5)
-		return 1
+/obj/item/projectile/bullet/gyro/on_hit(atom/target, blocked = 0)
+	explosion(target, 2, EX_ACT_LIGHT)
+	return 1
 
 /obj/item/projectile/ion/heavy
 	heavy_effect_range = 3
 	light_effect_range = 6
 
 // TECHNICALLY IT'S A LASER. But bullet...
-
+/*
 /obj/item/projectile/bullet/lasbolt
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 350
-	fire_sound = 'sound/weapons/gunshot/lasgun2.ogg'
+	fire_sound = 'mods/fd_guns/sounds/lasgun2.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	damage = 30
 	armor_penetration = 10
@@ -147,7 +152,7 @@
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 450
-	fire_sound = 'sound/weapons/gunshot/lasgun2.ogg'
+	fire_sound = 'mods/fd_guns/sounds/lasgun2.ogg'
 	damage = 40
 	armor_penetration = 20
 
@@ -155,7 +160,7 @@
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 650
-	fire_sound = 'sound/weapons/gunshot/lasgun3.ogg'
+	fire_sound = 'mods/fd_guns/sounds/lasgun3.ogg'
 	damage = 55
 	armor_penetration = 35
 	penetrating = 1
@@ -165,3 +170,4 @@
 		list(5, 0.75),
 		list(7, 0.70),
 	)
+*/

@@ -15,16 +15,16 @@
 	magazine_type = /obj/item/ammo_magazine/rifle/fleet
 	allowed_magazines = /obj/item/ammo_magazine/rifle/fleet
 	one_hand_penalty = 6
-	recoil_buildup = 2.4
+	recoil_buildup = 2.5
 	accuracy = -2
 	bulk = GUN_BULK_RIFLE + 1
 	wielded_item_state = "automat4"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
-	init_firemodes = list(
+	firemodes = list(
 			BURST_3_ROUND,
-			list(mode_name = "full auto",  mode_desc = "600 rounds per minute",   mode_type = /datum/firemode/automatic, fire_delay = 2)
+			list(mode_name = "full auto",  mode_desc = "600 rounds per minute",   auto_fire = 1, fire_delay = 2)
 	)
 
 /obj/item/gun/projectile/automatic/scg/on_update_icon()
@@ -54,7 +54,7 @@
 	wielded_item_state = "automat3"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
-	init_firemodes = list(
+	firemodes = list(
 			list(mode_name = "semiauto",  mode_desc = "Semi auto, but with some kind of cooldown", burst=1, fire_delay=5, move_delay=3, one_hand_penalty=6),
 			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=10, move_delay=5),
 		)
@@ -83,7 +83,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/smg/scg
 	accuracy = 1
 	one_hand_penalty = 3
-	init_firemodes = list(
+	firemodes = list(
 			BURST_3_ROUND,
 			BURST_5_ROUND,
 			FULL_AUTO_800
@@ -116,7 +116,7 @@
 	bulk = -1
 	accuracy = 0
 	one_hand_penalty = 4
-	init_firemodes = list(
+	firemodes = list(
 			SEMI_AUTO_NODELAY,
 			BURST_2_ROUND,
 			FULL_AUTO_600
@@ -153,9 +153,9 @@
 	caliber = CALIBER_RIFLE
 	bulk = GUN_BULK_RIFLE + 1
 	wielded_item_state = "gautomatic2"
-	init_firemodes = list(
-			list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null, accuracy=0),
-			list(mode_name = "full auto",  mode_desc = "400 rounds per minute",   mode_type = /datum/firemode/automatic, fire_delay = 4, one_hand_penalty=8, accuracy=-2)
+	firemodes = list(
+			list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null),
+			list(mode_name = "full auto",  mode_desc = "400 rounds per minute",  auto_fire = 1, fire_delay = 4, one_hand_penalty=8)
 		)
 
 /obj/item/gun/projectile/automatic/iccgn/on_update_icon()
@@ -176,12 +176,12 @@
 	caliber = CALIBER_RIFLE_MILITARY
 	magazine_type = /obj/item/ammo_magazine/rifle/precise
 	allowed_magazines = /obj/item/ammo_magazine/rifle/precise
-	accuracy = 1
+	accuracy = 0
 	recoil_buildup = 4
 	one_hand_penalty = 7
 	bulk = GUN_BULK_RIFLE + 2
 	wielded_item_state = "gautomatic1"
-	init_firemodes = list(
+	firemodes = list(
 			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=4, move_delay=6, accuracy=0),
 			list(mode_name = "semiauto",  mode_desc = "Fire as fast, as your gun give you to do it", burst=1, fire_delay=2, move_delay=4, accuracy= 1)
 		)
@@ -217,11 +217,13 @@
 	screen_shake = 3
 	bulk = GUN_BULK_RIFLE + 5
 	wielded_item_state = "gsmg3"
-	init_firemodes = list(
+	firemodes = list(
 			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=4, move_delay=6, accuracy=-4),
 			list(mode_name = "semiauto",  mode_desc = "Fire as fast, as your gun give you to do it", burst=1, fire_delay=2, move_delay=4, accuracy= -3)
 		)
 
+#ifdef MODPACK_RESOMI
+// Bullying of Swift
 /obj/item/gun/projectile/automatic/iccgn/bolter/Fire(atom/target, mob/living/user, clickparams, pointblank=0, reflex=0)
 	if(user.is_species(SPECIES_RESOMI))
 		if(alert(user, "[src] too big for you and can LITERALLY KILL YOU, if you will shoot from it!",, "Nevermind", "*krieg suicide noices",) == "Nevermind")
@@ -235,11 +237,7 @@
 		return
 	if(user.is_species(SPECIES_RESOMI))
 		to_chat(user, SPAN_DANGER("The recoil of the [src] is way too much for you, Resomi"))
-		var/recoil_dir = 0
-		if(user.dir == 1 || user.dir == 4 )
-			recoil_dir = user.dir*2
-		else if(user.dir == (8 || 2))
-			recoil_dir = user.dir/2
+		var/recoil_dir = reverse_dir[user_dir]
 		user.adjustBruteLoss(60)
 		user.Weaken(4)
 		log_and_message_admins("is fucked by [src]'s obliterating recoil. Stupid xenos...")
@@ -249,6 +247,7 @@
 			to_chat(user, SPAN_DANGER("Recoil so hurts..."))
 			user.adjustBruteLoss(15)
 
+#endif
 /obj/item/gun/projectile/automatic/iccgn/smg
 	name = "submachine gun"
 	desc = "Saudov's submachine gun (SSG-12) made for pilots and crew of armoured vehicles. The small size combines well with rapid suppressive fire.  "
@@ -263,7 +262,7 @@
 	one_hand_penalty = 4
 	accuracy = 0
 	wielded_item_state = "gsmg4"
-	init_firemodes = list(
+	firemodes = list(
 			SEMI_AUTO_NODELAY,
 			BURST_3_ROUND,
 			FULL_AUTO_600

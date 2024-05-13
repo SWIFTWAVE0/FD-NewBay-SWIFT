@@ -41,7 +41,7 @@
 	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsmg3M"
 	mag_type = MAGAZINE
-	caliber =  CALIBER_BOLTER
+	caliber = CALIBER_BOLTER
 	ammo_type = /obj/item/ammo_casing/rifle/bolter
 	max_ammo = 24
 
@@ -139,6 +139,13 @@
 /obj/item/ammo_magazine/smg/special/scg/rubber
 	labels = list("rubber")
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
+
+/obj/item/ammo_magazine/smg/iccgn
+	name = "magazine"
+	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon_state = "gsmg3M"
+	max_ammo = 45
+	multiple_sprites = 0
 
 // Other stuff
 

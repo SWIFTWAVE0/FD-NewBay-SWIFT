@@ -61,6 +61,6 @@
 	accuracy = 0
 	fire_delay = 2
 	one_hand_penalty = 2
-	init_firemodes = list(
+	firemodes = list(
 		FULL_AUTO_800
 	)

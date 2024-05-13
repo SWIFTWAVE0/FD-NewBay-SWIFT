@@ -16,7 +16,7 @@
 	bulk = GUN_BULK_RIFLE + 2
 	projectile_type = /obj/item/projectile/bullet/lasbolt/lasgun
 	wielded_item_state = "laser-wielded"
-	init_firemodes = list(
+	firemodes = list(
 			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=2, move_delay=4, accuracy=0, charge_cost=200 ),
 			list(mode_name = "semiauto",  mode_desc = "Fire as fast, as your gun give you to do it", burst=1, fire_delay=2, move_delay=2, accuracy=1, charge_cost=200 ),
 			list(mode_name = "overcharge", mode_desc = "Powerful shoot", 	burst=1, fire_delay=4, movedelay=6,
@@ -43,7 +43,7 @@
 	battery_type = /obj/item/cell/guncell/lasgun
 	bulk = GUN_BULK_RIFLE - 3
 	projectile_type = /obj/item/projectile/bullet/lasbolt
-	init_firemodes = list(
+	firemodes = list(
 			list(mode_name = "semiauto",  mode_desc = "Fire as fast, as your gun give you to do it", burst=1, fire_delay=2, move_delay=2, charge_cost=100, accuracy=1),
 			list(mode_name = "overcharge", mode_desc = "Powerful shoot",    burst=1, fire_delay=4, movedelay=6,
 																			accuracy=0, charge_cost=500, projectile_type = /obj/item/projectile/bullet/lasbolt/lasgun)

@@ -24,7 +24,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/shotgun/scg
 	bulk = GUN_BULK_RIFLE
 	accuracy = -1
-	init_firemodes = list(
+	firemodes = list(
 			BURST_3_ROUND,
 			FULL_AUTO_400
 		)
@@ -49,7 +49,7 @@
 	bulk = GUN_BULK_RIFLE
 	accuracy = 0
 	one_hand_penalty=5
-	init_firemodes = list(
+	firemodes = list(
 			SEMI_AUTO_NODELAY,
 			list(mode_name="2-beam bursts", mode_desc = "Short, controlled bursts", burst=2, fire_delay=null, move_delay=2)
 		)

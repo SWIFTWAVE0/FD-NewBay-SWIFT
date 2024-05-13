@@ -6,16 +6,20 @@
 #define FULL_AUTO_300		list(mode_name = "full auto",  mode_desc = "300 rounds per minute",   can_autofire = 1, fire_delay = 8, one_hand_penalty=2)
 #define FULL_AUTO_400		list(mode_name = "full auto",  mode_desc = "400 rounds per minute",   can_autofire = 1, fire_delay = 4, one_hand_penalty=3)
 #define FULL_AUTO_600		list(mode_name = "full auto",  mode_desc = "600 rounds per minute",   can_autofire = 1, fire_delay = 2, one_hand_penalty=4)
-#define FULL_AUTO_800		list(mode_name = "fuller auto",  mode_desc = "800 rounds per minute",   can_autofire = 1  fire_delay = 1, one_hand_penalty=5)
+#define FULL_AUTO_800		list(mode_name = "fuller auto",  mode_desc = "800 rounds per minute",   can_autofire = 1,  fire_delay = 1, one_hand_penalty=5)
 
-#include "mods\fd_guns\code\ammo\boxes.dm"
-#include "mods\fd_guns\code\ammo\bullets.dm"
-#include "mods\fd_guns\code\guns\automatic.dm"
-#include "mods\fd_guns\code\guns\energy.dm"
-#include "mods\fd_guns\code\guns\pistol.dm"
-#include "mods\fd_guns\code\guns\shotgun.dm"
-#include "mods\fd_guns\code\guns\sniper.dm"
-#include "mods\fd_guns\code\projectiles.dm"
+#define CALIBER_BOLTER		".75"
 
+#include "code/shitcode.dm"
+#include "code/projectiles.dm"
+
+#include "code/ammo/boxes.dm"
+#include "code/ammo/bullets.dm"
+
+#include "code/guns/automatic.dm"
+// #include "code/guns/energy.dm"
+#include "code/guns/pistol.dm"
+#include "code/guns/shotgun.dm"
+#include "code/guns/sniper.dm"
 
 #endif

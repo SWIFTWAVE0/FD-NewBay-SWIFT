@@ -16,8 +16,22 @@
 /obj/item/ammo_casing/pistol/automatic/rubber
 	projectile_type = /obj/item/projectile/bullet/pistol/automatic/rubber
 
+/obj/item/ammo_casing/pistol/magnum/rubber
+	desc = "A high-power pistol rubber bullet casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/rubber
+
 /obj/item/ammo_casing/rifle/military/marksman
 	projectile_type = /obj/item/projectile/bullet/rifle/marksman
+
+/obj/item/ammo_casing/magnum/shotgun
+	name = "shotgun magnum shell"
+	desc = "A shotgun shell with extra power."
+	icon_state = "gshell"
+	spent_icon = "gshell-spent"
+	caliber = CALIBER_SHOTGUN
+	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
+	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/magnum
+	matter = list(MATERIAL_STEEL = 720)
 
 /obj/item/ammo_casing/scg/shell
 	name = "shell casing"
