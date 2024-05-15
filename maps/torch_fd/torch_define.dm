@@ -50,6 +50,7 @@
 
 	use_overmap = 1
 	num_exoplanets = 0
+	num_traders = 0
 
 	away_site_budget = 0
 	min_offmap_players = 12

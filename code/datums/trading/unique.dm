@@ -3,7 +3,7 @@
 	want_multiplier = 5
 	typical_duration = 40
 
-/datum/trader/ship/unique/New()
+/*/datum/trader/ship/unique/New()
 	..()
 	wanted_items = list()
 	for(var/type in possible_wanted_items)
@@ -15,10 +15,10 @@
 		if(status & TRADER_BLACKLIST)
 			wanted_items -= type
 		if(status & TRADER_BLACKLIST_SUB)
-			wanted_items -= subtypesof(type)
+			wanted_items -= subtypesof(type)*/
 
 /datum/trader/ship/unique/tick()
-	if(prob(-disposition) || refuse_comms)
+	if(prob(-min(list_values(disposition))))
 		duration_of_stay--
 	return --duration_of_stay > 0
 
@@ -28,8 +28,15 @@
 /datum/trader/ship/unique/severance
 	name = "Unknown"
 	origin = "SGS Severance"
+	skill_req = SKILL_COOKING
 
 	possible_wanted_items = list(
+							/obj/item/reagent_containers/food/snacks/human                      = TRADER_SUBTYPES_ONLY,
+							/obj/item/reagent_containers/food/snacks/meat/human                 = TRADER_THIS_TYPE,
+							/mob/living/carbon/human                                                   = TRADER_ALL
+							)
+
+	wanted_items = list(
 							/obj/item/reagent_containers/food/snacks/human                      = TRADER_SUBTYPES_ONLY,
 							/obj/item/reagent_containers/food/snacks/meat/human                 = TRADER_THIS_TYPE,
 							/mob/living/carbon/human                                                   = TRADER_ALL
@@ -65,9 +72,10 @@
 	origin = "Floating rock"
 
 	possible_wanted_items  = list(/obj/item/ore                        = TRADER_ALL)
+	wanted_items  = list(/obj/item/ore                        = TRADER_ALL)
 	possible_trading_items = list(/obj/machinery/power/supermatter            = TRADER_ALL,
 								/obj/item/aiModule                     = TRADER_SUBTYPES_ONLY)
-	want_multiplier = 5000
+	want_multiplier = 4000 // was 5000, yeah
 
 	speech = list(TRADER_HAIL_GENERIC     = "Blub am MERCHANT. Blub hunger for things. Boo bring them to blub, yes?",
 				TRADER_HAIL_DENY          = "Blub does not want to speak to boo.",
