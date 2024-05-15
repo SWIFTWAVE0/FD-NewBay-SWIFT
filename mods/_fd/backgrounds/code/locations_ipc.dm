@@ -1,6 +1,4 @@
 #define HOME_SYSTEM_ERIDANI 				"Themis"
-#define HOME_SYSTEM_MEOT					"Meotourne"
-#define HOME_SYSTEM_REPUBL					"Nova Respublica"
 
 #define HOME_SYSTEM_EARTH_FD      "Earth"
 #define HOME_SYSTEM_LUNA_FD       "Luna"
@@ -65,9 +63,9 @@
 	..()
 	available_cultural_info[TAG_HOMEWORLD] -= IPC_HOMES_TO_DELETE
 
-/datum/map/New()
+/*/datum/map/New()
 	available_cultural_info[TAG_HOMEWORLD] += IPC_HOMES_TO_ADD
-	. = ..()
+	. = ..()*/
 
 /singleton/cultural_info/location/eridani
 	name = HOME_SYSTEM_ERIDANI
@@ -79,8 +77,6 @@
 	distance = "19 light years"
 
 #undef HOME_SYSTEM_ERIDANI
-#undef HOME_SYSTEM_MEOT
-#undef HOME_SYSTEM_REPUBL
 
 #undef HOME_SYSTEM_EARTH_FD
 #undef HOME_SYSTEM_LUNA_FD

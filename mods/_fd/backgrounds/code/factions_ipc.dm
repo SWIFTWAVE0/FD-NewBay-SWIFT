@@ -22,9 +22,9 @@
 													FACTION_POSITRONICS_THIRDGEN_CORPORATE, \
 													FACTION_POSITRONICS_THIRDGEN_STATE)
 
-/datum/map/New()
+/*/datum/map/New()
 	available_cultural_info[TAG_FACTION] += IPC_FACTIONS_TO_ADD
-	. = ..()
+	. = ..()*/
 
 /datum/species/machine/New()
 	available_cultural_info[TAG_FACTION] += IPC_FACTIONS_TO_ADD

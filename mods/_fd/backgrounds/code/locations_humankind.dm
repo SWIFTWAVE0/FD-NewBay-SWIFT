@@ -79,7 +79,7 @@
 //OUR OWN LOCATIONS//
 //START//
 
-/singleton/cultural_info/location/human/meotourne
+/singleton/cultural_info/location/human_fd/meotourne
 	name = HOME_SYSTEM_MEOT
 	distance = "23 light years"
 	description = "Meotourne, the only planet in Delta Pavonis system, is a unique temperate world with its own ecosystem. \
@@ -93,7 +93,7 @@
 	economic_power = 1.1
 	ruling_body = "Belmeone Federation"
 
-/singleton/cultural_info/location/human/pospolita
+/singleton/cultural_info/location/human_fd/pospolita
 	name = HOME_SYSTEM_REPUBL
 	distance = "23 light years"
 	description = "Nova Respublica is, in fact, not much more than several small planetary and asteroid resource extraction colonies and many space installations across Delta Pavonis and Kestalia systems. \
