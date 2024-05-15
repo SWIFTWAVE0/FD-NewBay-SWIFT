@@ -68,13 +68,12 @@
 													HOME_SYSTEM_FOSTER_FD)
 
 /datum/map/New()
-	available_cultural_info[TAG_HOMEWORLD] += HUMAN_HOMES_TO_ADD
+	available_cultural_info[TAG_HOMEWORLD] = HUMAN_HOMES_TO_ADD
 	. = ..()
 
 /datum/species/human/New()
-	available_cultural_info[TAG_HOMEWORLD] += HUMAN_HOMES_TO_ADD
 	..()
-	available_cultural_info[TAG_HOMEWORLD] -= HUMAN_HOMES_TO_DELETE
+	available_cultural_info[TAG_HOMEWORLD] = HUMAN_HOMES_TO_ADD
 
 //OUR OWN LOCATIONS//
 //START//
