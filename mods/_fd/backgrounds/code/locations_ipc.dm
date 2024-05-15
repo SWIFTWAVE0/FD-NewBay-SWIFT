@@ -65,6 +65,7 @@
 
 /singleton/cultural_info/location/eridani
 	name = HOME_SYSTEM_ERIDANI
+	nickname = "Фемида"
 	description = "Themis, the claimed homeworld of the Positronic Union, is a verdant world slowly falling \
 	to mass mechanization. Although there are populations of positronics living directly on the surface, \
 	most operate from orbital stations. IPCs living on Themis tend to be more callous than those in organic territories, \

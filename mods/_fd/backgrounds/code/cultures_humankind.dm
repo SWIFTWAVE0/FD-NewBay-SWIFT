@@ -51,6 +51,8 @@
 														CULTURE_HUMAN_SOLCOL, \
 														CULTURE_HUMAN_CONFEDC, \
 														CULTURE_HUMAN_CONFEDO, \
+														CULTURE_HUMAN_CONFEDC, \
+														CULTURE_HUMAN_CONFEDO, \
 														CULTURE_HUMAN_GAIAN, \
 														CULTURE_HUMAN_OTHER, \
 														CULTURE_HUMAN_NYXIAN)
@@ -76,9 +78,9 @@
 														CULTURE_HUMAN_OTHER_FD, \
 														CULTURE_HUMAN_REPUBL)
 
-/*/datum/map/New()
+/datum/map/New()
 	available_cultural_info[TAG_CULTURE] += HUMAN_CULTURES_TO_ADD
-	. = ..()*/
+	. = ..()
 
 /datum/species/human/New()
 	available_cultural_info[TAG_CULTURE] += HUMAN_CULTURES_TO_ADD
