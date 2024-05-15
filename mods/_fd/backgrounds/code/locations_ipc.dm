@@ -63,10 +63,6 @@
 	..()
 	available_cultural_info[TAG_HOMEWORLD] -= IPC_HOMES_TO_DELETE
 
-/*/datum/map/New()
-	available_cultural_info[TAG_HOMEWORLD] += IPC_HOMES_TO_ADD
-	. = ..()*/
-
 /singleton/cultural_info/location/eridani
 	name = HOME_SYSTEM_ERIDANI
 	description = "Themis, the claimed homeworld of the Positronic Union, is a verdant world slowly falling \

@@ -76,9 +76,9 @@
 														CULTURE_HUMAN_OTHER_FD, \
 														CULTURE_HUMAN_REPUBL)
 
-/datum/map/New()
+/*/datum/map/New()
 	available_cultural_info[TAG_CULTURE] += HUMAN_CULTURES_TO_ADD
-	. = ..()
+	. = ..()*/
 
 /datum/species/human/New()
 	available_cultural_info[TAG_CULTURE] += HUMAN_CULTURES_TO_ADD
