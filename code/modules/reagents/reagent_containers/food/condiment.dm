@@ -351,3 +351,7 @@
 	icon_state = "oliveoilsmall"
 	center_of_mass = "x=16;y=8"
 	starting_reagents = list(/datum/reagent/oliveoil = 20)
+
+/obj/item/reagent_containers/food/condiment/space_drugs
+	label_text = "Hex"
+	starting_reagents = list(/datum/reagent/drugs/hextro = 50)

@@ -39,7 +39,7 @@
 		TRADER_INSULT_GOOD       = "Where this come from? Is trade no good?",
 		TRADER_INSULT_BAD        = "If you say all this at home, you be dead!"
 		)
-	possible_wanted_items = list(/obj/item                  = TRADER_SUBTYPES_ONLY,
+	possible_wanted_items = list(/obj/item/                  = TRADER_SUBTYPES_ONLY,
 								/obj/item/stack/material            = TRADER_SUBTYPES_ONLY,
 								/obj/item/stack/material/cyborg     = TRADER_BLACKLIST_ALL,
 								/obj/item/organ                     = TRADER_SUBTYPES_ONLY,
@@ -70,7 +70,7 @@
 		if(H.species)
 			switch(H.species.name)
 				if(SPECIES_VOX)
-					disposition = 1000
+					disposition[map_sectors["[user.z]"]] = 1000
 					hailed_vox = TRUE
 					speech = visited_vox_speech
 	. = ..()

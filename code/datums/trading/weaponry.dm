@@ -2,6 +2,7 @@
 	name = "Gun Shop Employee"
 	name_language = TRADER_DEFAULT_NAME
 	origin = "Gun Shop"
+	skill_req = SKILL_WEAPONS
 	possible_origins = list("Rooty Tootie's Point-n-Shooties", "Bang-Bang Shop", "Wild Wild West Shop", "Keleshnikov", "Hunting Depot", "Big Game Hunters")
 	speech = list(TRADER_HAIL_GENERIC    = "Hello, hello! I hope you have your permit. Oh, who are we kidding, you're welcome anyway!",
 				TRADER_HAIL_DENY         = "Store policy dictates that you can fuck off.",
@@ -18,31 +19,29 @@
 				TRADER_INSULT_BAD        = "If I had my gun I'd shoot you!"
 				)
 
-	possible_trading_items = list(
-		/obj/item/gun/projectile/pistol/holdout = TRADER_ALL,
-		/obj/item/gun/projectile/pistol/magnum_pistol = TRADER_ALL,
-		/obj/item/gun/projectile/pistol/sec = TRADER_ALL,
-		/obj/item/gun/projectile/heavysniper/boltaction	= TRADER_ALL,
-		/obj/item/gun/projectile/pistol/sec/MK = TRADER_BLACKLIST,
-		/obj/item/gun/projectile/shotgun/pump = TRADER_SUBTYPES_ONLY,
-		/obj/item/ammo_magazine = TRADER_SUBTYPES_ONLY,
-		/obj/item/ammo_magazine/pistol/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/mil_rifle/heavy/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/gyrojet/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/pistol/small/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/pistol/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/box/pistol/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/box/machinegun/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/machine_pistol/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/smg_top/empty = TRADER_BLACKLIST,
-		/obj/item/ammo_magazine/magnum/empty = TRADER_BLACKLIST,
-		/obj/item/clothing/accessory/storage/holster = TRADER_ALL
-	)
+	possible_trading_items = list(/obj/item/gun/projectile/pistol/holdout    = TRADER_ALL,
+								/obj/item/gun/projectile/pistol/magnum_pistol= TRADER_ALL,
+								/obj/item/gun/projectile/pistol/sec         = TRADER_ALL,
+								/obj/item/gun/projectile/heavysniper/boltaction	= TRADER_ALL,
+								/obj/item/gun/projectile/pistol/sec/MK      = TRADER_BLACKLIST,
+								/obj/item/gun/projectile/shotgun/pump= TRADER_SUBTYPES_ONLY,
+								/obj/item/ammo_magazine                     = TRADER_SUBTYPES_ONLY,
+								/obj/item/ammo_magazine/pistol/empty         = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/gyrojet/empty           = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/pistol/small/empty         = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/pistol/empty         = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/box/pistol/empty       = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/box/machinegun/empty      = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/machine_pistol/empty        = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/smg_top/empty        = TRADER_BLACKLIST,
+								/obj/item/ammo_magazine/magnum/empty           = TRADER_BLACKLIST,
+								/obj/item/clothing/accessory/storage/holster        = TRADER_ALL)
 
 /datum/trader/ship/egunshop
 	name = "Energy Gun Shop Employee"
 	name_language = TRADER_DEFAULT_NAME
 	origin = "EGun Shop"
+	skill_req = SKILL_WEAPONS
 	possible_origins = list("The Emperor's Lasgun Shop", "Future Guns", "Solar Army", "Kiefer's Dependable Electric Arms", "Olympus Kingsport")
 	speech = list(TRADER_HAIL_GENERIC    = "Welcome to the future of warfare! ORIGIN, your one-stop shop for energy weaponry!",
 				TRADER_HAIL_DENY         = "I'm sorry, your communication channel has been blacklisted.",
@@ -74,6 +73,7 @@
 /datum/trader/dogan
 	name = "Dogan"
 	origin = "Dogan's Gun Beacon"
+	skill_req = SKILL_WEAPONS
 	speech = list(TRADER_HAIL_GENERIC    = "Hello! This is an automatic recording of me, Mr. Dogan! I hope you like the... GUNS... I've got in store for you today.",
 				TRADER_HAIL_DENY         = "I formally welcome you to... NOT... visit our store!",
 
