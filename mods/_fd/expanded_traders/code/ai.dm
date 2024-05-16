@@ -1,3 +1,13 @@
+
+/obj/overmap/visitable/ship/torch/Initialize()
+	. = ..()
+	add_starter_trader()
+
+/obj/overmap/visitable/ship/torch/proc/add_starter_trader()
+	var/trader_type = /datum/trader/trading_beacon/starter
+	GLOB.traders[trader_type] = new trader_type
+	GLOB.trader_types += trader_type
+
 /datum/trader/trading_beacon/engineering
 	origin = "Инженерный Маяк"
 

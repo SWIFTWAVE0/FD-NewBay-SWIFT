@@ -252,6 +252,7 @@
 	#include "../../mods/_fd/fd_species/_fd_species.dme"
 	#include "../../mods/_fd/hestia_missiles/_hestia_missiles.dme"
 	#include "../../mods/_fd/immersive_overmap/_immersive_overmap.dme"
+	#include "../../mods/_fd/junk_heaven/_junk_heaven.dme"
 	#include "../../mods/_fd/landing_eye/_landing_eye.dme"
 	#include "../../mods/_fd/mob_interactions/_mob_interactions.dme"
 	#include "../../mods/_fd/multitile_vehicles/_multitile_vehicles.dme"
