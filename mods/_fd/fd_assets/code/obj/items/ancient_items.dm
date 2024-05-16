@@ -1,7 +1,3 @@
-/obj/item
-	var/quota_worth = 0
-	var/quota_type = 1 // 1 - junk; 2 - minerals
-
 /obj/item/fd/ancient_items
 	name = "ancient thing"
 	desc = "some ancient stuff, idk"

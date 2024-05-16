@@ -1,0 +1,19 @@
+#ifndef MODPACK_JUNK_HEAVEN
+#define MODPACK_JUNK_HEAVEN
+
+#include "_junk_heaven.dm"
+
+#include "code/old_cryo.dm"
+#include "code/old_terminal.dm"
+#include "code/quota_harvester.dm"
+
+#endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+// END_INCLUDE
