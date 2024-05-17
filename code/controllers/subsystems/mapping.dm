@@ -7,6 +7,7 @@ SUBSYSTEM_DEF(mapping)
 	var/list/space_ruins_templates = list()
 	var/list/exoplanet_ruins_templates = list()
 	var/list/away_sites_templates = list()
+	var/list/junkyard_ruins_templates = list()
 	var/list/submaps = list()
 	var/list/submap_archetypes = list()
 
@@ -27,6 +28,7 @@ SUBSYSTEM_DEF(mapping)
 	map_templates = SSmapping.map_templates
 	space_ruins_templates = SSmapping.space_ruins_templates
 	exoplanet_ruins_templates = SSmapping.exoplanet_ruins_templates
+	junkyard_ruins_templates = SSmapping.junkyard_ruins_templates
 	away_sites_templates = SSmapping.away_sites_templates
 
 /datum/controller/subsystem/mapping/proc/preloadTemplates(path = "maps/templates/") //see master controller setup
@@ -70,6 +72,8 @@ SUBSYSTEM_DEF(mapping)
 			exoplanet_ruins_templates[MT.name] = MT
 		else if(istype(MT, /datum/map_template/ruin/space))
 			space_ruins_templates[MT.name] = MT
+		if(istype(MT, /datum/map_template/ruin/junkyard))
+			junkyard_ruins_templates[MT.name] = MT
 		else if(istype(MT, /datum/map_template/ruin/away_site))
 			away_sites_templates[MT.name] = MT
 

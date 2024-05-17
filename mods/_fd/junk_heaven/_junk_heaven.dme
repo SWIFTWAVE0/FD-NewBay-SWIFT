@@ -3,17 +3,19 @@
 
 #include "_junk_heaven.dm"
 
-#include "code/old_cryo.dm"
-#include "code/old_terminal.dm"
-#include "code/quota_harvester.dm"
+#include "code/intel_gathering/disks.dm"
+#include "code/intel_gathering/intel_trader.dm"
+#include "code/intel_gathering/old_terminal.dm"
+#include "code/intel_gathering/relics.dm"
+#include "code/intel_gathering/searching_device.dm"
+
+#include "code/junkyard_generation/_junkyard.dm"
+#include "code/junkyard_generation/junkyard_gen.dm"
+#include "code/junkyard_generation/junkyard_theme.dm"
+#include "code/junkyard_generation/landmarks.dm"
+#include "code/junkyard_generation/ruins.dm"
+
+#include "code/junkyard_activities/old_cryo.dm"
+#include "code/junkyard_activities/quota_harvester.dm"
 
 #endif
-// BEGIN_INTERNALS
-// END_INTERNALS
-// BEGIN_FILE_DIR
-#define FILE_DIR .
-// END_FILE_DIR
-// BEGIN_PREFERENCES
-// END_PREFERENCES
-// BEGIN_INCLUDE
-// END_INCLUDE

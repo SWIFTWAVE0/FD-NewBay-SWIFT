@@ -1,7 +1,7 @@
 /obj/item/fd/data
 	name = "old datamine disk (TIER 0 - ENGINEERING)"
 	desc = "Disk that holds various info - from old-state tech blueprints to astronomical maps."
-	icon = 'mods/_fd/fd_assets/icons/obj/items/disk.dmi'
+	icon = 'mods/_fd/junk_heaven/icons/disk.dmi'
 	icon_state = "datadisk0"
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
 
