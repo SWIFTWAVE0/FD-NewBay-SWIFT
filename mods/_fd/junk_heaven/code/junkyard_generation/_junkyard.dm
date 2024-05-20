@@ -1,34 +1,4 @@
 
-/datum/controller/subsystem/init_misc_late/Initialize(start_uptime)
-	GLOB.using_map.build_junkyards()
-
-/datum/map
-	var/num_junkyards = 0
-	var/list/junkyard_size
-
-/datum/map/New()
-	..()
-	if(!LAZYLEN(junkyard_size))
-		junkyard_size = list(world.maxx, world.maxy)
-
-/datum/map/setup_config(name, value, filename)
-	..()
-	switch(name)
-		if("num_junkyards") num_junkyards = text2num_or_default(value, num_junkyards)
-
-/datum/map/proc/build_junkyards()
-	if(!use_overmap)
-		return
-
-	for(var/i = 0, i < num_junkyards, i++)
-		var/list/junkyard_types_to_pick = subtypesof(/obj/overmap/visitable/sector/junkyard)
-		var/junkyard_type = pick(junkyard_types_to_pick)
-		var/obj/overmap/visitable/sector/junkyard/new_junkyard = new junkyard_type(null, junkyard_size[1], junkyard_size[2])
-		new_junkyard.build_level()
-
-/datum/map/torch
-	num_junkyards = 1
-
 /proc/generate_junkyard_name()
 	return "[rand(100,999)]"
 
@@ -145,7 +115,7 @@
 			var/valid = TRUE
 			var/list/block_to_check = block(locate(T.x - LANDING_ZONE_RADIUS, T.y - LANDING_ZONE_RADIUS, T.z), locate(T.x + LANDING_ZONE_RADIUS, T.y + LANDING_ZONE_RADIUS, T.z))
 			for (var/turf/check in block_to_check)
-				if (!istype(get_area(check), /area/exoplanet) || check.turf_flags & TURF_FLAG_NORUINS)
+				if (!istype(get_area(check), /area/junkyard) || check.turf_flags & TURF_FLAG_NORUINS)
 					valid = FALSE
 					break
 			if (attempts >= 10)

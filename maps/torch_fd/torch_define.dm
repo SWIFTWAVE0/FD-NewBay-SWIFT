@@ -49,7 +49,8 @@
 	default_law_type = /datum/ai_laws/solgov
 
 	use_overmap = 1
-	num_exoplanets = 0
+	num_exoplanets = 1
+	num_junkyards = 1
 	num_traders = 0
 
 	away_site_budget = 0

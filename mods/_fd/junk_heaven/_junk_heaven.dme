@@ -18,4 +18,7 @@
 #include "code/junkyard_activities/old_cryo.dm"
 #include "code/junkyard_activities/quota_harvester.dm"
 
+#include "code/junkyard_generation\junkyard_ruins\main.dm"
+#include "code/junkyard_generation\junkyard_ruins\junk_chunk.dm"
+
 #endif
