@@ -19,3 +19,6 @@
 		invisibility = INVISIBILITY_ABSTRACT
 	else
 		invisibility = 0
+
+/obj/screen/psi/examine(mob/user)
+	return FALSE

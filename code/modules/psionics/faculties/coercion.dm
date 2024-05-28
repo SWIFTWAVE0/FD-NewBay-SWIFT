@@ -140,7 +140,7 @@
 	cost =          28
 	cooldown =      200
 	use_grab =      TRUE
-	min_rank =      PSI_RANK_PARAMOUNT
+	min_rank =      PSI_RANK_GRANDMASTER
 	use_description = "Grab a victim, target the eyes, then use the grab on them while on disarm intent, in order to convert them into a loyal mind-slave. The process takes some time, and failure is punished harshly."
 
 /singleton/psionic_power/coercion/mindslave/invoke(mob/living/user, mob/living/target)

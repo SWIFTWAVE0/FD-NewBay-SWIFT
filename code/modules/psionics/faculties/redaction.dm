@@ -156,7 +156,7 @@
 	cost =            25
 	cooldown =        80
 	use_grab =        TRUE
-	min_rank =        PSI_RANK_PARAMOUNT
+	min_rank =        PSI_RANK_GRANDMASTER
 	faculty =         PSI_REDACTION
 	use_description = "Obtain a grab on a dead target, target the head, then select help intent and use the grab against them to attempt to bring them back to life. The process is lengthy and failure is punished harshly."
 	admin_log = FALSE

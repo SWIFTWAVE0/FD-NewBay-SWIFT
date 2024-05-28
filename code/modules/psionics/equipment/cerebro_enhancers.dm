@@ -12,7 +12,7 @@
 
 	var/operating = FALSE
 	var/list/boosted_faculties
-	var/boosted_rank = PSI_RANK_PARAMOUNT
+	var/boosted_rank = PSI_RANK_GRANDMASTER
 	var/unboosted_rank = PSI_RANK_MASTER
 	var/max_boosted_faculties = 3
 	var/boosted_psipower = 120
