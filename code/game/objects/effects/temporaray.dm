@@ -40,3 +40,17 @@
 	if(set_dir & WEST)
 		target_pixel_x = -16
 	animate(src, pixel_x = target_pixel_x, pixel_y = target_pixel_y, alpha = 0, time = duration)
+
+/obj/temp_visual/decoy
+	desc = "It's a decoy!"
+	duration = 15
+
+/obj/temp_visual/decoy/Initialize(mapload, set_dir, atom/mimiced_atom, modified_duration = 15)
+	duration = modified_duration
+	. = ..()
+	alpha = initial(alpha)
+	if(mimiced_atom)
+		name = mimiced_atom.name
+		appearance = mimiced_atom.appearance
+		set_dir(set_dir)
+		mouse_opacity = 0

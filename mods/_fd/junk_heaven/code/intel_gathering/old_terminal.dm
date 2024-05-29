@@ -88,18 +88,16 @@
 				to_chat(user, "<span class='notice'>Вы аккуратно вставляете внутрь батарею...</span>")
 				qdel(I)
 				update_icon()
-//commented out until psionics will be ported
 
-/*		if(powerless == TRUE && istype(I, /obj/item/psychic_power/psielectro))
+		if(powerless == TRUE && istype(I, /obj/item/psychic_power/psielectro))
 			if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) < PSI_RANK_OPERANT)
 				to_chat(user, "<span class='notice'>Вы ещё не успели освоиться с током настолько хорошо, чтобы провернуть нечто подобное...</span>")
 				return
 			if(do_after(user, 60))
 				powerless = FALSE
 				to_chat(user, "<span class='notice'>Вы оживляете платы старого терминала, наполняя его своим внутренним электричеством...</span>")
-				update_icon()*/
+				update_icon()
 
-//commented out until psionics will be ported
 	if(state == 1 && powerless == FALSE)
 		if(data == 1)
 			to_chat(user, "<span class='notice'>Похоже, что полезных чертежей в терминале не осталось...впрочем, вы всё ещё можете найти что-либо в округе с его помощью.</span>")
