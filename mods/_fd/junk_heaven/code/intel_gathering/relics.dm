@@ -450,11 +450,11 @@
 
 	sleep(80)
 
-//	for(var/faculty in list(PSI_COERCION, PSI_CONSCIOUSNESS, PSI_METAKINESIS, PSI_PSYCHOKINESIS, PSI_MANIFESTATION, PSI_REDACTION, PSI_ENERGISTICS))
-//		if(faculty in boosted_faculties)
-//			H.set_psi_rank(faculty, boosted_rank, take_larger = TRUE, temporary = TRUE)
-//		else
-//			H.set_psi_rank(faculty, unboosted_rank, take_larger = TRUE, temporary = TRUE)
+	for(var/faculty in list(PSI_COERCION, PSI_CONSCIOUSNESS, PSI_METAKINESIS, PSI_PSYCHOKINESIS, PSI_MANIFESTATION, PSI_REDACTION, PSI_ENERGISTICS))
+		if(faculty in boosted_faculties)
+			H.set_psi_rank(faculty, boosted_rank, take_larger = TRUE, temporary = TRUE)
+		else
+			H.set_psi_rank(faculty, unboosted_rank, take_larger = TRUE, temporary = TRUE)
 	if(H.psi)
 		H.psi.max_stamina = boosted_psipower
 		H.psi.stamina = H.psi.max_stamina
