@@ -1,26 +1,27 @@
 /datum/trader/ship/pet_shop
-	name = "Pet Shop Owner"
+	name = "Владелец Пет-Шопа"
 	name_language = LANGUAGE_SKRELLIAN
-	origin = "Pet Shop"
+	skill_req = SKILL_SCIENCE
+	origin = "Пет-Шоп"
 	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
-	possible_origins = list("Paws-Out", "Pets-R-Smart", "Tentacle Companions", "Xeno-Pets and Assorted Goods", "Barks and Drools")
-	speech = list(TRADER_HAIL_GENERIC    = "Welcome to my xeno-pet shop! Here you will find many wonderful companions. Some a bit more... aggressive than others. But companions none the less. I also buy pets, or trade them.",
-				TRADER_HAIL_DENY         = "I no longer wish to speak to you.",
+	possible_origins = list("Лапы наружу", "Сообразительные четвероногие", "Тентакли в помощь", "Всё для Ксенофауны", "Лай и Рык")
+	speech = list(TRADER_HAIL_GENERIC    = "Добро пожаловать в мой Пет-Шоп! Надеюсь, вы найдёте себе друга по душе. Некоторые из них...немного агрессивные, но всё равно очень верные! Я также скупаю животных. Обмен тоже возможен!",
+				TRADER_HAIL_DENY         = "Мне больше нечего вам сказать.",
 
-				TRADER_TRADE_COMPLETE    = "Remember to give them attention and food. They are living beings, and you should treat them like so.",
-				TRADER_NO_BLACKLISTED   = "Legally I can' do that. Morally, I refuse to do that.",
-				TRADER_FOUND_UNWANTED = "I only want animals. I don't need food or shiny things. I'm looking for specific ones at that. Ones I already have the cage and food for.",
-				TRADER_NOT_ENOUGH   = "I'd give you the animal for free, but I need the money to feed the others. So you must pay in full.",
-				TRADER_HOW_MUCH          = "This is a fine specimen. I believe it will cost you VALUE CURRENCY.",
-				TRADER_WHAT_WANT         = "I have the facilities, currently, to support",
+				TRADER_TRADE_COMPLETE    = "Не забывайте ухаживать за ним!",
+				TRADER_NO_BLACKLISTED   = "Мне не позволит принять это ни закон, ни мораль.",
+				TRADER_FOUND_UNWANTED = "Мне нужны только животные, ладно? Меня не интересует еда или эти блестящие штучки. И я говорю о вполне конкретных животных - я не возьму того, для кого у меня нет еды и клетки.",
+				TRADER_NOT_ENOUGH   = "Я бы отдал тебе его и за бесплатно, но мне нужно на что-то кормить других. Поэтому - никаких торгов. Только полная стоимость.",
+				TRADER_HOW_MUCH          = "Отличный выбор, высший сорт...он обойдётся вам в VALUE CURRENCY.",
+				TRADER_WHAT_WANT         = "В данный момент я смог бы принять к себе на борт...",
 
-				TRADER_COMPLEMENT_FAILURE   = "That was almost charming.",
-				TRADER_COMPLEMENT_SUCCESS = "Thank you. I needed that.",
-				TRADER_INSULT_GOOD       = "I ask you to stop. We can be peaceful. I know we can.",
-				TRADER_INSULT_BAD        = "My interactions with you are becoming less than fruitful.",
+				TRADER_COMPLEMENT_FAILURE   = "Это было так мило! Но нет, спасибо.",
+				TRADER_COMPLEMENT_SUCCESS = "Спасибо, мне было это нужно.",
+				TRADER_INSULT_GOOD       = "Я прошу вас прекратить. Давайте общаться как цивилизованные личности...",
+				TRADER_INSULT_BAD        = "Этот диалог становится всё более неловким.",
 
-				TRADER_BRIBE_FAILURE     = "I'm not going to do that. I have places to be.",
-				TRADER_BRIBE_SUCCESS      = "Hm. It'll be good for the animals, so sure.",
+				TRADER_BRIBE_FAILURE     = "Простите, но у меня нет времени чтобы делать столь длительные остановки.",
+				TRADER_BRIBE_SUCCESS      = "Хм. Животным нужно отдохнуть от блюспейс-прыжка. Я подожду.",
 				)
 
 	possible_wanted_items = list(/mob/living/simple_animal/passive/corgi      = TRADER_THIS_TYPE,
@@ -29,17 +30,12 @@
 								/mob/living/simple_animal/passive/lizard      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/mouse       = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/mushroom    = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/tindalos    = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/tomato      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/cow         = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/chick       = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/chicken     = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/yithian     = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/diyaab = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/bear = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/shantak= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/parrot      = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/samak= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/goat = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/carp = TRADER_THIS_TYPE)
 
@@ -49,49 +45,43 @@
 								/mob/living/simple_animal/passive/lizard      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/mouse       = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/mushroom    = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/tindalos    = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/tomato      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/cow         = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/chick       = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/passive/chicken     = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/yithian     = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/diyaab = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/bear= TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/shantak= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/parrot      = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/retaliate/beast/samak= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/goat = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/carp= TRADER_THIS_TYPE,
-								/obj/item/device/dociler              = TRADER_THIS_TYPE,
 								/obj/structure/dogbed                 = TRADER_THIS_TYPE)
 
 /datum/trader/ship/pet_shop/New()
 	..()
-	speech[TRADER_HAIL_START + SPECIES_SKRELL] = "Ah! A fellow Skrell. How wonderful, I may have a few pets imported from back home. Take a look."
+	speech[TRADER_HAIL_START + SPECIES_SKRELL] = "Ах! Мой собрат по несчастью! Встретить в этих краях другого скрелла - редкость! Слушай, у меня, кажется, сохранилась в запасе пара ребят с родины...хочешь взглянуть?"
 
 /datum/trader/ship/prank_shop
-	name = "Prank Shop Owner"
+	name = "Владелец Пранк-Шопа"
 	name_language = LANGUAGE_ROOTLOCAL
-	origin = "Prank Shop"
+	origin = "Пранк-Шоп"
 	compliment_increase = 0
 	insult_drop = 0
-	possible_origins = list("Yacks and Yucks Shop", "The Shop From Which I Sell Humorous Items", "The Prank Gestalt", "The Clown's Armory", "Uncle Knuckle's Chuckle Bunker", "A Place from Which to do Humorous Business")
-	speech = list(TRADER_HAIL_GENERIC = "We welcome you to our shop of humorous items. We invite you to partake in the divine experience of being pranked, and pranking someone else.",
-				TRADER_HAIL_DENY      = "We cannot do business with you. We are sorry.",
+	possible_origins = list("Смешинки", "Пранковый Гештальт", "Клоунский Арсенал", "Бункер дядюшки Кнаклза", "То самое место где продают смешные приколы", "То самое место где я заставляю людей смеяться")
+	speech = list(TRADER_HAIL_GENERIC = "Мы приглашаем вас в наш магазин, где продаются предметы увесилительного характера. Мы предлагаем вам стать свидетелем уникального опыта бытья пранкнутым, или пранкнуть кого-то самостоятельно.",
+				TRADER_HAIL_DENY      = "Мы больше не можем иметь с вами дел, вы слишком не смешной.",
 
-				TRADER_TRADE_COMPLETE = "We thank you for purchasing something. We enjoyed the experience of you doing so and we hope to learn from it.",
-				TRADER_NO_BLACKLISTED= "We are not allowed to do such. We are sorry.",
-				TRADER_NOT_ENOUGH="We have sufficiently experienced giving away goods for free. We wish to experience getting money in return.",
-				TRADER_HOW_MUCH       = "We believe that is worth VALUE CURRENCY.",
-				TRADER_WHAT_WANT      = "We wish only for the experiences you give us, in all else we want",
+				TRADER_TRADE_COMPLETE = "Мы благодарим вас за покупку этого замечательно предмета. Нам понравилось то, что вы купили у нас данную вещь и мы извлечём из этого полезный урок.",
+				TRADER_NO_BLACKLISTED= "Мы заинтересованы только в создании пранков. Военные преступления не звучат как что-то весёлое для нас.",
+				TRADER_NOT_ENOUGH="Мы уже осознали опыт раздачи вещей бесплатно. Теперь мы хотим осознать опыт получения денег за это.",
+				TRADER_HOW_MUCH       = "Мы верим в то, что этот предмет стоит VALUE CURRENCY.",
+				TRADER_WHAT_WANT      = "Нам важен лишь опыт и впечатления, которые вы производите. Однако, если вы настаиваете, то мы бы хотели...",
 
-				TRADER_COMPLEMENT_FAILURE= "You are attempting to compliment us.",
-				TRADER_COMPLEMENT_SUCCESS="You are attempting to compliment us.",
-				TRADER_INSULT_GOOD    = "You are attempting to insult us, correct?",
-				TRADER_INSULT_BAD     = "We do not understand.",
+				TRADER_COMPLEMENT_FAILURE= "Вы попытались сделать нам комплимент. Зачем?",
+				TRADER_COMPLEMENT_SUCCESS="Вы попытались сделать нам комплимент. Зачем?",
+				TRADER_INSULT_GOOD    = "Вы попытались сильно оскорбить нас, правильно?",
+				TRADER_INSULT_BAD     = "Мы, не смотря на вековой опыт, ничего не поняли.",
 
-				TRADER_BRIBE_FAILURE  = "We are sorry, but we cannot accept.",
-				TRADER_BRIBE_SUCCESS   = "We are happy to say that we accept this bribe.",
+				TRADER_BRIBE_FAILURE  = "Мы должны получить больше опыта. Мы извлекли из этого места весь спектр эмоций, который могли извлечь.",
+				TRADER_BRIBE_SUCCESS   = "Мы считаем, что вы можете показать нам ещё много чего. Мы задержимся.",
 				)
 	possible_trading_items = list(/obj/item/clothing/mask/gas/clown_hat = TRADER_THIS_TYPE,
 								/obj/item/clothing/mask/gas/mime        = TRADER_THIS_TYPE,
@@ -109,32 +99,32 @@
 								/obj/item/clothing/mask/fakemoustache   = TRADER_THIS_TYPE,
 								/obj/item/grenade/spawnergrenade/fake_carp = TRADER_THIS_TYPE)
 
-/datum/trader/ship/pet_shop/New()
+/datum/trader/ship/prank_shop/New()
 	..()
 	speech[TRADER_HAIL_START + SPECIES_DIONA] = "Welcome, other gestalt. We invite you to learn of our experiences, and teach us of your own."
 
-
 /datum/trader/ship/replica_shop
-	name = "Replica Store Owner"
+	name = "Владелец летающей кузницы"
+	skill_req = SKILL_COMBAT
 	name_language = TRADER_DEFAULT_NAME
-	origin = "Replica Store"
-	possible_origins = list("Ye-Old Armory", "Knights and Knaves", "The Blacksmith", "Historical Human Apparel and Items", "The Pointy End", "Fight Knight's Knightly Nightly Knight Fights", "Elminster's Fine Steel", "The Arms of King Duordan", "Queen's Edict")
-	speech = list(TRADER_HAIL_GENERIC = "Greetings, traveler! You've the look of one with a keen hunger for human history. Come in, and learn! Mayhaps even... buy?",
-				TRADER_HAIL_DENY      = "I shan't palaver with a man who thumbs his nose at the annals of history. Goodbye.",
+	origin = "Летающая кузница"
+	possible_origins = list("Старая-добрая Оружейная", "Рыцари и Негодяи", "Кузнец", "Историческое одеяние и оружие человеческой расы", "Острый Конец", "Сталь Эльминестера", "Дюрандаль", "Слуга Королевы")
+	speech = list(TRADER_HAIL_GENERIC = "Приветствую, путник! Ты определённо выглядишь как тот, кто хочет окунуться в человеческую историю поглубже! Прошу! Заходи! Может быть, тебе даже что-нибудь приглянётся?...",
+				TRADER_HAIL_DENY      = "Чтоб чёрт меня побрал - не знаю на что я надеялась! Ты просто грязный брут!",
 
-				TRADER_TRADE_COMPLETE = "Thank you, mighty warrior. And remember - these may be replicas, but their edges are honed to razor sharpness!",
-				TRADER_NO_BLACKLISTED= "Nay, we accept only the CURRENCY_SINGULAR. Or sovereigns of the king's mint, of course.",
-				TRADER_NOT_ENOUGH="Alas, traveler, my fine wares cost more than that.",
-				TRADER_HOW_MUCH       = "For VALUE CURRENCY, I can part with this finest of goods.",
-				TRADER_WHAT_WANT      = "I have ever longed for",
+				TRADER_TRADE_COMPLETE = "Благодарю, о великий воин. И помни - не смотря на то, что это всё реплика, их концы остры как реальные!",
+				TRADER_NO_BLACKLISTED= "Ишь что удумал - мы принимаем либо золото, либо CURRENCY_SINGULAR! Впрочем, королевские реликвии тоже сойдут...",
+				TRADER_NOT_ENOUGH="Извини, путник, но даже моя рубах стоит дороже, чем ты мне предлагаешь.",
+				TRADER_HOW_MUCH       = "Думаю, VALUE CURRENCY будет достаточно, чтобы почтить историю.",
+				TRADER_WHAT_WANT      = "Я всю свою жизнь охочусь за...",
 
-				TRADER_COMPLEMENT_FAILURE= "Oh ho ho! Aren't you quite the jester.",
-				TRADER_COMPLEMENT_SUCCESS="Why, thank you, traveler! Long have I slaved over the anvil to produce these goods.",
-				TRADER_INSULT_GOOD    = "Hey, bro, I'm just tryin' to make a living here, okay? The Camelot schtick is part of my brand.",
-				TRADER_INSULT_BAD     = "Man, fuck you, then.",
+				TRADER_COMPLEMENT_FAILURE= "Ха-ха-ха! Да ты настоящий Шут!",
+				TRADER_COMPLEMENT_SUCCESS="Благодарю, путник. Я не слышала таких комплиментов со времён того, как ковала мечи для армии Его Высочества.",
+				TRADER_INSULT_GOOD    = "Слушай, бро, я просто пытаюсь заработать себе на жизнь, ок? Вся эта Авалонская туфта - просто часть моего бренда.",
+				TRADER_INSULT_BAD     = "Ну и ебись с конём, если так хочешь.",
 
-				TRADER_BRIBE_FAILURE  = "Alas, traveler - I could stay all eve, but I've an Unathi client in waiting, and they are not known for patience.",
-				TRADER_BRIBE_SUCCESS   = "Mayhaps I could set a spell longer, and rest my weary feet.",
+				TRADER_BRIBE_FAILURE  = "Право, путник, я бы обсуждала с тобой нашу замечательную историю хоть целый день! Но мой следующий клиент - Унати. А они ждать не научены...",
+				TRADER_BRIBE_SUCCESS   = "Может быть, мы можем и задержаться...тем более, магу нужно время отдохнуть после последнего прыжка. Иначе он не сможет открыть портал в следующую точку нашего тернистого пути!",
 				)
 	possible_trading_items = list(/obj/item/clothing/head/wizard/magus = TRADER_THIS_TYPE,
 								/obj/item/shield/buckler        = TRADER_THIS_TYPE,
@@ -161,6 +151,6 @@
 								/obj/item/material/star         = TRADER_THIS_TYPE,
 								/obj/item/material/twohanded/baseballbat = TRADER_THIS_TYPE)
 
-/datum/trader/ship/pet_shop/New()
+/datum/trader/ship/replica_shop/New()
 	..()
-	speech[TRADER_HAIL_START + SPECIES_UNATHI] = "Ah, you've the look of a lizard who knows his way around martial combat. Come in! We can only hope our steel meets the formidable Moghedi standards."
+	speech[TRADER_HAIL_START + SPECIES_UNATHI] = "Ах, вы выглядите как воин, способно орудующий клинком. Прошу, входите! Мы можем лишь надеяться, что наша сталь может сравняться с стандартами Могеса."

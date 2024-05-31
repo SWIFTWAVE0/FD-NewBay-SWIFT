@@ -1,7 +1,7 @@
-/obj/structure/fd/intel_console
+/obj/structure/intel_console
 	name = "Old terminal"
 	desc = "Strange, pretty old looking data terminal. Possibly holds some good info to sold or use!"
-	icon = 'mods/_fd/fd_assets/icons/structures/miscobjs.dmi'
+	icon = 'mods/_fd/junk_heaven/icons/junkyard_structures.dmi'
 	icon_state = "retrosmall"
 	density = TRUE
 	anchored = TRUE
@@ -37,17 +37,17 @@
 	var/icon_state_broken = "retrosmall0"
 	var/icon_state_brolen_fully = "retrosmallb"
 
-/obj/structure/fd/intel_console/New()
+/obj/structure/intel_console/New()
 	. = ..()
 	state = pick(1,2,3)
 	data = rand(1,5)
 	update_icon()
 
-/obj/structure/fd/intel_console/LateInitialize()
+/obj/structure/intel_console/LateInitialize()
 	. = ..()
 	update_icon()
 
-/obj/structure/fd/intel_console/on_update_icon()
+/obj/structure/intel_console/on_update_icon()
 	if(state == 1 && powerless == TRUE)
 		icon_state = icon_state_unpowered
 	if(state == 1 && powerless == FALSE)
@@ -58,7 +58,7 @@
 		icon_state = icon_state_brolen_fully
 	return
 
-/obj/structure/fd/intel_console/attackby(obj/item/I, mob/living/user)
+/obj/structure/intel_console/attackby(obj/item/I, mob/living/user)
 
 	if(state == 3 && istype(I, /obj/item/stack/material/glass/))
 		var/obj/item/stack/material/glass/guass = I
@@ -88,14 +88,16 @@
 				to_chat(user, "<span class='notice'>Вы аккуратно вставляете внутрь батарею...</span>")
 				qdel(I)
 				update_icon()
-/*		if(powerless == TRUE && istype(I, /obj/item/psychic_power/psielectro)) ПСИОНИКА
+
+		if(powerless == TRUE && istype(I, /obj/item/psychic_power/psielectro))
 			if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) < PSI_RANK_OPERANT)
 				to_chat(user, "<span class='notice'>Вы ещё не успели освоиться с током настолько хорошо, чтобы провернуть нечто подобное...</span>")
 				return
 			if(do_after(user, 60))
 				powerless = FALSE
 				to_chat(user, "<span class='notice'>Вы оживляете платы старого терминала, наполняя его своим внутренним электричеством...</span>")
-				update_icon() */
+				update_icon()
+
 	if(state == 1 && powerless == FALSE)
 		if(data == 1)
 			to_chat(user, "<span class='notice'>Похоже, что полезных чертежей в терминале не осталось...впрочем, вы всё ещё можете найти что-либо в округе с его помощью.</span>")
@@ -113,7 +115,7 @@
 		to_chat(user, "<span class='warning'>На вряд ли [I] может здесь чем-то помочь...</span>")
 		return
 
-/obj/structure/fd/intel_console/attack_hand(mob/user)
+/obj/structure/intel_console/attack_hand(mob/user)
 	if(state == 1 && powerless == FALSE)
 		if(data > 0)
 			if(do_after(user, 80))
@@ -127,7 +129,7 @@
 						else
 							to_chat(user, "<span class='notice'>Похоже, что в памяти данного терминала подобной информации нет!</span>")
 					if("Хранилища")
-						var/obj/structure/closet/crate/CR = locate() in orange(30)
+						var/obj/structure/closet/crate/secure/loot/CR = locate() in orange(30)
 						if(CR)
 							to_chat(user, "<span class='notice'>Ближайшее хранилище снаряжения находится на координатах: [CR.x], [CR.y]</span>")
 							data -= 1

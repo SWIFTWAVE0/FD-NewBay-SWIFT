@@ -3,7 +3,7 @@
 	want_multiplier = 5
 	typical_duration = 40
 
-/datum/trader/ship/unique/New()
+/*/datum/trader/ship/unique/New()
 	..()
 	wanted_items = list()
 	for(var/type in possible_wanted_items)
@@ -15,10 +15,10 @@
 		if(status & TRADER_BLACKLIST)
 			wanted_items -= type
 		if(status & TRADER_BLACKLIST_SUB)
-			wanted_items -= subtypesof(type)
+			wanted_items -= subtypesof(type)*/
 
 /datum/trader/ship/unique/tick()
-	if(prob(-disposition) || refuse_comms)
+	if(prob(-min(list_values(disposition))))
 		duration_of_stay--
 	return --duration_of_stay > 0
 
@@ -26,10 +26,17 @@
 	return make_response(TRADER_WHAT_WANT, "I don't want anything!", 0, FALSE)
 
 /datum/trader/ship/unique/severance
-	name = "Unknown"
-	origin = "SGS Severance"
+	name = "Неизвестный"
+	origin = "ITV Северин"
+	skill_req = SKILL_COOKING
 
 	possible_wanted_items = list(
+							/obj/item/reagent_containers/food/snacks/human                      = TRADER_SUBTYPES_ONLY,
+							/obj/item/reagent_containers/food/snacks/meat/human                 = TRADER_THIS_TYPE,
+							/mob/living/carbon/human                                                   = TRADER_ALL
+							)
+
+	wanted_items = list(
 							/obj/item/reagent_containers/food/snacks/human                      = TRADER_SUBTYPES_ONLY,
 							/obj/item/reagent_containers/food/snacks/meat/human                 = TRADER_THIS_TYPE,
 							/mob/living/carbon/human                                                   = TRADER_ALL
@@ -42,54 +49,55 @@
 
 	blacklisted_trade_items = null
 
-	speech = list(TRADER_HAIL_GENERIC     = "H-hello. Can you hear me? G-good... I have... specific needs... I have a lot to t-trade with you in return of course.",
+	speech = list(TRADER_HAIL_GENERIC     = "П-привет. Меня слышно? П-прекрасно...у меня есть...специфичная просьба...и конечно я могу предложить не мало интересного в обмен.",
 				TRADER_HAIL_DENY          = "--CONNECTION SEVERED--",
 
-				TRADER_TRADE_COMPLETE     = "Hahahahahahaha! Thankyouthankyouthankyou!",
-				TRADER_NO_MONEY       = "I d-don't NEED cash.",
-				TRADER_NOT_ENOUGH     = "N-no, no no no. M-more than that... more...",
-				TRADER_FOUND_UNWANTED = "I d-don't think you GET what I want, fr- from your offer.",
-				TRADER_HOW_MUCH       = "Meat. I want meat. The kind they don't serve in the- the mess hall.",
-				TRADER_WHAT_WANT      = "Long p-pork. Yes... that's what I want...",
+				TRADER_TRADE_COMPLETE     = "АХАХАХАХахахаХХАхАХа! Спасибоспасибоспасибоспасибо!",
+				TRADER_NO_MONEY       = "Мне н-не нужны ДЕНЬГИ.",
+				TRADER_NOT_ENOUGH     = "Н-не-не-не. Б-больше...мне нужно больше.",
+				TRADER_FOUND_UNWANTED = "М-мне кажется т-ты не понимаешь ч-что мне РЕАЛЬНО НУЖНО.",
+				TRADER_HOW_MUCH       = "Мясо. Мне нужно мясо. Такое, какое не принято подавать в цивилизованном обществе...",
+				TRADER_WHAT_WANT      = "Пожирнее. Да...я хочу...",
 
-				TRADER_COMPLEMENT_FAILURE    = "Your lies won't ch-change what I did.",
-				TRADER_COMPLEMENT_SUCCESS  = "Yes... I suppose you're right.",
-				TRADER_INSULT_GOOD        = "I... probably deserve that.",
-				TRADER_INSULT_BAD         = "Maybe you should c-come here and say that. You'd be worth s-something then.",
+				TRADER_COMPLEMENT_FAILURE    = "Твоя ложь уже ничего не изменит.",
+				TRADER_COMPLEMENT_SUCCESS  = "Да...я действительно не так уж и плох.",
+				TRADER_INSULT_GOOD        = "Я...заслужил это.",
+				TRADER_INSULT_BAD         = "Может, ты подойдёшь поближе, и скажешь м-мне это в лицо? ЧТОБЫЯВОНЗИЛЭТОТНОЖПРЯМОВТВОЮГЛОТКУ!",
 				)
-	mob_transfer_message = "<span class='danger'>You are transported to ORIGIN, and with a sickening thud, you fall unconscious, never to wake again.</span>"
+	mob_transfer_message = "<span class='danger'>Вы были перемещены на ORIGIN. Последнее, что вы помните - это удар по голове. А затем была только темнота.</span>"
 
 
 /datum/trader/ship/unique/rock
-	name = "Bobo"
-	origin = "Floating rock"
+	name = "Бобо"
+	origin = "Камень с двигателями"
 
 	possible_wanted_items  = list(/obj/item/ore                        = TRADER_ALL)
+	wanted_items  = list(/obj/item/ore                        = TRADER_ALL)
 	possible_trading_items = list(/obj/machinery/power/supermatter            = TRADER_ALL,
 								/obj/item/aiModule                     = TRADER_SUBTYPES_ONLY)
-	want_multiplier = 5000
+	want_multiplier = 4000 // was 5000, yeah
 
-	speech = list(TRADER_HAIL_GENERIC     = "Blub am MERCHANT. Blub hunger for things. Boo bring them to blub, yes?",
-				TRADER_HAIL_DENY          = "Blub does not want to speak to boo.",
+	speech = list(TRADER_HAIL_GENERIC     = "Бобо не ТОРГУЕТ. Бобо ЕСТ. Бу приносить Бобо еду, хорошо?",
+				TRADER_HAIL_DENY          = "Бу обидел Бобо. Бобо больше не хочет общаться с Бу.",
 
-				TRADER_TRADE_COMPLETE     = "Blub likes to trade!",
-				TRADER_NO_MONEY     = "Boo try to give Blub paper. Blub does not want paper.",
-				TRADER_NOT_ENOUGH   = "Blub hungry for bore than that.",
-				TRADER_FOUND_UNWANTED = "Blub only wants bocks. Give bocks.",
-				TRADER_HOW_MUCH           = "Blub wants bocks. Boo give bocks. Blub gives stuff blub found.",
-				TRADER_WHAT_WANT          = "Blub wants bocks. Big bocks, small bocks. Shiny bocks!",
+				TRADER_TRADE_COMPLETE     = "Вкууусно.",
+				TRADER_NO_MONEY     = "Бобо не любит бумажки. Бумажки не питательны.",
+				TRADER_NOT_ENOUGH   = "Бобо нужно больше.",
+				TRADER_FOUND_UNWANTED = "Бобо хочет только хрустяшки.",
+				TRADER_HOW_MUCH           = "Бобо хочет хрустяшек. Бу давать хрустяшки. Бобо давать что-то взамен.",
+				TRADER_WHAT_WANT          = "Бобо хочет хрустяшек. Больших хрустяшек, маленьких хрустяшек. Блестящих хрустяшек!",
 
-				TRADER_COMPLEMENT_FAILURE    = "Blub is just MERCHANT. What do boo mean?",
-				TRADER_COMPLEMENT_SUCCESS  = "Boo are a bood berson!",
-				TRADER_INSULT_GOOD        = "Blub do not understand. Blub thought we were briends.",
-				TRADER_INSULT_BAD         = "Blub feels bad now.",
+				TRADER_COMPLEMENT_FAILURE    = "Бобо просто хочет есть. Что Бу имеет в виду?",
+				TRADER_COMPLEMENT_SUCCESS  = "Бу хороший!",
+				TRADER_INSULT_GOOD        = "Бобо не понимает! Бобо думал что мы с Бу друзья!",
+				TRADER_INSULT_BAD         = "Бобо чувствует себя грустно.",
 				)
 
 //probably could stick soem Howl references in here but like, eh. Haven't seen it in years.
 /datum/trader/ship/unique/wizard
-	name = "Sorcerer"
-	origin = "A moving castle"
-	possible_origins = list("An indistinct location", "Unknown location", "The Diamond Sphere", "Beyond the Veil", "Deadverse")
+	name = "Заклинатель"
+	origin = "Космический Замок"
+	possible_origins = list("Дворец короля Артура", "Гробница Фараона", "Память о далёком прошлом", "Темница Хроноса")
 	name_language = TRADER_DEFAULT_NAME
 
 	possible_wanted_items = list(/mob/living/simple_animal/construct            = TRADER_SUBTYPES_ONLY,
@@ -112,22 +120,22 @@
 								/obj/item/staff                           = TRADER_ALL,
 								) //Probably see about getting some more wizard based shit
 
-	speech = list(TRADER_HAIL_GENERIC     = "Hello! Are you here on pleasure or business?",
-				TRADER_HAIL_DENY          = "I'm sorry, but I REALLY don't want to speak to you.",
+	speech = list(TRADER_HAIL_GENERIC     = "Приветствую! Вы заглянули ко мне за помощью, или за сделкой?",
+				TRADER_HAIL_DENY          = "Прошу прощения, но у меня есть дела по-важнее, нежели общение с ЧЕРНЬЮ.",
 
-				TRADER_TRADE_COMPLETE     = "Pleasure doing business with you!",
-				TRADER_NO_MONEY     = "Cash? Ha! What's cash to a man like me?",
-				TRADER_NOT_ENOUGH   = "Hm, well I do enjoy what you're offering, I prefer a fair trade.",
-				TRADER_FOUND_UNWANTED = "What? I want oddities! Don't you understand?",
-				TRADER_HOW_MUCH           = "I want dark things, brooding things... things that go bump in the night. Things that bleed wrong, live wrong, are wrong.",
-				TRADER_WHAT_WANT          = "Have anything from a broodish cult?",
+				TRADER_TRADE_COMPLETE     = "Отличная сделка. Волшебная!",
+				TRADER_NO_MONEY     = "Деньги? Ха! Что деньги для такого как я?",
+				TRADER_NOT_ENOUGH   = "Хм, ваше предложение валидно, но я бы всё-таки хотел чего-то, что достойно моего ассортимента.",
+				TRADER_FOUND_UNWANTED = "Что мне нужно? Мне нужны реликвии! Магические артефакты! Неужели непонятно?",
+				TRADER_HOW_MUCH           = "Мне нужны мощные предметы. Обладающие воистину ВЕЛИКОЙ аурой.",
+				TRADER_WHAT_WANT          = "Хм...Культ Нар-Си? Рат'вара? Впрочем, сомневаюсь, что это о многом вам говорит.",
 
-				TRADER_COMPLEMENT_FAILURE    = "Like I haven't heard that one before!",
-				TRADER_COMPLEMENT_SUCCESS  = "Haha! Aren't you nice.",
-				TRADER_INSULT_GOOD        = "Naughty naughty.",
-				TRADER_INSULT_BAD         = "Now where do you get off talking to me like that?",
+				TRADER_COMPLEMENT_FAILURE    = "Боже! Словно я не слышал этого раньше",
+				TRADER_COMPLEMENT_SUCCESS  = "Ха-ха! Ну разве вы не сама любезность?",
+				TRADER_INSULT_GOOD        = "Нагло...действительно нагло.",
+				TRADER_INSULT_BAD         = "Знаете, я ведь могу превратить вас в мышь до конца вашей жалкой жизни.",
 				)
 
 /datum/trader/ship/unique/wizard/New()
 	..()
-	speech[TRADER_HAIL_START + SPECIES_GOLEM] = "Interesting... how incredibly interesting... come! Let us do business!"
+	speech[TRADER_HAIL_START + SPECIES_GOLEM] = "Интересно...воистину интересно...прошу, вершина магической науки - проходите!"

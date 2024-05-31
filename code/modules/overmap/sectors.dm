@@ -158,6 +158,9 @@ GLOBAL_LIST_EMPTY(known_overmap_sectors)
 		for(var/obj/machinery/computer/ship/helm/H as anything in GLOB.overmap_helm_computers)
 			update_known_connections(TRUE)
 
+	for(var/datum/trader/merchant)
+		merchant.update_disposition_list()
+
 
 /obj/overmap/visitable/sector/update_known_connections(notify = FALSE)
 	. = ..()

@@ -1,12 +1,13 @@
+
 /mob/living/carbon/human/joinable
 	var/mob/living/carbon/human/joinable/brainmob
 
 /mob/living/carbon/human/joinable/attack_ghost(mob/observer/ghost/user)
-	var/question = "�� �������, ��� ������ ������ ���� �� ��������� �� �����������?"
-	var/ask = alert(question, "�� �� ��� ������� �������� ����, ��� �� �� ��������� ������� ������� ��� ���������!", "��", "���")
+	var/question = "Вы уверены, что хотите начать игру за выжившего из криокапсулы?"
+	var/ask = alert(question, "Мы не даём никакой гарантии того, что вы не окажетесь посреди космоса без скафандра!", "Да", "Нет")
 	if(!ask)
 		return
-	if(ask == "���" || mind)
+	if(ask == "Нет" || mind)
 		return
 	var/datum/ghosttrap/T = get_ghost_trap("space sleeper")
 	T.transfer_personality(user, src)
@@ -30,6 +31,28 @@
 	id_slot = slot_wear_id
 	id_types = list(/obj/item/card/id/civilian)
 
+/datum/ghosttrap/survivor
+	object = "space sleeper"
+	ghost_trap_message = "They are occupying a space sleeper now."
+	ghost_trap_role = "Space Sleeper"
+	minutes_since_death = 5
+
+/datum/ghosttrap/survivor/welcome_candidate(mob/target)
+	to_chat(target, SPAN_BOLD("Вы - счастливчик, которому повезло оказаться найденным среди этого бескрайнего звёздного моря."))
+	to_chat(target, "Интересно, сколько вы спали?...")
+	var/mob/living/carbon/human/joinable/P = target.loc
+	if (!istype(P))
+		return
+	P.visible_message(SPAN_ITALIC("[P] начинает жадно глотать воздух!"), range = 3)
+	P.update_icon()
+
+/datum/ghosttrap/survivor/set_new_name(mob/target)
+	. = ..()
+	var/mob/living/carbon/human/joinable/P = target.loc
+	if (!istype(P))
+		return
+	P.UpdateNames()
+
 #define SURVIVOR_SPAWNER_RANDOM_NAME       FLAG(0)
 #define SURVIVOR_SPAWNER_CUT_SURVIVAL      FLAG(1)
 #define SURVIVOR_SPAWNER_CUT_ID_PDA        (SURVIVOR_SPAWNER_RANDOM_NAME | SURVIVOR_SPAWNER_CUT_SURVIVAL)
@@ -49,7 +72,7 @@
 /obj/structure/abandoned_cryo
 	name = "emergency cryogenic freezer"
 	desc = "A man-sized pod of pretty old design."
-	icon = 'mods/_fd/fd_assets/icons/structures/old_cryo.dmi'
+	icon = 'mods/_fd/junk_heaven/icons/junkyard_structures.dmi'
 	icon_state = "pod_closed"
 	density = TRUE
 	anchored = TRUE
@@ -72,12 +95,12 @@
 /obj/structure/abandoned_cryo/attackby(obj/item/C, mob/user)
 	if(isCrowbar(C) && user.skill_check(SKILL_HAULING, SKILL_TRAINED))
 		if(opened)
-			to_chat(user, SPAN_DANGER("Pod were alreade opened!"))
+			to_chat(user, SPAN_DANGER("Капсула уже открыта!"))
 		else if(!opened)
 			user.visible_message(
-				SPAN_WARNING("\The [user] wedges \the [C] into \the [src] and starts forcing it open!"),
-				SPAN_DANGER("You start forcing \the [src] open."),
-				SPAN_WARNING("You hear metal groaning and grinding!")
+				SPAN_WARNING("[user] вонзает [C] в бок [src], поддевая крышку и начиня приподнимать ту!"),
+				SPAN_DANGER("Вы пытаетесь открыть [src]."),
+				SPAN_WARNING("Вы слышите скрип металла!")
 			)
 			playsound(loc, 'sound/machines/airlock_creaking.ogg', 100, TRUE)
 			if(do_after(user, 30, src))
@@ -92,25 +115,25 @@
 				if(prob(30))
 					survivor.adjustBruteLoss(20)
 					user.visible_message(
-						SPAN_DANGER("You damaged \the [src], while trying to open it!"),
+						SPAN_DANGER("Вы сильно повредили [src], пока занимались вскрытием! Могли быть задеты системы жизнеобеспечения!"),
 					)
 	if(isWrench(C))
 		if(!anchored)
 			anchored = TRUE
-			to_chat(user, "<span class='notice'>You secure pod to the floor.</span>")
+			to_chat(user, "<span class='notice'>Вы фиксурете капсулу на месте.</span>")
 		else
-			to_chat(user, "<span class='notice'>You unsecure pod from the floor.</span>")
+			to_chat(user, "<span class='notice'>Вы ослабляете болты, теперь имея возможность свободно передвигать капсулу.</span>")
 			playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
 			anchored = FALSE
 
 	if(isMultitool(C) && user.skill_check(SKILL_DEVICES, SKILL_TRAINED))
 		if(opened)
-			to_chat(user, SPAN_DANGER("Pod were alreade opened!"))
+			to_chat(user, SPAN_DANGER("Капсула уже открыта!"))
 		else if(!opened)
 			user.visible_message(
-				SPAN_WARNING("\The [user] starts to hacking \the [src] with \the [C]!"),
-				SPAN_DANGER("You start hacking \the [src]."),
-				SPAN_WARNING("You hear various beeps!")
+				SPAN_WARNING("[user] подсоединяет [C] к [src], начиная копошиться в системе!"),
+				SPAN_DANGER("Вы подключаетесь к внутренним системам [src]."),
+				SPAN_WARNING("Вы слышите разного рода блипы и бупы! Что-то явно происходит!")
 			)
 			playsound(loc, 'sound/machines/button4.ogg', 100, TRUE)
 			if(do_after(user, 50, src))
@@ -125,12 +148,12 @@
 
 	else
 		user.visible_message(
-			SPAN_WARNING("You probably need crowbar or wrench to do something with this old crap! Or, better, get someone more professional.")
+			SPAN_WARNING("Вам бы не помешали инструменты вроде лома и ключа, чтобы сделать с этой кучей сатрого мусора хоть что-то! Или, что ещё лучше - профессиональный хакер.")
 		)
 
 /obj/structure/abandoned_cryo/attack_hand(mob/user)
 	user.visible_message(
-		SPAN_WARNING("You can't open this thing with bare hands!")
+		SPAN_WARNING("У вас не получится открыть капсулу голыми руками!")
 	)
 
 #define HEX_COLOR_TO_RGB_ARGS(X) arglist(GetHexColors(X))

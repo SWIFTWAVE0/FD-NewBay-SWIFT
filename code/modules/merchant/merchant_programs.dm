@@ -7,13 +7,16 @@
 	nanomodule_path = /datum/nano_module/program/merchant
 	size = 12
 	usage_flags = PROGRAM_CONSOLE
-	required_access = access_merchant
+	required_access = access_cargo
 	var/obj/machinery/merchant_pad/pad = null
 	var/current_merchant = 0
 	var/show_trades = FALSE
 	var/hailed_merchant = FALSE
 	var/last_comms = null
 	var/temp = null
+
+	var/ignore_distance = FALSE
+
 	/// Stores the money deposited into the merchant program
 	var/bank = 0
 
@@ -101,16 +104,16 @@
 	if(bank < amt)
 		last_comms = "ERROR: NOT ENOUGH FUNDS."
 		return
-	get_response(T.bribe_to_stay_longer(amt))
+	get_response(T.bribe_to_stay_longer(amt,holder.loc.z))
 
 /datum/computer_file/program/merchant/proc/offer_item(datum/trader/T, num, skill)
 	var/quantity = 1
 	if(pad)
 		var/list/targets = pad.get_targets()
-		for(var/target in targets)
+/*		for(var/target in targets)
 			if(!computer.emagged() && istype(target,/mob/living/carbon/human))
 				last_comms = "SAFETY LOCK ENABLED: SENTIENT MATTER UNTRANSMITTABLE"
-				return
+				return*/
 		get_response(T.offer_items_for_bulk(quantity, targets, num, get_turf(pad), skill))
 	else
 		last_comms = "PAD NOT CONNECTED"
@@ -156,6 +159,9 @@
 	if(!pad)
 		last_comms = "PAD NOT CONNECTED. CANNOT TRANSFER"
 		return
+	if(bank <= 0)
+		last_comms = "BANK IS EMPTY. CANNOT TRANSFER"
+		return
 	var/turf/T = get_turf(pad)
 	var/obj/item/spacecash/bundle/B = new(T)
 	B.worth = bank
@@ -165,6 +171,7 @@
 /datum/computer_file/program/merchant/Topic(href, href_list)
 	if(..())
 		return TOPIC_HANDLED
+	var/obj/overmap/visitable/linked = map_sectors["[holder.loc.z]"]
 	var/mob/user = usr
 	if(href_list["PRG_connect_pad"])
 		. = TOPIC_HANDLED
@@ -214,8 +221,11 @@
 		if(!hailed_merchant)
 			if(href_list["PRG_hail"])
 				. = TOPIC_HANDLED
-				hailed_merchant = get_response(T.hail(user))
-				show_trades = FALSE
+				if((T.overmap_representation in view(12,linked)) || ignore_distance)
+					hailed_merchant = get_response(T.hail(user))
+					show_trades = FALSE
+				else
+					temp = "Cannot find this trader within sensors reach. Trader located in X[T.overmap_representation.x] Y[T.overmap_representation.y]"
 			. = TOPIC_HANDLED
 		else
 			if(href_list["PRG_show_trades"])
@@ -223,10 +233,10 @@
 				show_trades = !show_trades
 			if(href_list["PRG_insult"])
 				. = TOPIC_HANDLED
-				get_response(T.insult())
+				get_response(T.insult(holder.loc.z), user)
 			if(href_list["PRG_compliment"])
 				. = TOPIC_HANDLED
-				get_response(T.compliment())
+				get_response(T.compliment(holder.loc.z), user)
 			if(href_list["PRG_offer_item"])
 				. = TOPIC_HANDLED
 				offer_item(T,text2num(href_list["PRG_offer_item"]) + 1, user.get_skill_value(SKILL_FINANCE))
@@ -251,3 +261,11 @@
 			if(href_list["PRG_bribe"])
 				. = TOPIC_HANDLED
 				bribe(T, text2num(href_list["PRG_bribe"]))
+
+/datum/computer_file/program/merchant/no_id
+	required_access = null
+
+/datum/computer_file/program/merchant/ignore_distance
+	available_on_ntnet = FALSE
+	ignore_distance = TRUE
+	required_access = access_merchant

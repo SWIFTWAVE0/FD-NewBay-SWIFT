@@ -101,7 +101,10 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 
 	var/id_hud_icons = 'icons/mob/hud.dmi' // Used by the ID HUD (primarily sechud) overlay.
 
+	var/num_traders = 0
 	var/num_exoplanets = 0
+	var/num_junkyards = 0
+	var/list/junkyard_size
 	var/list/planet_size  //dimensions of planet zlevel, defaults to world size. Due to how maps are generated, must be (2^n+1) e.g. 17,33,65,129 etc. Map will just round up to those if set to anything other.
 	var/away_site_budget = 0
 	var/min_offmap_players = 0
@@ -249,6 +252,8 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 				allowed_jobs += jtype
 	if(!LAZYLEN(planet_size))
 		planet_size = list(world.maxx, world.maxy)
+	if(!LAZYLEN(junkyard_size))
+		junkyard_size = list(world.maxx, world.maxy)
 	current_lobby_screen = pick(lobby_screens)
 	game_year = text2num(time2text(world.timeofday, "YYYY")) + DEFAULT_GAME_YEAR_OFFSET
 
@@ -275,6 +280,8 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		if ("overmap_z") overmap_z = text2num_or_default(value, overmap_z)
 		if ("overmap_size") overmap_size = text2num_or_default(value, overmap_size)
 		if ("overmap_event_areas") overmap_event_areas = text2num_or_default(value, overmap_event_areas)
+		if ("num_traders") num_traders = text2num_or_default(value, num_traders)
+		if ("num_junkyards") num_junkyards = text2num_or_default(value, num_junkyards)
 		if ("num_exoplanets") num_exoplanets = text2num_or_default(value, num_exoplanets)
 		if ("away_site_budget") away_site_budget = text2num_or_default(value, away_site_budget)
 		if ("station_name") station_name = value
@@ -424,6 +431,15 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		var/exoplanet_type = pick(subtypesof(/obj/overmap/visitable/sector/exoplanet))
 		var/obj/overmap/visitable/sector/exoplanet/new_planet = new exoplanet_type(null, planet_size[1], planet_size[2])
 		new_planet.build_level()
+
+/datum/map/proc/build_junkyards()
+	if(!use_overmap)
+		return
+
+	for(var/i = 0, i < num_junkyards, i++)
+		var/junkyard_type = pick(subtypesof(/obj/overmap/visitable/sector/junkyard))
+		var/obj/overmap/visitable/sector/junkyard/new_junkyard = new junkyard_type(null, junkyard_size[1], junkyard_size[2])
+		new_junkyard.build_level()
 
 // Used to apply various post-compile procedural effects to the map.
 /datum/map/proc/refresh_mining_turfs(zlevel)

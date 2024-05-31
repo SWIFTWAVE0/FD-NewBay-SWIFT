@@ -56,8 +56,8 @@ SUBSYSTEM_DEF(misc)
 
 GLOBAL_LIST_EMPTY(traders)
 GLOBAL_LIST_EMPTY(trader_types)
-GLOBAL_VAR_INIT(trader_max, 10)
-GLOBAL_VAR_INIT(trader_station_count, 3)
+GLOBAL_VAR_INIT(trader_max, 5)
+GLOBAL_VAR_INIT(trader_station_count, 2)
 GLOBAL_VAR_INIT(trader_unique_chance, 5)
 GLOBAL_LIST_INIT(trader_stations, subtypesof(/datum/trader) - typesof(/datum/trader/ship))
 GLOBAL_LIST_INIT(trader_ships, subtypesof(/datum/trader/ship) - typesof(/datum/trader/ship/unique))
@@ -65,44 +65,47 @@ GLOBAL_LIST_INIT(trader_uniques, subtypesof(/datum/trader/ship/unique))
 
 
 /datum/controller/subsystem/misc/proc/UpdateTraders(resumed, no_mc_tick, generate_stations = 0)
-	if (!resumed)
+	if(!resumed)
 		queue = GLOB.trader_types.Copy()
 	var/count = length(queue)
 	var/max = GLOB.trader_max
 	var/trader_type
 	var/datum/trader/trader
-	if (count < max && prob(100 - 50 * count / max))
+	if(count < max && prob(100 - 50 * count / max))
 		var/list/candidates
-		if (generate_stations)
+		if(generate_stations)
 			candidates = GLOB.trader_stations.Copy() - GLOB.trader_types
-		else if (prob(GLOB.trader_unique_chance))
+		else if(prob(GLOB.trader_unique_chance))
 			candidates = GLOB.trader_uniques.Copy() - GLOB.trader_types
 		else
 			candidates = GLOB.trader_ships.Copy() - GLOB.trader_types
-		if (length(candidates))
-			for (var/i = (generate_stations || 1) to 1 step -1)
+		if(length(candidates))
+			for(var/i = (generate_stations || 1) to 1 step -1)
+				if(!GLOB.using_map || length(GLOB.trader_types) >= GLOB.using_map.num_traders)
+					break
 				trader_type = pick(candidates)
 				candidates -= trader_type
 				GLOB.trader_types += trader_type
 				GLOB.traders[trader_type] = new trader_type
-				if (generate_stations)
+				if(generate_stations)
 					CHECK_TICK
-				else if (MC_TICK_CHECK)
+				else if(MC_TICK_CHECK)
 					return
-	for (var/i = count to 1 step -1)
+	for(var/i = count to 1 step -1)
 		trader_type = queue[i]
 		trader = GLOB.traders[trader_type]
-		if (QDELETED(trader))
+		if(QDELETED(trader))
 			GLOB.trader_types -= trader_type
 			GLOB.traders[trader_type] = null
 			continue
-		if (!trader.tick())
+		if(!trader.tick())
 			GLOB.trader_types -= trader_type
 			GLOB.traders[trader_type] = null
+			trader.leave_map()
 			qdel(trader)
-		if (no_mc_tick)
+		if(no_mc_tick)
 			CHECK_TICK
-		else if (MC_TICK_CHECK)
+		else if(MC_TICK_CHECK)
 			queue.Cut(i)
 			return
 

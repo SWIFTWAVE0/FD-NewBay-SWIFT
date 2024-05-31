@@ -1,0 +1,10 @@
+#ifndef MODPACK_EXPANDED_TRADERS
+#define MODPACK_EXPANDED_TRADERS
+
+#include "_expanded_traders.dm"
+
+#include "code/ai.dm"
+
+#include "code/preset_console.dm"
+
+#endif
