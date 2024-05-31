@@ -1,7 +1,7 @@
 
 /obj/item/ammo_magazine/rifle/fleet
 	name = "assault rifle magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "automat4M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_RIFLE
@@ -10,7 +10,7 @@
 
 /obj/item/ammo_magazine/rifle/army
 	name = "battle rifle magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "automat3M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_RIFLE_MILITARY
@@ -19,7 +19,7 @@
 
 /obj/item/ammo_magazine/rifle/iccgn
 	name = "assault rifle magazine"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gautomatic2M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_RIFLE
@@ -27,7 +27,7 @@
 	max_ammo = 30
 /obj/item/ammo_magazine/rifle/precise
 	name = "assault rifle magazine"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gautomatic1M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_RIFLE_MILITARY
@@ -38,7 +38,7 @@
 	name = "heavy battle rifle magazine"
 	desc = "A magazine for some kind of gun. This one - Armour-Piercing Discarding Sabot(APDS)"
 	labels = list("APDS")
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsmg3M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_BOLTER
@@ -55,7 +55,7 @@
 
 /obj/item/ammo_magazine/pistol/scg
 	name = "magnum magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "pistol7M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL_MAGNUM
@@ -69,7 +69,7 @@
 
 /obj/item/ammo_magazine/pistol/assasin
 	name = "pistol magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "pistol6M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL_FLECHETTE
@@ -84,7 +84,7 @@
 
 /obj/item/ammo_magazine/pistol/iccgn
 	name = "pistol magazine"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gpistol8M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL_MAGNUM
@@ -99,7 +99,7 @@
 
 /obj/item/ammo_magazine/pistol/automatic
 	name = "automatic pistol magazine"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gpistol9M"
 	mag_type = MAGAZINE
 	matter = list(MATERIAL_STEEL = 2000)
@@ -114,7 +114,7 @@
 
 /obj/item/ammo_magazine/smg/scg
 	name = "magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "smg5M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL
@@ -128,7 +128,7 @@
 
 /obj/item/ammo_magazine/smg/special/scg
 	name = "magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "smg6M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL
@@ -142,7 +142,7 @@
 
 /obj/item/ammo_magazine/smg/iccgn
 	name = "magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "gsmg3M"
 	max_ammo = 45
 	multiple_sprites = 0
@@ -152,7 +152,7 @@
 /obj/item/ammo_magazine/shotgun/scg
 	name = "shotgun drum"
 	labels = list("slugs")
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "shotgun4M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_SHOTGUN
@@ -177,7 +177,7 @@
 /obj/item/ammo_magazine/shotgun/iccgn
 	name = "shotgun drum"
 	labels = list("slugs")
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gshotgun2M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_SHOTGUN
@@ -202,7 +202,7 @@
 
 /obj/item/ammo_magazine/sniper/scg
 	name = "magazine"
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "sniperrifle2M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_RIFLE_MILITARY
@@ -212,7 +212,7 @@
 
 /obj/item/ammo_magazine/sniper/iccgn
 	name = "magazine"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsniperrifle4M"
 	mag_type = MAGAZINE
 	caliber = CALIBER_RIFLE_MILITARY

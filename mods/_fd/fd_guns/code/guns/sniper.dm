@@ -3,7 +3,7 @@
 /obj/item/gun/projectile/heavysniper/scg
 	name = "multitask sniper rifle"
 	desc = "Special Applications Rifle, system 99. The sniper rifle was made to give the sniper team more firepower and versatility. Unfortunately, it holds only two cartridges for greater convenience.."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "sniperrifle1"
 	item_state = "sniperrifle1"
 	w_class = ITEM_SIZE_HUGE
@@ -17,7 +17,6 @@
 	ammo_type = /obj/item/ammo_casing/scg/shell
 	one_hand_penalty = 6
 	accuracy = -2
-	recoil_buildup = 75
 	bulk = 8
 	scoped_accuracy = 8
 	scope_zoom = 2
@@ -29,7 +28,7 @@
 /obj/item/gun/projectile/sniper/marksman
 	name = "designated marksman rifle"
 	desc = "This rifle favors mid- to long-ranged combat, offering impressive stopping power over a long distance."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "sniperrifle2"
 	item_state = "sniperrifle2"
 	w_class = ITEM_SIZE_HUGE
@@ -59,7 +58,7 @@
 /obj/item/gun/projectile/sniper/iccgn
 	name = "heavy sniper rifle"
 	desc = "Vordan Sniper Rifle (VSR-34), designed to defeat exoskeletons and light armoured vehicles by a sniper team. Can use Sol Gov sniper rifle ammunition"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsniperrifle4"
 	item_state = "gsniperrifle4"
 	w_class = ITEM_SIZE_HUGE
@@ -73,7 +72,6 @@
 	allowed_magazines = /obj/item/ammo_magazine/sniper/iccgn
 	one_hand_penalty = 6
 	accuracy = -2
-	recoil_buildup = 80
 	bulk = 10
 	scoped_accuracy = 8
 	scope_zoom = 2.5
@@ -92,7 +90,7 @@
 /obj/item/gun/projectile/sniper/dmr
 	name = "designated marksman rifle"
 	desc = "Designated Marksman Rifle-41 (DMR-41) The Marksman rifle was made to give more versatility and strength to fire groups. The multi-tasking nature of such a rifle allows for a variety of missions up to and including breaching airlocks and blast doors"
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsniperrifle3"
 	item_state = "gsniperrifle3"
 	w_class = ITEM_SIZE_HUGE

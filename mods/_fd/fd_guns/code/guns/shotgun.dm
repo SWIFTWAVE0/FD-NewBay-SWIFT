@@ -3,7 +3,7 @@
 /obj/item/gun/projectile/shotgun/pump/scg
 	name = "combat shotgun"
 	desc = "A pump-action shotgun respected for its reliability and its capacity. However, not as fast firing as the Fleet's favorite."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "shotgun3"
 	item_state = "shotgun3"
 	wielded_item_state = "shotgun3"
@@ -15,7 +15,7 @@
 /obj/item/gun/projectile/automatic/shotgun/scg
 	name = "assault shotgun"
 	desc = "One of the Fleet's favorite guns. Fast shotgun without the need for painful reloading in combat. Insert, fire, forget."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "shotgun4"
 	item_state = "shotgun4"
 	wielded_item_state = "shotgun4"
@@ -39,7 +39,7 @@
 /obj/item/gun/projectile/automatic/shotgun/iccgn
 	name = "shotgun"
 	desc = "Volleygun (VG-23) not being able to boast of speed has the ability to clearly state the enemy with his shot in the face. Good ammunition with two firing modes and a unique cartridge."
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gshotgun2"
 	item_state = "gshotgun2"
 	wielded_item_state = "gshotgun2"

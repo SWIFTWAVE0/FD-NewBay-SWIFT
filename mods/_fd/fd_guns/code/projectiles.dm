@@ -38,7 +38,7 @@
 	spread_step = 65
 
 /obj/item/projectile/bullet/rifle/fleet
-	fire_sound = 'mods/fd_guns/sounds/gunshot8.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/gunshot8.ogg'
 	damage = 35
 	armor_penetration = 20
 	penetrating = 0
@@ -51,20 +51,20 @@
 	distance_falloff = 1.2
 
 /obj/item/projectile/bullet/rifle/iccgn
-	fire_sound = 'mods/fd_guns/sounds/auto1.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/auto1.ogg'
 	damage = 40
 	armor_penetration = 35
 
 
 /obj/item/projectile/bullet/rifle/accurate
-	fire_sound = 'mods/fd_guns/sounds/auto2.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/auto2.ogg'
 	damage = 40
 	armor_penetration = 45
 	penetrating = 1
 	penetration_modifier = 0.8
 
 /obj/item/projectile/bullet/rifle/bolter
-	fire_sound = 'mods/fd_guns/sounds/loudbolt.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/loudbolt.ogg'
 	icon_state= "bolter"
 	damage = 40
 	armor_penetration = 50
@@ -115,7 +115,7 @@
 	penetrating = 0
 	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP | DAMAGE_FLAG_EDGE
 
-/obj/item/projectile/bullet/gyro/on_hit(atom/target, blocked = 0)
+/obj/item/projectile/bullet/rifle/shell/explosive/on_hit(atom/target, blocked = 0)
 	explosion(target, 2, EX_ACT_LIGHT)
 	return 1
 
@@ -129,7 +129,7 @@
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 350
-	fire_sound = 'mods/fd_guns/sounds/lasgun2.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/lasgun2.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	damage = 30
 	armor_penetration = 10
@@ -152,7 +152,7 @@
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 450
-	fire_sound = 'mods/fd_guns/sounds/lasgun2.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/lasgun2.ogg'
 	damage = 40
 	armor_penetration = 20
 
@@ -160,7 +160,7 @@
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 650
-	fire_sound = 'mods/fd_guns/sounds/lasgun3.ogg'
+	fire_sound = 'mods/_fd/fd_guns/sounds/lasgun3.ogg'
 	damage = 55
 	armor_penetration = 35
 	penetrating = 1

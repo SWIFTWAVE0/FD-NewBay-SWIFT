@@ -3,7 +3,7 @@
 /obj/item/gun/projectile/pistol/scg
 	name = "magnum pistol"
 	desc = "A heavy pistol, popularly called the 'Head Breaker' for its high firepower. Unfortunately, this firepower had to be sacrificed at the expense of speed and ammunition.."
-	icon = 'mods/fd_guns/icons/magnum_cpps.dmi'
+	icon = 'mods/_fd/fd_guns/icons/magnum_cpps.dmi'
 	icon_state = "pistol7"
 	item_state = "pistol7"
 	magazine_type = /obj/item/ammo_magazine/pistol/scg
@@ -19,7 +19,7 @@
 /obj/item/gun/projectile/pistol/scg/assasin
 	name = "silenced pistol"
 	desc = "A gun made specifically for SolGov Special Operations units. It has a built-in silencer."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "pistol6"
 	item_state = "pistol6"
 	magazine_type = /obj/item/ammo_magazine/pistol/assasin
@@ -35,7 +35,7 @@
 /obj/item/gun/projectile/pistol/iccgn
 	name = "standart pistol"
 	desc = "Kishevatov Standard Pistol (KSP) made by Kishevatov's designer for quick elimination of soldiers with medium armor."
-	icon = 'mods/fd_guns/icons/pistol_iccgn.dmi'
+	icon = 'mods/_fd/fd_guns/icons/pistol_iccgn.dmi'
 	icon_state = "gpistol9"
 	item_state = "gpistol9"
 	magazine_type = /obj/item/ammo_magazine/pistol/iccgn
@@ -51,7 +51,7 @@
 /obj/item/gun/projectile/automatic/pistol/iccgn
 	name = "automatic pistol"
 	desc = "Boarding Automatic Pistol - 34 (BAP-34) developed by Heltek Corporation for boarding teams."
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gpistol8"
 	item_state = "gpistol8"
 	magazine_type = /obj/item/ammo_magazine/pistol/automatic

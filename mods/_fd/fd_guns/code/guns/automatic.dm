@@ -1,10 +1,11 @@
 // SCG
 
 // Automatic Rifles. High Speed, mid cal.
+
 /obj/item/gun/projectile/automatic/scg // Я сам не ебу, но оно было помечено как автомат - Максимум.
 	name = "assault rifle"
 	desc = "A standard assault rifle in service with the SCG Fleet. Appreciated for its good velocity and not inferior caliber with blunt-nosed projectiles designed to be fired without risk of damaging thin bulkheads."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "automat4"
 	item_state = "automat4"
 	w_class = ITEM_SIZE_HUGE
@@ -15,16 +16,15 @@
 	magazine_type = /obj/item/ammo_magazine/rifle/fleet
 	allowed_magazines = /obj/item/ammo_magazine/rifle/fleet
 	one_hand_penalty = 6
-	recoil_buildup = 2.5
-	accuracy = -2
+	accuracy = 1
 	bulk = GUN_BULK_RIFLE + 1
 	wielded_item_state = "automat4"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
-			BURST_3_ROUND,
-			list(mode_name = "full auto",  mode_desc = "600 rounds per minute",   auto_fire = 1, fire_delay = 2)
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, burst_delay=2, move_delay=2, burst_accuracy=list(1, 1, 0, -1),	dispersion=list(1.2, 1.6, 2.2)),
+		list(mode_name = "full auto", auto_fire=1, fire_delay=2, burst_accuracy=list(1, 1, 0, 0, -1), dispersion=list(1.4, 2.1, 2.7))
 	)
 
 /obj/item/gun/projectile/automatic/scg/on_update_icon()
@@ -37,7 +37,7 @@
 /obj/item/gun/projectile/automatic/scg/army
 	name = "battle rifle"
 	desc = "The heavy rifle of the Sol Gov army, beloved by them for its high armor penetration rates. However, it's unlikely to fit comfortably on a bulletproof vest."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "automat3"
 	item_state = "automat3"
 	w_class = ITEM_SIZE_HUGE
@@ -47,16 +47,17 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/rifle/army
 	allowed_magazines = /obj/item/ammo_magazine/rifle/army
-	one_hand_penalty = 10
-	recoil_buildup = 3.5
-	accuracy = -1
-	bulk = GUN_BULK_RIFLE + 5
+	one_hand_penalty = 6
+	accuracy = 0
+	accuracy_power = 10
+	bulk = GUN_BULK_RIFLE + 3
 	wielded_item_state = "automat3"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
+
 	firemodes = list(
-			list(mode_name = "semiauto",  mode_desc = "Semi auto, but with some kind of cooldown", burst=1, fire_delay=5, move_delay=3, one_hand_penalty=6),
-			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=10, move_delay=5),
+		list(mode_name="semiauto", burst=1, fire_delay=5, move_delay=3, one_hand_penalty=6, dispersion=(0.5), accuracy=1, burst_accuracy=1),
+		list(mode_name="3-round bursts", burst=3, burst_delay=2, fire_delay=10, move_delay=5, one_hand_penalty = 10, accuracy=0, burst_accuracy=list(-1, 0, -1), dispersion=list(0.5, 0.8, 1.2)),
 		)
 
 /obj/item/gun/projectile/automatic/scg/army/on_update_icon()
@@ -71,7 +72,7 @@
 /obj/item/gun/projectile/automatic/scg/smg
 	name = "submachine gun"
 	desc = "A submachine gun valued for its compactness, cheapness and lightness. However, it is unlikely to shoot you in the head.."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "smg5"
 	item_state = "smg5"
 	w_class = ITEM_SIZE_NORMAL
@@ -83,10 +84,11 @@
 	allowed_magazines = /obj/item/ammo_magazine/smg/scg
 	accuracy = 1
 	one_hand_penalty = 3
+
 	firemodes = list(
-			BURST_3_ROUND,
-			BURST_5_ROUND,
-			FULL_AUTO_800
+		list(mode_name="fuller auto",       burst=1, can_autofire=1, fire_delay=1,    move_delay=null, one_hand_penalty=5, burst_accuracy=list(1,0,0,-1,-1,-1,-3,-3), dispersion=list(0, 0.5, 1.0, 1.5, 2, 3)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=2,	burst_accuracy=list(1,1, 0, 0),	dispersion=list(0.6, 0.8, 1.0)),
+		list(mode_name="5-round bursts",   burst=5, fire_delay=null, move_delay=4, 	burst_accuracy=list(1,1, 0, 0,0, 0,-1,-1), dispersion=list(0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/gun/projectile/automatic/scg/smg/on_update_icon()
@@ -99,27 +101,25 @@
 /obj/item/gun/projectile/automatic/scg/smg/special
 	name = "special ops smg"
 	desc = "A new model of submachine gun, for short and medium ranges. Made to order by SolGov Special Operations units"
-	icon = 'mods/fd_guns/icons/bullupsmg_cpps.dmi'
 	icon_state = "smg6"
 	item_state = "smg6"
 	wielded_item_state = "smg6"
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_NORMAL
 	force = 6
 	caliber = CALIBER_PISTOL
 	slot_flags = SLOT_BELT|SLOT_BACK
-	recoil_buildup = 1.5
 	magazine_type = /obj/item/ammo_magazine/smg/special/scg
 	allowed_magazines = /obj/item/ammo_magazine/smg/special/scg
 	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
-	bulk = -1
-	accuracy = 0
+	bulk = 0
+	accuracy = 2
 	one_hand_penalty = 4
 	firemodes = list(
-			SEMI_AUTO_NODELAY,
-			BURST_2_ROUND,
-			FULL_AUTO_600
+		list(mode_name = "semiauto", burst=1, fire_delay=0, move_delay=null, dispersion=(0.5), burst_accuracy=2),
+		list(mode_name = "3-round bursts", burst=3, fire_delay=null, move_delay=2, burst_accuracy=list(1,1, 0, 0), dispersion=list(0.4, 0.6, 0.8)),
+		list(mode_name = "full auto", burst=1, can_autofire = 1, fire_delay = 4, move_delay=2, dispersion=list(0.6, 0.8, 1.0), burst_accuracy=list(1, 0, 0, -1))
 		)
 
 /obj/item/gun/projectile/automatic/scg/smg/special/on_update_icon()
@@ -140,22 +140,21 @@
 /obj/item/gun/projectile/automatic/iccgn
 	name = "automatic rifle"
 	desc = "Heldan Assault Rifle (HAR), designed for fast, close and medium range assault combat."
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gautomatic2"
 	item_state = "gautomatic2"
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/rifle/iccgn
 	allowed_magazines = /obj/item/ammo_magazine/rifle/iccgn
-	accuracy = 0
-	recoil_buildup = 3
+	accuracy = 1
 	one_hand_penalty = 4
 	caliber = CALIBER_RIFLE
 	bulk = GUN_BULK_RIFLE + 1
 	wielded_item_state = "gautomatic2"
 	firemodes = list(
-			list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null),
-			list(mode_name = "full auto",  mode_desc = "400 rounds per minute",  auto_fire = 1, fire_delay = 4, one_hand_penalty=8)
+		list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null, dispersion=list(0.6, 0.8, 1.0)),
+		list(mode_name = "full auto",  mode_desc = "400 rounds per minute",  auto_fire = 1, fire_delay = 4, one_hand_penalty=8, dispersion=list(1.0, 1.4, 1.8))
 		)
 
 /obj/item/gun/projectile/automatic/iccgn/on_update_icon()
@@ -164,11 +163,11 @@
 		icon_state = "[item_state]"
 	else
 		icon_state = "[item_state]-empty"
-
+/*
 /obj/item/gun/projectile/automatic/iccgn/precise
 	name = "battle rifle"
 	desc = "Drogan's Marksman Rifle - 213 (DMR - 213),  designed for long range warfare as opposed to the not-so-accurate Heldan Automatic Rifle.  "
-	icon = 'mods/fd_guns/icons/precise_gkk.dmi'
+	icon = 'mods/_fd/fd_guns/icons/precise_gkk.dmi'
 	icon_state = "gautomatic1"
 	item_state = "gautomatic1"
 	slot_flags = SLOT_BACK
@@ -176,14 +175,14 @@
 	caliber = CALIBER_RIFLE_MILITARY
 	magazine_type = /obj/item/ammo_magazine/rifle/precise
 	allowed_magazines = /obj/item/ammo_magazine/rifle/precise
-	accuracy = 0
+	accuracy = 3
 	recoil_buildup = 4
 	one_hand_penalty = 7
 	bulk = GUN_BULK_RIFLE + 2
 	wielded_item_state = "gautomatic1"
 	firemodes = list(
-			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=4, move_delay=6, accuracy=0),
-			list(mode_name = "semiauto",  mode_desc = "Fire as fast, as your gun give you to do it", burst=1, fire_delay=2, move_delay=4, accuracy= 1)
+			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=4, move_delay=6, accuracy=1),
+			list(mode_name = "semiauto",  mode_desc = "Fire as fast, as your gun give you to do it", burst=1, fire_delay=3, move_delay=4, accuracy= 3)
 		)
 
 /obj/item/gun/projectile/automatic/iccgn/precise/on_update_icon()
@@ -198,11 +197,11 @@
 		return
 	else
 		overlays += image(icon, "ammo_ok")
-
+*/ /*
 /obj/item/gun/projectile/automatic/iccgn/bolter
 	name = "heavy battle rifle"
 	desc = "Heavy battle rifle Barracuda-31, designed specifically for APCs, but converted to a more mobile state. Designed to destroy heavily armoured soldiers and lightly armoured vehicles, mechs. Just... run, if you see it. "
-	icon = 'mods/fd_guns/icons/weapon_gkk_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsmg3"
 	item_state = "gsmg3"
 	slot_flags = SLOT_BACK
@@ -267,3 +266,4 @@
 			BURST_3_ROUND,
 			FULL_AUTO_600
 		)
+*/
