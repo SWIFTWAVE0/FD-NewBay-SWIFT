@@ -19,10 +19,18 @@
 	. = ..()
 	if(. && psi)
 		INVOKE_PSI_POWERS(src, psi.get_melee_powers(SSpsi.faculties_by_intent[a_intent]), A, FALSE)
+		if(a_intent == I_DISARM)
+			INVOKE_PSI_POWERS(src, psi.get_melee_powers(SSpsi.faculties_by_name_new["Allaxetia"]), A, FALSE)
+		if(a_intent == I_HELP)
+			INVOKE_PSI_POWERS(src, psi.get_melee_powers(SSpsi.faculties_by_name_new["Hyloforia"]), A, FALSE)
+		if(a_intent == I_HURT)
+			INVOKE_PSI_POWERS(src, psi.get_melee_powers(SSpsi.faculties_by_name_new["Teleplexy"]), A, FALSE)
 
 /mob/living/RangedAttack(atom/A, params)
 	if(psi)
 		INVOKE_PSI_POWERS(src, psi.get_ranged_powers(SSpsi.faculties_by_intent[a_intent]), A, TRUE)
+		if(a_intent == I_HURT)
+			INVOKE_PSI_POWERS(src, psi.get_ranged_powers(SSpsi.faculties_by_name_new["Teleplexy"]), A, TRUE)
 	. = ..()
 
 /mob/living/proc/check_psi_grab(obj/item/grab/grab)
