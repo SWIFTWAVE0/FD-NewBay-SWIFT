@@ -50,10 +50,10 @@
 /obj/item/material/shard/attackby(obj/item/W as obj, mob/user as mob)
 	if(isWelder(W) && material.shard_can_repair)
 		var/obj/item/weldingtool/WT = W
-		if(WT.remove_fuel(1, user))
-			material.place_sheet(get_turf(src))
-			qdel(src)
-			return
+		if(!WT.remove_fuel(1, user) && (istype(W, /obj/item/weldingtool))) return
+		material.place_sheet(get_turf(src))
+		qdel(src)
+		return
 	return ..()
 
 /obj/item/material/shard/Crossed(AM as mob|obj)
