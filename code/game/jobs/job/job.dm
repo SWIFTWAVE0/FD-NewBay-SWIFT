@@ -57,6 +57,8 @@
 
 	var/faction = MOB_FACTION_CREW
 
+	var/psi_allowed_species = list(/datum/species/human,/datum/species/human/vatgrown,/datum/species/human/tritonian,/datum/species/human/gravworlder,/datum/species/human/spacer)
+
 /datum/job/New()
 
 	if(prob(100-availablity_chance))	//Close positions, blah blah.
@@ -82,24 +84,31 @@
 		H.set_default_language(all_languages[LANGUAGE_SPACER])
 
 	if(psi_latency_chance && prob(psi_latency_chance))
-		H.set_psi_rank(pick(PSI_COERCION, PSI_REDACTION, PSI_ENERGISTICS, PSI_PSYCHOKINESIS), 1, defer_update = TRUE)
+		H.set_psi_rank(pick(PSI_COERCION, PSI_REDACTION, PSI_ENERGISTICS, PSI_PSYCHOKINESIS, PSI_CONSCIOUSNESS, PSI_MANIFESTATION, PSI_METAKINESIS), 1, defer_update = TRUE)
 	if(islist(psi_faculties))
 		for(var/psi in psi_faculties)
 			H.set_psi_rank(psi, psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
-	if(H.psi)
-		H.psi.update()
-		if(give_psionic_implant_on_join)
-			var/obj/item/implant/psi_control/imp = new
-			imp.implanted(H)
-			imp.forceMove(H)
-			imp.imp_in = H
-			imp.implanted = TRUE
-			var/obj/item/organ/external/affected = H.get_organ(BP_HEAD)
-			if(affected)
-				affected.implants += imp
-				imp.part = affected
-			to_chat(H, SPAN_DANGER("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
-
+	H.psi?.update()
+	if((H.psi && give_psionic_implant_on_join) || (H.client?.prefs.psi_openness && H.client.prefs.psi_status <= 2))
+// FD PSIONICS
+		if(!(H.species.type in psi_allowed_species))
+			to_chat(H, SPAN_DANGER("Only humans can have psionic abilities!"))
+			return
+		var/obj/item/implant/psi_control/imp = new
+		imp.implanted(H)
+		imp.forceMove(H)
+		imp.imp_in = H
+		imp.implanted = TRUE
+		var/obj/item/organ/external/affected = H.get_organ(BP_HEAD)
+		if(affected)
+			affected.implants += imp
+			imp.part = affected
+		to_chat(H, SPAN_DANGER("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
+	if(H.client?.prefs.psi_threat_level && (H.species.type in psi_allowed_species))
+		H.verbs += /mob/living/carbon/human/proc/SelectPsiAbilities
+		spawn(10)
+			H.SelectPsiAbilities()
+// FD PSIONICS
 	var/singleton/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
 	if(outfit) . = outfit.equip(H, title, alt_title)
 	if(faction)
