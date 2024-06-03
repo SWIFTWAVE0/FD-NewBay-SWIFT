@@ -16,7 +16,7 @@
 	// Welding Tool - Weld the drain closed
 	if (isWelder(tool))
 		var/obj/item/weldingtool/welder = tool
-		if (!welder.remove_fuel(1, user))
+		if (!welder.remove_fuel(1, user) && (istype(tool, /obj/item/weldingtool)))
 			return TRUE
 		welded = !welded
 		user.visible_message(

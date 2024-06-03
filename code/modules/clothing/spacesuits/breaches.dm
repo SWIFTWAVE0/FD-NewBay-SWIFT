@@ -223,7 +223,7 @@
 			return
 
 		var/obj/item/weldingtool/WT = W
-		if(!WT.remove_fuel(5))
+		if(!WT.remove_fuel(5) && istype(W, /obj/item/weldingtool))
 			return
 
 		repair_breaches(DAMAGE_BRUTE, 3, user)
