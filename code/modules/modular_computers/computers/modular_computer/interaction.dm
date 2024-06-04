@@ -169,7 +169,7 @@
 	if(isWelder(W))
 		var/obj/item/weldingtool/WT = W
 		var/damage = get_damage_value()
-		if(!WT.can_use(round(damage/75), user))
+		if(istype(W, /obj/item/weldingtool) && !WT.can_use(round(damage/75), user))
 			return
 
 		if(!get_damage_value())

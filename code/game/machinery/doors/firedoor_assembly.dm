@@ -72,7 +72,7 @@
 			USE_FEEDBACK_FAILURE("\The [src] needs to be unanchored before you can dismantle it.")
 			return TRUE
 		var/obj/item/weldingtool/welder = tool
-		if (!welder.can_use(1, user, "to dismantle \the [src]."))
+		if (!welder.can_use(1, user, "to dismantle \the [src].")  && (istype(tool, /obj/item/weldingtool)))
 			return TRUE
 		user.visible_message(
 			SPAN_NOTICE("\The [user] starts dismantling \the [src] with \a [tool]."),
