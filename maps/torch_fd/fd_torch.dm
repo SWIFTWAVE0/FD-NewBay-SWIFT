@@ -109,7 +109,7 @@
 
 	// --- JOB SECTION --- //
 	#include "../torch/job/torch_access.dm"
-	#include "../torch/job/torch_jobs.dm"
+	#include "job/torch_jobs.dm"
 	#include "../torch/job/command_jobs.dm"
 	#include "../torch/job/corporate_jobs.dm"
 	#include "../torch/job/engineering_jobs.dm"
@@ -232,9 +232,9 @@
 	#include "../../mods/sauna_props/_sauna_props.dme"
 	#include "../../mods/wyccbay_optimization/_wyccbay_optimization.dme"
 
-	#include "../../mods/_maps/sentinel/_map_sentinel.dme"
-	#include "../../mods/_maps/farfleet/_map_farfleet.dme"
-	#include "../../mods/_maps/hand/_map_hand.dme"
+	// #include "../../mods/_maps/sentinel/_map_sentinel.dme" // К чёрту оверрайдит все ранги флота ЦПСС, ломает роль SEA
+	// #include "../../mods/_maps/farfleet/_map_farfleet.dme" // Не совсем работает без карты Стража (инклюд выше)
+	// #include "../../mods/_maps/hand/_map_hand.dme" // Тоже зависим от предметов с карты Стража (инклюд над фарфлитом)
 
 		// ~NON-UPSTREAM MODS~ //
 	#include "../../mods/_fd/runechat/_runechat.dme"
@@ -243,11 +243,13 @@
 	#include "../../mods/_fd/accent_labels/_accent_labels.dme"
 	#include "../../mods/_fd/additional_biomods/_additional_biomods.dme"
 	#include "../../mods/_fd/ascent/_ascent.dme"
+	#include "../../mods/_fd/backgrounds/_fd_backgrounds.dme"
 	#include "../../mods/_fd/bruno_items/_bruno_items.dme"
 	#include "../../mods/_fd/combat_stances/_combat_stances.dme"
 	#include "../../mods/_fd/complementary_xeno_ablities/_complementary_xeno_ablities.dme"
 	#include "../../mods/_fd/conference_holopads/_conference_holopads.dme"
 	#include "../../mods/_fd/fd_guns/_fd_guns.dme"
+	#include "../../mods/_fd/fd_species/_fd_species.dme"
 	#include "../../mods/_fd/hestia_missiles/_hestia_missiles.dme"
 	#include "../../mods/_fd/immersive_overmap/_immersive_overmap.dme"
 	#include "../../mods/_fd/landing_eye/_landing_eye.dme"
@@ -255,6 +257,7 @@
 	#include "../../mods/_fd/multitile_vehicles/_multitile_vehicles.dme"
 	#include "../../mods/_fd/old_space_cannons/_old_space_cannons.dme"
 	#include "../../mods/_fd/random_rooms/_random_rooms.dme"
+	#include "../../mods/_fd/structure_storage/_structure_storage.dme"
 
 	#include "../../mods/_fd/_maps/airfield/_airfield.dme"
 	#include "../../mods/_fd/_maps/ares/_ares.dme"
