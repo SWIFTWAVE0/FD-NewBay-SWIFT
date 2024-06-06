@@ -19,8 +19,8 @@
 #include "code/locations/locations_ipc.dm"
 #include "code/locations/locations_unathi.dm"
 
-#include "code/loadout_xeno.dm"
-#include "code/passport.dm"
+//#include "code/loadout_xeno.dm"
+//#include "code/passport.dm"
 
 #include "code/language/alain.dm"
 #include "code/language/arabic.dm"
