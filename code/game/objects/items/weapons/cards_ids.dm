@@ -221,9 +221,6 @@ var/global/const/NO_EMAG_ACT = -50
 	var/detail_color
 	var/extra_details
 
-	var/psi_status
-	var/psi_level
-
 /obj/item/card/id/Initialize()
 	.=..()
 	if(job_access_type)
@@ -271,7 +268,7 @@ var/global/const/NO_EMAG_ACT = -50
 	if(front && side)
 		send_rsc(user, front, "front.png")
 		send_rsc(user, side, "side.png")
-	var/datum/browser/popup = new(user, "idcard", name, 600, 300)
+	var/datum/browser/popup = new(user, "idcard", name, 600, 250)
 	popup.set_content(dat())
 	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
 	popup.open()
@@ -296,15 +293,12 @@ var/global/const/NO_EMAG_ACT = -50
 
 	id_card.formal_name_prefix = initial(id_card.formal_name_prefix)
 	id_card.formal_name_suffix = initial(id_card.formal_name_suffix)
-	if(client?.prefs)
+	if(client && client.prefs)
 		for(var/culturetag in client.prefs.cultural_info)
 			var/singleton/cultural_info/culture = SSculture.get_culture(client.prefs.cultural_info[culturetag])
 			if(culture)
 				id_card.formal_name_prefix = "[culture.get_formal_name_prefix()][id_card.formal_name_prefix]"
 				id_card.formal_name_suffix = "[id_card.formal_name_suffix][culture.get_formal_name_suffix()]"
-		if(client.prefs.psi_threat_level && client.prefs.psi_openness)
-			id_card.psi_level = client.prefs.psi_threat_level
-			id_card.psi_status = GLOB.psistatus2text[client.prefs.psi_status]
 
 	id_card.registered_name = real_name
 
@@ -338,9 +332,6 @@ var/global/const/NO_EMAG_ACT = -50
 	dat += text("Name: []</A><BR>", "[formal_name_prefix][registered_name][formal_name_suffix]")
 	dat += text("Pronouns: []</A><BR>\n", sex)
 	dat += text("Age: []</A><BR>\n", age)
-	if(psi_status)
-		dat += "Psionics status: [psi_status]<BR>\n"
-		dat += "Psionics threat level: [psi_level]<BR>\n"
 
 	if(GLOB.using_map.flags & MAP_HAS_BRANCH)
 		dat += text("Branch: []</A><BR>\n", military_branch ? military_branch.name : "\[UNSET\]")
@@ -352,10 +343,7 @@ var/global/const/NO_EMAG_ACT = -50
 	dat += text("Blood Type: []<BR>\n", blood_type)
 	dat += text("DNA Hash: []<BR><BR>\n", dna_hash)
 	if(front && side)
-		dat += "<td align = center valign = top>Photo:<br>"
-		dat += "<img style='image-rendering: pixelated;' src=front.png height=80 width=80 border=4>"
-		dat += "<img style='image-rendering: pixelated;' src=side.png height=80 width=80 border=4>"
-		dat += "</td>"
+		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=80 width=80 border=4><img src=side.png height=80 width=80 border=4></td>"
 	dat += "</tr></table>"
 	return jointext(dat,null)
 
