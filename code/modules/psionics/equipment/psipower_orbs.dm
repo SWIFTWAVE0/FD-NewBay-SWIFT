@@ -99,6 +99,12 @@
 	force = 5
 	edge = TRUE
 	maintain_cost = 10
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "electro"
 	item_state = "electro"
 	attack_cooldown = 5
@@ -302,6 +308,12 @@
 	force = 5
 	edge = TRUE
 	maintain_cost = 10
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "pyro"
 	item_state = "pyro"
 	attack_cooldown = 5
@@ -494,7 +506,7 @@
 	layer = ABOVE_HUMAN_LAYER
 	w_class = ITEM_SIZE_NO_CONTAINER
 	health_max = 200
-//	icon = 'icons/fd/freeze.dmi'
+	icon = 'icons/psi_fd/freeze.dmi'
 	icon_state = "ice_cube"
 	var/timer = 30
 
@@ -561,6 +573,12 @@
 	force = 5
 	edge = TRUE
 	maintain_cost = 10
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "cryo"
 	item_state = "cryo"
 	attack_cooldown = 5

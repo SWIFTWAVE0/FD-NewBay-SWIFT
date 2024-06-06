@@ -13,6 +13,12 @@
 	sharp = TRUE
 	edge = TRUE
 	maintain_cost = 6
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "psiblade_short"
 	item_state = "psiblade_short"
 	attack_cooldown = 8
@@ -30,6 +36,12 @@
 /obj/item/psychic_power/psiblade/master/grand
 	force = 35
 	maintain_cost = 4
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "psiblade_long"
 	item_state = "psiblade_long"
 
@@ -69,6 +81,12 @@
 	sharp = TRUE
 	edge = TRUE
 	maintain_cost = 8
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "psiaxe"
 	item_state = "psiaxe"
 	attack_cooldown = 16
@@ -99,6 +117,12 @@
 	force = 10
 	edge = TRUE
 	maintain_cost = 5
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "psiclub"
 	item_state = "psiclub"
 	attack_cooldown = 6
@@ -129,6 +153,12 @@
 	sharp = TRUE
 	edge = TRUE
 	maintain_cost = 6
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "psispear"
 	item_state = "psispear"
 	attack_cooldown = 12

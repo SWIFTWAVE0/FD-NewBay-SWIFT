@@ -1,6 +1,12 @@
 /obj/item/cryokinesis
 	name = "ice"
 	icon = 'icons/obj/psychic_powers.dmi'
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "cryo"
 
 	var/delete_on_drop = 0 //should we delete this item, if it isn't in our inventory?
