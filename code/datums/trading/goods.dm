@@ -92,7 +92,7 @@
 								/obj/item/module                                  = TRADER_SUBTYPES_ONLY,
 								/obj/item/tracker_electronics                     = TRADER_THIS_TYPE,
 								/obj/item/device/flashlight              = TRADER_ALL,
-								/obj/item/device/kit/paint                 = TRADER_SUBTYPES_ONLY,
+								/obj/item/device/kit                 = TRADER_SUBTYPES_ONLY,
 								/obj/item/aicard                    = TRADER_THIS_TYPE,
 								/obj/item/device/binoculars                = TRADER_THIS_TYPE,
 								/obj/item/device/cable_painter             = TRADER_THIS_TYPE,
@@ -233,7 +233,7 @@ Sells devices, odds and ends, and medical stuff
 	origin = "Наркопритон"
 	skill_req = SKILL_CHEMISTRY
 	possible_origins = list("Карнавал чувств", "CBT", "Отвал башки", "Доктор Стоун", "Страна развлечений МакМаффина")
-	possible_trading_items = list(/obj/item/device/kit/paint                 = TRADER_SUBTYPES_ONLY,
+	possible_trading_items = list(/obj/item/device/kit                 = TRADER_SUBTYPES_ONLY,
 
 								/obj/item/device/paint_sprayer                                  = TRADER_THIS_TYPE,
 								/obj/item/device/megaphone                                      = TRADER_THIS_TYPE,

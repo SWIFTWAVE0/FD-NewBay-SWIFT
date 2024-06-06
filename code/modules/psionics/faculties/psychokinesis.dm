@@ -529,7 +529,7 @@
 	icon = 'icons/effects/psi_effects.dmi'
 	icon_state = "earth_pillar_2"
 
-/obj/structure/girder/rock/attackby(obj/item/W, mob/user)
+/obj/structure/girder/rock/use_tool(obj/item/W, mob/user)
 	if (user.a_intent == I_HURT)
 		..()
 		return

@@ -1,7 +1,7 @@
 ///ELECTRIC ORB///
 
 //ATOM related things, that cannot be putted in orb itself
-/obj/machinery/vending/attackby(obj/item/W as obj, mob/living/user as mob)
+/obj/machinery/vending/use_tool(obj/item/W as obj, mob/living/user as mob)
 
 	if(istype(W, /obj/item/psychic_power/psielectro))
 		if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) >= PSI_RANK_APPRENTICE)
@@ -21,7 +21,7 @@
 
 	..()
 
-/obj/machinery/smartfridge/attackby(obj/item/O as obj, mob/living/user as mob)
+/obj/machinery/smartfridge/use_tool(obj/item/O as obj, mob/living/user as mob)
 
 	if(istype(O, /obj/item/psychic_power/psielectro))
 		if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) >= PSI_RANK_APPRENTICE)
@@ -34,7 +34,7 @@
 
 	..()
 
-/obj/machinery/atm/attackby(obj/item/I as obj, mob/living/user as mob)
+/obj/machinery/atm/use_tool(obj/item/I as obj, mob/living/user as mob)
 
 	if(istype(I, /obj/item/psychic_power/psielectro))
 		if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) >= PSI_RANK_OPERANT)
@@ -64,7 +64,7 @@
 
 	..()
 
-/obj/machinery/psi_monitor/attackby(obj/item/O as obj, mob/living/user as mob)
+/obj/machinery/psi_monitor/use_tool(obj/item/O as obj, mob/living/user as mob)
 
 	if(istype(O, /obj/item/psychic_power/psielectro))
 		if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) >= PSI_RANK_OPERANT)
@@ -74,8 +74,9 @@
 					emag_act()
 					new /obj/temporary(get_turf(src),3, 'icons/effects/effects.dmi', "electricity_constant")
 				. = TRUE
+	return ..()
 
-/obj/structure/holoplant/attackby(obj/item/I, mob/living/user, click_params)
+/obj/structure/holoplant/use_tool(obj/item/I, mob/living/user, click_params)
 
 	if(istype(I, /obj/item/psychic_power/psielectro))
 		if(istype(user) && user.psi && !user.psi.suppressed && user.psi.get_rank(PSI_METAKINESIS) >= PSI_RANK_APPRENTICE)
@@ -443,7 +444,7 @@
 		if(istype(target.wear_mask, /obj/item/clothing/mask/smokable/cigarette) && user.zone_sel.selecting == BP_MOUTH)
 			var/obj/item/clothing/mask/smokable/cigarette/cig = target.wear_mask
 			if(target == user)
-				cig.attackby(src, user)
+				cig.use_tool(src, user)
 			else
 				cig.light("<span class='notice'>[user] щёлкает пальцами как зажигалкой, подпаливая [cig.name] во рту [target].</span>")
 
@@ -501,7 +502,7 @@
 	. = ..()
 	run_timer()
 
-/obj/structure/girder/ice_wall/attackby(obj/item/W, mob/user)
+/obj/structure/girder/ice_wall/use_tool(obj/item/W, mob/user)
 	if (user.a_intent == I_HURT)
 		..()
 		return
