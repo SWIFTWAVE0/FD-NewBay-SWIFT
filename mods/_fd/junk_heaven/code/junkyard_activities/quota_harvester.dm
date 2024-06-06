@@ -98,8 +98,8 @@
 		run_timer()
 		update_icon()
 
-/obj/structure/quota_harvester/attackby(obj/item/I, mob/user)
-
+/obj/structure/quota_harvester/use_tool(obj/item/I, mob/user)
+	SHOULD_CALL_PARENT(FALSE)
 	if(active)
 		if(I.quota_worth <= 0 && I.quota_type == 1)
 			src.audible_message("<b>\The [src]</b> says, 'Данный объект <span class='danger'>не несёт никакой физической ценности</span> для компании.'")
@@ -118,8 +118,8 @@
 /obj/structure/quota_harvester/mining
 	name = "mineral quota harvester"
 
-/obj/structure/quota_harvester/mining/attackby(obj/item/I, mob/user)
-
+/obj/structure/quota_harvester/mining/use_tool(obj/item/I, mob/user)
+	SHOULD_CALL_PARENT(FALSE)
 	if(active)
 		if(I.quota_worth <= 0 && I.quota_type == 2)
 			src.audible_message("<b>\The [src]</b> says, 'Данный объект <span class='danger'>не несёт никакой физической ценности</span> для компании.'")
