@@ -14,7 +14,19 @@
 	bulk = 4
 	accuracy = 1
 	one_hand_penalty = 4
-	ammo_indicator = TRUE
+
+/obj/item/gun/projectile/pistol/scg/on_update_icon()
+	..()
+	if(!ammo_magazine)
+		icon_state = "[initial(icon_state)]-e"
+
+	if(!LAZYLEN(ammo_magazine.stored_ammo))
+		AddOverlays(image(icon, "ammo_bad"))
+	else if(LAZYLEN(ammo_magazine.stored_ammo) <= 0.5 * ammo_magazine.max_ammo)
+		AddOverlays(image(icon, "ammo_warn"))
+		return
+	else
+		AddOverlays(image(icon, "ammo_ok"))
 
 /obj/item/gun/projectile/pistol/scg/assasin
 	name = "silenced pistol"
@@ -30,6 +42,13 @@
 	fire_delay = 4
 	accuracy = 2
 	one_hand_penalty = 3
+
+/obj/item/gun/projectile/pistol/scg/assasin/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-e"
 
 // ICCGN
 /obj/item/gun/projectile/pistol/iccgn
@@ -48,6 +67,19 @@
 	one_hand_penalty = 4
 	ammo_indicator = TRUE
 
+/obj/item/gun/projectile/pistol/iccgn/on_update_icon()
+	..()
+	if(!ammo_magazine)
+		icon_state = "[initial(icon_state)]-e"
+
+	if(!LAZYLEN(ammo_magazine.stored_ammo))
+		AddOverlays(image(icon, "ammo_bad"))
+	else if(LAZYLEN(ammo_magazine.stored_ammo) <= 0.5 * ammo_magazine.max_ammo)
+		AddOverlays(image(icon, "ammo_warn"))
+		return
+	else
+		AddOverlays(image(icon, "ammo_ok"))
+
 /obj/item/gun/projectile/automatic/pistol/iccgn
 	name = "automatic pistol"
 	desc = "Boarding Automatic Pistol - 34 (BAP-34) developed by Heltek Corporation for boarding teams."
@@ -59,8 +91,16 @@
 	caliber = CALIBER_PISTOL
 	force = 7
 	accuracy = 0
-	fire_delay = 2
-	one_hand_penalty = 2
+	can_autofire=1
+	fire_delay=2
+	one_hand_penalty=4
 	firemodes = list(
-		FULL_AUTO_800
+		list(mode_name = "full auto", can_autofire=1, fire_delay=2, one_hand_penalty=4, dispersion=list(1.0, 1.4, 1.8))
 	)
+
+/obj/item/gun/projectile/automatic/pistol/iccgn/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-e"
