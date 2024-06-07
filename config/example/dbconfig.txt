@@ -23,10 +23,3 @@ PASSWORD mypassword
 FEEDBACK_DATABASE test
 FEEDBACK_LOGIN mylogin
 FEEDBACK_PASSWORD mypassword
-
-
-###################################################################
-#                            SIERRABAY                            #
-###################################################################
-
-UTILITY_DATABASE tgstation
