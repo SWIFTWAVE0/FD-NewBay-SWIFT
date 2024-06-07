@@ -40,8 +40,7 @@ ID мода: FD_GUNS
 
 ### Оверрайды
 
-- `mods/_master_files/sound/my_cool_sound.ogg`
-- `mods/_master_files/code/my_modular_override.dm`: `proc/overriden_proc`, `var/overriden_var`
+- `/obj/item/gun/energy`: `var/battery_changable`, `proc/Initialize`, `proc/MouseDrop`, `proc/use_tool`
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`

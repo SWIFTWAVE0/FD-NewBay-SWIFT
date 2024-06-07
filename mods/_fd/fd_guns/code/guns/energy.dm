@@ -3,7 +3,7 @@
 /obj/item/gun/energy/laser/lasgun
 	name = "Lasgun"
 	desc = "Lasgun series D-99 designed specifically for the Fleet. Known for its devastating power, almost unique for lasers."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "lascar"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK
@@ -12,7 +12,7 @@
 	force = 10
 	one_hand_penalty = 4
 	battery_changable = TRUE
-	battery_type = /obj/item/cell/guncell/lasgun
+	cell_type = /obj/item/cell/guncell/lasgun
 	bulk = GUN_BULK_RIFLE + 2
 	projectile_type = /obj/item/projectile/bullet/lasbolt/lasgun
 	wielded_item_state = "laser-wielded"
@@ -31,7 +31,7 @@
 /obj/item/gun/energy/laser/laspistol
 	name = "Laspistol"
 	desc = "Unlike its big brother, the Laspistol series D-99 was made for Fleet Officers and as an auxiliary weapon in case the shit hit the fan.."
-	icon = 'mods/fd_guns/icons/weapon_cpss_icon.dmi'
+	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "laspistolciv"
 	item_state = "laspistolciv"
 	slot_flags = SLOT_BACK
@@ -40,7 +40,7 @@
 	force = 4
 	one_hand_penalty = 4
 	battery_changable = TRUE
-	battery_type = /obj/item/cell/guncell/lasgun
+	cell_type = /obj/item/cell/guncell/lasgun
 	bulk = GUN_BULK_RIFLE - 3
 	projectile_type = /obj/item/projectile/bullet/lasbolt
 	firemodes = list(
@@ -59,7 +59,7 @@
 /obj/item/cell/guncell/lasgun
 	name = "Lasgun power pack"
 	desc = "Unified power pack for D-99 series Lasguns and Laspistols. According to Fleet Veterans, this battery can be used as explosives. Don't try"
-	icon = 'icons/obj/power.dmi'
+	icon = 'mods/_fd/fd_guns/icons/power_las.dmi'
 	icon_state = "lgpp"
 	w_class = ITEM_SIZE_SMALL
 	charge = 4000

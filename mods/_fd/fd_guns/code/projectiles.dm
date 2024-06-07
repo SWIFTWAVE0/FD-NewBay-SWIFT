@@ -124,7 +124,7 @@
 	light_effect_range = 6
 
 // TECHNICALLY IT'S A LASER. But bullet...
-/*
+
 /obj/item/projectile/bullet/lasbolt
 	name = "laser"
 	icon_state = "lasbolt"
@@ -133,7 +133,7 @@
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	damage = 30
 	armor_penetration = 10
-	damage_flags = DAM_LASER | DAM_EDGE
+	damage_flags = DAMAGE_FLAG_LASER | DAMAGE_FLAG_EDGE
 	distance_falloff = 1.5
 	damage_falloff = TRUE
 	damage_falloff_list = list(
@@ -144,7 +144,7 @@
 // Tech stuff
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
 	embed = 0
-	damage_type = BURN
+	damage_type = DAMAGE_BURN
 	eyeblur = 4
 	muzzle_type = null
 
@@ -170,4 +170,3 @@
 		list(5, 0.75),
 		list(7, 0.70),
 	)
-*/
