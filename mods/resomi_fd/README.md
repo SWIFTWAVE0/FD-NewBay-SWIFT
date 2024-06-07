@@ -11,7 +11,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Резоми
 
-ID мода: RESOMI
+ID мода: RESOMI_FD
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -19,8 +19,7 @@ ID мода: RESOMI
 
 ### Описание мода
 
-Ря!
-- Портирует расу резоми с Infinity.
+- Портирует расу резоми с Infinity с добавлением контентных изменений FD.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -66,26 +65,20 @@ ID мода: RESOMI
   - `SPECIES_RESOMI`
   - `LANGUAGE_RESOMI`
 - `mods/resomi/code/datum/_defines.dm`:
-  - `CULTURE_RESOMI_EREMUS`
-  - `CULTURE_RESOMI_ASRANDA`
-  - `CULTURE_RESOMI_REFUGEE`
-  - `CULTURE_RESOMI_NEWGENERATION`
-  - `CULTURE_RESOMI_LOSTCOLONYRICH`
-  - `CULTURE_RESOMI_LOSTCOLONYPOOR`
-  - `CULTURE_RESOMI_SKRELL`
-  - `HOME_SYSTEM_RESOMI_BIRDCAGE`
-  - `HOME_SYSTEM_RESOMI_EREMUS`
-  - `HOME_SYSTEM_RESOMI_ASRANDA`
-  - `HOME_SYSTEM_RESOMI_SAVEEL`
-  - `HOME_SYSTEM_RESOMI_LOST_COLONY`
-  - `HOME_SYSTEM_RESOMI_REFUGEE_COLONY`
-  - `HOME_SYSTEM_RESOMI_HOMELESS`
-  - `HOME_SYSTEM_RESOMI_IMPER_COLONY`
-  - `HOME_SYSTEM_RESOMI_RESOBALAK`
-  - `RELIGION_RESOMI_CHOSEN`
-  - `RELIGION_RESOMI_EMPEROR`
-  - `RELIGION_RESOMI_MOUNTAIN`
-  - `RELIGION_RESOMI_SKIES`
+  - `CULTURE_RESOMI_TEMALI`
+  - `CULTURE_RESOMI_SHAYAMI`
+  - `CULTURE_RESOMI_SHOSHNI`
+  - `CULTURE_RESOMI_ATARI`
+  - `CULTURE_RESOMI_OTHER`
+  - `CULTURE_RESOMI_SPACER`
+
+  - `HOME_SYSTEM_RESOMI_ALISH`
+
+  - `FACTION_RESOMI_URE`
+  - `FACTION_RESOMI_CONCORD`
+  - `FACTION_RESOMI_INDEPENDENT`
+  - `FACTION_EXPEDITIONARY`
+
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
@@ -110,8 +103,10 @@ LordNest
 SurEugene
 Daeberdir
 UEDHighCommand
+SWIFT0
+Maximum123
+Doctor Alex
 
-При крайне необходимой моральной поддержке ксеномодераторов Imony и TheGrimArcadia
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
