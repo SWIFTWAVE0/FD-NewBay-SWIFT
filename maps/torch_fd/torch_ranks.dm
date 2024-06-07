@@ -34,6 +34,7 @@
 		/datum/species/vox     = list(
 			/datum/mil_branch/expeditionary_corps,
 			/datum/mil_branch/fleet,
+			/datum/mil_branch/scga,
 			/datum/mil_branch/civilian,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet
@@ -197,6 +198,58 @@
 						SKILL_WEAPONS = SKILL_BASIC,
 						SKILL_EVA     = SKILL_BASIC)
 
+/datum/mil_branch/scga
+	name = "Army"
+	name_short = "SCGA"
+	email_domain = "torch.army.mil"
+
+	rank_types = list(
+		/datum/mil_rank/scga/e1,
+		/datum/mil_rank/scga/e2,
+		/datum/mil_rank/scga/e3,
+		/datum/mil_rank/scga/e4,
+		/datum/mil_rank/scga/e5,
+		/datum/mil_rank/scga/e6,
+		/datum/mil_rank/scga/e7,
+		/datum/mil_rank/scga/e8,
+		/datum/mil_rank/scga/e8_alt,
+		/datum/mil_rank/scga/e9,
+		/datum/mil_rank/scga/e9_alt1,
+		/datum/mil_rank/scga/e9_alt2,
+		/datum/mil_rank/scga/o1,
+		/datum/mil_rank/scga/o2,
+		/datum/mil_rank/scga/o3,
+		/datum/mil_rank/scga/o4,
+		/datum/mil_rank/scga/o5,
+		/datum/mil_rank/scga/o6,
+		/datum/mil_rank/scga/o7,
+		/datum/mil_rank/scga/o8,
+		/datum/mil_rank/scga/o9,
+		/datum/mil_rank/scga/o10,
+		/datum/mil_rank/scga/o10_alt
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/scga/e2,
+		/datum/mil_rank/scga/e3,
+		/datum/mil_rank/scga/e4,
+		/datum/mil_rank/scga/e5,
+		/datum/mil_rank/scga/e6,
+		/datum/mil_rank/scga/e7,
+		/datum/mil_rank/scga/e8,
+		/datum/mil_rank/scga/e8_alt,
+		/datum/mil_rank/scga/o1,
+		/datum/mil_rank/scga/o2,
+		/datum/mil_rank/scga/o3,
+		/datum/mil_rank/scga/o4
+	)
+
+	assistant_job = /datum/job/crew
+	min_skill = list(
+		SKILL_HAULING = SKILL_TRAINED,
+		SKILL_WEAPONS = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_BASIC
+	)
 
 /datum/mil_branch/civilian
 	name = "Civilian"
@@ -465,6 +518,8 @@
 	name_short = "ADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o8)
 	sort_order = 18
+
+
 
 
 /*
