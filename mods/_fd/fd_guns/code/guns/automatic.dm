@@ -238,7 +238,7 @@
 		return
 	if(user.is_species(SPECIES_RESOMI))
 		to_chat(user, SPAN_DANGER("The recoil of the [src] is way too much for you, Resomi"))
-		var/recoil_dir = reverse_dir[user_dir]
+		var/recoil_dir = GLOB.reverse_dir[user.dir]
 		user.adjustBruteLoss(60)
 		user.Weaken(4)
 		log_and_message_admins("is fucked by [src]'s obliterating recoil. Stupid xenos...")
