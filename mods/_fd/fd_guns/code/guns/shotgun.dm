@@ -26,8 +26,8 @@
 	accuracy = -1
 	dispersion = list(1.5, 2.0, 2.5)
 	firemodes = list(
-			list(mode_name="3-round bursts", mode_desc = "Short, controlled bursts", burst=3, fire_delay=null, move_delay=4, one_hand_penalty=3),
-			list(mode_name = "full auto",  mode_desc = "400 rounds per minute",   can_autofire = 1, fire_delay = 4, one_hand_penalty=3)
+			list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4, one_hand_penalty=3),
+			list(mode_name = "full auto", can_autofire=1, fire_delay = 4, one_hand_penalty=3)
 		)
 
 /obj/item/gun/projectile/automatic/shotgun/scg/on_update_icon()
@@ -52,8 +52,8 @@
 	one_hand_penalty=5
 	dispersion = list(1.0, 1.3, 1.6)
 	firemodes = list(
-			list(mode_name = "semiauto",  mode_desc = "Fire as fast as you can pull the trigger", burst=1, fire_delay=0, move_delay=null),
-			list(mode_name="2-beam bursts", mode_desc = "Short, controlled bursts", burst=2, fire_delay=null, move_delay=2)
+			list(mode_name = "semiauto", burst=1, fire_delay=0, move_delay=null),
+			list(mode_name="2-beam bursts", burst=2, fire_delay=null, move_delay=2)
 		)
 
 /obj/item/gun/projectile/automatic/shotgun/iccgn/on_update_icon()
