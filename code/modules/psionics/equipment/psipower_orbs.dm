@@ -495,8 +495,8 @@
 	range_step = 1
 	spread_step = 50
 	armor_penetration = 20
-//	icon = 'proxima/icons/obj/guns/projectiles.dmi'
-	icon_state = "syringeproj_many"
+	icon = 'icons/psi_fd/projectiles.dmi'
+	icon_state = "ice_spikes"
 	color = "#9ee0dd"
 
 /obj/structure/girder/ice_wall

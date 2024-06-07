@@ -2,6 +2,12 @@
 	name = "electric whip"
 	force = 10
 	maintain_cost = 4
+
+	item_icons = list(
+		slot_l_hand_str = 'icons/psi_fd/lefthand.dmi',
+		slot_r_hand_str = 'icons/psi_fd/righthand.dmi',
+		)
+
 	icon_state = "electrowhip"
 	attack_cooldown = 10
 
