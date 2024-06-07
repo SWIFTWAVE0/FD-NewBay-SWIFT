@@ -84,7 +84,8 @@
 
 	LAZYINITLIST(psi_faculties)
 	for(var/faculty_name in psi_abilities_by_name)
-		var/faculty_id = SSpsi.faculties_by_name[faculty_name].id
+		var/singleton/psionic_faculty/faculty = SSpsi.faculties_by_name[faculty_name]
+		var/faculty_id = faculty.id
 		psi_faculties |= list("[faculty_id]" = psi_abilities_by_name[faculty_name])
 
 	for(var/psi in psi_faculties)
