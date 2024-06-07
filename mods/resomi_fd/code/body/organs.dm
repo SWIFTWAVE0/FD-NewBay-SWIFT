@@ -26,5 +26,5 @@
 	parent_organ = BP_CHEST
 
 /obj/item/organ/internal/eyes/resomi
-	icon = 'mods/resomi/icons/human_races/eyes.dmi'
-	eye_icon = 'mods/resomi/icons/human_races/eyes.dmi'
+	icon = 'mods/resomi_fd/icons/human_races/eyes.dmi'
+	eye_icon = 'mods/resomi_fd/icons/human_races/eyes.dmi'

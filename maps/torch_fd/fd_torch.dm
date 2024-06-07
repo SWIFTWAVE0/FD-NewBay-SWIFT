@@ -227,8 +227,6 @@
 	#include "../../mods/jukebox_tapes/_jukebox_tapes.dme"
 	#include "../../mods/legalese_language/_legalese.dme"
 	#include "../../mods/petting_zoo/_petting_zoo.dme"
-	// #include "../../mods/resomi/_resomi.dme"
-	// #include "../../mods/resomi_fd/_resomi.dme"
 	#include "../../mods/screentips/_screentips.dme"
 	#include "../../mods/tajara/_tajara.dme"
 	#include "../../mods/sauna_props/_sauna_props.dme"
@@ -239,6 +237,9 @@
 	// #include "../../mods/_maps/hand/_map_hand.dme" // Тоже зависим от предметов с карты Стража (инклюд над фарфлитом)
 
 		// ~NON-UPSTREAM MODS~ //
+
+	#include "../../mods/resomi_fd/_resomi.dme"
+
 	#include "../../mods/_fd/runechat/_runechat.dme"
 	#include "../../mods/_fd/fd_assets/_fd_assets.dme"
 

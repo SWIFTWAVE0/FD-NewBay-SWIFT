@@ -7,6 +7,10 @@
 	custom_setup_proc = /obj/item/passport/proc/set_info
 	cost = 0
 
+/obj/item/passport/xeno/resomi
+	name = "\improper Resomi registration document"
+	icon_state = "passport"
+	desc = "Something like a passport for Resomi."
 
 /datum/gear/uniform/resomi
 	display_name = "(Resomi) uniform, colored"
