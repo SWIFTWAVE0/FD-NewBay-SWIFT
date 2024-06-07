@@ -274,7 +274,7 @@ var/global/const/NO_EMAG_ACT = -50
 	if(front && side)
 		send_rsc(user, front, "front.png")
 		send_rsc(user, side, "side.png")
-	var/datum/browser/popup = new(user, "idcard", name, 600, 300)
+	var/datum/browser/popup = new(user, "idcard", name, 600, 350)
 	popup.set_content(dat())
 	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
 	popup.open()
@@ -305,9 +305,6 @@ var/global/const/NO_EMAG_ACT = -50
 			if(culture)
 				id_card.formal_name_prefix = "[culture.get_formal_name_prefix()][id_card.formal_name_prefix]"
 				id_card.formal_name_suffix = "[id_card.formal_name_suffix][culture.get_formal_name_suffix()]"
-		if(client.prefs.psi_threat_level && client.prefs.psi_openness)
-			id_card.psi_level = client.prefs.psi_threat_level
-			id_card.psi_status = GLOB.psistatus2text[client.prefs.psi_status]
 
 	id_card.registered_name = real_name
 	id_card.sex = get_formal_pronouns()
@@ -317,6 +314,10 @@ var/global/const/NO_EMAG_ACT = -50
 		id_card.blood_type		= dna.b_type
 		id_card.dna_hash		= dna.unique_enzymes
 		id_card.fingerprint_hash= md5(dna.uni_identity)
+
+	if(client?.prefs?.psi_threat_level && client.prefs.psi_openness)
+		id_card.psi_level = client.prefs.psi_threat_level
+		id_card.psi_status = GLOB.psi_status2text[client.prefs.psi_status]
 
 /mob/living/carbon/human/set_id_info(obj/item/card/id/id_card)
 	..()
@@ -331,19 +332,26 @@ var/global/const/NO_EMAG_ACT = -50
 				for(var/add_access in category.add_accesses)
 					id_card.access.Add(add_access)
 
+/obj/item/card/id/proc/extra_dat()
+	. = list()
+	if(psi_status)
+		. += "Psionics status: [psi_status]<br>"
+		. += "Psionics threat level: [psi_level]<br>"
+
 /obj/item/card/id/proc/dat()
 	var/list/dat = list("<table><tr><td>")
-	dat += text("Name: []</A><BR>", "[formal_name_prefix][registered_name][formal_name_suffix]")
-	dat += text("Pronouns: []</A><BR>\n", sex)
-	dat += text("Age: []</A><BR>\n", age)
-	if(psi_status)
-		dat += "Psionics status: [psi_status]<BR>\n"
-		dat += "Psionics threat level: [psi_level]<BR>\n"
+	dat += text("Name: []</A><br>", "[formal_name_prefix][registered_name][formal_name_suffix]")
+	dat += text("Pronouns: []</A><br>\n", sex)
+	dat += text("Age: []</A><br><br>\n", age)
+
+	dat += jointext(extra_dat(), null)
+	dat += "<br>"
 
 	if(GLOB.using_map.flags & MAP_HAS_BRANCH)
 		dat += text("Branch: []</A><BR>\n", military_branch ? military_branch.name : "\[UNSET\]")
 	if(GLOB.using_map.flags & MAP_HAS_RANK)
 		dat += text("Rank: []</A><BR>\n", military_rank ? military_rank.name : "\[UNSET\]")
+	dat += "<br>"
 
 	dat += text("Assignment: []</A><BR>\n", assignment)
 	dat += text("Fingerprint: []</A><BR>\n", fingerprint_hash)
@@ -351,11 +359,12 @@ var/global/const/NO_EMAG_ACT = -50
 	dat += text("DNA Hash: []<BR><BR>\n", dna_hash)
 	if(front && side)
 		dat += "<td align = center valign = top>Photo:<br>"
-		dat += "<img style='image-rendering: pixelated;' src=front.png height=80 width=80 border=4>"
-		dat += "<img style='image-rendering: pixelated;' src=side.png height=80 width=80 border=4>"
+		dat += "<img style='image-rendering: pixelated;' src=front.png height=96 width=96>"
+		dat += "<img style='image-rendering: pixelated;' src=side.png height=96 width=96>"
 		dat += "</td>"
 	dat += "</tr></table>"
-	return jointext(dat,null)
+
+	return jointext(dat, null)
 
 /obj/item/card/id/attack_self(mob/user as mob)
 	user.visible_message("\The [user] shows you: [icon2html(src, viewers(get_turf(src)))] [src.name]. The assignment on the card: [src.assignment]",\

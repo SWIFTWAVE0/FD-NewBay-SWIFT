@@ -39,11 +39,10 @@
 	if(is_species(SPECIES_IPC))
 		id_card.ipc_gen = get_cultural_value(TAG_FACTION)
 
-/obj/item/card/id/dat()
-	var/list/dat = list("<table><tr><td>")
+/obj/item/card/id/extra_dat()
+	. = ..()
 	if(ipc_gen)
-		dat += text("Registration: []</A><BR>\n", ipc_gen)
-	..()
+		. += "Registration: [ipc_gen]<br>"
 
 /singleton/cultural_info/faction/ipc
 	economic_power = 0.1

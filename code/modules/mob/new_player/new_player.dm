@@ -258,10 +258,12 @@
 		to_chat(src, alert("[job.title] is not available. Please try another."))
 		return 0
 
+/*
 	if (!check_occupation_set(job))
 		var/choice = alert("You do not have [job.title] set as your occupation, are you sure you want to join as this role?", "Occupation Mismatch", "Yes", "No")
 		if (choice != "Yes")
 			return FALSE
+*/
 
 	SSjobs.assign_role(src, job.title, 1)
 
