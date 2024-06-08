@@ -22,6 +22,29 @@ GLOBAL_LIST_INIT(psi_threat_level2free_points, list(3, 4, 9, 14))
 /datum/preferences
 	var/list/psi_abilities
 
+/datum/preferences/proc/sanitize_psi_abilities()
+	if(!psi_threat_level)
+		return
+
+	while(TRUE)
+		for(var/faculty in psi_abilities)
+			if(calculate_free_points() >= 0)
+				return
+
+			if(psi_abilities[faculty] > 1)
+				--psi_abilities[faculty]
+
+
+/datum/preferences/proc/calculate_free_points()
+	. = GLOB.psi_threat_level2free_points[psi_threat_level]
+
+	for(var/faculty in psi_abilities)
+		for(var/level in 1 to GLOB.psi_level2cost.len)
+			var/level_name = GLOB.psi_level2cost[level]
+			var/level_cost = GLOB.psi_level2cost[level_name]
+
+			if(psi_abilities[faculty] == level)
+				. -= level_cost
 
 /datum/category_item/player_setup_item/psionics/abilities
 	name = "Abilities"
@@ -43,19 +66,12 @@ GLOBAL_LIST_INIT(psi_threat_level2free_points, list(3, 4, 9, 14))
 
 	return ..()
 
-/datum/category_item/player_setup_item/psionics/abilities/proc/calculate_free_points()
-	. = GLOB.psi_threat_level2free_points[pref.psi_threat_level]
-
-	for(var/faculty in pref.psi_abilities)
-		for(var/level in 1 to GLOB.psi_level2cost.len)
-			var/level_name = GLOB.psi_level2cost[level]
-			var/level_cost = GLOB.psi_level2cost[level_name]
-
-			if(pref.psi_abilities[faculty] == level)
-				. -= level_cost
 
 /datum/category_item/player_setup_item/psionics/abilities/proc/can_select_level(faculty, level)
-	return (calculate_free_points() + GLOB.psi_level2cost[GLOB.psi_level2cost[pref.psi_abilities[faculty]]]) >= GLOB.psi_level2cost[GLOB.psi_level2cost[level]]
+	if(level <= 1)
+		return TRUE // safe measure
+
+	return (pref.calculate_free_points() + GLOB.psi_level2cost[GLOB.psi_level2cost[pref.psi_abilities[faculty]]]) >= GLOB.psi_level2cost[GLOB.psi_level2cost[level]]
 
 /datum/category_item/player_setup_item/psionics/abilities/content()
 	if(!pref.psi_threat_level)
@@ -75,7 +91,7 @@ GLOBAL_LIST_INIT(psi_threat_level2free_points, list(3, 4, 9, 14))
 
 	. += "<tt><center>"
 
-	. += FONT_LARGE("<b>Points remaining: [calculate_free_points()]</b>")
+	. += FONT_LARGE("<b>Points remaining: [pref.calculate_free_points()]</b>")
 
 	. += "<table style='width: 100%' style='font-size: 15px; text-align: center' class='table'>"
 

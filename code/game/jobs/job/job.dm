@@ -82,6 +82,9 @@
 
 	var/list/psi_abilities_by_name = H.client.prefs.psi_abilities
 
+	if(!H.client.prefs.psi_threat_level)
+		return
+
 	LAZYINITLIST(psi_faculties)
 	for(var/faculty_name in psi_abilities_by_name)
 		var/singleton/psionic_faculty/faculty = SSpsi.faculties_by_name[faculty_name]
