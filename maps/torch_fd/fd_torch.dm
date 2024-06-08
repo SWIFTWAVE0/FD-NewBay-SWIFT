@@ -242,6 +242,7 @@
 
 	#include "../../mods/_fd/runechat/_runechat.dme"
 	#include "../../mods/_fd/fd_assets/_fd_assets.dme"
+	#include "../../mods/_fd/fd_guns/_fd_guns.dme"
 
 	#include "../../mods/_fd/accent_labels/_accent_labels.dme"
 	#include "../../mods/_fd/additional_biomods/_additional_biomods.dme"
@@ -276,6 +277,18 @@
 	#include "../../mods/_fd/_maps/snow_cage/_snow_cage.dme"
 	#include "../../mods/_fd/_maps/trader_ship/_trader_ship.dme"
 	#include "../../mods/_fd/_maps/yacht/_yacht.dme"
+
+		// ~EXOPLANET RUINS~ //
+
+	#include "../random_ruins/exoplanet_ruins/small_ruins/build_ruin.dm"
+	#include "../random_ruins\exoplanet_ruins\remains\remains.dm"
+	#include "../random_ruins/exoplanet_ruins/scg_city_restored/scg_city_restored.dm"
+	#include "../random_ruins/exoplanet_ruins/scg_ruined_city/scg_ruined_city.dm"
+	#include "../random_ruins/exoplanet_ruins/railway/railway.dm"
+	#include "../random_ruins/exoplanet_ruins/pollux/station.dm"
+	#include "../random_ruins/exoplanet_ruins/shelters/shelters_alt.dm"
+	#include "../random_ruins/exoplanet_ruins/warehouse/warehouse.dm"
+
 
 	#define using_map_DATUM /datum/map/torch
 
