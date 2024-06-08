@@ -125,29 +125,32 @@ Please contact me on #coderbus IRC. ~Carn x
 #define HO_SKIN_LAYER       3
 #define HO_SURGERY_LAYER    4 //bs12 specific.
 #define HO_UNDERWEAR_LAYER  5
-#define HO_UNIFORM_LAYER    6
-#define HO_DAMAGE_LAYER     7
-#define HO_ID_LAYER         8
-#define HO_SHOES_LAYER      9
-#define HO_GLOVES_LAYER     10
-#define HO_BELT_LAYER       11
-#define HO_SUIT_LAYER       12
-#define HO_TAIL_LAYER       13 //bs12 specific. this hack is probably gonna come back to haunt me
-#define HO_GLASSES_LAYER    14
-#define HO_BELT_LAYER_ALT   15
-#define HO_SUIT_STORE_LAYER 16
-#define HO_BACK_LAYER       17
-#define HO_HAIR_LAYER       18 //TODO: make part of head layer?
-#define HO_GOGGLES_LAYER    19
-#define HO_EARS_LAYER       20
-#define HO_FACEMASK_LAYER   21
-#define HO_HEAD_LAYER       22
-#define HO_COLLAR_LAYER     23
-#define HO_HANDCUFF_LAYER   24
-#define HO_L_HAND_LAYER     25
-#define HO_R_HAND_LAYER     26
-#define HO_FIRE_LAYER       27 //If you're on fire
-#define TOTAL_LAYERS        28
+#define HO_TAIL_UNDER_LAYER 6 //resomi tail fix by FD
+#define HO_UNIFORM_LAYER    7
+#define HO_DAMAGE_LAYER     8
+#define HO_ID_LAYER         9
+#define HO_SHOES_LAYER      10
+#define HO_GLOVES_LAYER     11
+#define HO_BELT_LAYER       12
+#define HO_SUIT_LAYER       13
+#define HO_TAIL_OVER_LAYER  14
+//#define HO_TAIL_LAYER       15 //bs12 specific. this hack is probably gonna come back to haunt me
+#define HO_GLASSES_LAYER    15
+#define HO_BELT_LAYER_ALT   16
+#define HO_SUIT_STORE_LAYER 17
+#define HO_BACK_LAYER       18
+#define HO_TAIL_ALT_LAYER   19
+#define HO_HAIR_LAYER       20 //TODO: make part of head layer?
+#define HO_GOGGLES_LAYER    21
+#define HO_EARS_LAYER       22
+#define HO_FACEMASK_LAYER   23
+#define HO_HEAD_LAYER       24
+#define HO_COLLAR_LAYER     25
+#define HO_HANDCUFF_LAYER   26
+#define HO_L_HAND_LAYER     27
+#define HO_R_HAND_LAYER     28
+#define HO_FIRE_LAYER       29 //If you're on fire
+#define TOTAL_LAYERS        29
 //////////////////////////////////
 
 /mob/living/carbon/human
@@ -667,17 +670,23 @@ var/global/list/damage_icon_parts = list()
 		queue_icon_update()
 
 /mob/living/carbon/human/proc/update_tail_showing(update_icons=1)
-	overlays_standing[HO_TAIL_LAYER] = null
+//	overlays_standing[HO_TAIL_LAYER] = null // FD RESOMI TAIL FIX //
+
+	overlays_standing[HO_TAIL_OVER_LAYER] = null
+	overlays_standing[HO_TAIL_ALT_LAYER] = null
+	overlays_standing[HO_TAIL_UNDER_LAYER] = null
 
 	var/species_tail = species.get_tail(src)
 
 	if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
 		var/icon/tail_s = get_tail_icon()
-		overlays_standing[HO_TAIL_LAYER] = image(tail_s, icon_state = "[species_tail]_s")
+//		overlays_standing[HO_TAIL_LAYER] = image(tail_s, icon_state = "[species_tail]_s") // FD RESOMI TAIL FIX //
+		overlays_standing[(dir == NORTH) ? ((tail_layer == TRUE) ? HO_TAIL_ALT_LAYER : HO_TAIL_OVER_LAYER) : HO_TAIL_UNDER_LAYER] = image(tail_s, icon_state = "[species_tail]_s")
 		animate_tail_reset(0)
 
 	if(update_icons)
-		queue_icon_update()
+		update_icon()
+//		queue_icon_update() // FD RESOMI TAIL FIX //
 
 /mob/living/carbon/human/proc/get_tail_icon()
 	var/icon_key = "[species.get_race_key(src)][skin_color][head_hair_color]"
@@ -698,9 +707,21 @@ var/global/list/damage_icon_parts = list()
 
 	return tail_icon
 
+// FD RESOMI TAIL FIX //
+
+/mob/living/carbon/human/set_dir()
+	. = ..()
+	var/species_tail = species.get_tail(src)
+	if(!species_tail)
+		return
+	update_tail_showing()
+
+// FD RESOMI TAIL FIX //
 
 /mob/living/carbon/human/proc/set_tail_state(t_state)
-	var/image/tail_overlay = overlays_standing[HO_TAIL_LAYER]
+//	var/image/tail_overlay = overlays_standing[HO_TAIL_LAYER] // FD RESOMI TAIL FIX //
+
+	var/image/tail_overlay = overlays_standing[(dir == NORTH) ? ((tail_layer == TRUE) ? HO_TAIL_ALT_LAYER : HO_TAIL_OVER_LAYER) : HO_TAIL_UNDER_LAYER]
 
 	if(tail_overlay && species.get_tail_animation(src))
 		tail_overlay.icon_state = t_state
@@ -712,7 +733,10 @@ var/global/list/damage_icon_parts = list()
 /mob/living/carbon/human/proc/animate_tail_once(update_icons=1)
 	var/t_state = "[species.get_tail(src)]_once"
 
-	var/image/tail_overlay = overlays_standing[HO_TAIL_LAYER]
+//	var/image/tail_overlay = overlays_standing[HO_TAIL_LAYER] // FD RESOMI TAIL FIX //
+
+	var/image/tail_overlay = overlays_standing[(dir == NORTH) ? ((tail_layer == TRUE) ? HO_TAIL_ALT_LAYER : HO_TAIL_OVER_LAYER) : HO_TAIL_UNDER_LAYER]
+
 	if(tail_overlay && tail_overlay.icon_state == t_state)
 		return //let the existing animation finish
 
@@ -720,7 +744,9 @@ var/global/list/damage_icon_parts = list()
 	if(tail_overlay)
 		spawn(20)
 			//check that the animation hasn't changed in the meantime
-			if(overlays_standing[HO_TAIL_LAYER] == tail_overlay && tail_overlay.icon_state == t_state)
+//			if(overlays_standing[HO_TAIL_LAYER] == tail_overlay && tail_overlay.icon_state == t_state) // FD RESOMI TAIL FIX //
+
+			if(overlays_standing[(dir == NORTH) ? ((tail_layer == TRUE) ? HO_TAIL_ALT_LAYER : HO_TAIL_OVER_LAYER) : HO_TAIL_UNDER_LAYER] == tail_overlay && tail_overlay.icon_state == t_state)
 				animate_tail_stop()
 
 	if(update_icons)
@@ -815,6 +841,7 @@ var/global/list/damage_icon_parts = list()
 #undef HO_SKIN_LAYER
 #undef HO_SURGERY_LAYER
 #undef HO_UNDERWEAR_LAYER
+#undef HO_TAIL_UNDER_LAYER
 #undef HO_UNIFORM_LAYER
 #undef HO_DAMAGE_LAYER
 #undef HO_ID_LAYER
@@ -823,11 +850,13 @@ var/global/list/damage_icon_parts = list()
 #undef HO_BELT_LAYER
 #undef HO_EARS_LAYER
 #undef HO_SUIT_LAYER
-#undef HO_TAIL_LAYER
+#undef HO_TAIL_OVER_LAYER
+//#undef HO_TAIL_LAYER
 #undef HO_GLASSES_LAYER
 #undef HO_BELT_LAYER_ALT
 #undef HO_SUIT_STORE_LAYER
 #undef HO_BACK_LAYER
+#undef HO_TAIL_ALT_LAYER
 #undef HO_HAIR_LAYER
 #undef HO_GOGGLES_LAYER
 #undef HO_FACEMASK_LAYER

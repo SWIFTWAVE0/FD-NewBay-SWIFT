@@ -1,3 +1,6 @@
+/mob
+	var/tail_layer = FALSE
+
 /mob/living/proc/toggle_pass_table()
 	set category = "Abilities"
 	set name = "Toggle Agility" //Dunno a better name for this. You have to be pretty agile to hop over stuff!!!
@@ -5,6 +8,12 @@
 	pass_flags ^= PASS_FLAG_TABLE //I dunno what this fancy ^= is but Aronai gave it to me.
 	to_chat(src, "You [pass_flags&PASS_FLAG_TABLE ? "will" : "will NOT"] move over tables/railings/trays!")
 
+/mob/proc/switch_tail_layer()
+	set category = "Abilities"
+	set name = "Toggle tail layer"
+	set desc = "tail will be over or under backpack"
+	tail_layer = !tail_layer
+	to_chat(src, "<span class='notice'>Your tail will be [tail_layer == TRUE ? "over" : "under"] backpacks.</span>")
 
 /mob/living/carbon/human/proc/resomi_sonar_ping()
 	set name = "Listen In"
