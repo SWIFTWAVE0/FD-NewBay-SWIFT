@@ -31,6 +31,63 @@
 	var/singleton/cultural_info/faction/ipc/gen = SSculture.get_culture(prefs.cultural_info[TAG_FACTION])
 	. = istype(gen) ? (job.type in gen.valid_jobs) : ..()
 
+	if(gen.type == /singleton/cultural_info/faction/ipc/first)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/first,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/first_gen,
+		)
+		return
+	if(gen.type == /singleton/cultural_info/faction/ipc/third/state)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/third,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/third_gen,
+		)
+		return
+	if(gen.type == /singleton/cultural_info/faction/ipc/third/privt)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/third,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/third_gen,
+		)
+		return
+	if(gen.type == /singleton/cultural_info/faction/ipc/third/corp)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/third,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/third_gen,
+		)
+		return
+	if(gen.type == /singleton/cultural_info/faction/ipc/second/owned)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/second,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/second_gen,
+		)
+		return
+	if(gen.type == /singleton/cultural_info/faction/ipc/second/free)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/second,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/second_gen,
+		)
+		return
+	if(gen.type == /singleton/cultural_info/faction/ipc/second/union)
+		src.has_organ = list(
+			BP_POSIBRAIN = /obj/item/organ/internal/posibrain/ipc/second,
+			BP_EYES = /obj/item/organ/internal/eyes/robot,
+			BP_COOLING = /obj/item/organ/internal/cooling_system,
+			BP_EXONET = /obj/item/organ/internal/ecs/second_gen,
+		)
+		return
+
 /obj/item/card/id
 	var/ipc_gen = null
 
