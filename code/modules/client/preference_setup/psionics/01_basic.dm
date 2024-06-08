@@ -38,6 +38,7 @@ GLOBAL_LIST_INIT(text2psi_status, list("C" = 1, "B" = 2, "A" = 3, "S" = 4))
 	if(href_list["select_psi_threat_level"])
 		pref.psi_threat_level = text2num(input("Select threat level", CHARACTER_PREFERENCE_INPUT_TITLE, pref.psi_threat_level) in list("0", "1", "2", "3", "4"))
 		pref.psi_threat_level = clamp(pref.psi_threat_level, 0, 4)
+		pref.sanitize_psi_abilities()
 		return TOPIC_REFRESH
 
 	else if(href_list["select_psi_status"])
