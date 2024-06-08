@@ -89,10 +89,11 @@
 	for(var/faculty_name in psi_abilities_by_name)
 		var/singleton/psionic_faculty/faculty = SSpsi.faculties_by_name[faculty_name]
 		var/faculty_id = faculty.id
-		psi_faculties |= list("[faculty_id]" = psi_abilities_by_name[faculty_name])
+		psi_faculties |= list("[faculty_id]" = psi_abilities_by_name[faculty_name] - 1)
 
 	for(var/psi in psi_faculties)
-		H.set_psi_rank(psi, psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
+		if(psi_faculties[psi] > 0)
+			H.set_psi_rank(psi, psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
 
 	H.psi.update()
 
