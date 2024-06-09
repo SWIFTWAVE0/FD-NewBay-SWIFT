@@ -52,6 +52,7 @@
 #include "code/jobs/pathfinder.dm"
 #include "code/jobs/research_director.dm"
 #include "code/jobs/passenger.dm"
+#include "code/jobs/ai.dm"
 
 #include "code/fd_sofa_override.dm"
 #include "code/floor_decals.dm"
