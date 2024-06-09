@@ -39,7 +39,6 @@
 #include "code/turfs/wall_types.dm"
 
 #include "code/weapons/automatic_shotgun.dm"
-#include "code/weapons/k342.dm"
 #include "code/weapons/mech_mounted.dm"
 #include "code/weapons/rsh21.dm"
 #include "code/weapons/sledgehammer.dm"
