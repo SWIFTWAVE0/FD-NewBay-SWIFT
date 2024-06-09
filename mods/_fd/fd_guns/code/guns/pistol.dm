@@ -6,6 +6,10 @@
 	icon = 'mods/_fd/fd_guns/icons/magnum_cpps.dmi'
 	icon_state = "pistol7"
 	item_state = "pistol7"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi'
+		)
 	magazine_type = /obj/item/ammo_magazine/pistol/scg
 	allowed_magazines = /obj/item/ammo_magazine/pistol/scg
 	caliber = CALIBER_PISTOL_MAGNUM
@@ -34,6 +38,10 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "pistol6"
 	item_state = "pistol6"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi'
+		)
 	magazine_type = /obj/item/ammo_magazine/pistol/assasin
 	allowed_magazines = /obj/item/ammo_magazine/pistol/assasin
 	caliber = CALIBER_PISTOL_FLECHETTE
@@ -57,6 +65,10 @@
 	icon = 'mods/_fd/fd_guns/icons/pistol_iccgn.dmi'
 	icon_state = "gpistol9"
 	item_state = "gpistol9"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi'
+		)
 	magazine_type = /obj/item/ammo_magazine/pistol/iccgn
 	allowed_magazines = /obj/item/ammo_magazine/pistol/iccgn
 	caliber = CALIBER_PISTOL_MAGNUM
@@ -86,6 +98,10 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gpistol8"
 	item_state = "gpistol8"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi'
+		)
 	magazine_type = /obj/item/ammo_magazine/pistol/automatic
 	allowed_magazines = /obj/item/ammo_magazine/pistol/automatic
 	caliber = CALIBER_PISTOL
