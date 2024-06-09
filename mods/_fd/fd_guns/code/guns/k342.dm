@@ -145,9 +145,9 @@
 			if(0.05 to 34)
 				i = "g_0+"
 		if(i)
-			overlays += image(icon, i)
+			AddOverlays(image(icon, i))
 			var/datum/firemode/current_mode = firemodes[sel_mode]
-			overlays += image(icon, splittext(current_mode.name, " ")[1])
+			AddOverlays(image(icon, splittext(current_mode.name, " ")[1]))
 	else
 		icon_state = "[initial(item_state)]_off"
 
