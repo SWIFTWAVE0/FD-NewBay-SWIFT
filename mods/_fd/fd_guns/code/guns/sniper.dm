@@ -6,6 +6,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "sniperrifle1"
 	item_state = "sniperrifle1"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK
@@ -25,12 +30,17 @@
 	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
 	fire_delay = 12
 
-/obj/item/gun/projectile/sniper/marksman
+/obj/item/gun/projectile/sniper/scg/marksman
 	name = "designated marksman rifle"
 	desc = "This rifle favors mid- to long-ranged combat, offering impressive stopping power over a long distance."
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "sniperrifle2"
 	item_state = "sniperrifle2"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	caliber = CALIBER_RIFLE_MILITARY
@@ -61,6 +71,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsniperrifle4"
 	item_state = "gsniperrifle4"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK
@@ -87,12 +102,17 @@
 		icon_state = "gsniperrifle4-empty"
 
 
-/obj/item/gun/projectile/sniper/dmr
+/obj/item/gun/projectile/sniper/iccgn/dmr
 	name = "designated marksman rifle"
 	desc = "Designated Marksman Rifle-41 (DMR-41) The Marksman rifle was made to give more versatility and strength to fire groups. The multi-tasking nature of such a rifle allows for a variety of missions up to and including breaching airlocks and blast doors"
 	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsniperrifle3"
 	item_state = "gsniperrifle3"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	caliber = CALIBER_RIFLE_MILITARY
