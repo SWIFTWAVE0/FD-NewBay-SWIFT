@@ -127,7 +127,7 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/exploration/expmed/fleet,
-		/datum/mil_branch/scga = /singleton/hierarchy/outfit/job/torch/crew/exploration/expmed/army
+	//	/datum/mil_branch/scga = /singleton/hierarchy/outfit/job/torch/crew/exploration/expmed/army
 		)
 
 	allowed_ranks = list(
@@ -136,10 +136,10 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/scga/e4_alt,
+/*		/datum/mil_rank/scga/e4_alt,
 		/datum/mil_rank/scga/e4,
 		/datum/mil_rank/scga/e5,
-		/datum/mil_rank/scga/e6
+		/datum/mil_rank/scga/e6*/
 	)
 	min_skill = list(   SKILL_EVA = SKILL_BASIC,
 						SKILL_MEDICAL = SKILL_TRAINED
@@ -179,7 +179,7 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/exploration/expeng/fleet,
-		/datum/mil_branch/scga = /singleton/hierarchy/outfit/job/torch/crew/exploration/expeng/army
+//		/datum/mil_branch/scga = /singleton/hierarchy/outfit/job/torch/crew/exploration/expeng/army
 		)
 
 	allowed_ranks = list(
@@ -188,10 +188,10 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/scga/e4_alt,
+/*		/datum/mil_rank/scga/e4_alt,
 		/datum/mil_rank/scga/e4,
 		/datum/mil_rank/scga/e5,
-		/datum/mil_rank/scga/e6
+		/datum/mil_rank/scga/e6*/
 	)
 	min_skill = list(   SKILL_EVA = SKILL_BASIC,
 						SKILL_CONSTRUCTION = SKILL_BASIC,
