@@ -114,52 +114,11 @@ var/const/access_research_security = "ACCESS_RESEARCH_SECURITY" //97
 		/obj/item/rig_module/cooling_unit)
 
 ///Job
-/datum/job/research_guard
-	title = "Research Guard"
-	department = "Science"
-	department_flag = SCI
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Chief Science Officer"
-	selection_color = "#473d63"
-	economic_power = 5
-	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 26)
-	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research_guard
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /singleton/hierarchy/outfit/job/torch/passenger/research_guard/ec
-	)
-
-	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5
-	)
-	min_skill = list(SKILL_BUREAUCRACY	= SKILL_TRAINED,
-						SKILL_EVA		= SKILL_BASIC,
-						SKILL_COMBAT	= SKILL_BASIC,
-						SKILL_WEAPONS	= SKILL_TRAINED
-						)
-
-	max_skill = list(	SKILL_COMBAT	= SKILL_EXPERIENCED,
-						SKILL_WEAPONS	= SKILL_EXPERIENCED)
-	skill_points = 20
-
-	access = list(
-		access_research_security, access_tox, access_tox_storage, access_maint_tunnels, access_research, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
-		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
-		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_maint, access_radio_sci
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
-
-/datum/job/research_guard/get_description_blurb()
-	return "You are a security guard from the Organization of the Expeditionary Corps, which must protect the scientific department and its employees from various threats. Eat donuts, call scientists \"eggheads\"."
-
+/*
 /datum/map/torch/New()
 	. = ..()
 	var/index = allowed_jobs.Find(/datum/job/scientist_assistant)
 	if(index)
 		index++
 		allowed_jobs.Insert(index, /datum/job/research_guard)
+*/

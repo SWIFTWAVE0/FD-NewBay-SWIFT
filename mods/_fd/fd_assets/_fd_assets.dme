@@ -46,13 +46,6 @@
 #include "code/weapons/rsh21.dm"
 #include "code/weapons/sledgehammer.dm"
 
-#include "code/jobs/chief_steward.dm"
-#include "code/jobs/research_guard.dm"
-#include "code/jobs/pathfinder.dm"
-#include "code/jobs/research_director.dm"
-#include "code/jobs/passenger.dm"
-#include "code/jobs/ai.dm"
-
 #include "code/fd_sofa_override.dm"
 #include "code/floor_decals.dm"
 #include "code/fullscreen.dm"

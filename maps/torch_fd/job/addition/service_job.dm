@@ -33,19 +33,3 @@
 		/obj/item/device/radio/headset/headset_chief_steward,
 		/obj/item/device/radio/headset/headset_chief_steward/alt,
 	)
-
-
-// Getting MrMeat
-
-/datum/job/chief_steward
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/service/cook,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/service/chief_steward/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e6
-	)
