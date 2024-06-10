@@ -207,6 +207,7 @@
 		/datum/mil_rank/scga/e1,
 		/datum/mil_rank/scga/e2,
 		/datum/mil_rank/scga/e3,
+		/datum/mil_rank/scga/e4_alt,
 		/datum/mil_rank/scga/e4,
 		/datum/mil_rank/scga/e5,
 		/datum/mil_rank/scga/e6,
@@ -232,6 +233,7 @@
 	spawn_rank_types = list(
 		/datum/mil_rank/scga/e2,
 		/datum/mil_rank/scga/e3,
+		/datum/mil_rank/scga/e4_alt,
 		/datum/mil_rank/scga/e4,
 		/datum/mil_rank/scga/e5,
 		/datum/mil_rank/scga/e6,

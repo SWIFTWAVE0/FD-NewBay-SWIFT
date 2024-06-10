@@ -19,6 +19,7 @@
 #include "code/guns/pistol.dm"
 #include "code/guns/shotgun.dm"
 #include "code/guns/sniper.dm"
+#include "code/guns/k342.dm"
 
 #undef CALIBER_BOLTER
 
