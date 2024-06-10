@@ -50,6 +50,8 @@ GLOBAL_LIST_INIT(psi_threat_level2free_points, list(3, 4, 9, 14))
 	name = "Abilities"
 	sort_order = 3
 
+	var/static/list/psi_faculties_names
+
 /datum/category_item/player_setup_item/psionics/abilities/load_character(datum/pref_record_reader/R)
 	pref.psi_abilities = R.read("psi_abilities")
 
@@ -57,11 +59,19 @@ GLOBAL_LIST_INIT(psi_threat_level2free_points, list(3, 4, 9, 14))
 	W.write("psi_abilities", pref.psi_abilities)
 
 /datum/category_item/player_setup_item/psionics/abilities/sanitize_character()
-	if(pref.psi_abilities)
+	if(pref.psi_abilities?.len)
 		return ..()
 
+	if(!psi_faculties_names)
+		psi_faculties_names = list()
+
+		var/list/faculties = GET_SINGLETON_SUBTYPE_MAP(/singleton/psionic_faculty)
+		for(var/ftype in faculties)
+			var/singleton/psionic_faculty/faculty = faculties[ftype]
+			psi_faculties_names += faculty.name
+
 	pref.psi_abilities = list()
-	for(var/faculty in SSpsi.faculties_by_name)
+	for(var/faculty in psi_faculties_names)
 		pref.psi_abilities[faculty] = 1
 
 	return ..()
@@ -76,6 +86,9 @@ GLOBAL_LIST_INIT(psi_threat_level2free_points, list(3, 4, 9, 14))
 /datum/category_item/player_setup_item/psionics/abilities/content()
 	if(!pref.psi_threat_level)
 		return ..()
+
+	if(!pref.psi_abilities)
+		sanitize_character()
 
 	. = list()
 
