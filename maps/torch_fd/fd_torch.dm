@@ -110,17 +110,17 @@
 	// --- JOB SECTION --- //
 	#include "../torch/job/torch_access.dm"
 	#include "job/torch_jobs.dm"
-	#include "job/exploration_team.dm"
-	#include "../torch/job/command_jobs.dm"
-	#include "../torch/job/corporate_jobs.dm"
-	#include "../torch/job/engineering_jobs.dm"
-	#include "../torch/job/exploration_jobs.dm"
-	#include "../torch/job/medical_jobs.dm"
-	#include "../torch/job/misc_jobs.dm"
-	#include "../torch/job/research_jobs.dm"
-	#include "../torch/job/security_jobs.dm"
-	#include "../torch/job/service_jobs.dm"
-	#include "../torch/job/supply_jobs.dm"
+
+	#include "job/command_jobs.dm"
+	#include "job/corporate_jobs.dm"
+	#include "job/engineering_jobs.dm"
+	#include "job/exploration_jobs.dm"
+	#include "job/medical_jobs.dm"
+	#include "job/misc_jobs.dm"
+	#include "job/research_jobs.dm"
+	#include "job/security_jobs.dm"
+	#include "job/service_jobs.dm"
+	#include "job/supply_jobs.dm"
 
 	#include "../torch/outfits/scgec.dm"
 	#include "../torch/robot/module_flying_surveyor.dm"
@@ -136,6 +136,11 @@
 	#include "../torch/job/outfits/security_outfits.dm"
 	#include "../torch/job/outfits/service_outfits.dm"
 	#include "../torch/job/outfits/supply_outfits.dm"
+
+	// --- JOBS ADDITION --- //
+	#include "job/addition/exploration_jobs.dm"
+	#include "job/addition/research_jobs.dm"
+	#include "job/addition/service_jobs.dm"
 
 	// --- MACHINERY --- //
 	#include "../torch/machinery/apc_shuttle.dm"
