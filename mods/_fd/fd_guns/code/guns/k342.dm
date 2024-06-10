@@ -106,12 +106,12 @@
 /obj/item/gun/energy/k342
 	name = "plasma rifle"
 	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of charges: stunning, incendiary and lethal."
-	icon = 'mods/_fd/fd_assets/icons/obj/k342.dmi'
+	icon = 'mods/_fd/fd_guns/icons/k342.dmi'
 	w_class = ITEM_SIZE_LARGE
 	item_icons = list(
-		slot_l_hand_str = 'mods/_fd/fd_assets/icons/onmob/lefthand-guns.dmi',
-		slot_r_hand_str = 'mods/_fd/fd_assets/icons/onmob/righthand-guns.dmi',
-		slot_back_str = 'mods/_fd/fd_assets/icons/onmob/back-guns.dmi'
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/lefthand-guns.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/righthand-guns.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/back-guns.dmi'
 		)
 	slot_flags = SLOT_BACK|SLOT_BELT
 	icon_state = "barrakuda_off"
@@ -154,7 +154,7 @@
 /obj/item/gun/energy/k342/sniper
 	name = "plasma sniper rifle"
 	desc = "K480 Skat is the latest heavy plasma weapon created by NanoTrasen for SolGov snipers, capable to fire several types of charges: stunning, incendiary, and lethal bolts. Advanced magnetic constriction technology improves accuracy and firepower."
-	icon = 'mods/_fd/fd_assets/icons/obj/k480.dmi'
+	icon = 'mods/_fd/fd_guns/icons/k480.dmi'
 	icon_state = "mantis_off"
 	item_state = "mantis"
 	w_class = ITEM_SIZE_LARGE
