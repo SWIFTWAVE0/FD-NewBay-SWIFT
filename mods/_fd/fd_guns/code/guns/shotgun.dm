@@ -7,6 +7,11 @@
 	icon_state = "shotgun3"
 	item_state = "shotgun3"
 	wielded_item_state = "shotgun3"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	max_shells = 11
 	ammo_type = /obj/item/ammo_casing/shotgun
@@ -19,6 +24,11 @@
 	icon_state = "shotgun4"
 	item_state = "shotgun4"
 	wielded_item_state = "shotgun4"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/shotgun/scg
 	allowed_magazines = /obj/item/ammo_magazine/shotgun/scg
@@ -44,6 +54,11 @@
 	icon_state = "gshotgun2"
 	item_state = "gshotgun2"
 	wielded_item_state = "gshotgun2"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/shotgun/iccgn
 	allowed_magazines = /obj/item/ammo_magazine/shotgun/iccgn

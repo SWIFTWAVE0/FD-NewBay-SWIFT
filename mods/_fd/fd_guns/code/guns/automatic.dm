@@ -8,6 +8,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "automat4"
 	item_state = "automat4"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	caliber = CALIBER_RIFLE
@@ -40,6 +45,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "automat3"
 	item_state = "automat3"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	caliber = CALIBER_RIFLE_MILITARY
@@ -75,6 +85,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "smg5"
 	item_state = "smg5"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	w_class = ITEM_SIZE_NORMAL
 	caliber = CALIBER_PISTOL
 	slot_flags = SLOT_BELT
@@ -104,6 +119,11 @@
 	icon_state = "smg6"
 	item_state = "smg6"
 	wielded_item_state = "smg6"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_back.dmi'
+		)
 	icon = 'mods/_fd/fd_guns/icons/bullupsmg_cpps.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	force = 6
@@ -145,6 +165,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gautomatic2"
 	item_state = "gautomatic2"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/rifle/iccgn
@@ -172,6 +197,11 @@
 	icon = 'mods/_fd/fd_guns/icons/precise_gkk.dmi'
 	icon_state = "gautomatic1"
 	item_state = "gautomatic1"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	caliber = CALIBER_RIFLE_MILITARY
@@ -206,6 +236,11 @@
 	icon = 'mods/_fd/fd_guns/icons/weapon_gkk_icon.dmi'
 	icon_state = "gsmg3"
 	item_state = "gsmg3"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	screen_shake = 1
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -255,6 +290,11 @@
 	desc = "Saudov's submachine gun (SSG-12) made for pilots and crew of armoured vehicles. The small size combines well with rapid suppressive fire.  "
 	icon_state = "gsmg4"
 	item_state = "gsmg4"
+	item_icons = list(
+		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_character.dmi',
+		slot_back_str = 'mods/_fd/fd_guns/icons/onmob/weapon_gkk_back.dmi'
+		)
 	w_class = ITEM_SIZE_NORMAL
 	caliber = CALIBER_PISTOL
 	slot_flags = SLOT_BELT

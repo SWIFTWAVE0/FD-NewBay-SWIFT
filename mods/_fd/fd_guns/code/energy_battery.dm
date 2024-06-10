@@ -43,7 +43,7 @@
 
 	if(new_overlay_state != overlay_state)
 		overlay_state = new_overlay_state
-		overlays.Cut()
+		CutOverlays()
 		if(overlay_state)
 			AddOverlays(image(icon, overlay_state))
 

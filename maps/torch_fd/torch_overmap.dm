@@ -152,3 +152,9 @@
 
 /datum/shuttle/autodock/overmap/exploration_shuttle
 	shuttle_area = list(/area/exploration_shuttle/cockpit, /area/exploration_shuttle/atmos, /area/exploration_shuttle/power, /area/exploration_shuttle/crew, /area/exploration_shuttle/cargo, /area/exploration_shuttle/airlock)
+
+// Override of Desc
+
+/obj/overmap/visitable/ship/torch
+//	desc = "A frankensteined HNS Mako-class corvette, broadcasting SCGEC codes and the designation \"SEV Torch, HSC-4-13-X\"."
+	desc = "A frankensteined HNS Mako-class corvette, modified into a frigate, broadcasting SCGEC codes and the designation \"SEV Torch, HSC-4-13-X\"."

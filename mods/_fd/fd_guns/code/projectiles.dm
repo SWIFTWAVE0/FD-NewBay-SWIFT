@@ -128,6 +128,7 @@
 /obj/item/projectile/bullet/lasbolt
 	name = "laser"
 	icon_state = "lasbolt"
+	icon = 'mods/_fd/fd_guns/icons/projectiles.dmi'
 	temperature = T0C + 350
 	fire_sound = 'mods/_fd/fd_guns/sounds/lasgun2.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
