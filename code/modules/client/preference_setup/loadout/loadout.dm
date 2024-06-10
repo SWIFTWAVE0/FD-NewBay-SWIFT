@@ -425,6 +425,27 @@ var/global/list/gear_datums = list()
 			to_chat(subject, SPAN_WARNING("Failed to find a valid organ to install \the [augment] into!"))
 			qdel(augment)
 			return
+//FD EDIT - IT'S HORRIBLE I KNOW RIGHT
+
+		var/occupied = subject.internal_organs_by_name[augment.organ_tag]
+		if (occupied)
+			to_chat(subject, SPAN_WARNING("You already have \an [occupied] installed there. Swithcing to other organ."))
+			var/obj/item/organ/external/parent2 = augment.get_valid_parent_organ(subject)
+			if (!parent2)
+				to_chat(subject, SPAN_WARNING("Failed to find a valid organ to install \the [augment] into!"))
+				qdel(augment)
+				return
+			var/surgery_step = GET_SINGLETON(/singleton/surgery_step/internal/replace_organ)
+			if (augment.surgery_configure(subject, subject, parent2, null, surgery_step))
+				to_chat(subject, SPAN_WARNING("Failed to set up \the [augment] for installation in your [parent2.name]!"))
+				qdel(augment)
+				return
+			augment.forceMove(subject)
+			augment.replaced(subject, parent2)
+			augment.onRoundstart()
+			return
+
+//FD EDIT - IT'S HORRIBLE I KNOW RIGHT
 		var/surgery_step = GET_SINGLETON(/singleton/surgery_step/internal/replace_organ)
 		if (augment.surgery_configure(subject, subject, parent, null, surgery_step))
 			to_chat(subject, SPAN_WARNING("Failed to set up \the [augment] for installation in your [parent.name]!"))
