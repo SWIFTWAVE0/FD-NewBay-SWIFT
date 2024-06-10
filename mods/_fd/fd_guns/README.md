@@ -40,7 +40,16 @@ ID мода: FD_GUNS
 
 ### Оверрайды
 
-- `/obj/item/gun/energy`: `var/battery_changable`, `proc/Initialize`, `proc/MouseDrop`, `proc/use_tool`
+- `mods/_fd/fd_guns/code/energy_battery.dm`
+  - `/obj/item/gun/energy`: `var/battery_changable`, `proc/Initialize`, `proc/MouseDrop`, `proc/use_tool`
+
+- `mods/_fd/fd_guns/code/belt.dm`
+  - `/obj/item/storage/belt/security`: `proc/New()`
+  - `/obj/item/storage/belt/holster`: `proc/New()`, `proc/on_update_icon()`
+  - `/obj/item/storage/belt/holster/forensic`: `proc/New()`
+  - `/obj/item/storage/belt/holster/security`: `proc/New()`
+  - `/obj/item/storage/belt/holster/general` : `proc/New()`
+  - `/obj/item/storage/belt/holster/machete` : `proc/New()`
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
@@ -50,7 +59,7 @@ ID мода: FD_GUNS
 
 ### Дефайны
 
-- Отсутствуют
+- `BELT_OVERLAY_HOLSTER_FD` - `3`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
