@@ -7,6 +7,9 @@
 	item_state = "rig0-ftu"
 	icon = 'mods/_fd/fd_assets/icons/obj/clothing_head.dmi'
 	icon_override = 'mods/_fd/fd_assets/icons/onmob/clothing_head.dmi'
+	item_icons = list(
+		slot_head_str = 'mods/_fd/fd_assets/icons/onmob/clothing_head.dmi'
+	)
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -22,6 +25,9 @@
 	icon_state = "rig-ftu"
 	icon = 'mods/_fd/fd_assets/icons/obj/clothing_suit.dmi'
 	name = "old-ass green voidsuit"
+	item_icons = list(
+		slot_wear_suit_str = 'mods/_fd/fd_assets/icons/onmob/clothing_suit.dmi'
+	)
 	desc = "Old space suit model, designed for work in dangerous environment, where you will get hit with different things"
 	item_state_slots = list(
 		slot_l_hand_str = "syndicate-green-dark",
