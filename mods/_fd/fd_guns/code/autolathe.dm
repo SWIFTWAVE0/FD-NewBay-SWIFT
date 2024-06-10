@@ -56,11 +56,11 @@
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_smgspecial
 	name = "ammunition (specops smg magazine)"
-	path = /obj/item/ammo_magazine/smg/special
+	path = /obj/item/ammo_magazine/smg/special/scg
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_smgspecial/rubber
 	name = "ammunition (specops smg magazine, rubber)"
-	path = /obj/item/ammo_magazine/smg/special/rubber
+	path = /obj/item/ammo_magazine/smg/special/scg/rubber
 
 //
 
