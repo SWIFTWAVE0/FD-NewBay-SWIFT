@@ -48,7 +48,7 @@
 
 	return melee_strike
 
-/obj/item/pre_use_item(obj/item/tool, mob/living/user, click_params)
+/obj/item/use_before(atom/target, mob/living/user, click_parameters)
 	if(!isnull(melee_strike) && !user.skill_check(SKILL_COMBAT, SKILL_EXPERIENCED) && prob(src.fail_chance))
 		user.drop_from_inventory(src)
 		to_chat(user,"<span class = 'danger'>[user] пытается провернуть особую атаку, но [src] неуклюже валится из рук!</span>")
