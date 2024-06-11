@@ -163,3 +163,11 @@
 /obj/item/towel/equipped(M, slot)
 	..()
 	sprite_sheets = list(SPECIES_RESOMI = (slot == slot_head ? 'mods/resomi_fd/icons/clothing/onmob_head_resomi.dmi' : 'mods/resomi_fd/icons/clothing/onmob_suit_resomi.dmi'))
+
+/obj/item/clothing/under/solgov/utility/expeditionary/Initialize()
+	. = ..()
+	LAZYSET(sprite_sheets, SPECIES_RESOMI, 'mods/resomi_fd/icons/clothing/solgov/onmob_under_resomi.dmi')
+
+/obj/item/clothing/accessory/solgov/department/Initialize()
+	. = ..()
+	LAZYSET(sprite_sheets, SPECIES_RESOMI, 'mods/resomi_fd/icons/clothing/solgov/onmob_accessories_resomi.dmi')
