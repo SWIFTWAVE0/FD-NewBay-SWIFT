@@ -1,4 +1,16 @@
+#define CULTURE_HUMAN_MARTIAN_FD        "Martian, Surfacer"
+#define CULTURE_HUMAN_MARSTUN_FD        "Martian, Tunneller"
+#define CULTURE_HUMAN_LUNAPOOR_FD       "Luna, Lower Class"
+#define CULTURE_HUMAN_LUNARICH_FD       "Luna, Upper Class"
+#define CULTURE_HUMAN_VENUSIAN_FD       "Venusian, Zoner"
+#define CULTURE_HUMAN_BELTER_FD         "Belter, Ceres"
+#define CULTURE_HUMAN_PLUTO_FD          "Plutonian"
 
+#define HOME_SYSTEM_LUNA_FD       "Luna"
+#define HOME_SYSTEM_MARS_FD       "Mars"
+#define HOME_SYSTEM_VENUS_FD      "Venus"
+#define HOME_SYSTEM_CERES_FD      "Ceres"
+#define HOME_SYSTEM_PLUTO_FD      "Pluto"
 
 /datum/species/resomi
 	name = SPECIES_RESOMI
@@ -41,7 +53,7 @@
 	burn_mod =  1.35
 	metabolism_mod = 2.0
 	mob_size = MOB_SMALL
-	holder_type = /obj/item/holder
+	holder_type = /obj/item/holder/human
 	light_sensitive = 6
 	gluttonous = GLUT_TINY
 	blood_volume = 280
@@ -65,8 +77,7 @@
 	heat_discomfort_level = 292
 	heat_discomfort_strings = list(
 		"Вашу кожу покалывает от жары.",
-		"Вам жарко.",
-		)
+		"Вам жарко.")
 	cold_discomfort_level = 200
 	cold_discomfort_strings = list(
 		"Вы не чувствуете своих лап из-за холода.",
@@ -116,6 +127,13 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
+			CULTURE_HUMAN_LUNAPOOR_FD,
+			CULTURE_HUMAN_LUNARICH_FD,
+			CULTURE_HUMAN_VENUSIAN_FD,
+			CULTURE_HUMAN_MARTIAN_FD,
+			CULTURE_HUMAN_MARSTUN_FD,
+			CULTURE_HUMAN_PLUTO_FD,
+			CULTURE_HUMAN_BELTER_FD,
 			CULTURE_RESOMI_TEMALI,
 			CULTURE_RESOMI_SHAYAMI,
 			CULTURE_RESOMI_SHOSHONI,
@@ -126,16 +144,25 @@
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_RESOMI_ALISH,
+			HOME_SYSTEM_LUNA_FD,
+			HOME_SYSTEM_VENUS_FD,
+			HOME_SYSTEM_MARS_FD,
+			HOME_SYSTEM_PLUTO_FD,
+			HOME_SYSTEM_CERES_FD,
 			HOME_SYSTEM_OTHER
 		),
 		TAG_FACTION = list(
 			FACTION_RESOMI_URE,
 			FACTION_RESOMI_CONCORD,
 			FACTION_RESOMI_INDEPENDENT,
+			FACTION_FREETRADE,
+			FACTION_XYNERGY,
 			FACTION_EXPEDITIONARY,
+			FACTION_CORPORATE,
+			FACTION_MAJOR_BILL,
 			FACTION_OTHER
 		),
-		TAG_RELIGION = list(
+		TAG_RELIGION =  list(
 			RELIGION_OTHER
 		)
 	)
@@ -165,6 +192,19 @@
 		/singleton/emote/audible/rustle/resomi,
 		/singleton/emote/audible/trill/resomi,
 		/singleton/emote/audible/warble/resomi,
-		/singleton/emote/audible/wurble/resomi,
-
+		/singleton/emote/audible/wurble/resomi
 		)
+
+#undef CULTURE_HUMAN_MARTIAN_FD
+#undef CULTURE_HUMAN_MARSTUN_FD
+#undef CULTURE_HUMAN_LUNAPOOR_FD
+#undef CULTURE_HUMAN_LUNARICH_FD
+#undef CULTURE_HUMAN_VENUSIAN_FD
+#undef CULTURE_HUMAN_BELTER_FD
+#undef CULTURE_HUMAN_PLUTO_FD
+
+#undef HOME_SYSTEM_LUNA_FD
+#undef HOME_SYSTEM_MARS_FD
+#undef HOME_SYSTEM_VENUS_FD
+#undef HOME_SYSTEM_CERES_FD
+#undef HOME_SYSTEM_PLUTO_FD
