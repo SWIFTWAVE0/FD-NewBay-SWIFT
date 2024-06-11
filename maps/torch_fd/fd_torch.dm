@@ -165,6 +165,7 @@
 
 	// --- LOADOUT --- //
 	#include "loadout/_defines.dm"
+	#include "loadout/augments.dm"
 	#include "../torch/loadout/loadout_accessories.dm"
 	#include "../torch/loadout/loadout_ec_skillbadges.dm"
 	#include "../torch/loadout/loadout_eyes.dm"
