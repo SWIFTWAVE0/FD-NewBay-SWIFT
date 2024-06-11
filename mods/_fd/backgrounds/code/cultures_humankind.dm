@@ -55,7 +55,10 @@
 														CULTURE_HUMAN_CONFEDO, \
 														CULTURE_HUMAN_GAIAN, \
 														CULTURE_HUMAN_OTHER, \
-														CULTURE_HUMAN_NYXIAN)
+														CULTURE_HUMAN_NYXIAN, \
+														CULTURE_HUMAN_KUIPERI, \
+														CULTURE_HUMAN_KUIPERO, \
+														CULTURE_HUMAN_MAGNITKA)
 #define HUMAN_CULTURES_TO_ADD						list(CULTURE_HUMAN_KIPERIUSMINER, \
 														CULTURE_HUMAN_KIPERIUSPRISONER, \
 														CULTURE_HUMAN_MEOT, \
