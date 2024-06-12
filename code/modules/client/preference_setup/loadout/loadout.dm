@@ -421,10 +421,24 @@ var/global/list/gear_datums = list()
 	if (istype(item, /obj/item/organ/internal/augment))
 		var/obj/item/organ/internal/augment/augment = item
 		var/obj/item/organ/external/parent = augment.get_valid_parent_organ(subject)
+
 		if (!parent)
 			to_chat(subject, SPAN_WARNING("Failed to find a valid organ to install \the [augment] into!"))
 			qdel(augment)
 			return
+
+		var/list/arms_hands = BP_ARMS_HANDS
+		for(var/i in 1 to arms_hands.len)
+			if(parent != subject.get_organ(arms_hands[i]))
+				continue
+			var/occupied = locate(/obj/item/organ/internal/augment) in parent.internal_organs
+			if(!occupied)
+				continue
+			var/switched_zone = arms_hands[i + (IsMultiple(i, 2) ? -1 : 1)]
+			log_and_message_admins("[augment] can't be installed in [parent], because there is something already! Switching to [parse_zone(switched_zone)]!")
+			parent = subject.get_organ(switched_zone)
+			break
+
 		var/surgery_step = GET_SINGLETON(/singleton/surgery_step/internal/replace_organ)
 		if (augment.surgery_configure(subject, subject, parent, null, surgery_step))
 			to_chat(subject, SPAN_WARNING("Failed to set up \the [augment] for installation in your [parent.name]!"))

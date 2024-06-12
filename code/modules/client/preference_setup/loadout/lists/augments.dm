@@ -1,8 +1,6 @@
 /datum/gear/augment
 	sort_category = "Augments"
 	category = /datum/gear/augment
-	cost = 2
-
 
 /datum/gear/augment/armor_minor
 	display_name = "Armor Augments (Minor)"
