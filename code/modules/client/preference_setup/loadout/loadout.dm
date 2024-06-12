@@ -427,29 +427,17 @@ var/global/list/gear_datums = list()
 			qdel(augment)
 			return
 
-		if (parent == subject.get_organ(BP_L_ARM))
+		var/list/arms_hands = BP_ARMS_HANDS
+		for(var/i in 1 to arms_hands.len)
+			if(parent != subject.get_organ(arms_hands[i]))
+				continue
 			var/occupied = locate(/obj/item/organ/internal/augment) in parent.internal_organs
-			if(occupied)
-				log_and_message_admins("[augment] can't be installed in [subject] [parent], because there is something already! Swithching to right arm!")
-				parent = subject.get_organ(BP_R_ARM)
-
-		if (parent == subject.get_organ(BP_R_ARM))
-			var/occupied = locate(/obj/item/organ/internal/augment) in parent.internal_organs
-			if(occupied)
-				log_and_message_admins("[augment] can't be installed in [subject] [parent], because there is something already! Swithching to left arm!")
-				parent = subject.get_organ(BP_L_ARM)
-
-		if (parent == subject.get_organ(BP_L_HAND))
-			var/occupied = locate(/obj/item/organ/internal/augment) in parent.internal_organs
-			if(occupied)
-				log_and_message_admins("[augment] can't be installed in [subject] [parent], because there is something already! Swithching to right hand!")
-				parent = subject.get_organ(BP_R_HAND)
-
-		if (parent == subject.get_organ(BP_R_HAND))
-			var/occupied = locate(/obj/item/organ/internal/augment) in parent.internal_organs
-			if(occupied)
-				log_and_message_admins("[augment] can't be installed in [subject] [parent], because there is something already! Swithching to left hand!")
-				parent = subject.get_organ(BP_L_HAND)
+			if(!occupied)
+				continue
+			var/switched_zone = arms_hands[i + (IsMultiple(i, 2) ? -1 : 1)]
+			log_and_message_admins("[augment] can't be installed in [parent], because there is something already! Switching to [parse_zone(switched_zone)]!")
+			parent = subject.get_organ(switched_zone)
+			break
 
 		var/surgery_step = GET_SINGLETON(/singleton/surgery_step/internal/replace_organ)
 		if (augment.surgery_configure(subject, subject, parent, null, surgery_step))
