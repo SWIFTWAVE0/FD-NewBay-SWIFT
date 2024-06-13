@@ -63,7 +63,7 @@
 	..()
 	var/list/options = list()
 	options["synapse interceptor"] = /obj/item/organ/internal/augment/boost/reflex
-	options["vision enhanced retinas"] = /obj/item/organ/internal/augment/active/enchanced_vision
+	options["vision enhanced retinas"] = /obj/item/organ/internal/augment/active/enhanced_vision
 	options["integrated h-eye-lighting module"] = /obj/item/organ/internal/augment/active/flash_eyes
 	options["integrated health HUD"] = /obj/item/organ/internal/augment/active/hud/health
 	options["integrated security HUD"] = /obj/item/organ/internal/augment/active/hud/security

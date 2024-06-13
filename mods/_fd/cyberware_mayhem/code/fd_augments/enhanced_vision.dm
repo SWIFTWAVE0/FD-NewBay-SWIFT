@@ -1,4 +1,4 @@
-/obj/item/organ/internal/augment/active/enchanced_vision/zoom(mob/user, tileoffset = 14,viewsize = 9)
+/obj/item/organ/internal/augment/active/enhanced_vision/zoom(mob/user, tileoffset = 14,viewsize = 9)
 	if(!user.client)
 		return
 	if(zoom)
@@ -49,7 +49,7 @@
 
 	user.visible_message("\The [user] peers through [zoomdevicename ? "the [zoomdevicename] of [src]" : "[src]"].")
 
-/obj/item/organ/internal/augment/active/enchanced_vision
+/obj/item/organ/internal/augment/active/enhanced_vision
 	name = "vision enhanced retinas"
 	desc = "Zeng Hu implants given to EMTs to assist with finding the injured. These eye implants allow one to see further and better than you normally could."
 	icon_state = "booster"
@@ -69,26 +69,30 @@
 	var/active = FALSE
 	var/debuffing = FALSE
 
-/obj/item/organ/internal/augment/active/enchanced_vision/Initialize()
+/obj/item/organ/internal/augment/active/enhanced_vision/Initialize()
 	. = ..()
-	id = "[/obj/item/organ/internal/augment/active/enchanced_vision]_[sequential_id(/obj/item/organ/internal/augment/active/enchanced_vision)]"
+	id = "[/obj/item/organ/internal/augment/active/enhanced_vision]_[sequential_id(/obj/item/organ/internal/augment/active/enhanced_vision)]"
 
-/obj/item/organ/internal/augment/active/enchanced_vision/activate()
+/obj/item/organ/internal/augment/active/enhanced_vision/activate()
 	. = ..()
-
-	zoom(owner, 7, 7)
-	owner.visible_message(
-		zoom ? "<b>[owner]</b>'s pupils narrow..." : "<b>[owner]</b>'s pupils return to normal.",
-		range = 3
-	)
 
 	if(active)
 		debuffing = FALSE
+		active = FALSE
+		unzoom()
 		for (var/datum/skill_buff/augment/D as anything in owner.fetch_buffs_of_type(buffpath, 0))
 			if (D.id != id)
 				continue
 			D.remove()
 			return
+
+	if(!active)
+		zoom(owner, 7, 7)
+		active = TRUE
+		owner.visible_message(
+			zoom ? "<b>[owner]</b>'s pupils narrow..." : "<b>[owner]</b>'s pupils return to normal.",
+			range = 3
+		)
 
 	if (length(buffs))
 		var/datum/skill_buff/augment/A
@@ -97,7 +101,7 @@
 			active = TRUE
 			A.id = id
 
-/obj/item/organ/internal/augment/active/enchanced_vision/proc/debuff()
+/obj/item/organ/internal/augment/active/enhanced_vision/proc/debuff()
 	if (!length(injury_debuffs))
 		return FALSE
 	for (var/datum/skill_buff/augment/D as anything in owner.fetch_buffs_of_type(buffpath, 0))
@@ -108,7 +112,7 @@
 		return TRUE
 	return FALSE
 
-/obj/item/organ/internal/augment/active/enchanced_vision/proc/buff()
+/obj/item/organ/internal/augment/active/enhanced_vision/proc/buff()
 	if (!length(buffs))
 		return FALSE
 	for (var/datum/skill_buff/augment/D as anything in owner.fetch_buffs_of_type(buffpath, 0))
@@ -119,7 +123,7 @@
 		return TRUE
 	return FALSE
 
-/obj/item/organ/internal/augment/active/enchanced_vision/Process()
+/obj/item/organ/internal/augment/active/enhanced_vision/Process()
 	..()
 	if (!owner)
 		return
@@ -128,6 +132,12 @@
 		if (!E)
 			return
 		E.damage += 5
+	if (!zoom)
+		debuffing = FALSE
+		for (var/datum/skill_buff/augment/D as anything in owner.fetch_buffs_of_type(buffpath, 0))
+			if (D.id != id)
+				continue
+			D.remove()
 	if (!debuffing)
 		if (is_broken())
 			debuff()
