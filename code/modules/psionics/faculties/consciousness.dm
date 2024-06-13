@@ -528,8 +528,8 @@
 			to_chat(user, SPAN_WARNING("Ты разделяешь своё подсознание на [amount] копий"))
 			for(var/i = 1 to amount)
 				var/mob/living/simple_animal/hostile/mirror_shade/MS = new(pick(get_adjacent_open_turfs(user)), user)
-				MS.appearance = user.appearance
-				MS.name = user.name
+				MS.CopyOverlays(user, TRUE)
+				MS.icon = null
 			return TRUE
 
 /obj/item/natural_weapon/punch/holo

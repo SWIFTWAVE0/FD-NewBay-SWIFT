@@ -277,7 +277,7 @@
 	name =             "Bullet Storm"
 	cost =             30
 	cooldown =         120
-	min_rank =         PSI_RANK_APPRENTICE
+	min_rank =         PSI_RANK_OPERANT
 	use_melee =        TRUE
 	use_description = "Выберите рот на красном интенте и нажмите в любое место около себя, чтобы создать рой псионических снарядов, летящих в разные стороны."
 	var/psi_shot = "Standart"
@@ -321,8 +321,6 @@
 				user.fragmentate(O, 30, 6, list(/obj/item/projectile/psi = 1))
 			if(PSI_RANK_OPERANT)
 				user.fragmentate(O, 20, 5, list(/obj/item/projectile/psi = 1))
-			if(PSI_RANK_APPRENTICE)
-				user.fragmentate(O, 10, 4, list(/obj/item/projectile/psi = 1))
 		return TRUE
 
 /mob/proc/fragmentate(turf/T=get_turf(src), fragment_number = 30, spreading_range = 5, list/fragtypes=list(/obj/item/projectile/))

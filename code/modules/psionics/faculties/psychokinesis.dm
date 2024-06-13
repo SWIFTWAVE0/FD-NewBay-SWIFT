@@ -15,7 +15,7 @@
 	cooldown =        15
 	use_ranged =      TRUE
 	use_manifest =    FALSE
-	min_rank =        PSI_RANK_GRANDMASTER
+	min_rank =        PSI_RANK_APPRENTICE
 	use_description = "Нажмите по отдалённом объекту или существу на жёлтом интенте с выбранной головой или телом, чтобы захватить его телекинезом."
 	admin_log = FALSE
 	use_sound = 'sound/effects/psi/power_used.ogg'
