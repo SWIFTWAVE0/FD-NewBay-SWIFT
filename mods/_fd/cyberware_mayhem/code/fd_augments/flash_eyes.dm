@@ -6,7 +6,7 @@
 	icon_state = "thermal"
 	default_action_type = /datum/action/item_action/organ/augment/fd
 	desc = "An pair of strong eye-lamps with focused beam of light."
-	augment_flags = AUGMENT_MECHANICAL
+	augment_flags = AUGMENT_BIOLOGICAL | AUGMENT_MECHANICAL
 	origin_tech = list(TECH_DATA = 2, TECH_BIO = 2)
 	var/lights_on = FALSE
 

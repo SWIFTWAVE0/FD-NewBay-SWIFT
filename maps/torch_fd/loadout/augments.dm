@@ -79,8 +79,8 @@
 /datum/gear/augment/r_arm/New()
 	..()
 	var/list/options = list()
+	options["embedded blade"] = /obj/item/organ/internal/augment/active/item/armblade
 	options["concealed wrist blade"] = /obj/item/organ/internal/augment/active/item/wrist_blade
-	options["wrist blade"] = /obj/item/material/armblade/wrist
 	options["integrated circuit frame"] = /obj/item/organ/internal/augment/active/item/circuit/fd
 	options["pop-out shotgun"] = /obj/item/organ/internal/augment/active/item/popout_shotgun
 	options["pneumatic power gauntlet"] = /obj/item/organ/internal/augment/active/item/powerfist
@@ -95,8 +95,8 @@
 /datum/gear/augment/l_arm/New()
 	..()
 	var/list/options = list()
+	options["embedded blade"] = /obj/item/organ/internal/augment/active/item/armblade
 	options["concealed wrist blade"] = /obj/item/organ/internal/augment/active/item/wrist_blade
-	options["wrist blade"] = /obj/item/material/armblade/wrist
 	options["integrated circuit frame"] = /obj/item/organ/internal/augment/active/item/circuit/fd
 	options["pop-out shotgun"] = /obj/item/organ/internal/augment/active/item/popout_shotgun
 	options["pneumatic power gauntlet"] = /obj/item/organ/internal/augment/active/item/powerfist
