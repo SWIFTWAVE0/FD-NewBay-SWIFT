@@ -43,13 +43,14 @@
 /obj/item/clothing/mask/gas/ascent
 	name = "mantid facemask"
 	desc = "An alien facemask with chunky gas filters and a breathing valve."
+	icon = 'mods/_fd/ascent/icons/clothing/obj_mask.dmi'
 	filter_water = TRUE
 	icon_state = "ascent_mask"
 	item_state = "ascent_mask"
 	sprite_sheets = list(
 		SPECIES_NABBER =       'icons/mob/species/nabber/onmob_mask_gas.dmi',
-		SPECIES_MANTID_GYNE =  'mods/_fd/ascent/icons/alate/onmob/onmob_mask_alate.dmi',
-		SPECIES_MANTID_ALATE = 'mods/_fd/ascent/icons/gyne/onmob/onmob_mask_gyne.dmi'
+		SPECIES_MANTID_GYNE =  'mods/_fd/ascent/icons/gyne/onmob/onmob_mask_gyne.dmi',
+		SPECIES_MANTID_ALATE = 'mods/_fd/ascent/icons/alate/onmob/onmob_mask_alate.dmi'
 	)
 	species_restricted = list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE)
 	filtered_gases = list(GAS_PHORON,GAS_N2O,GAS_CHLORINE,GAS_AMMONIA,GAS_CO,GAS_METHANE)
@@ -87,6 +88,7 @@
 	name = "mantid undersuit"
 	desc = "A ribbed, spongy undersuit of some sort. It has a big sleeve for a tail, so it probably isn't for humans."
 	species_restricted = list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE)
+	icon = 'mods/_fd/ascent/icons/clothing/obj_under.dmi'
 	icon_state = "ascent"
 	worn_state = "ascent"
 	color = COLOR_DARK_GUNMETAL
@@ -99,7 +101,7 @@
 	name = "mantid gear harness"
 	desc = "A complex tangle of articulated cables and straps."
 	species_restricted = ALL_ASCENT_SPECIES
-	icon_state = "ascent_harness"
+	icon_state = "gear_harness"
 	body_parts_covered = 0
 	slot_flags = SLOT_OCLOTHING | SLOT_BELT
 	sprite_sheets = list(
