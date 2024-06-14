@@ -141,6 +141,7 @@
 	#include "job/addition/exploration_jobs.dm"
 	#include "job/addition/research_jobs.dm"
 	#include "job/addition/service_jobs.dm"
+	#include "job/addition/security.dm"
 
 	// --- MACHINERY --- //
 	#include "../torch/machinery/apc_shuttle.dm"
@@ -155,7 +156,7 @@
 	#include "../torch/structures/closets/medical.dm"
 	#include "../torch/structures/closets/misc.dm"
 	#include "../torch/structures/closets/research.dm"
-	#include "../torch/structures/closets/security.dm"
+//	#include "../torch/structures/closets/security.dm"
 	#include "../torch/structures/closets/services.dm"
 	#include "../torch/structures/closets/supply.dm"
 	#include "../torch/structures/closets/exploration.dm"
@@ -289,7 +290,7 @@
 		// ~EXOPLANET RUINS~ //
 
 	#include "../random_ruins/exoplanet_ruins/small_ruins/build_ruin.dm"
-	#include "../random_ruins\exoplanet_ruins\remains\remains.dm"
+	#include "../random_ruins/exoplanet_ruins/remains/remains.dm"
 	#include "../random_ruins/exoplanet_ruins/scg_city_restored/scg_city_restored.dm"
 	#include "../random_ruins/exoplanet_ruins/scg_ruined_city/scg_ruined_city.dm"
 	#include "../random_ruins/exoplanet_ruins/railway/railway.dm"
