@@ -1,6 +1,7 @@
 /obj/item/clothing/head/helmet/space/void/ascent
 	name = "\improper Ascent voidsuit helmet"
 	desc = "An articulated spacesuit helmet of mantid manufacture."
+	icon = 'mods/_fd/ascent/icons/clothing/obj_head.dmi'
 	icon_state = "ascent_general"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -18,6 +19,7 @@
 /obj/item/clothing/suit/space/void/ascent
 	name = "\improper Ascent voidsuit"
 	desc = "A form-fitting spacesuit of mantid manufacture."
+	icon = 'mods/_fd/ascent/icons/clothing/obj_suit.dmi'
 	icon_state = "kexosuit"
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
 	armor = list(

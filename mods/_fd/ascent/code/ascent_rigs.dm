@@ -338,6 +338,7 @@
 
 /obj/item/clothing/head/helmet/space/rig/mantid
 	light_color = "#00ffff"
+	icon = 'mods/_fd/ascent/icons/clothing/obj_head.dmi'
 	desc = "More like a torpedo casing than a helmet."
 	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER, SPECIES_MONARCH_QUEEN)
 	sprite_sheets = list(
@@ -350,6 +351,7 @@
 
 /obj/item/clothing/suit/space/rig/mantid
 	desc = "It's closer to a mech than a suit."
+	icon = 'mods/_fd/ascent/icons/clothing/obj_suit.dmi'
 	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =    'mods/_fd/ascent/icons/gyne/onmob/onmob_suit_gyne.dmi',
@@ -368,6 +370,7 @@
 
 /obj/item/clothing/shoes/magboots/rig/mantid
 	desc = "It's like a highly advanced forklift."
+	icon = 'mods/_fd/ascent/icons/clothing/obj_feet.dmi'
 	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =  'mods/_fd/ascent/icons/gyne/onmob/onmob_shoes_gyne.dmi',
@@ -376,6 +379,7 @@
 
 /obj/item/clothing/gloves/rig/mantid
 	desc = "They look like a cross between a can opener and a Swiss army knife the size of a shoebox."
+	icon = 'mods/_fd/ascent/icons/alate/onmob/onmob_gloves_alate.dmi'
 	siemens_coefficient = 0
 	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER, SPECIES_MONARCH_QUEEN)
 	sprite_sheets = list(
