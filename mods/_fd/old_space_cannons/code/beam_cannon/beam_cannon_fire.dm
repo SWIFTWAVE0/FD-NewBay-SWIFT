@@ -327,7 +327,7 @@
 			break
 		var/obj/effect/ion_beam = new /obj/projectile(T)
 		ion_beam.dir = d
-		ion_beam.icon = 'icons/effects/beam.dmi'
+		ion_beam.icon = 'mods/_fd/old_space_cannons/icons/beam.dmi'
 		ion_beam.icon_state = beam_icon
 		ion_beam.anchored = TRUE //иначе лазеры смешно улетают от взрывов
 		ion_beam.does_spin = FALSE // ^^^
