@@ -5,7 +5,7 @@
 	desc = "Lasgun series D-99 designed specifically for the Fleet. Known for its devastating power, almost unique for lasers."
 	icon = 'mods/_fd/fd_guns/icons/weapon_cpss_icon.dmi'
 	icon_state = "lascar"
-	item_state = "lascar"
+	item_state = "lasgun"
 	item_icons = list(
 		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/lasgun_lefthand.dmi',
 		slot_r_hand_str = 'mods/_fd/fd_guns/icons/onmob/weapon_cpss_character.dmi',
@@ -17,15 +17,20 @@
 	force = 15
 	screen_shake = 0
 	one_hand_penalty = 4
+	burst=3
+	fire_delay=2
+	move_delay=4
+	accuracy=2
+	charge_cost=200
 	battery_changable = TRUE
 	cell_type = /obj/item/cell/guncell/lasgun
 	bulk = GUN_BULK_RIFLE
-	projectile_type = /obj/item/projectile/bullet/lasbolt/lasgun
-	wielded_item_state = "laser-wielded"
+	projectile_type = /obj/item/projectile/lasbolt/lasgun
+	wielded_item_state = "lasgun-wielded"
 	firemodes = list(
-			list(mode_name="3-round bursts", burst=3, fire_delay=2, move_delay=4, accuracy=2, charge_cost=200, projectile_type = /obj/item/projectile/bullet/lasbolt),
-			list(mode_name = "semiauto", burst=1, fire_delay=2, move_delay=2, accuracy=3, charge_cost=200, projectile_type = /obj/item/projectile/bullet/lasbolt),
-			list(mode_name = "overcharge", burst=1, fire_delay=4, move_delay=6, accuracy=2, charge_cost=800, projectile_type = /obj/item/projectile/bullet/lasbolt/overcharge)
+			list(mode_name="3-round bursts", burst=3, fire_delay=2, move_delay=4, accuracy=2, charge_cost=200, projectile_type = /obj/item/projectile/lasbolt),
+			list(mode_name = "semiauto", burst=1, fire_delay=2, move_delay=2, accuracy=3, charge_cost=200, projectile_type = /obj/item/projectile/lasbolt),
+			list(mode_name = "overcharge", burst=1, fire_delay=4, move_delay=6, accuracy=2, charge_cost=800, projectile_type = /obj/item/projectile/lasbolt/overcharge)
 		)
 
 /obj/item/gun/energy/laser/lasgun/on_update_icon()
@@ -49,10 +54,13 @@
 	battery_changable = TRUE
 	cell_type = /obj/item/cell/guncell/lasgun
 	bulk = GUN_BULK_RIFLE - 4
-	projectile_type = /obj/item/projectile/bullet/lasbolt
+	charge_cost=100
+	fire_delay = 2
+	move_delay = null
+	projectile_type = /obj/item/projectile/lasbolt
 	firemodes = list(
-			list(mode_name = "semiauto", burst=1, fire_delay=2, move_delay=null, charge_cost=100, accuracy=3, projectile_type = /obj/item/projectile/bullet/lasbolt),
-			list(mode_name = "overcharge", burst=1, fire_delay=2, move_delay=3, accuracy=2, charge_cost=500, projectile_type = /obj/item/projectile/bullet/lasbolt/lasgun)
+			list(mode_name = "semiauto", burst=1, fire_delay=2, move_delay=null, charge_cost=100, accuracy=3, projectile_type = /obj/item/projectile/lasbolt),
+			list(mode_name = "overcharge", burst=1, fire_delay=2, move_delay=3, accuracy=2, charge_cost=500, projectile_type = /obj/item/projectile/lasbolt/lasgun)
 		)
 
 /obj/item/gun/energy/laser/laspistol/on_update_icon()

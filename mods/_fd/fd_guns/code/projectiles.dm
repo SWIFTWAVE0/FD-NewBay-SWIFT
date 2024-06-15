@@ -125,7 +125,7 @@
 
 // TECHNICALLY IT'S A LASER. But bullet...
 
-/obj/item/projectile/bullet/lasbolt
+/obj/item/projectile/lasbolt
 	name = "laser"
 	icon_state = "lasbolt"
 	icon = 'mods/_fd/fd_guns/icons/projectiles.dmi'
@@ -147,9 +147,21 @@
 	embed = 0
 	damage_type = DAMAGE_BURN
 	eyeblur = 4
-	muzzle_type = null
+	step_delay = 0.35
+	muzzle_type = /obj/projectile/lasbolt/muzzle
 
-/obj/item/projectile/bullet/lasbolt/lasgun
+	light_range = 5
+	light_power = 1
+	light_color = COLOR_RED_LIGHT
+
+/obj/projectile/lasbolt/muzzle
+	icon = 'mods/_fd/fd_guns/icons/projectiles.dmi'
+	icon_state = "muzzle_las"
+	light_range = 5
+	light_power = 1
+	light_color = COLOR_RED_LIGHT
+
+/obj/item/projectile/lasbolt/lasgun
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 450
@@ -157,7 +169,7 @@
 	damage = 40
 	armor_penetration = 20
 
-/obj/item/projectile/bullet/lasbolt/overcharge
+/obj/item/projectile/lasbolt/overcharge
 	name = "laser"
 	icon_state = "lasbolt"
 	temperature = T0C + 650
