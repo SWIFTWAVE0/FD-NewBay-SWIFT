@@ -22,7 +22,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/rifle/fleet
 	one_hand_penalty = 6
 	accuracy = 1
-	bulk = GUN_BULK_RIFLE + 1
+	bulk = GUN_BULK_LIGHT_RIFLE-1
 	wielded_item_state = "automat4"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
@@ -58,9 +58,9 @@
 	magazine_type = /obj/item/ammo_magazine/rifle/army
 	allowed_magazines = /obj/item/ammo_magazine/rifle/army
 	one_hand_penalty = 6
-	accuracy = 0
+	accuracy = 1
 	accuracy_power = 10
-	bulk = GUN_BULK_RIFLE + 3
+	bulk = GUN_BULK_RIFLE
 	wielded_item_state = "automat3"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
@@ -99,6 +99,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/smg/scg
 	accuracy = 1
 	one_hand_penalty = 3
+	bulk = 3
 
 	firemodes = list(
 		list(mode_name="fuller auto",       burst=1, can_autofire=1, fire_delay=1,    move_delay=null, one_hand_penalty=5, burst_accuracy=list(1,0,0,-1,-1,-1,-3,-3), dispersion=list(0, 0.5, 1.0, 1.5, 2, 3)),
@@ -177,7 +178,7 @@
 	accuracy = 1
 	one_hand_penalty = 4
 	caliber = CALIBER_RIFLE
-	bulk = GUN_BULK_RIFLE + 1
+	bulk = GUN_BULK_RIFLE-1
 	wielded_item_state = "gautomatic2"
 	firemodes = list(
 		list(mode_name = "semiauto", burst=1, fire_delay=0, move_delay=null, dispersion=list(0.6, 0.8, 1.0)),
@@ -209,7 +210,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/rifle/precise
 	accuracy = 3
 	one_hand_penalty = 7
-	bulk = GUN_BULK_RIFLE + 2
+	bulk = GUN_BULK_RIFLE
 	wielded_item_state = "gautomatic1"
 	firemodes = list(
 			list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=6, accuracy=1, dispersion=list(0.8, 1.0, 1.2)),
@@ -251,7 +252,7 @@
 	accuracy = 0
 	one_hand_penalty = 10
 	screen_shake = 3
-	bulk = GUN_BULK_RIFLE + 5
+	bulk = GUN_BULK_RIFLE + 2
 	wielded_item_state = "gsmg3"
 	firemodes = list(
 			list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=6, accuracy=-3, dispersion=list(3.0, 4.0, 5.0)),
@@ -304,6 +305,7 @@
 	one_hand_penalty = 4
 	accuracy = 1
 	wielded_item_state = "gsmg4"
+	bulk = 3
 	firemodes = list(
 		list(mode_name = "semiauto", burst=1, fire_delay=0, move_delay=null, dispersion=(1.0)),
 		list(mode_name = "3-round bursts", burst=3, fire_delay=null, move_delay=2, burst_accuracy=list(1,1, 0, 0), dispersion=list(1.4, 1.6, 1.8)),
