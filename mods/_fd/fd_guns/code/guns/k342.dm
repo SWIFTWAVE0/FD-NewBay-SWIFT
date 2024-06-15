@@ -1,5 +1,6 @@
 /obj/item/projectile/plasma
 	name = "plasma bolt"
+	icon = 'mods/_fd/fd_guns/icons/plasma/projectiles.dmi'
 	icon_state = "plasma_bolt"
 	fire_sound='mods/_fd/fd_assets/sounds/incinerate.ogg'
 	armor_penetration = 25
@@ -13,6 +14,7 @@
 /obj/projectile/plasma
 	light_color = COLOR_BLUE
 	layer = ABOVE_LIGHTING_LAYER
+	icon = 'mods/_fd/fd_guns/icons/plasma/projectiles.dmi'
 
 /obj/projectile/plasma/heavy
 	light_color = COLOR_RED
@@ -81,6 +83,7 @@
 	damage = 2
 	agony = 40
 	eyeblur = 1
+	color = COLOR_YELLOW
 	muzzle_type = /obj/projectile/plasma/stun/muzzle
 	impact_type = /obj/projectile/plasma/stun/impact
 
@@ -106,7 +109,7 @@
 /obj/item/gun/energy/k342
 	name = "plasma rifle"
 	desc = "K342 Barrakuda is the latest plasma weapon created by NanoTrasen. It can fire several types of charges: stunning, incendiary and lethal."
-	icon = 'mods/_fd/fd_guns/icons/k342.dmi'
+	icon = 'mods/_fd/fd_guns/icons/plasma/k342.dmi'
 	w_class = ITEM_SIZE_LARGE
 	item_icons = list(
 		slot_l_hand_str = 'mods/_fd/fd_guns/icons/onmob/lefthand-guns.dmi',
@@ -122,6 +125,8 @@
 	authorized_modes = list(ALWAYS_AUTHORIZED)
 	screen_shake = 0
 	cell_type = /obj/item/cell/guncell
+	charge_cost = 20
+	projectile_type = /obj/item/projectile/plasma/stun
 	battery_changable = TRUE
 	firemodes = list(
 		list(mode_name="stun charge", projectile_type=/obj/item/projectile/plasma/stun, charge_cost=20, fire_delay=4, projectile_color=COLOR_YELLOW),
@@ -154,7 +159,7 @@
 /obj/item/gun/energy/k342/sniper
 	name = "plasma sniper rifle"
 	desc = "K480 Skat is the latest heavy plasma weapon created by NanoTrasen for SolGov snipers, capable to fire several types of charges: stunning, incendiary, and lethal bolts. Advanced magnetic constriction technology improves accuracy and firepower."
-	icon = 'mods/_fd/fd_guns/icons/k480.dmi'
+	icon = 'mods/_fd/fd_guns/icons/plasma/k480.dmi'
 	icon_state = "mantis_off"
 	item_state = "mantis"
 	w_class = ITEM_SIZE_LARGE
