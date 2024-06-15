@@ -52,4 +52,7 @@
 #include "code/skills.dm"
 #include "code/~TO_MAKE.dm"
 
+#include "customs/kanaris/item.dm"
+#include "customs/kanaris/weapon.dm"
+
 #endif
