@@ -168,9 +168,39 @@
 		active_timer = addtimer(new Callback(src, PROC_REF(clear_target)), 1 MINUTE, TIMER_UNIQUE | TIMER_OVERRIDE | TIMER_STOPPABLE)
 
 
-/obj/machinery/computer/teleporter/proc/get_targets()
+// [FD-EDIT]
+// /obj/machinery/computer/teleporter/proc/get_targets()
+/obj/machinery/computer/teleporter/proc/get_targets(mob/user)
+// [/FD-EDIT]
 	var/list/ids = list()
 	var/list/result = list()
+
+// [FD-ADD]
+// some risky space-boarding stuff
+	var/obj/overmap/visitable/linked = map_sectors["[z]"]
+	for (var/obj/overmap/visitable/S in view(2,linked))
+		if (QDELETED(S) || S == linked || S.z != 12 || istype(S,/obj/overmap/visitable/sector/merc_base))
+			continue
+
+		var/actual_spread = world.maxx / 8
+
+		var/obj/overmap/visitable/ship/target_ship = target
+		if(istype(target_ship, /obj/overmap/visitable/ship))
+			actual_spread = target_ship.get_speed() <= SHIP_SPEED_SLOW ? (target_ship.get_helm_skill()+1)/2 : 1 * (world.maxx/8) / user ? (user.get_skill_value(SKILL_DEVICES)+1)/2 : 1
+
+		if(istype(target, /obj/overmap/visitable/sector/exoplanet))
+			actual_spread = world.maxx / 2 - 8
+
+		var/teleport_x = floor(world.maxx / 2) + round( rand(-actual_spread, actual_spread) )
+		var/teleport_y = floor(world.maxy / 2) + round( rand(-actual_spread, actual_spread) )
+
+		var/turf/T = locate(teleport_x, teleport_y, pick(S.map_z))
+		var/bearing = round(90 - Atan2(S.x - linked.x, S.y - linked.y),5)
+
+		result["TLOC - [S.name] [get_dist(linked,S) > 0 ? "\[Bearing: [bearing]\]" : "\[NEAR\]" ]"] = T
+
+// boring beacons- WUH, YOU CAN LOCK ON TRACKING IMPLANTS??
+// [/FD-ADD]
 	for (var/obj/machinery/tele_beacon/B)
 		if (QDELETED(B) || !B.functioning() || !isPlayerLevel(B.z))
 			continue
