@@ -282,6 +282,7 @@
 	#include "../../mods/_fd/_maps/lighthouse/_lighthouse.dme"
 	#include "../../mods/_fd/_maps/new_blueriver/_new_blueriver.dme"
 	#include "../../mods/_fd/_maps/providence/_providence.dme"
+	#include "../../mods/_fd/_maps/small_exoplanet_1/_small_exoplanet_1.dme"
 	#include "../../mods/_fd/_maps/smugglers_ship/_smugglers_ship.dme"
 	#include "../../mods/_fd/_maps/snow_cage/_snow_cage.dme"
 	#include "../../mods/_fd/_maps/trader_ship/_trader_ship.dme"
