@@ -6,6 +6,8 @@
 #include "code/visual_filters.dm"
 
 #include "code/assets.dm"
+#include "code/core.dm"
 #include "code/lovecraft.dm"
+#include "code/turfs.dm"
 
 #endif

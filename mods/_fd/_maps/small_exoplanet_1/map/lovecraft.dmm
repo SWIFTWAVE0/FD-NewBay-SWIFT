@@ -1,354 +1,446 @@
-"a" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/below_level)
-"b" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
-"c" = (/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
-"d" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-157"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"e" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-203"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"f" = (/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"g" = (/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
-"i" = (/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"j" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 4},/turf/simulated/open/water,/area/lovecraft/main_level)
-"k" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
-"l" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-255"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"m" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/brick,/turf/simulated/open/water,/area/lovecraft/main_level)
-"n" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-21"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"o" = (/obj/overmap/visitable/sector/lovecraft,/obj/landmark/map_data{height = 3},/turf/unsimulated/wall{color = "black"},/area/lovecraft/upper_level)
-"p" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-38"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"q" = (/obj/structure/fake_water,/turf/simulated/open/water,/area/lovecraft/main_level)
-"r" = (/obj/structure/fd/grim_walls/brick,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"s" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/upper_level)
-"t" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
-"u" = (/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
-"v" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-127"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"w" = (/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
-"y" = (/turf/simulated/ocean/grim_windswept,/area/lovecraft/below_level)
-"z" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-137"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"A" = (/turf/simulated/open,/area/lovecraft/upper_level)
-"B" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"C" = (/obj/structure/fd/grim_lamp_double{pixel_x = -30; pixel_y = 5},/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"E" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/turf/simulated/open/water,/area/lovecraft/main_level)
-"F" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
-"G" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-55"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"H" = (/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
-"I" = (/obj/structure/fd/grim_lamp{pixel_y = -9},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"J" = (/obj/structure/fd/grim_lamp{dir = 1},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"K" = (/turf/simulated/open/water,/area/lovecraft/main_level)
-"L" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"M" = (/turf/simulated/floor/exoplanet/brick_road,/area/lovecraft/main_level)
-"N" = (/obj/structure/fd/grim_lamp{dir = 1; pixel_y = -9},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"O" = (/obj/structure/flora/tree/grim/brown,/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
-"P" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/main_level)
-"Q" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-191"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"R" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"S" = (/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
-"T" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-223"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
-"U" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"V" = (/obj/structure/fd/grim_lamp,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
-"W" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
-"X" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
+"aN" = (/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"bb" = (/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black,/obj/structure/fd/grim_lamp_double{pixel_x = -30; pixel_y = 11},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"bH" = (/obj/structure/fd/grim_lamp,/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"bZ" = (/obj/floor_decal/spline/fancy/black/corner{dir = 1},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"cA" = (/obj/floor_decal/spline/fancy/black{dir = 1},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"cF" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/brick,/turf/simulated/open/water,/area/lovecraft/main_level)
+"eG" = (/obj/structure/stairs/east,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"eK" = (/obj/structure/fake_water,/obj/structure/railing/mapped,/turf/simulated/open/water,/area/lovecraft/main_level)
+"eT" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-74-d"},/turf/simulated/open,/area/lovecraft/upper_level)
+"fe" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/moss,/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"fr" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"fu" = (/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"gq" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-74-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"gu" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"gU" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"gW" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/turf/simulated/open/water,/area/lovecraft/main_level)
+"hk" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-21"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"hm" = (/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
+"ii" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-8"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"io" = (/obj/structure/fd/grim_lamp{pixel_y = -9},/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"iI" = (/obj/structure/railing/mapped{dir = 1; icon_state = "railing0-1"},/obj/structure/railing/mapped{dir = 4},/turf/simulated/open,/area/lovecraft/upper_level)
+"iU" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-12"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"jq" = (/obj/structure/moss{icon_state = "moss"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"jy" = (/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
+"kc" = (/obj/floor_decal/spline/fancy/black/corner{dir = 1},/obj/floor_decal/spline/fancy/black/corner{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"kp" = (/obj/structure/railing/mapped{dir = 1; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
+"ku" = (/turf/simulated/open,/area/lovecraft/upper_level)
+"ld" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-3"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"lu" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"lx" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east3"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"ma" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8},/obj/floor_decal/spline/fancy/black{dir = 10},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"mt" = (/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black{dir = 10},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"ng" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-55"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"oe" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"oi" = (/obj/floor_decal{color = "grey"; dir = 1; icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'; icon_state = "stairs_6"},/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
+"os" = (/obj/floor_decal/spline/fancy/black{dir = 9},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"ov" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-13"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"ox" = (/obj/floor_decal/spline/fancy/black{dir = 5},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"pf" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"pI" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_edge"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"pV" = (/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"qg" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/below_level)
+"qq" = (/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"ri" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/upper_level)
+"ro" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"rx" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-203"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"rG" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-74"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"sk" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"sF" = (/obj/floor_decal/spline/fancy/black{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"ui" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-255"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"uR" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-2"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"vg" = (/obj/overmap/visitable/sector/lovecraft,/obj/landmark/map_data{height = 3},/turf/unsimulated/wall{color = "black"},/area/lovecraft/upper_level)
+"vw" = (/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
+"wp" = (/obj/structure/fd/grim_walls/metal,/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"wT" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
+"xf" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-110"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"xp" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"xJ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_east1"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"yn" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"yy" = (/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"zG" = (/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
+"zM" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"As" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-191"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"Av" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/obj/structure/moss{icon_state = "moss_east1"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Bg" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 4},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Br" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black{dir = 6},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"BD" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-38"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"BJ" = (/turf/simulated/ocean/grim_windswept,/area/lovecraft/below_level)
+"BM" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Ct" = (/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"CH" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_north"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"CN" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10-d"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"CP" = (/obj/structure/fake_water,/turf/simulated/open/water,/area/lovecraft/main_level)
+"Dp" = (/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"DF" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
+"DJ" = (/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"Ev" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
+"EG" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"EW" = (/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
+"Fb" = (/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"Gr" = (/obj/structure/stairs/east,/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"Gs" = (/obj/structure/railing/mapped,/turf/simulated/open,/area/lovecraft/upper_level)
+"Gt" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"GJ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"GK" = (/obj/structure/railing/mapped{dir = 8},/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Hb" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Hw" = (/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"Hz" = (/obj/structure/stairs/north,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"HV" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-38-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"Iy" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"IM" = (/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
+"IS" = (/obj/structure/moss{icon_state = "moss_east1"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"Jg" = (/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"Ji" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-127"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"Jr" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"JB" = (/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"JI" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-3"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"JK" = (/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Kc" = (/obj/floor_decal/spline/fancy/black/corner{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Lb" = (/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"LU" = (/obj/floor_decal/spline/fancy/black{dir = 4},/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Nk" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"No" = (/obj/structure/fake_water,/obj/structure/moss,/turf/simulated/open/water,/area/lovecraft/main_level)
+"NQ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Oi" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"Om" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-255"},/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-223"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"OK" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Pb" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"Pu" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
+"Qe" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"QB" = (/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"Ri" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-157"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"RC" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/main_level)
+"Tg" = (/obj/structure/fd/grim_lamp_double{pixel_x = -30; pixel_y = 11},/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Tj" = (/obj/structure/flora/tree/grim/brown,/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"TC" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
+"TU" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 4},/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"TY" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Ur" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-38-d"},/turf/simulated/open,/area/lovecraft/upper_level)
+"UL" = (/obj/structure/fd/grim_walls/brick,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Vf" = (/obj/structure/fd/grim_lamp{dir = 1; pixel_y = -9},/obj/floor_decal/spline/fancy/black{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"VA" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-223"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"VL" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"VX" = (/obj/floor_decal/spline/fancy/black{dir = 5},/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"WK" = (/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"WS" = (/obj/structure/fd/grim_lamp{dir = 1},/obj/floor_decal/spline/fancy/black{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"WZ" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-239"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"Xh" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-7"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"XB" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"XI" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
+"XO" = (/obj/floor_decal/spline/fancy/black{dir = 6},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"XR" = (/obj/structure/moss,/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"Ym" = (/turf/simulated/floor/exoplanet/brick_road,/area/lovecraft/main_level)
+"Yn" = (/obj/floor_decal/spline/fancy/black/corner,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"YF" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-137"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"YJ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"YO" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Zi" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-12"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"ZZ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_east3"},/turf/simulated/open/water,/area/lovecraft/main_level)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-allllllllllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-allllllllllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-alTddddQlllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aleyyyynQllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aTzyyiyyGllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-azyyyiiyGllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyyiiiyndQliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyyiiiyyyGliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyyiiiiypvliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayiiiiiiynQliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiyGliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiyyiiiyyGliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiyiiiyypvliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayiiiiyypvlliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyiiiyyGllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyiiiyyGllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyyiiiyGllliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyyiiiynQlliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-ayyiiiiyynQlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllla
-ayiiiiiiyyGlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllla
-ayiiiiiiiyGlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllla
-aiiiiiiiiynQlllllllllllllllllllllllllllllllTdddQllllllllllllllllllllllllllllllllllllllllllllllllllla
-aiiiiiiiiyynQlllllllllllllllllllllllllllllleyyynQlllllllllllllllllllllllllllllllllllllllllllllllllla
-aiiiiiiiiiyyGlllllllllllllllllllllllllllllleyyyyndQlllllllllllllllllllllllllllllllllllllllllllllllla
-aiiiiiiiiiyynddddddddddddddddddddddddddddddzyyyyiynddddddddddddddddddddddddddddddddQllllllllllllllla
-aiiiiiiiiiyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiyyyyyyyyyyyiiiiyyyyyyyyyyyyyyyyyynddQlllllllllllla
-aiiiiiiiiiiyyyyyyyyyyiiiiyyyyyyyyyiiiyyyyyyyyyyiiiiyyyyiiiiiiiiiiiiyyyyyyyiiyyyyyyyyyinQllllllllllla
-aiiiiiiiiiiiyyyyyyyyyiiiiiyyyyyyiiiiiiyyyyyyyyiiiiiiiyyiiiiiiiiiiiiyyyyyiiiiiyyyyyyyiiyGllllllllllla
-aiiiiiiiiiiiiyyyyyyiiiiiiiiiyyyyiiiiiiiiyyyyiiiiiiiiiiiiiiiiiiiiiiiiiyyyiiiiiyyyyyyiiiiGllllllllllla
-aiiiiiiiiiiiiyyyyiiiiiyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyiiiiiiGllllllllllla
-aiiiiiiiiiiiiiyyyiiiyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyiiiiiyGllllTdQlllla
-aiiiiiiiiiiiiiiiiiiyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyiiiyiiiiiiiiiiiiiiiiyynddddzynddQla
-aiiiiiiiiiiiiiiiiiyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyiyyiiiiiiiiiiiiiiiiiiyyyyyyiiyyynQa
-aiiiiiiiiiiiiiiiiiyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyiiiiiiiiiiiiiiiiiiiiiyyyiiiiiiiyyna
-aiiiiiiiiiiiiiiiiiiyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyya
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiyyyya
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyya
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyya
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyya
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiya
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyiiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyyyyiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyyyyiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyyyiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyyyyyiiiiiia
-aiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiyyiiiiiiiia
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+qgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguiVARiRiRiRiAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qguirxBJBJBJBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgVAYFBJBJJgBJBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgYFBJBJBJJgJgBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJBJJgJgJgBJhkRiAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJBJJgJgJgBJBJBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJBJJgJgJgJgBJBDJiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJJgJgJgJgJgJgBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgBJBJJgJgJgBJBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgBJJgJgJgBJBJBDJiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJJgJgJgJgBJBJBDJiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJJgJgJgBJBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJJgJgJgBJBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJBJJgJgJgBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJBJJgJgJgBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJBJJgJgJgJgBJBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJJgJgJgJgJgJgBJBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgBJJgJgJgJgJgJgJgBJnguiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiVARiRiRiAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgBJBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuirxBJBJBJhkAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgBJBJnguiuiuiuiuiuiuiuiuiuiuiuiVARiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiYFBJBJBJBJhkRiAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgBJBJhkRiRiRiRiRiRiRiRiRiRiRiRiYFBJBJBJBJBJBJBJBJBJBJBJJgJgBJBJBJBJBJBJBJBJBJJgBJhkRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiRiAsuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJJgBJJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJBJJgJgBJBJBJBJBJBJBJBJBJBJBJJgJgJgJgBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJhkRiRiAsuiuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJBJBJBJJgJgJgJgBJBJBJBJBJJgJgJgJgJgBJBJJgJgJgBJBJBJBJBJBJBJJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJJgJgBJBJBJBJBJBJBJBJBJJghkAsuiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJBJBJJgJgJgJgJgBJBJBJBJBJJgJgJgJgBJBJJgJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJJgJgJgJgJgBJBJBJBJBJBJBJJgJgBJnguiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgBJBJBJBJBJJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJJgJgJgJgJgBJBJBJBJBJBJJgJgJgJgnguiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgBJBJJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJJgJgJgJgJgJgnguiuiuiuiuiuiuiuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJJgJgJgJgJgBJnguiuiuiuiVARiAsuiuiuiuiqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJhkRiRiRiRiYFBJhkRiRiAsuiqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgBJBJBJhkAsqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJJgJgJgJgJgJgJgBJBJhkqg
+qgxfrGJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJqg
+qguirxJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJqg
+qguirxJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJqg
+qguiWZrGJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJqg
+qguiOmYFJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJqg
+qgVAYFJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJqg
+qgYFJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgJgJgJgJgJgJgJgJgBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgJgJgJgJgJgJgJgBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJJgJgJgJgJgJgJgJgJgJgJgBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgBJJgJgJgBJJgJgJgJgBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJJgJgJgJgJgJgJgJgJgBDxfrGBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgBJBJBJBJBJBJJgBJJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJJgJgJgJgJgJgJgJgBDJiuirxBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgqg
+qgBJBJBJBJBJBJJgJgJgJgBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgnguiuiWZrGBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgqg
+qgBJBJBJBJBJBJBJJgJgJgJgJgBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgnguiuiuiWZrGBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJJgJgJgJgJgqg
+qgBJBJBJBJBJBJBJBJBJJgJgJgBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgJghkAsuiuiuirxJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJJgJgJgJgqg
+qgBJBJBJBJBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJJgJgJgJgJghkRiAsuirxJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJBJJgJgJgJgJgqg
+qgBJBJBJBJBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgBJBJJgJghkRiYFJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgJgJgJgJgqg
+qgBJBJBJBJBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJBJBJBJBJJgJgJgJgJgJgqg
+qgBJBJBJBJBJBJBJBJBJBJBJBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgJgBJBJJgJgJgJgJgJgJgJgqg
+qgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqgqg
 "}
 (1,1,2) = {"
-PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKP
-PSSSSSSSSSSSSSSSScccccccccccccccccccccccccccccccccccccccccccccccccccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSSSScMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScccMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMcccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMMMcccccccccccccccccccccccccccccccccccccccccccMMMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMMccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSccMMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSccMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PSOSSSSSSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMccSSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PgSSSSSSSSSSSOScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMMccSSSSSSSSSSSSSSSSSSSSSSSSSSSP
-PwSSSSOuSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMMMcccccccccccccccccccSSSOSSSSSP
-PuuSgOwgSSSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMMMMMMMMMMMMMMMMMMMMMcSSSSSSSSOP
-PugSSSwwwgSSSSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccMMMMMMMMMMMMMMMMMMMMMcccSSSSSSSP
-PSSSguuwggwSSSOcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMMMMMMMMMMMMMMMMMMMMMcSSSSSSSP
-PffffffffggugSScMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScccccccccccccccccccMMMMMcSSSOSSSP
-PffffffffffffffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSccMMMMcOSSSSSSP
-PUUrffrUUUUUrffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSccMMMcSSSSSSSP
-PHHHffHHHguubffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcgSSSSSSP
-PHHqffqHHHwwFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcuwSSSOSP
-PHHqffqqHHgwFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcwgSSSSSP
-PHqmUfmqHHHutffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcwgSSSSSP
-PqqqqqqqHHHuFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcgSSSSSSP
-PqqqqqqqqqHgtffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcuSSOSSSP
-PqqqqqqqqHHwFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcuuSSSSSP
-PqqqqqqqqHHHFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcgSSSSSSP
-PqqqqqqqqqHHFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSOSP
-PqqqqqqqqqHHbffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSP
-PqqqqqqqqHHHbffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSP
-PqqqqqqqHHHHtffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSP
-PqqqqqqqHHHgbffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcOSSSSSSP
-PqqqqqqqHHHutffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSOSSSSSP
-PqqqqqqqHHwubffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSP
-PqqqqqqqHHugbffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSP
-PqqqqqqqqHHgFVfcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSSSP
-PqqqqqqqqqHwFffcMMMcSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSScMMMcSSSSSOSP
-PqqqqqqqqqHHFffcMMMccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSccMMMcSSSSSSSP
-PqqqqqqqqqHHtffcMMMMccSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSccMMMMcSSSSSSSP
-PqqqqqqqqqqHWVfcMMMMMcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccMMMMMcSOgSSSwP
-PqqqqqqqqqqqWffcMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMcSSSSSguP
-PqqqqqqqqqqqWffcccMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMcccguSSSwuP
-PqqqqqqqqqqqjffffcMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMcffgggwSgwP
-PqqqqqqqqqqqqrUffcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccffgwwuggHP
-PqqqqqqqqqqqqqqBffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffXggHHP
-PqqqqqqqqqqqqqqBffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffkHHHHP
-PqqqqqqqqqqqqqqrUUUCUUUUUUUUUUUCUUrfffffffrUUUUCUUUrfffffffrUUUUCUUUrfffffffrUUUUCUUUrfffffffrHHHHHP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqLrfffrRqqqqqqqqqqLrfffrRqqqqqqqqqqLrfffrRqqqqqqqqqqLrfffrRHHHHHHP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffkqHHHHHP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjVfffJqqqqqqqqqqqqVfffJqqqqqqqqqqqqVfffJqqqqqqqqqqqqVfffJEqqqqHHP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffEqqqqqHP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffEqqqqqqqqqqjfffffEqqqqqqqqqqjfffffEqqqqqqqqqqjfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjIfffNEqqqqqqqqqqjIfffNEqqqqqqqqqqjIfffNEqqqqqqqqqqjIfffNEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffEqqqqqqqqqqjfffffEqqqqqqqqqqjfffffEqqqqqqqqqqjfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjVfffJqqqqqqqqqqqqVfffJqqqqqqqqqqqqVfffJqqqqqqqqqqqqVfffJEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffqqqqqqqqqqqqfffffEqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrUUUrqqqqqqqqqqqqrUUUrqqqqqqqqqqqqrUUUrqqqqqqqqqqqqrUUUrqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqP
-PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+RCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbTjLbLbLbLbLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbTjLbLbLbLbLbLbLbLbLbLbzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbTjLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbTjLbLbLbLbLbTjLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbjyLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbIMIMLbjyLbTjLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCTjLbLbjyhmIMjyLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbjyhmhmLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbhmIMLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbTjLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbTjLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCIMLbLbLbLbLbLbLbLbLbLbLbTjLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RChmLbLbLbLbTjjyLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGLbLbLbTjLbLbLbLbLbRC
+RCjyjyLbIMTjhmIMLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbTjRC
+RCjyIMLbLbLbhmhmhmIMLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGLbLbLbLbLbLbLbRC
+RCLbLbLbIMjyjyhmIMIMhmLbLbLbTjzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbRC
+RCcAcAcAcAcAcAcAoxIMIMjyIMLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbLbLbTjLbLbLbRC
+RCWKWKWKWKWKWKWKbZcAcAcAcAcAoxzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGTjLbLbLbLbLbLbRC
+RCDpDpULKcYnULDpDpDpDpDpULKcsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCqqqqpVJKsFXRQByyIMjyjyPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
+RCaNaNBMJKsFxJjqaNpVhmhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyhmLbLbLbTjLbRC
+RCaNaNCHJKsFZZpfaNaNIMhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGhmIMLbLbLbLbLbRC
+RCaNCPcFmtXOcFpfaNaNaNjyDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGhmIMLbLbLbLbLbRC
+RCCPCPskskskskCPaNaNaNjyXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNIMDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyLbLbTjLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyjyLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNaNXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbTjLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNaNPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNaNaNDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNaNIMPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGTjLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNaNjyDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbTjLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNhmjyPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNjyIMPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNIMXIbHsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbTjLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNXIJKsFzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNDFJKsFzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPCPaNJrbHsFzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbTjIMLbLbLbhmRC
+RCCPCPCPCPCPCPCPCPCPCPCPJrJKsFzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbIMjyRC
+RCCPCPCPCPCPCPCPCPCPCPCPJrJKsFzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGIMjyLbLbLbhmjyRC
+RCCPCPCPCPCPCPCPCPCPCPCPBgJKWKcAoxzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGosVXIMIMIMhmLbIMhmRC
+RCCPCPCPCPCPCPCPCPCPCPCPBMULDpKcsFzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGJKLUoiTChmjyIMIMaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPNQNoGKWKcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAWKbZkcoxwTIMIMaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPGJGKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKsFfraNaNaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPBMULDpDpDpbbDpDpDpDpDpDpDpDpDpDpDpbbDpDpULKcWKWKWKWKWKYnULDpDpDpDpbbDpDpDpULKcWKWKWKWKWKYnULDpDpDpDpbbDpDpDpULKcWKWKWKWKWKYnULDpDpDpDpTgDpDpDpULKcWKWKWKWKWKYnULFbaNaNaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPskskskskCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPmaULWKWKWKULBrCPCPCPCPCPCPCPCPskNQmaULWKWKWKULBrpIYJCPCPCPCPCPCPCPCPmaULWKWKWKULBrCPCPCPCPCPCPCPskGJNomaULWKWKWKULBrISaNaNaNaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPCPCPQeZiZiHbCPCPCPNQJKWKWKWKsFZZYJCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPNkpIlxJKWKWKWKsFfepfaNaNaNaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgbHWKWKWKWSCPCPCPCPJICtCtJICPCPOKBMbHWKWKWKWSxJCPCPCPCPCPCPCPCPCPCPCPbHWKWKWKWSCPCPCPCPCPCPCPCPCPCPskBMbHWKWKWKWSAvCPCPCPCPaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPCPQegUCtCtzMHbCPCPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeOKCPCPCPCPaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPQexpCtCtCtCtOiHbCPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPJIHwCtCtCtCtHwJICPTUJKWKWKWKsFoeCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPCPCPCPCPCPCPCPCPCPTUJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgioWKWKWKVfgWCPJIHwwpCtCtwpHwJICPTUioWKWKWKVfoeCPCPCPCPCPCPCPCPCPCPBgioWKWKWKVfgWCPCPCPCPCPCPCPCPCPCPTUioWKWKWKVfoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPJIHwCtCtCtCtHwJICPTUJKWKWKWKsFoeCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPCPCPCPCPCPCPCPCPCPTUJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFeKeKJIHwCtCtCtCtHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFHweGJIHwwpCtCtwpHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFEGGrJIHwCtCtCtCtHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgbHWKWKWKWSCPCPXhiiCtCNCtCtHwJICPBMbHWKWKWKWSpfCPCPCPCPCPCPCPCPCPCPCPbHWKWKWKWSCPCPCPCPCPCPCPCPCPCPCPBMbHWKWKWKWSoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPJIHzJBJICtCtHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPULDpDpDpULCPCPJIHwCtJICtCtHwJICPBMULDpDpDpULpfCPCPCPCPCPCPCPCPCPCPCPULDpDpDpULCPCPCPCPCPCPCPCPCPCPCPBMULTYTYTYULpfCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPYOluCtJICtCtIyroCPCPskskskskskCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPskskskskskCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPYOZiovZiZiroCPCPCPCPCPCPOKCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPRC
+RCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRCRC
 "}
 (1,1,3) = {"
-ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs
-osssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+riririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuGsGskukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuUrfufueTkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuldfufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuldfufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuXBPbfufuynVLkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuGsguDJfufuDJGtGskukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJDJfufufufuDJDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJfufufufufufuDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuDJfufufufufufuDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuDJfuHVDJDJDJDJgqkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJfuDJfufufufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJEWuRfufufufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJEvldfufufufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJDJldfufufuXBPbkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuiIDJyniUiUiUPbkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukpkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+vgririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririririri
 "}
