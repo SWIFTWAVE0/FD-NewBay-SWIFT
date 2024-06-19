@@ -9,10 +9,9 @@
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/weather.dmi'
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	icon_state = "rain_1"
-	alpha = 40
+	alpha = 30
 
 /obj/screen/fullscreen/mist
-	icon = 'icons/effects/tile_effects.dmi'
-	screen_loc = "WEST,SOUTH to EAST,NORTH"
-	icon_state = "backfog"
-	alpha = 30
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/parallax.dmi'
+	scale_to_view = TRUE
+	icon_state = "mist"

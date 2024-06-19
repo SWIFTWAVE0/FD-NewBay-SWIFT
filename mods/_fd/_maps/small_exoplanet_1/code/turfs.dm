@@ -171,6 +171,150 @@
 	..()
 	icon_state = "tile_old_[rand(1, 4)]"
 
+/turf/simulated/floor/exoplanet/grim_metal3
+	name = "rusted catwalk"
+	desc = "Just an old, rusted metal floor, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "full_dark_alt"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile
+	name = "molded concrete"
+	desc = "Just an old, broken concrete plate."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "concrete_tile"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile/New()
+	..()
+	icon_state = "concrete_tile_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile2
+	name = "molded concrete"
+	desc = "Just an old, broken concrete plate."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "concrete_tile_y"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile2/New()
+	..()
+	icon_state = "concrete_tile_y_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile3
+	name = "molded concrete"
+	desc = "Just an old, broken concrete plate."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "concrete_tile_w"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile3/New()
+	..()
+	icon_state = "concrete_tile_w_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile4
+	name = "molded concrete"
+	desc = "Just an old, broken concrete plate."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "concrete_tile_d"
+
+/turf/simulated/floor/exoplanet/grim_concrete_tile4/New()
+	..()
+	icon_state = "concrete_tile_d_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_wood_log
+	name = "wooden floor"
+	desc = "Just an old floor plate made of logs, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood_log"
+
+/turf/simulated/floor/exoplanet/grim_wood_good
+	name = "wooden floor"
+	desc = "A pretty new wooden planks, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood_alt"
+
+/turf/simulated/floor/exoplanet/grim_wood_good2
+	name = "wooden floor"
+	desc = "A pretty new wooden planks, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood_tile"
+
+/turf/simulated/floor/exoplanet/grim_wood
+	name = "molded wooden floor"
+	desc = "Just an old, molded red wood, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood_red"
+
+/turf/simulated/floor/exoplanet/grim_wood/New()
+	..()
+	icon_state = "wood_red_[rand(1, 8)]"
+
+/turf/simulated/floor/exoplanet/grim_wood2
+	name = "molded wooden floor"
+	desc = "Just an old, molded ebony wood, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood"
+
+/turf/simulated/floor/exoplanet/grim_wood2/New()
+	..()
+	icon_state = "wood_[rand(1, 9)]"
+
+/turf/simulated/floor/exoplanet/grim_wood3
+	name = "molded wooden floor"
+	desc = "Just an old, molded white wood, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood_white"
+
+/turf/simulated/floor/exoplanet/grim_wood3/New()
+	..()
+	icon_state = "wood_white_[rand(1, 8)]"
+
+/turf/simulated/floor/exoplanet/grim_wood_scorched
+	name = "scorched wooden floor"
+	desc = "Just an old, almost burnt wooden floor, nothing special."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "wood_burned"
+
+/turf/simulated/floor/exoplanet/grim_wood_scorched/New()
+	..()
+	icon_state = "wood_burned_[rand(1, 8)]"
+
+/turf/simulated/floor/exoplanet/grim_ceramic
+	name = "ceramic pavement"
+	desc = "Just an old, molded bricky pavement."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "ceramic_grey"
+
+/turf/simulated/floor/exoplanet/grim_ceramic/New()
+	..()
+	icon_state = "ceramic_grey_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor
+	name = "ceramic tile"
+	desc = "Just an old, molded bricky plate."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "ceramic_cross"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor/New()
+	..()
+	icon_state = "ceramic_cross_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor2
+	name = "ceramic tile"
+	desc = "Just an old, molded bricky plate."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "ceramic_blue"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor2/New()
+	..()
+	icon_state = "ceramic_blue_[rand(1, 4)]"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor3
+	name = "dark ceramic tile"
+	desc = "Just an old, molded bricky pattern."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "ceramic_green"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor3/New()
+	..()
+	icon_state = "ceramic_green_[rand(1, 6)]"
+
 //forgive me god for the sins i'm about to commit
 
 /obj/structure/fd/grim_walls
@@ -190,6 +334,7 @@
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/wood_wall.dmi'
 
 	name = "wooden wall"
+	color = "#2e221a"
 
 /obj/structure/fd/grim_walls/metal
 	icon_state = "rusty_wall-0"

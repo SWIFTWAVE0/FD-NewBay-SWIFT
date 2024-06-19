@@ -1,129 +1,231 @@
+"aH" = (/turf/simulated/floor/exoplanet/grim_metal3,/area/lovecraft/upper_level)
+"aL" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-12"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "aN" = (/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "bb" = (/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black,/obj/structure/fd/grim_lamp_double{pixel_x = -30; pixel_y = 11},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "bH" = (/obj/structure/fd/grim_lamp,/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "bZ" = (/obj/floor_decal/spline/fancy/black/corner{dir = 1},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"cx" = (/obj/structure/fd/grim_window{icon_state = "plastitanium_window-12"},/turf/simulated/floor/exoplanet/grim_metal3,/area/lovecraft/upper_level)
 "cA" = (/obj/floor_decal/spline/fancy/black{dir = 1},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "cF" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/brick,/turf/simulated/open/water,/area/lovecraft/main_level)
+"eu" = (/obj/structure/fd/grim_window{icon_state = "plastitanium_window-3"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
 "eG" = (/obj/structure/stairs/east,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
 "eK" = (/obj/structure/fake_water,/obj/structure/railing/mapped,/turf/simulated/open/water,/area/lovecraft/main_level)
+"eQ" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-5"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "eT" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-74-d"},/turf/simulated/open,/area/lovecraft/upper_level)
 "fe" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/moss,/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "fr" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "fu" = (/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"gb" = (/turf/simulated/floor/exoplanet/grim_ceramic,/area/lovecraft/main_level)
 "gq" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-74-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
 "gu" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"gT" = (/obj/structure/stairs/north,/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/indoors/main/adm)
 "gU" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "gW" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/turf/simulated/open/water,/area/lovecraft/main_level)
 "hk" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-21"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "hm" = (/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
+"hu" = (/obj/structure/fd/grim_walls/wood,/turf/simulated/floor/exoplanet/brick_road,/area/lovecraft/main_level)
+"hC" = (/turf/simulated/floor/exoplanet/grim_wood_good2,/area/lovecraft/indoors/main/adm)
 "ii" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-8"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "io" = (/obj/structure/fd/grim_lamp{pixel_y = -9},/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"it" = (/obj/structure/stairs/south,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/indoors/main/adm)
 "iI" = (/obj/structure/railing/mapped{dir = 1; icon_state = "railing0-1"},/obj/structure/railing/mapped{dir = 4},/turf/simulated/open,/area/lovecraft/upper_level)
 "iU" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-12"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
 "jq" = (/obj/structure/moss{icon_state = "moss"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "jy" = (/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
+"jB" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-2"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"jV" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-14"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"jW" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-1"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "kc" = (/obj/floor_decal/spline/fancy/black/corner{dir = 1},/obj/floor_decal/spline/fancy/black/corner{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "kp" = (/obj/structure/railing/mapped{dir = 1; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
 "ku" = (/turf/simulated/open,/area/lovecraft/upper_level)
+"kT" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-6"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"lb" = (/obj/structure/fd/grim_window{icon_state = "plastitanium_window-3"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/indoors/main/adm)
 "ld" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-3"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
 "lu" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
 "lx" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east3"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"lC" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-2"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
+"lX" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-1"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "ma" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8},/obj/floor_decal/spline/fancy/black{dir = 10},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "mt" = (/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black{dir = 10},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"mB" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-4"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"mV" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-9"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "ng" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-55"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"nV" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-3"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "oe" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "oi" = (/obj/floor_decal{color = "grey"; dir = 1; icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'; icon_state = "stairs_6"},/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
 "os" = (/obj/floor_decal/spline/fancy/black{dir = 9},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "ov" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-13"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "ox" = (/obj/floor_decal/spline/fancy/black{dir = 5},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "pf" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"pp" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-2"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"pt" = (/turf/simulated/floor/exoplanet/grim_wood_scorched,/area/lovecraft/main_level)
 "pI" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_edge"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"pL" = (/turf/simulated/floor/exoplanet/grim_concrete_tile,/area/lovecraft/indoors/main/adm)
+"pN" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-9"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "pV" = (/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "qg" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/below_level)
 "qq" = (/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"qL" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-5"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
+"qU" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-4"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "ri" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/upper_level)
 "ro" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "rx" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-203"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"rF" = (/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/indoors/main/adm)
 "rG" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-74"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"sa" = (/obj/structure/fd/grim_lamp{dir = 1},/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
 "sk" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "sF" = (/obj/floor_decal/spline/fancy/black{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"sK" = (/turf/simulated/floor/exoplanet/grim_ceramic_indoor,/area/lovecraft/indoors/main/adm)
+"tw" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-10"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "ui" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-255"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
+"um" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-3"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"uB" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-12"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"uF" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-15"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
+"uN" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-14"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "uR" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-2"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"ve" = (/obj/structure/fd/grim_walls/stone,/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "vg" = (/obj/overmap/visitable/sector/lovecraft,/obj/landmark/map_data{height = 3},/turf/unsimulated/wall{color = "black"},/area/lovecraft/upper_level)
 "vw" = (/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
+"vx" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-7"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"vJ" = (/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_concrete_tile4,/area/lovecraft/indoors/main/adm)
 "wp" = (/obj/structure/fd/grim_walls/metal,/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "wT" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
 "xf" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-110"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "xp" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"xA" = (/obj/floor_decal/spline/fancy/black/corner{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "xJ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_east1"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"xT" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-2"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "yn" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
 "yy" = (/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"yF" = (/obj/structure/fd/grim_window{icon_state = "plastitanium_window-12"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"yT" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-21"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"zh" = (/obj/structure/fd/grim_walls/wood,/turf/simulated/floor/exoplanet/grim_wood2,/area/lovecraft/main_level)
+"zk" = (/obj/structure/fd/grim_window{icon_state = "plastitanium_window-12"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/indoors/main/adm)
+"zo" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-13"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "zG" = (/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
 "zM" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"Ag" = (/obj/structure/fd/grim_walls/stone,/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "As" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-191"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "Av" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 8},/obj/structure/moss{icon_state = "moss_east1"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "Bg" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 4},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Bp" = (/turf/simulated/floor/exoplanet/grim_wood,/area/lovecraft/main_level)
 "Br" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black{dir = 6},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "BD" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-38"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "BJ" = (/turf/simulated/ocean/grim_windswept,/area/lovecraft/below_level)
 "BM" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Cs" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-10"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "Ct" = (/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"CB" = (/obj/structure/fd/grim_walls/wood,/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/main_level)
+"CD" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-11"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "CH" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_north"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "CN" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10-d"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "CP" = (/obj/structure/fake_water,/turf/simulated/open/water,/area/lovecraft/main_level)
+"Da" = (/turf/simulated/floor/exoplanet/grim_wood_good2,/area/lovecraft/main_level)
 "Dp" = (/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Dy" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-9"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "DF" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
 "DJ" = (/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"DQ" = (/turf/simulated/floor/exoplanet/grim_wood2,/area/lovecraft/indoors/main/adm)
+"Ee" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-1"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "Ev" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
+"EE" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-75"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "EG" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"EK" = (/obj/structure/stairs/east,/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_wood_good2,/area/lovecraft/main_level)
 "EW" = (/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/open,/area/lovecraft/upper_level)
 "Fb" = (/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"Fg" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-9"},/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-13"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Fl" = (/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/main_level)
 "Gr" = (/obj/structure/stairs/east,/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
 "Gs" = (/obj/structure/railing/mapped,/turf/simulated/open,/area/lovecraft/upper_level)
 "Gt" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"GE" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-6"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "GJ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "GK" = (/obj/structure/railing/mapped{dir = 8},/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Ha" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "Hb" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Hv" = (/turf/simulated/floor/exoplanet/grim_ceramic_indoor3,/area/lovecraft/main_level)
 "Hw" = (/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
 "Hz" = (/obj/structure/stairs/north,/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"HB" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-139"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"HE" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-10"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
+"HQ" = (/turf/simulated/floor/exoplanet/grim_concrete_tile4,/area/lovecraft/indoors/main/adm)
 "HV" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-38-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/upper_level)
+"Ik" = (/turf/simulated/floor/exoplanet/concrete_pavement,/area/lovecraft/main_level)
+"Im" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-2"},/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/main_level)
 "Iy" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
+"ID" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_wood_good2,/area/lovecraft/main_level)
+"IE" = (/obj/structure/flora/tree/grim/brown,/turf/simulated/floor/exoplanet/wet_stone2,/area/lovecraft/main_level)
 "IM" = (/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
 "IS" = (/obj/structure/moss{icon_state = "moss_east1"},/obj/structure/moss{icon_state = "moss_south"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"IW" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-1"},/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/main_level)
 "Jg" = (/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "Ji" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-127"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "Jr" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "JB" = (/obj/structure/railing/mapped{dir = 8; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "JI" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-3"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "JK" = (/obj/floor_decal/spline/fancy/black{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"JN" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-46"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"JV" = (/obj/structure/flora/tree/grim/brown,/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
 "Kc" = (/obj/floor_decal/spline/fancy/black/corner{dir = 8},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"KX" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-12"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"La" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/indoors/main/adm)
 "Lb" = (/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Lj" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-14"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"LC" = (/turf/simulated/floor/exoplanet/grim_wood,/area/lovecraft/indoors/main/adm)
+"LE" = (/turf/simulated/floor/exoplanet/grim_wood2,/area/lovecraft/main_level)
+"LL" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-12"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "LU" = (/obj/floor_decal/spline/fancy/black{dir = 4},/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Mh" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_wood2,/area/lovecraft/indoors/main/adm)
+"Mk" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Mo" = (/obj/structure/fd/grim_walls/wood,/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
+"MN" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-6"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
+"MU" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-4"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "Nk" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_west"},/obj/structure/moss{icon_state = "moss"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "No" = (/obj/structure/fake_water,/obj/structure/moss,/turf/simulated/open/water,/area/lovecraft/main_level)
+"NC" = (/obj/floor_decal{color = "grey"; dir = 8; icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'; icon_state = "stairs_6"},/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
 "NQ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "Oi" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/main_level)
 "Om" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-255"},/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-223"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "OK" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"OV" = (/turf/simulated/floor/exoplanet/grim_metal3,/area/lovecraft/main_level)
 "Pb" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
 "Pu" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/gravel,/area/lovecraft/main_level)
 "Qe" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Qi" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-3"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Ql" = (/obj/floor_decal{color = "grey"; icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'; icon_state = "stairs_6"},/turf/simulated/floor/exoplanet/slab,/area/lovecraft/main_level)
+"Qv" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-8"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "QB" = (/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
+"QH" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-13"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Rf" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/main_level)
 "Ri" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-157"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "RC" = (/turf/unsimulated/wall{color = "black"},/area/lovecraft/main_level)
+"RN" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-1"},/turf/simulated/floor/exoplanet/grim_wood_good2,/area/lovecraft/main_level)
+"SG" = (/turf/simulated/floor/exoplanet/grim_metal,/area/lovecraft/indoors/main/adm)
+"SJ" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-2"},/turf/simulated/floor/exoplanet/grim_wood_good2,/area/lovecraft/main_level)
+"SV" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-5"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "Tg" = (/obj/structure/fd/grim_lamp_double{pixel_x = -30; pixel_y = 11},/obj/structure/railing/mapped,/obj/floor_decal/spline/fancy/black,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "Tj" = (/obj/structure/flora/tree/grim/brown,/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Tx" = (/turf/simulated/floor/exoplanet/grim_ceramic_indoor2,/area/lovecraft/main_level)
 "TC" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
 "TU" = (/obj/structure/fake_water,/obj/structure/railing/mapped{dir = 4},/obj/structure/moss{icon_state = "moss_west"},/turf/simulated/open/water,/area/lovecraft/main_level)
 "TY" = (/obj/structure/railing/mapped,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Uk" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-14"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Up" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-8"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "Ur" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-38-d"},/turf/simulated/open,/area/lovecraft/upper_level)
 "UL" = (/obj/structure/fd/grim_walls/brick,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"UT" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-1"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"UY" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-9"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
+"Va" = (/obj/structure/fd/grim_walls/wood{icon_state = "wood_wall-8"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "Vf" = (/obj/structure/fd/grim_lamp{dir = 1; pixel_y = -9},/obj/floor_decal/spline/fancy/black{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Vv" = (/obj/structure/flora/tree/grim/brown,/turf/simulated/floor/exoplanet/wet_stone,/area/lovecraft/main_level)
 "VA" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-223"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "VL" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-10"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
+"VM" = (/turf/simulated/floor/exoplanet/concrete_pavement,/area/lovecraft/upper_level)
 "VX" = (/obj/floor_decal/spline/fancy/black{dir = 5},/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
 "WK" = (/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"WN" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "WS" = (/obj/structure/fd/grim_lamp{dir = 1},/obj/floor_decal/spline/fancy/black{dir = 4},/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"WT" = (/obj/floor_decal{color = "grey"; dir = 8; icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'; icon_state = "stairs_6"},/turf/simulated/floor/exoplanet/grim_ceramic,/area/lovecraft/main_level)
 "WZ" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-239"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "Xh" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-7"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
 "XB" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-6"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/upper_level)
@@ -132,10 +234,15 @@
 "XR" = (/obj/structure/moss,/turf/simulated/floor/exoplanet/water/shallow/grim,/area/lovecraft/main_level)
 "Ym" = (/turf/simulated/floor/exoplanet/brick_road,/area/lovecraft/main_level)
 "Yn" = (/obj/floor_decal/spline/fancy/black/corner,/turf/simulated/floor/exoplanet/grim_seaport,/area/lovecraft/main_level)
+"Yp" = (/obj/structure/fd/grim_walls/stone,/turf/simulated/floor/exoplanet/grim_wood_log,/area/lovecraft/indoors/main/adm)
 "YF" = (/obj/structure/fd/grim_walls/rock{icon_state = "jungle_wall-137"},/turf/simulated/ocean/grim,/area/lovecraft/below_level)
 "YJ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_south"},/obj/structure/moss{icon_state = "moss_east1"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"YL" = (/obj/structure/fd/grim_walls/brick{icon_state = "boss_wall-3"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/main_level)
 "YO" = (/obj/structure/fake_water,/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-5-d"},/turf/simulated/open/water,/area/lovecraft/main_level)
+"Zb" = (/obj/structure/fd/grim_lamp_double,/turf/simulated/floor/exoplanet/concrete_pavement,/area/lovecraft/main_level)
+"Zc" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/exoplanet/grim_wood2,/area/lovecraft/indoors/main/adm)
 "Zi" = (/obj/structure/fd/grim_walls/metal{icon_state = "rusty_wall-12"},/turf/simulated/floor/exoplanet/grim_metal2,/area/lovecraft/main_level)
+"Zr" = (/obj/structure/fd/grim_walls/stone{icon_state = "iron_wall-4"},/turf/simulated/floor/exoplanet/grim_dirt,/area/lovecraft/indoors/main/adm)
 "ZZ" = (/obj/structure/fake_water,/obj/structure/moss{icon_state = "moss_east3"},/turf/simulated/open/water,/area/lovecraft/main_level)
 
 (1,1,1) = {"
@@ -265,52 +372,52 @@ RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzG
 RCLbLbLbLbLbLbLbLbLbLbTjLbLbLbLbLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
 RCLbLbLbTjLbLbLbLbLbLbLbLbLbLbzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
 RCLbLbLbLbLbLbLbLbLbLbLbLbTjLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbTjLbLbLbLbLbTjLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbjyLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbIMIMLbjyLbTjLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCTjLbLbjyhmIMjyLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbjyhmhmLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbLbhmIMLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbLbLbLbLbLbTjLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCLbTjLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RCIMLbLbLbLbLbLbLbLbLbLbLbTjLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
-RChmLbLbLbLbTjjyLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGLbLbLbTjLbLbLbLbLbRC
-RCjyjyLbIMTjhmIMLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbTjRC
-RCjyIMLbLbLbhmhmhmIMLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGLbLbLbLbLbLbLbRC
-RCLbLbLbIMjyjyhmIMIMhmLbLbLbTjzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbRC
-RCcAcAcAcAcAcAcAoxIMIMjyIMLbLbzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbLbLbTjLbLbLbRC
-RCWKWKWKWKWKWKWKbZcAcAcAcAcAoxzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGTjLbLbLbLbLbLbRC
-RCDpDpULKcYnULDpDpDpDpDpULKcsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCqqqqpVJKsFXRQByyIMjyjyPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
-RCaNaNBMJKsFxJjqaNpVhmhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyhmLbLbLbTjLbRC
-RCaNaNCHJKsFZZpfaNaNIMhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGhmIMLbLbLbLbLbRC
-RCaNCPcFmtXOcFpfaNaNaNjyDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGhmIMLbLbLbLbLbRC
-RCCPCPskskskskCPaNaNaNjyXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPCPaNIMDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyLbLbTjLbLbLbRC
-RCCPCPCPCPCPCPCPCPaNaNhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyjyLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPaNaNaNXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPCPaNaNXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbTjLbRC
-RCCPCPCPCPCPCPCPCPCPaNaNPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPaNaNaNPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPaNaNaNaNDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPaNaNaNIMPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGTjLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPaNaNaNjyDFJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbTjLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPaNaNhmjyPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPaNaNjyIMPuJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPaNaNIMXIbHsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPCPaNhmXIJKsFzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbTjLbRC
-RCCPCPCPCPCPCPCPCPCPaNaNXIJKsFzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPCPaNaNDFJKsFzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGLbLbLbLbLbLbLbRC
-RCCPCPCPCPCPCPCPCPCPCPaNJrbHsFzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbTjIMLbLbLbhmRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmYmzGzGLbIMIMIMLbLbLbLbhmhmIMTjLbLbzGYmYmzGhmIMjyHaKXKXKXKXKXKXKXKXKXKXKXKXLjKXKXKXKXKXMkzGzGYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGzGGEuBuBuBuBuBUkyFuBUkuBuBuBuBCszGYmYmzGIMIMVvumCtCtCtCtHwCtCtCtCtCtCtCtumCtCtCtCtCtWNMkzGzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbTjLbLbLbLbLbTjLbLbLbLbLbzGYmYmYmzGjyQiFlDaDaDaFljWFlFljWLELELELEQizGYmYmzGLbIMLbeuCtCtCtCtHwCtCtCtwpCtCtCtEeCtwpCtCtCtCtWNMkzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbjyLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMeuFlDaDaDaFlBpBpBpBpLELELELEQizGYmYmzGjyjyIMumCtCtCtCtHwCtCtCtCtCtCtCtHwCtCtCtCtCtCtCtumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbIMIMLbjyLbTjLbLbLbLbLbzGYmYmYmzGTjQiFlDaDaDaFlxTBpBpxTFlFlFlFlQizGYmYmzGIEhmLbumCtCtCtCtHwCtCtCtCtCtCtCtHwCtCtCtCtCtCtCtumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCTjLbLbjyhmIMjyLbLbLbLbLbLbLbzGYmYmzGsaLbQiFlDaDaDaFlQiBpBpQiLELELELEeuzGYmYmzGzGzGzGumCtCtCtCtHwOVOVOVHwOVOVOVHwCtCtCtCtCtCtCtumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbjyhmhmLbLbLbLbLbLbLbzGYmYmzGIkIkeQuBuBUkVaHvQiBpBpQiLELELELEQizGYmYmYmYmYmzGumCtCtCtCtHwCtCtCtHwCtCtCtHwCtCtCtCtCtwpCtumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbhmIMLbLbLbLbLbLbLbzGYmYmzGIkgbgbgbgbQiHvHvQiBpBpvxVaTxqUUkpNzGYmYmYmYmYmzGumHwHwHwHwjBCtCtCtjBCtCtCtjBCtCtCtCtCtCtCtumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbTjLbLbLbLbzGYmYmzGIkgbgbgbgbQiHvHvQiBpBpQiTxTxTxQiIMzGzGzGzGYmYmzGumCtCtCtCtumCtCtCtumCtCtCtumOVOVOVOVOVOVOVumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmzGIkGEuBVaBpeQuBuBpNFlFlQiTxTxTxQiIMLbJVjyzGYmYmzGeuCtCtCtCtumHwHwHwEeHwHwHwWNKXMkHwHwHwHwHwumzGYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCLbTjLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmzGzGQiFlBpBpBpBpBpFlBpBpeQuBuBuBFgCshmhmIMzGYmYmzGumCtCtCtCtumzGzGzGzGzGzGzGzGzGumOVOVOVOVOVumzGYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RCIMLbLbLbLbLbLbLbLbLbLbLbTjLbzGYmYmYmzGQiFlBpBpBpBpBpFlBpBpBpLEptLEptvxuBuBCszGYmYmzGWNQvOVOVMUUYzGYmYmYmYmYmYmYmzGeuCtCtCtCtCtumzGYmYmYmYmzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbRC
+RChmLbLbLbLbTjjyLbLbLbLbLbLbLbzGYmYmYmzGQiFlBpBpBpBpBpFlBpBpxTLEptptptjWHvHvQizGYmYmzGzGzGQlQlzGMozGYmYmYmYmYmYmYmMoumCtCtCtCtCtumzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGLbLbLbTjLbLbLbLbLbRC
+RCjyjyLbIMTjhmIMLbLbLbLbLbLbLbzGYmYmYmzGQiFlBpBpBpBpBpFlBpBpQiptptptLEHvHvHvQizGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmNCEeCtCtwpCtCtumzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbTjRC
+RCjyIMLbLbLbhmhmhmIMLbLbLbLbLbzGYmYmYmzGQiFlBpBpBpBpBpFlBpBpQiLELELEptxTHvHvQizGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmNCOVCtCtCtCtCtumzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGLbLbLbLbLbLbLbRC
+RCLbLbLbIMjyjyhmIMIMhmLbLbLbTjzGYmYmYmzGeQuByFuBuBuBuBuByFuBFguBuByFuBQHuBuBpNzGYmYmYmzGzGzGYmYmYmYmYmYmYmYmYmYmYmNCjBCtCtCtCtCtumzGLbzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbRC
+RCcAcAcAcAcAcAcAoxIMIMjyIMLbLbzGYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmzGzGzGYmYmhuYmYmYmYmYmYmYmYmMoWNKXKXKXKXKXUYzGLbzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbLbLbTjLbLbLbRC
+RCWKWKWKWKWKWKWKbZcAcAcAcAcAoxzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGzGzGzGzGzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGTjLbLbLbLbLbLbRC
+RCDpDpULKcYnULDpDpDpDpDpULKcsFzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCqqqqpVJKsFXRQByyIMjyjyPuJKsFzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
+RCaNaNBMJKsFxJjqaNpVhmhmXIJKsFzGYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyhmLbLbLbTjLbRC
+RCaNaNCHJKsFZZpfaNaNIMhmXIJKsFzGYmYmYmzGMNLLLLLLLLLLLLLLuNLLLLLLLLuNLLLLLLuNUpzGYmYmYmzGGEuBuBuBuBuBuBuBuBuBuBuBCszGYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGhmIMLbLbLbLbLbRC
+RCaNCPcFmtXOcFpfaNaNaNjyDFJKsFzGYmYmYmzGnVsKHQsKsKsKsKsKlXHQHQHQHQnVrFrFrFnVzGzGYmYmYmzGQiBpFlBpBpBpBpBpBpBpFlBpQizGYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGhmIMLbLbLbLbLbRC
+RCCPCPskskskskCPaNaNaNjyXIJKsFzGYmYmYmzGnVsKAgsKsKsKsKsKHQHQpLpLpLnVLCLCLCnVzGYmYmYmYmzGeuBpFlBpBpBpBpBpBpBpFlBpeuzGYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNIMDFJKsFzGYmYmYmzGlbsKHQsKsKsKsKsKlCHQpLAgSGnVLCLCLCnVzGYmYmYmYmzGQiBpCBBpBpBpzhBpBpBpCBBpeuzGYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyLbLbTjLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNhmXIJKsFzGYmYmYmzGnVsKHQsKsKsKsKsKnVHQpLvJitnVrFrFrFnVzGzGYmYmYmzGeuBpFlBpBpBpBpBpBpBpFlBpeuzGYmYmzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGjyjyLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNaNXIJKsFzGYmYmYmzGnVsKHQsKsKsKsKsKqLUppLZrLLuFUphCZrzoHEzGYmYmYmzGQiBpFlBpBpBpBpBpBpBpFlBpQizGYmYmzGzGzGzGzGzGzGzGzGzGzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGIMLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNXIJKsFzGYmYmYmzGlbsKHQsKsKsKsKsKsKsKsKsKsKlXhChChChCnVzGYmYmzGsaeQuBCsFlCBFlFlFlRfRfImFlQizGYmYmYmYmYmYmYmYmYmYmYmYmYmYmLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbTjLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNPuJKsFzGYmYmYmzGnVsKAgHQHQHQHQAgHQHQHQHQHQhChChChChCnVzGYmYmzGIkIkIkjWDaDaDaDaDaIDEKRNDaQizGYmYmYmYmYmYmYmYmYmYmYmYmYmYmLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNaNPuJKsFzGYmYmYmzGnVsKsKHQsKsKsKsKsKsKHQsKsKlChChChChCnVzGYmYmzGIkgbWTFlDaDaDaDaDaDaDaDaDaQizGYmzGzGzGzGzGzGzGzGzGzGzGzGzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNaNaNDFJKsFzGYmYmYmzGqLLLLLUpsKsKZrUpsKsKZruNLLDyrFrFrFrFnVzGYmYmzGIkgbWTFlDaDaDaDaDaIDIDDaDaQizGYmzGIkmBjVaLaLaLaLtwIkIkIkzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNaNIMPuJKsFzGYmYmYmzGIkIkIkIkIkIkIkIkIkIkIknVDQrFDQDQDQDQnVzGYmYmzGIkIkIkxTDaDaDaDaDaIDEKSJDaQizGYmzGIkgbYLLbLbLbLbYLgbgbIkzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGTjLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNaNjyDFJKsFzGYmYmYmzGIkgbgbgbgbgbgbgbgbgbIklXDQrFDQDQDQDQnVzGYmYmzGsaGEuBpNFlCBFlFlFlFlFlIWFlQizGYmzGIkgbeuLbLbLbLbSVaLaLtwzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbTjLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNhmjyPuJKsFzGYmYmYmzGZbgbgbgbgbgbgbgbgbgbIkDQDQrFDQDQDQMhnVzGYmYmYmzGQiBpFlBpBpBpBpBpBpBpFlBpQizGYmzGIkgbeuLbLbLbLbLbLbLbYLzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPaNaNjyIMPuJKsFzGYmYmYmzGIkgbgbgbgbgbgbgbgbgbIklCDQYprFrFLaZrCDzGYmYmYmzGeuBpFlBpBpBpBpBpBpBpFlBpQizGYmzGIkkTmVLbLbLbLbppLbLbYLzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPaNaNIMXIbHsFzGYmYmYmzGIkIkgbgbgbgbgbgbgbgbIknVDQrFDQDQZcgTnVzGYmYmYmzGQiBpCBBpBpBpzhBpBpBpCBBpQizGYmzGzGUTLbLbLbLbLbSVaLJNEEzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNhmXIJKsFzGYmYmYmzGveIkgbgbgbgbgbgbgbgbIklbDQrFDQDQZcrFnVzGYmYmYmzGeuBpFlBpBpBpBpBpBpBpFlBpQizGYmYmzGLbLbLbLbLbLbLbLbyTHBzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGYmYmYmzGLbLbLbLbLbTjLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNXIJKsFzGYmYmYmzGzGIkIkIkgbgbgbgbgbgbIklbDQrFDQDQDQDQnVzGYmYmYmzGQiBpFlBpBpBpBpBpBpBpFlBpQizGYmYmzGppLbLbLbLbLbLbLbLbYLzGLbLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPaNaNDFJKsFzGYmYmYmYmzGzGveIkIkIkIkZbIkIkIkqLLLzkLLLLzkLLDyzGYmYmYmzGeQuBuBuBuBuBuBuByFyFyFuBpNzGYmYmzGSVaLaLaLaLyFaLaLaLmVzGLbLbLbLbLbLbLbLbLbLbLbLbLbzGzGYmYmYmYmzGLbLbLbLbLbLbLbRC
+RCCPCPCPCPCPCPCPCPCPCPaNJrbHsFzGYmYmYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGYmYmYmYmYmzGLbTjIMLbLbLbhmRC
 RCCPCPCPCPCPCPCPCPCPCPCPJrJKsFzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGLbLbLbLbLbIMjyRC
 RCCPCPCPCPCPCPCPCPCPCPCPJrJKsFzGzGzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGzGzGIMjyLbLbLbhmjyRC
-RCCPCPCPCPCPCPCPCPCPCPCPBgJKWKcAoxzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGosVXIMIMIMhmLbIMhmRC
+RCCPCPCPCPCPCPCPCPCPCPCPBgJKbZcAoxzGYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmYmzGosVXIMIMIMhmLbIMhmRC
 RCCPCPCPCPCPCPCPCPCPCPCPBMULDpKcsFzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGzGJKLUoiTChmjyIMIMaNRC
-RCCPCPCPCPCPCPCPCPCPCPCPCPNQNoGKWKcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAWKbZkcoxwTIMIMaNaNRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPNQNoGKbZcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAcAxAbZkcoxwTIMIMaNaNRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPGJGKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKsFfraNaNaNaNRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPBMULDpDpDpbbDpDpDpDpDpDpDpDpDpDpDpbbDpDpULKcWKWKWKWKWKYnULDpDpDpDpbbDpDpDpULKcWKWKWKWKWKYnULDpDpDpDpbbDpDpDpULKcWKWKWKWKWKYnULDpDpDpDpTgDpDpDpULKcWKWKWKWKWKYnULFbaNaNaNaNRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPskskskskCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPmaULWKWKWKULBrCPCPCPCPCPCPCPCPskNQmaULWKWKWKULBrpIYJCPCPCPCPCPCPCPCPmaULWKWKWKULBrCPCPCPCPCPCPCPskGJNomaULWKWKWKULBrISaNaNaNaNaNRC
@@ -318,12 +425,12 @@ RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWK
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgbHWKWKWKWSCPCPCPCPJICtCtJICPCPOKBMbHWKWKWKWSxJCPCPCPCPCPCPCPCPCPCPCPbHWKWKWKWSCPCPCPCPCPCPCPCPCPCPskBMbHWKWKWKWSAvCPCPCPCPaNaNRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPCPQegUCtCtzMHbCPCPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeOKCPCPCPCPaNRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPQexpCtCtCtCtOiHbCPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
-RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPJIHwCtCtCtCtHwJICPTUJKWKWKWKsFoeCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPCPCPCPCPCPCPCPCPCPTUJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPJIHwOVOVOVOVHwJICPTUJKWKWKWKsFoeCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPCPCPCPCPCPCPCPCPCPTUJKWKWKWKsFoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgioWKWKWKVfgWCPJIHwwpCtCtwpHwJICPTUioWKWKWKVfoeCPCPCPCPCPCPCPCPCPCPBgioWKWKWKVfgWCPCPCPCPCPCPCPCPCPCPTUioWKWKWKVfoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPJIHwCtCtCtCtHwJICPTUJKWKWKWKsFoeCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFgWCPCPCPCPCPCPCPCPCPCPTUJKWKWKWKsFoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFeKeKJIHwCtCtCtCtHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFHweGJIHwwpCtCtwpHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
-RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFEGGrJIHwCtCtCtCtHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
+RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFEGGrJIHwOVOVOVOVHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgbHWKWKWKWSCPCPXhiiCtCNCtCtHwJICPBMbHWKWKWKWSpfCPCPCPCPCPCPCPCPCPCPCPbHWKWKWKWSCPCPCPCPCPCPCPCPCPCPCPBMbHWKWKWKWSoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPBgJKWKWKWKsFCPCPJIHzJBJICtCtHwJICPBMJKWKWKWKsFpfCPCPCPCPCPCPCPCPCPCPCPJKWKWKWKsFCPCPCPCPCPCPCPCPCPCPCPBMJKWKWKWKsFoeCPCPCPCPCPCPRC
 RCCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPCPULDpDpDpULCPCPJIHwCtJICtCtHwJICPBMULDpDpDpULpfCPCPCPCPCPCPCPCPCPCPCPULDpDpDpULCPCPCPCPCPCPCPCPCPCPCPBMULTYTYTYULpfCPCPCPCPCPCPRC
@@ -389,24 +496,24 @@ rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuku
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMkuVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMkuVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMkuVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMkuVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukuVMVMVMVMVMVMVMVMVMkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
@@ -421,11 +528,11 @@ rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuku
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuldfufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuldfufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuXBPbfufuynVLkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuGsguDJfufuDJGtGskukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuGsguDJaHaHDJGtGskukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJDJfufufufuDJDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJfufufufufufuDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuDJfufufufufufuDJEWkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
-rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuDJfuHVDJDJDJDJgqkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
+rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuDJfuHVcxcxcxcxgqkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJfuDJfufufufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJEWuRfufufufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri
 rikukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuvwDJEvldfufufufuldkukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukukuri

@@ -1,3 +1,15 @@
+/obj/structure/fd/grim_window
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/plastitanium_window.dmi'
+	icon_state = "plastitanium_window-0"
+	color = "#929292"
+	density = TRUE
+	anchored = TRUE
+	opacity = FALSE
+
+/obj/structure/fd/grim_window/Initialize()
+	. = ..()
+	set_light(3, 0.8, l_color = "#e2943a")
+
 /obj/structure/moss
 	name = "green moss"
 	desc = "A pile of gross water plants piled together."
