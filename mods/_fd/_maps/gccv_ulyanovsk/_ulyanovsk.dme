@@ -1,0 +1,16 @@
+#ifndef MODPACK_GCCV_ULYANOVSK
+#define MODPACK_GCCV_ULYANOVSK
+
+#include "_ulyanovsk.dm"
+
+#include "code/gccv_ulyanovsk.dm"
+#include "code/gccv_ulyanovsk_areas.dm"
+#include "code/gccv_ulyanovsk_jobs.dm"
+#include "code/gccv_ulyanovsk_radio.dm"
+#include "code/gccv_ulyanovsk_shuttles.dm"
+#include "code/armor.dm"
+#include "code/landmine.dm"
+#include "code/reactor.dm"
+#include "code/fabricator.dm"
+
+#endif
