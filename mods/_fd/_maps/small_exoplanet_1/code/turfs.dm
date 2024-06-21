@@ -55,6 +55,16 @@
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/dirt.dmi'
 	icon_state = "stone_old2"
 
+/turf/simulated/floor/exoplanet/grim_tile
+	name = "tile"
+	desc = "An rusted plate, separated into 4 pieces."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "pattern_kitchen_alt"
+
+/turf/simulated/floor/exoplanet/grim_tile/New()
+	..()
+	icon_state = "pattern_kitchen_alt_[rand(1, 4)]"
+
 /turf/simulated/floor/exoplanet/grim_asphalt1
 	name = "broken asphalt"
 	desc = "An cracked old road."
@@ -314,6 +324,16 @@
 /turf/simulated/floor/exoplanet/grim_ceramic_indoor3/New()
 	..()
 	icon_state = "ceramic_green_[rand(1, 6)]"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor4
+	name = "white ceramic tile"
+	desc = "Just an old, molded bricky pattern."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
+	icon_state = "ceramic_white"
+
+/turf/simulated/floor/exoplanet/grim_ceramic_indoor4/New()
+	..()
+	icon_state = "ceramic_white_[rand(1, 8)]"
 
 //forgive me god for the sins i'm about to commit
 
