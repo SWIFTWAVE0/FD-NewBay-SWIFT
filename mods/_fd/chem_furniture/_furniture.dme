@@ -1,0 +1,8 @@
+#ifndef MODPACK_CHEM_FURNITURE
+#define MODPACK_CHEM_FURNITURE
+
+#include "_furniture.dm"
+
+#include "code/furniture.dm"
+
+#endif

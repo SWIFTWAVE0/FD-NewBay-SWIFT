@@ -271,6 +271,7 @@
 	#include "../../mods/_fd/old_space_cannons/_old_space_cannons.dme"
 	#include "../../mods/_fd/random_rooms/_random_rooms.dme"
 	#include "../../mods/_fd/structure_storage/_structure_storage.dme"
+	#include "../../mods/_fd/chem_furniture/_furniture.dme"
 
 	#include "../../mods/_fd/_maps/airfield/_airfield.dme"
 	#include "../../mods/_fd/_maps/ares/_ares.dme"
@@ -282,10 +283,12 @@
 	#include "../../mods/_fd/_maps/lighthouse/_lighthouse.dme"
 	#include "../../mods/_fd/_maps/new_blueriver/_new_blueriver.dme"
 	#include "../../mods/_fd/_maps/providence/_providence.dme"
+	#include "../../mods/_fd/_maps/small_exoplanet_1/_small_exoplanet_1.dme"
 	#include "../../mods/_fd/_maps/smugglers_ship/_smugglers_ship.dme"
 	#include "../../mods/_fd/_maps/snow_cage/_snow_cage.dme"
 	#include "../../mods/_fd/_maps/trader_ship/_trader_ship.dme"
 	#include "../../mods/_fd/_maps/yacht/_yacht.dme"
+	#include "../../mods/_fd/_maps/gccv_ulyanovsk/_ulyanovsk.dme"
 
 		// ~EXOPLANET RUINS~ //
 

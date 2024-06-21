@@ -1,0 +1,14 @@
+#ifndef MODPACK_LOVECRAFT
+#define MODPACK_LOVECRAFT
+
+#include "_lovecraft.dm"
+
+#include "code/visual_filters.dm"
+
+#include "code/assets.dm"
+#include "code/core.dm"
+#include "code/doors.dm"
+#include "code/lovecraft.dm"
+#include "code/turfs.dm"
+
+#endif
