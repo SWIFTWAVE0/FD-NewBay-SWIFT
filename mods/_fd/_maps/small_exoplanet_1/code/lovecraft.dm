@@ -50,8 +50,86 @@
 /area/lovecraft/indoors/main/adm
 	name = "Innsmouth Admiralty (MAIN)"
 
+/area/lovecraft/indoors/main/lib
+	name = "Innsmouth Great Library (MAIN)"
+
+/area/lovecraft/indoors/main/hotel
+	name = "Innsmouth Mossberry Hotel (MAIN)"
+
+/area/lovecraft/indoors/main/cargo
+	name = "Innsmouth Docking Cargo (MAIN)"
+
+/area/lovecraft/indoors/main/cargo/stores
+	name = "Innsmouth Bazar (MAIN)"
+	add_overlay = TRUE
+
+/area/lovecraft/indoors/main/cargo/stores/Entered(mob/living/L)
+	..()
+	if(istype(L) && add_overlay)
+		L.overlay_fullscreen("mist", /obj/screen/fullscreen/mist)
+
+/area/lovecraft/indoors/main/cargo/stores/Exited(mob/living/L)
+	..()
+	if(istype(L) && add_overlay)
+		L.clear_fullscreen("mist")
+
+/area/lovecraft/indoors/main/home1
+	name = "Traw's family House (MAIN)"
+
+/area/lovecraft/indoors/main/home2
+	name = "Smith's family House (MAIN)"
+
+/area/lovecraft/indoors/main/home3
+	name = "Baxter's family House (MAIN)"
+
+/area/lovecraft/indoors/main/home4
+	name = "Anderson's family House (MAIN)"
+
+/area/lovecraft/indoors/main/home5
+	name = "Teodor's family House (MAIN)"
+
+/area/lovecraft/indoors/main/ship_lower
+	name = "Ship Lower Deck (MAIN)"
+
 /area/lovecraft/indoors/second
 	base_turf = /turf/simulated/open
+
+/area/lovecraft/indoors/second/adm
+	name = "Innsmouth Admiralty (ABOVE)"
+
+/area/lovecraft/indoors/second/lib
+	name = "Innsmouth Great Library (ABOVE)"
+
+/area/lovecraft/indoors/second/home1
+	name = "Traw's family House (ABOVE)"
+
+/area/lovecraft/indoors/second/home2
+	name = "Smith's family House (ABOVE)"
+
+/area/lovecraft/indoors/second/home2/balcony
+	add_overlay = TRUE
+
+/area/lovecraft/indoors/second/home2/balcony/Entered(mob/living/L)
+	..()
+	if(istype(L) && add_overlay)
+		L.overlay_fullscreen("mist", /obj/screen/fullscreen/mist)
+
+/area/lovecraft/indoors/second/home2/balcony/Exited(mob/living/L)
+	..()
+	if(istype(L) && add_overlay)
+		L.clear_fullscreen("mist")
+
+/area/lovecraft/indoors/second/home3
+	name = "Baxter's family House (ABOVE)"
+
+/area/lovecraft/indoors/second/home4
+	name = "Anderson's family House (ABOVE)"
+
+/area/lovecraft/indoors/second/home5
+	name = "Teodor's family House (ABOVE)"
+
+/area/lovecraft/indoors/second/ship_upper
+	name = "Ship First Deck (ABOVE)"
 
 /area/lovecraft/main_level
 	name = "NOTHING FOR NOW (MAIN)"

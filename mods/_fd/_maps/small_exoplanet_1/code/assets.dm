@@ -1,4 +1,559 @@
+/obj/structure/curtain/grim_red
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "curtain1"
+
+/obj/structure/curtain/grim_red/toggle()
+	set_opacity(!opacity)
+	if(opacity)
+		icon_state = "curtain1"
+		layer = ABOVE_HUMAN_LAYER
+	else
+		icon_state = "curtain"
+		layer = ABOVE_WINDOW_LAYER
+
+/obj/structure/fd/wall_decor
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/decoration.dmi'
+	icon_state = "black_drape"
+	name = "wall decor"
+	desc = "An old, scratched picture."
+	anchored = TRUE
+	opacity = FALSE
+
+/obj/structure/fd/wall_decor2
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/decor.dmi'
+	icon_state = "luna1"
+	name = "wall decor"
+	desc = "An old, scratched picture."
+	anchored = TRUE
+	opacity = FALSE
+
+/obj/structure/fd/darts
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/darts.dmi'
+	icon_state = "dartboard"
+	name = "wall dartboard"
+	desc = "An old, scratched board, used to play darts on."
+	anchored = FALSE
+	density = TRUE
+	opacity = FALSE
+
+/obj/structure/fd/forge_furniture
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/forge.dmi'
+	icon_state = "smelter1"
+	name = "working equipment"
+	desc = "An old, primitive machinery used for various things."
+	anchored = TRUE
+	density = TRUE
+	opacity = FALSE
+
+/obj/structure/fd/grim_bookshelf
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/bookshelf.dmi'
+	icon_state = "bookcase"
+	name = "bookshelf"
+	desc = "An old bookshelf."
+	anchored = TRUE
+	density = TRUE
+	opacity = TRUE
+
+/obj/structure/fd/library_bigart
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/64x64.dmi'
+	icon_state = "sherwoods"
+	name = "wall art"
+	desc = "An old piece of beautiful art."
+	anchored = TRUE
+	density = FALSE
+	opacity = FALSE
+
+/obj/structure/fd/library_bigart2
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/64x64.dmi'
+	icon_state = "lake"
+	name = "wall art"
+	desc = "An old piece of beautiful art."
+	anchored = TRUE
+	density = FALSE
+	opacity = FALSE
+
+/obj/structure/fd/library_bigart3
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tallstructure.dmi'
+	icon_state = "mona"
+	name = "wall art"
+	desc = "An old piece of beautiful art."
+	anchored = TRUE
+	density = FALSE
+	opacity = FALSE
+
+/obj/structure/fd/signboard_hotel
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tallstructure.dmi'
+	icon_state = "goblet"
+	name = "signboard"
+	desc = "Very tall hotel signboard."
+	anchored = TRUE
+	density = FALSE
+	opacity = FALSE
+
+/obj/structure/fd/signboard_cargo
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tallstructure.dmi'
+	icon_state = "bsmith"
+	name = "signboard"
+	desc = "Very tall ship's cargo signboard."
+	anchored = TRUE
+	density = FALSE
+	opacity = FALSE
+
+/obj/item/stool/grim
+	name = "bar stool"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "barstool"
+	base_icon = "barstool"
+	item_state = "bar_stool"
+
+/obj/item/stool/grim/New(newloc)
+	..(newloc,MATERIAL_WALNUT)
+	color = null
+
+/obj/item/stool/grim/on_update_icon()
+
+	if(padding_material)
+		SetName("[padding_material.display_name] [initial(name)]") //this is not perfect but it will do for now.
+		desc = "A padded stool. Apply butt. It's made of [material.use_name] and covered with [padding_material.use_name]."
+	else
+		SetName("[material.display_name] [initial(name)]")
+		desc = "A stool. Apply butt with care. It's made of [material.use_name]."
+
+/obj/structure/bed/chair/wood/grim
+
+/obj/structure/bed/chair/wood/grim/New(newloc)
+	..(newloc,MATERIAL_WALNUT)
+	color = null
+
+/obj/structure/bed/chair/wood/grim/on_update_icon()
+	return
+
+/obj/structure/bed/chair/wood/grim/elite
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "chair2"
+	base_icon = "chair2"
+
+/obj/structure/bed/chair/wood/grim/elite2
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "chair1"
+	base_icon = "chair1"
+
+/obj/structure/bed/chair/wood/grim/normal
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "chair3"
+	base_icon = "chair3"
+
+/obj/item/stool/grim/bench
+	name = "wooden bench"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "benchsmall"
+	base_icon = "benchsmall"
+	item_state = "bar_stool"
+
+/obj/structure/bed/grim
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "inn_bed"
+	base_icon = "inn_bed"
+
+/obj/structure/bed/grim/New(newloc)
+	..(newloc,MATERIAL_WALNUT, MATERIAL_LEATHER_GENERIC)
+	color = null
+
+/obj/structure/bed/grim/on_update_icon()
+
+	if(material_alteration & MATERIAL_ALTERATION_NAME)
+		SetName(padding_material ? "[padding_material.adjective_name] [initial(name)]" : "[material.adjective_name] [initial(name)]") //this is not perfect but it will do for now.
+
+	if(material_alteration & MATERIAL_ALTERATION_DESC)
+		desc = initial(desc)
+		desc += padding_material ? " It's made of [material.use_name] and covered with [padding_material.use_name]." : " It's made of [material.use_name]."
+
+/obj/structure/bed/grim/big
+	name = "big double bed"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "double"
+	base_icon = "double"
+
+/obj/structure/bed/grim/big/New(newloc)
+	..(newloc,MATERIAL_WALNUT, MATERIAL_LEATHER_GENERIC)
+	color = null
+
+/obj/structure/bed/grim/bad
+	name = "broke bed"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "shitbed"
+	base_icon = "shitbed"
+
+/obj/structure/bed/grim/bad/New(newloc)
+	..(newloc,MATERIAL_WALNUT, MATERIAL_LEATHER_GENERIC)
+	color = null
+
+/obj/structure/table/rack/grim
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "shelf_big"
+
+/obj/structure/table/rack/grim/Initialize()
+	SHOULD_CALL_PARENT(FALSE)
+
+	// reset color/alpha, since they're set for nice map previews
+	color = "#ffffff"
+	alpha = 255
+	update_connections(1)
+	update_icon()
+	update_desc()
+	update_material()
+
+/obj/structure/table/rack/grim/use_tool(obj/item/tool, mob/user, list/click_params)
+	SHOULD_CALL_PARENT(FALSE)
+
+	// Unfinished table - Construction stuff
+	if (can_plate && !material)
+		// Material - Plate table
+		if (istype(tool, /obj/item/stack/material))
+			material = common_material_add(tool, user, "plat")
+			if (material)
+				update_connections(TRUE)
+				update_icon()
+				update_desc()
+				update_material()
+			return TRUE
+
+		// Wrench - Dismantle
+		if (isWrench(tool))
+			dismantle(tool, user)
+			return TRUE
+
+		// Anything else - Can't put it on an unfinished table
+		USE_FEEDBACK_FAILURE("\The [src] needs to be plated before you can put \the [tool] on it.")
+		return TRUE
+
+	// Put things on table
+	if (!user.unEquip(tool, loc))
+		FEEDBACK_UNEQUIP_FAILURE(user, tool)
+		return TRUE
+	return TRUE
+
+/obj/structure/table/rack/grim/table_rouge
+	name = "table"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tables.dmi'
+	icon_state = "tablewood"
+
+/obj/structure/table/rack/grim/table_lfwb
+	name = "table"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tables_lfwb.dmi'
+	icon_state = "reinf_table2"
+
+/obj/structure/storage/grim1
+	name = "chest drawer"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "drawer1"
+	slots = 8
+	storage_space = 15
+
+/obj/structure/storage/grim2
+	name = "chest drawer"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "drawer2"
+	slots = 8
+	storage_space = 15
+
+/obj/structure/storage/grim3
+	name = "chest drawer"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "drawer3"
+	slots = 10
+	storage_space = 25
+
+/obj/item/storage/mirror/grim
+	name = "victorian mirror"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+
+/obj/item/storage/mirror/grim/MouseDrop(obj/over)
+	return
+
+/obj/item/storage/mirror/grim/shatter()
+	if (shattered)
+		playsound(src, 'sound/effects/hit_on_shattered_glass.ogg', 70, 1)
+		return
+	shattered = TRUE
+	icon_state = "[icon_state]_broke"
+	playsound(src, "shatter", 70, 1)
+	desc = "Oh no, seven years of bad luck!"
+
+/obj/item/storage/mirror/use_tool(obj/item/I, mob/living/user, list/click_params)
+	. = ..()
+	if (!.)
+		return
+	if (prob(I.force) && user.a_intent == I_HURT)
+		user.visible_message(SPAN_WARNING("\The [user] smashes \the [src] with \the [I]!"))
+		shatter()
+
+/obj/item/storage/mirror/grim/golden
+	icon_state = "fancymirror"
+
+/obj/item/storage/mirror/grim/basic
+	icon_state = "mirror"
+
+/obj/item/storage/mirror/grim/iron
+	icon_state = "mirroriron"
+
+/obj/structure/closet/grim
+	setup = 0
+	closet_appearance = null
+
+	var/screwdriver_time_needed = 7.5 SECONDS
+
+/obj/structure/closet/grim/examine(mob/user, distance)
+	. = ..()
+	if(distance <= 1 && !opened)
+		to_chat(user, "The lid is [locked ? "tightly secured with screws." : "unsecured and can be opened."]")
+
+/obj/structure/closet/grim/can_open()
+	. =  ..()
+	if(locked)
+		return FALSE
+
+/obj/structure/closet/grim/use_tool(obj/item/tool, mob/user, list/click_params)
+	// Screwdriver - Toggle lock
+	if (isScrewdriver(tool))
+		if (opened)
+			USE_FEEDBACK_FAILURE("\The [src] needs to be closed before you can screw the lid shut.")
+			return TRUE
+		playsound(src, 'sound/items/Screwdriver.ogg', 50, TRUE)
+		user.visible_message(
+			SPAN_NOTICE("\The [user] begins screwing \the [src]'s lid [locked ? "open" : "shut"] with \a [tool]."),
+			SPAN_NOTICE("You begin screwing \the [src]'s lid [locked ? "open" : "shut"] with \the [tool].")
+		)
+		if (!user.do_skilled(screwdriver_time_needed, SKILL_CONSTRUCTION, src, do_flags = DO_REPAIR_CONSTRUCT) || !user.use_sanity_check(src, tool))
+			return TRUE
+		if (opened)
+			USE_FEEDBACK_FAILURE("\The [src] needs to be closed before you can screw the lid shut.")
+			return TRUE
+		playsound(src, 'sound/items/Screwdriver.ogg', 50, TRUE)
+		user.visible_message(
+			SPAN_NOTICE("\The [user] screws \the [src]'s lid [locked ? "open" : "shut"] with \a [tool]."),
+			SPAN_NOTICE("You screw \the [src]'s lid [locked ? "open" : "shut"] with \the [tool].")
+		)
+		locked = !locked
+		return TRUE
+
+	return ..()
+
+/obj/structure/closet/grim/toggle(mob/user as mob)
+	if(!(opened ? close() : open()))
+		to_chat(user, SPAN_NOTICE("It won't budge!"))
+
+/obj/structure/closet/grim/req_breakout()
+	. = ..()
+	if(locked)
+		return TRUE
+
+/obj/structure/closet/grim/break_open()
+	locked = FALSE
+	..()
+
+/obj/structure/closet/grim/metal
+	name = "metal closet"
+	desc = "It's an old rusted metal closet."
+	icon_state = "closed"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/metal_closet.dmi'
+
+/obj/structure/closet/grim/wood
+	name = "wooden closet"
+	desc = "It's an old molded closet."
+	icon_state = "closed"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/wooden_closet.dmi'
+
+/obj/structure/closet/grim/wood_crate
+	name = "wooden crate"
+	desc = "It's an old molded crate."
+	icon_state = "closed"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/wooden_crate.dmi'
+
+/obj/structure/fd/grim_fountain
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/64x64.dmi'
+	icon_state = "fountain"
+	name = "old fountain"
+	desc = "An old, pretty cracked structure with various leaks from side to side. Water in it greenish and dark, probably not very good to drink."
+	density = TRUE
+	anchored = TRUE
+	bound_width = 64
+
+/obj/structure/fd/grim_garg_statue
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tallstructure.dmi'
+	icon_state = "mgargoyle"
+	name = "old statue"
+	desc = "An old, molded statue of a horrific creature."
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/fd/grim_knight_statue1
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tallstructure.dmi'
+	icon_state = "knightstatue2_l"
+	name = "old statue"
+	desc = "An old, molded statue of a knight, holding an emblem of Innsmouth Order."
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/fd/grim_knight_statue2
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/tallstructure.dmi'
+	icon_state = "knightstatue2_r"
+	name = "old statue"
+	desc = "An old, molded statue of a knight, holding an emblem of Innsmouth Order."
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/hygiene/sink/grim_well
+	name = "well"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "welly"
+	clogged = -1 // how do you clog a well
+	density = TRUE
+
+/obj/item/flame/candle/grim
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/lighting.dmi'
+	candle_power = 1
+
+/obj/item/flame/candle/grim/Initialize()
+	SHOULD_CALL_PARENT(FALSE)
+	wax = rand(27 MINUTES, 33 MINUTES) / SSobj.wait // Enough for 27-33 minutes. 30 minutes on average, adjusted for subsystem tickrate.
+
+/obj/structure/fd/candle_wall
+	name = "candles"
+	desc = "An wall mounted candles ready to light your day."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/light.dmi'
+	icon_state = "wallcandle1"
+	density = FALSE
+	anchored = TRUE
+	opacity = FALSE
+	var/lit = TRUE
+	var/have_candle = TRUE
+	var/light_attached = /obj/item/flame/candle/grim
+
+/obj/structure/fd/candle_wall/Initialize()
+	. = ..()
+	set_light(5, 1, l_color = "#e69f43")
+	START_PROCESSING(SSobj, src)
+
+/obj/structure/fd/candle_wall/update_icon()
+	if(!have_candle && !lit)
+		icon_state = "wallcandle2"
+
+	if(!lit)
+		icon_state = "wallcandle0"
+
+	if(lit)
+		icon_state = "wallcandle1"
+
+/obj/structure/fd/candle_wall/Process()
+
+	if(!have_candle)
+		set_light(0)
+		update_icon()
+
+	if(!lit)
+		set_light(0)
+		update_icon()
+
+	if(lit)
+		set_light(5, 1, l_color = "#e69f43")
+		update_icon()
+
+/obj/structure/fd/candle_wall/use_tool(obj/item/I, mob/living/user)
+	. = ..()
+	if(istype(I,/obj/item/flame/candle/grim))
+		var/obj/item/flame/candle/grim/L = I
+		if(lit && have_candle)
+			if(L.lit == FALSE)
+				L.light()
+			else
+				return FALSE
+		if(!have_candle)
+			have_candle = TRUE
+			qdel(L)
+	if(istype(I,/obj/item/clothing/mask/smokable/cigarette))
+		var/obj/item/clothing/mask/smokable/cigarette/L = I
+		if(lit && have_candle)
+			if(L.lit == FALSE)
+				L.light()
+			else
+				return FALSE
+
+/obj/structure/fd/candle_wall/attack_hand(mob/user as mob)
+	if(!have_candle)
+		return
+	if(!ishuman(user))
+		return 0
+	visible_message("<span class='notice'>[usr] takes [src] from the wall.</span>")
+	var/obj/item/flame/candle/grim/B = new light_attached(get_turf(src))
+	usr.put_in_hands(B)
+	have_candle = FALSE
+	lit = FALSE
+
+/obj/structure/fd/grim_fireplace_big
+	name = "fireplace"
+	desc = "A house fireplace for all your warm nights."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/fireplace64.dmi'
+	icon_state = "fireplace1"
+	density = FALSE
+	anchored = TRUE
+	opacity = FALSE
+	var/lit = TRUE
+
+/obj/structure/fd/grim_fireplace_big/Initialize()
+	. = ..()
+	set_light(8, 0.8, l_color = "#cf3025", angle = LIGHT_VERY_WIDE)
+	START_PROCESSING(SSobj, src)
+
+/obj/structure/fd/grim_fireplace_big/update_icon()
+	if(!lit)
+		icon_state = "fireplace0"
+
+	if(lit)
+		icon_state = "fireplace1"
+
+/obj/structure/fd/grim_fireplace_big/Process()
+	if(!lit)
+		set_light(0)
+		update_icon()
+
+	if(lit)
+		set_light(8, 0.8, l_color = "#cf3025", angle = LIGHT_VERY_WIDE)
+		update_icon()
+
+/obj/structure/fd/grim_fireplace
+	name = "fireplace"
+	desc = "A house fireplace for all your warm nights."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/light.dmi'
+	icon_state = "wallfire1"
+	density = FALSE
+	anchored = TRUE
+	opacity = FALSE
+	var/lit = TRUE
+
+/obj/structure/fd/grim_fireplace/Initialize()
+	. = ..()
+	set_light(8, 0.6, l_color = "#cf3025", angle = LIGHT_WIDE)
+	START_PROCESSING(SSobj, src)
+
+/obj/structure/fd/grim_fireplace/update_icon()
+	if(!lit)
+		icon_state = "wallfire0"
+
+	if(lit)
+		icon_state = "wallfire1"
+
+/obj/structure/fd/grim_fireplace/Process()
+	if(!lit)
+		update_icon()
+		set_light(0)
+	if(lit)
+		set_light(8, 0.6, l_color = "#cf3025", angle = LIGHT_WIDE)
+		update_icon()
+
 /obj/structure/fd/grim_window
+	name = "window"
+	desc = "A house window which emmitting slight glow, transfered from the other side of the building."
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/plastitanium_window.dmi'
 	icon_state = "plastitanium_window-0"
 	color = "#929292"
