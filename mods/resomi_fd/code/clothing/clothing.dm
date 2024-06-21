@@ -121,6 +121,11 @@
 	. = ..()
 	LAZYSET(sprite_sheets, SPECIES_RESOMI, 'mods/resomi_fd/icons/clothing/onmob_head_resomi.dmi')
 	LAZYSET(sprite_sheets_obj, SPECIES_RESOMI, 'packs/infinity/icons/obj/clothing/species/resomi/obj_head_resomi.dmi')
+
+/obj/item/clothing/head/beret/Initialize()
+	. = ..()
+	LAZYSET(base_sprite_sheets, SPECIES_RESOMI, 'mods/resomi_fd/icons/clothing/onmob_head_resomi.dmi')
+
 //glasses
 /obj/item/clothing/glasses/Initialize()
 	. = ..()
