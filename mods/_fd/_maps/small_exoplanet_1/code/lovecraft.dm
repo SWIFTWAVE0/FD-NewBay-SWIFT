@@ -43,6 +43,7 @@
 
 /area/lovecraft
 	var/add_overlay = FALSE
+	requires_power = FALSE
 
 /area/lovecraft/indoors/main
 	base_turf = /turf/simulated/floor/exoplanet/grim_dirt
@@ -90,6 +91,22 @@
 
 /area/lovecraft/indoors/main/ship_lower
 	name = "Ship Lower Deck (MAIN)"
+
+/area/lovecraft/indoors/main/fisherman
+	name = "Fisherman House (MAIN)"
+
+/area/lovecraft/indoors/main/fisherman/balcony
+	add_overlay = TRUE
+
+/area/lovecraft/indoors/main/fisherman/balcony/Entered(mob/living/L)
+	..()
+	if(istype(L) && add_overlay)
+		L.overlay_fullscreen("mist", /obj/screen/fullscreen/mist)
+
+/area/lovecraft/indoors/main/fisherman/balcony/Exited(mob/living/L)
+	..()
+	if(istype(L) && add_overlay)
+		L.clear_fullscreen("mist")
 
 /area/lovecraft/indoors/second
 	base_turf = /turf/simulated/open

@@ -11,6 +11,89 @@
 		icon_state = "curtain"
 		layer = ABOVE_WINDOW_LAYER
 
+/obj/machinery/door/blast/grim
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/structure.dmi'
+	icon_state = "shutter0"
+	icon_state_open = "shutter1"
+	icon_state_opening = "shutter_opening"
+	icon_state_closed = "shutter0"
+	icon_state_closing = "shutter_closing"
+
+	icon_state_open_broken = "shutter1"
+	icon_state_closed_broken = "shutter0"
+
+	health_max = 9000
+	block_air_zones = TRUE
+
+/obj/machinery/button/blast_door/shaft_access
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/machines.dmi'
+	name = "coin machine"
+	desc = "It controls blast doors, remotely. There is also a lette - '10 coins for entrance'."
+	icon_state = "steward_machine_off"
+	var/coins = 0
+	var/fulfilled = FALSE
+
+/obj/machinery/button/blast_door/shaft_access/Initialize()
+	. = ..()
+	START_PROCESSING(SSobj, src)
+
+/obj/machinery/button/blast_door/shaft_access/Process()
+
+	if(coins >= 10)
+		fulfilled = TRUE
+
+	if(fulfilled)
+		update_icon()
+
+/obj/machinery/button/blast_door/shaft_access/use_tool(obj/item/I, mob/user, params)
+	. = ..()
+
+	if(istype(I, /obj/item/fd/soulcoin))
+		qdel(I)
+		coins += 1
+
+/obj/machinery/button/blast_door/shaft_access/interface_interact(user)
+	if(!CanInteract(user, DefaultTopicState()))
+		return FALSE
+	if(!fulfilled)
+		return
+	if(istype(user, /mob/living/carbon))
+		playsound(src, "button", 60)
+	activate(user)
+	return TRUE
+
+/obj/machinery/button/blast_door/shaft_access/on_update_icon()
+	if(fulfilled)
+		icon_state = "steward_machine"
+
+	if(operating)
+		icon_state = "steward_machine"
+
+/obj/item/fd/soulcoin
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/enigma_husks.dmi'
+	icon_state = "soultoken"
+	name = "bloody coin"
+	desc = "Someone said that this thing will help us enter the mineshaft."
+	w_class = ITEM_SIZE_TINY
+
+/obj/structure/fd/coin_grounded
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/enigma_husks.dmi'
+	icon_state = "soultoken_floor"
+	name = "SOULCOIN"
+	desc = "You need this to enter the shaft."
+	anchored = TRUE
+	opacity = FALSE
+	density = FALSE
+	var/ticket = /obj/item/fd/soulcoin
+
+/obj/structure/fd/coin_grounded/attack_hand(mob/living/user)
+	if(!ishuman(user))
+		return 0
+	visible_message("<span class='notice'>[usr] takes [src] from the wall.</span>")
+	var/obj/item/flame/candle/grim/B = new ticket(get_turf(src))
+	usr.put_in_hands(B)
+	qdel(src)
+
 /obj/structure/fd/wall_decor
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/decoration.dmi'
 	icon_state = "black_drape"
@@ -418,6 +501,95 @@
 	SHOULD_CALL_PARENT(FALSE)
 	wax = rand(27 MINUTES, 33 MINUTES) / SSobj.wait // Enough for 27-33 minutes. 30 minutes on average, adjusted for subsystem tickrate.
 
+/obj/item/flame/match/torch
+	name = "torch"
+	pluralname = "matche"
+	desc = "A simple stick, used for lighting."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/lighting.dmi'
+	icon_state = "mtorch"
+	item_state = "oxycandle_on"
+	smoketime = 500
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/flame/match/torch/on_update_icon()
+	..()
+	if(burnt)
+		icon_state = "mtorch"
+		item_state = "oxycandle"
+
+/obj/structure/fd/torch_wall
+	name = "torch"
+	desc = "An wall mounted torch ready to light your day."
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/light.dmi'
+	icon_state = "torchwall1"
+	density = FALSE
+	anchored = TRUE
+	opacity = FALSE
+	var/lit = TRUE
+	var/have_torch = TRUE
+	var/light_attached = /obj/item/flame/match/torch
+
+/obj/structure/fd/candle_wall/Initialize()
+	. = ..()
+	set_light(5, 1, l_color = "#da4531")
+	START_PROCESSING(SSobj, src)
+
+/obj/structure/fd/torch_wall/update_icon()
+	if(!have_torch && !lit)
+		icon_state = "torchwall"
+
+	if(lit)
+		icon_state = "torchwall1"
+
+/obj/structure/fd/torch_wall/Process()
+
+	if(!have_torch && !lit)
+		set_light(0)
+		update_icon()
+
+	if(lit)
+		set_light(5, 1, l_color = "#da4531")
+		update_icon()
+
+/obj/structure/fd/torch_wall/use_tool(obj/item/I, mob/living/user)
+	. = ..()
+	if(istype(I,/obj/item/flame/match/torch))
+		var/obj/item/flame/match/torch/L = I
+		if(lit && have_torch)
+			if(L.lit == FALSE)
+				L.lit = TRUE
+			else
+				return FALSE
+		if(!have_torch)
+			have_torch = TRUE
+			qdel(L)
+	if(istype(I,/obj/item/flame/candle/grim))
+		var/obj/item/flame/candle/grim/L = I
+		if(lit && have_torch)
+			if(L.lit == FALSE)
+				L.light()
+			else
+				return FALSE
+	if(istype(I,/obj/item/clothing/mask/smokable/cigarette))
+		var/obj/item/clothing/mask/smokable/cigarette/L = I
+		if(lit && have_torch)
+			if(L.lit == FALSE)
+				L.light()
+			else
+				return FALSE
+
+/obj/structure/fd/torch_wall/attack_hand(mob/user as mob)
+	if(!have_torch)
+		return
+	if(!ishuman(user))
+		return 0
+	visible_message("<span class='notice'>[usr] takes [src] from the wall.</span>")
+	var/obj/item/flame/match/torch/B = new light_attached(get_turf(src))
+	usr.put_in_hands(B)
+	B.lit = TRUE
+	have_torch = FALSE
+	lit = FALSE
+
 /obj/structure/fd/candle_wall
 	name = "candles"
 	desc = "An wall mounted candles ready to light your day."
@@ -439,19 +611,12 @@
 	if(!have_candle && !lit)
 		icon_state = "wallcandle2"
 
-	if(!lit)
-		icon_state = "wallcandle0"
-
 	if(lit)
 		icon_state = "wallcandle1"
 
 /obj/structure/fd/candle_wall/Process()
 
-	if(!have_candle)
-		set_light(0)
-		update_icon()
-
-	if(!lit)
+	if(!have_candle && !lit)
 		set_light(0)
 		update_icon()
 
@@ -487,6 +652,7 @@
 	visible_message("<span class='notice'>[usr] takes [src] from the wall.</span>")
 	var/obj/item/flame/candle/grim/B = new light_attached(get_turf(src))
 	usr.put_in_hands(B)
+	B.light()
 	have_candle = FALSE
 	lit = FALSE
 
