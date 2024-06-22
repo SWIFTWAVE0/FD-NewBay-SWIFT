@@ -286,9 +286,11 @@
 	#include "../../mods/_fd/_maps/small_exoplanet_1/_small_exoplanet_1.dme"
 	#include "../../mods/_fd/_maps/smugglers_ship/_smugglers_ship.dme"
 	#include "../../mods/_fd/_maps/snow_cage/_snow_cage.dme"
+	#include "../../mods/_fd/_maps/sfv_dropship/_delman.dme"
 	#include "../../mods/_fd/_maps/trader_ship/_trader_ship.dme"
 	#include "../../mods/_fd/_maps/yacht/_yacht.dme"
 	#include "../../mods/_fd/_maps/gccv_ulyanovsk/_ulyanovsk.dme"
+
 
 		// ~EXOPLANET RUINS~ //
 
