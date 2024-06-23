@@ -180,6 +180,7 @@
 /datum/job/submap/research_lab_scg/research/xenoarcheology/lab
 	title = "Lab Technician of Xenoarcheology"
 	selection_color = "#815615"
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN, SPECIES_ADHERENT, SPECIES_NABBER, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	access = list(
 		access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
 		access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
@@ -191,21 +192,25 @@
 
 /datum/job/submap/research_lab_scg/research/roboticist/lab
 	title = "Lab Technician of Robotists"
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN, SPECIES_ADHERENT, SPECIES_NABBER, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	selection_color = "#633d63"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/lab
 
 /datum/job/submap/research_lab_scg/research/biology/lab
 	title = "Lab Technician of Biology"
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN, SPECIES_ADHERENT, SPECIES_NABBER, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	selection_color = "#013d3b"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/lab
 
 /datum/job/submap/research_lab_scg/research/bluespace/lab
 	title = "Lab Technician of Theorical Bluespace"
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN, SPECIES_ADHERENT, SPECIES_NABBER, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	selection_color = "#603dc2"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/lab
 
 /datum/job/submap/research_lab_scg/research/psycho/lab
 	title = "Lab Technician of Psychology"
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN,SPECIES_ADHERENT, SPECIES_NABBER, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	selection_color = "#4e1370"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/lab
 
@@ -217,6 +222,7 @@
 	title = "Security Agent"
 	selection_color = "#9e0909"
 	info = "You are the part of the Agency"
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	outfit_type = /singleton/hierarchy/outfit/job/researchlab/agent
 	total_positions = 3
 	skill_points = 3
@@ -252,6 +258,7 @@
 	title = "Service staff"
 	selection_color = "#2b5f21"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN, SPECIES_ADHERENT, SPECIES_NABBER, SPECIES_DIONA, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_RESOMI)
 	total_positions = 4
 	spawn_positions = 4
 	min_skill = list(
