@@ -2,11 +2,10 @@
 
 // Map template data.
 /datum/map_template/ruin/away_site/delman_docking_ring
-	name = "PM-23 'Delman' Dropship"
+	name = "PM-23 \"Delman\" Dropship"
 	id = "awaysite_delman"
 	description = "Army dropship that can bring to planet up to Platoon(42) and 4 Vehicle."
-	prefix = "mods/_fd/_maps/sfv_dropship/"
-	suffixes = list("delman.dmm")
+	mappaths = list("mods/_fd/_maps/sfv_dropship/delman.dm")
 	area_usage_test_exempted_areas = list(
 		/area/ship/delman,
 		/area/ship/delman/central,
@@ -30,7 +29,7 @@
 
 /obj/machinery/computer/shuttle_control/explore/delman
 	name = "shuttle control console"
-	shuttle_tag = "PM-23 'Delman' Dropship"
+	shuttle_tag = "PM-23 \"Delman\" Dropship"
 
 /obj/shuttle_landmark/delman
 	name = "Delman Landing Zone"
@@ -43,28 +42,28 @@
 	landmark_tag = "nav_transit_delman_transport"
 
 /area/ship/delman/central
-	name = "\improper PM-23 'Delman' Dropship | Central"
+	name = "\improper PM-23 \"Delman\" Dropship | Central"
 	icon_state = "bridge"
 
 /area/ship/delman/cockpit
-	name = "\improper PM-23 'Delman' Dropship | Cockpit "
+	name = "\improper PM-23 \"Delman\" Dropship | Cockpit "
 	icon_state = "bridge_hall"
 
 /area/ship/delman/rightwing
-	name = "\improper PM-23 'Delman' Dropship | Right Wing"
+	name = "\improper PM-23 \"Delman\" Dropship | Right Wing"
 	icon_state = "yellow"
 
 /area/ship/delman/leftwing
-	name = "\improper PM-23 'Delman' Dropship | Left Wing"
+	name = "\improper PM-23 \"Delman\" Dropship | Left Wing"
 	icon_state = "red"
 
 /area/ship/delman/engibay
-	name = "\improper PM-23 'Delman' Dropship | EngiBay "
+	name = "\improper PM-23 \"Delman\" Dropship | EngiBay "
 	icon_state = "engine"
 
 /obj/overmap/visitable/ship/landable/delman
-	name = "PM-23 'Delman' Dropship"
-	shuttle = "PM-23 'Delman' Dropship"
+	name = "PM-23 \"Delman\" Dropship"
+	shuttle = "PM-23 \"Delman\" Dropship"
 	desc = "Wake signature indicates a small armed vessel, broadcasting registration codes \"SCGFV-3471-S-463\"."
 	fore_dir = NORTH
 	color = "#0751f3"
@@ -82,7 +81,7 @@
 	)
 
 /datum/shuttle/autodock/overmap/delman
-	name = "PM-23 'Delman' Dropship"
+	name = "PM-23 \"Delman\" Dropship"
 	warmup_time = 3
 	range = 0
 	shuttle_area = list(
