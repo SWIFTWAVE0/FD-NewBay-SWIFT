@@ -7,15 +7,3 @@
 #include "code/dead_sea.dm"
 
 #endif
-// BEGIN_INTERNALS
-// END_INTERNALS
-// BEGIN_FILE_DIR
-#define FILE_DIR .
-// END_FILE_DIR
-// BEGIN_PREFERENCES
-// END_PREFERENCES
-// BEGIN_INCLUDE
-#include "_dead_sea.dm"
-#include "code\dead_sea.dm"
-#include "code\dead_sea_areas.dm"
-// END_INCLUDE
