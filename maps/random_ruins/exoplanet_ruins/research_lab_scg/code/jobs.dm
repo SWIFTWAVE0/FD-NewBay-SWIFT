@@ -2,6 +2,7 @@
 	title = "Colony Supervisor"
 	total_positions = 1
 	spawn_positions = 1
+	required_language = LANGUAGE_HUMAN_EURO
 	selection_color = "#1d1d4f"
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN)
 	info = "Главный на районе. Тот, кто связывает всех воедино, не давая развалиться на кусочки подобно планете, на которой они все находятся."
@@ -123,7 +124,7 @@
 
 /datum/job/submap/research_lab_scg/research/bluespace
 	title = "Lead Scientist of Theorical Bluespace"
-	selection_color = "#6e3bfa"
+	selection_color = "#5421e0"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/bluespace
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -178,7 +179,7 @@
 
 /datum/job/submap/research_lab_scg/research/xenoarcheology/lab
 	title = "Lab Technician of Xenoarcheology"
-	selection_color = "#473d63"
+	selection_color = "#815615"
 	access = list(
 		access_tox, access_tox_storage, access_maint_tunnels, access_research, access_mining_office,
 		access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
@@ -200,12 +201,12 @@
 
 /datum/job/submap/research_lab_scg/research/bluespace/lab
 	title = "Lab Technician of Theorical Bluespace"
-	selection_color = "#5b4d20"
+	selection_color = "#603dc2"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/lab
 
 /datum/job/submap/research_lab_scg/research/psycho/lab
 	title = "Lab Technician of Psychology"
-	selection_color = "#68099e"
+	selection_color = "#4e1370"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/lab
 
 
@@ -217,9 +218,8 @@
 	selection_color = "#9e0909"
 	info = "You are the part of the Agency"
 	outfit_type = /singleton/hierarchy/outfit/job/researchlab/agent
-	total_positions = 30
-	skill_points = 30
-	required_language = LANGUAGE_HUMAN_EURO
+	total_positions = 3
+	skill_points = 3
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 	                    SKILL_EVA         = SKILL_BASIC,
@@ -250,7 +250,7 @@
 
 /datum/job/submap/research_lab_scg/service
 	title = "Service staff"
-	selection_color = "#229e09"
+	selection_color = "#2b5f21"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook
 	total_positions = 4
 	spawn_positions = 4
@@ -264,7 +264,7 @@
 
 /datum/job/submap/research_lab_scg/service/maintence
 	title = "Maintence Staff"
-	selection_color = "#aa9b13"
+	selection_color = "#918518"
 	total_positions = 2
 	spawn_positions = 2
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/contractor

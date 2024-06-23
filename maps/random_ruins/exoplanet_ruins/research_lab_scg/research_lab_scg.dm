@@ -5,8 +5,8 @@
 #include "code/outfit.dm"
 
 /datum/map_template/ruin/exoplanet/research_lab_scg
-	name = "SCG City"
-	id = "scg_city_restored"
+	name = "Research Lab of SCG"
+	id = "research_lab_scg"
 	description = "SCG City... Thats all, yeah."
 	suffixes = list("research_lab_scg/research_lab_scg.dmm")
 	spawn_cost = 10
@@ -15,7 +15,7 @@
 //	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/lovely)
 
 /singleton/submap_archetype/playablecity/research_lab_scg
-	descriptor = "SCG City"
+	descriptor = "Research Lab of SCG"
 	crew_jobs = list(
 		/datum/job/submap/research_lab_scg,
 
@@ -38,12 +38,12 @@
 		/datum/job/submap/research_lab_scg/service/colonist
 	)
 
-/obj/submap_landmark/spawnpoint/research_lab_scg
+/obj/submap_landmark/spawnpoint/research_lab_scg/colonist
 	name = "City Dweller"
 
 /obj/submap_landmark/spawnpoint/citymayor_spawn
 	name = "City Head"
 
 /obj/submap_landmark/joinable_submap/city/research_lab_scg
-	name = "SCG City"
+	name = "Research Lab of SCG"
 	archetype = /singleton/submap_archetype/playablecity/research_lab_scg
