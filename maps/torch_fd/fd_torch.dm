@@ -296,7 +296,7 @@
 
 	#include "../random_ruins/exoplanet_ruins/small_ruins/build_ruin.dm"
 	#include "../random_ruins/exoplanet_ruins/remains/remains.dm"
-	#include "../random_ruins/exoplanet_ruins/research_lab_scg/scg_city_restored.dm"
+	#include "../random_ruins/exoplanet_ruins/research_lab_scg/research_lab_scg.dm"
 	#include "../random_ruins/exoplanet_ruins/scg_city_restored/scg_city_restored.dm"
 	#include "../random_ruins/exoplanet_ruins/scg_ruined_city/scg_ruined_city.dm"
 	#include "../random_ruins/exoplanet_ruins/railway/railway.dm"
