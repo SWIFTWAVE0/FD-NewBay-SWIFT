@@ -92,8 +92,8 @@
 	density = FALSE
 
 /obj/structure/fd/chains
-	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/barbed_wire.dmi'
-	icon_state = "wire"
+	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/chains.dmi'
+	icon_state = "chains"
 	name = "steel chains"
 	desc = "Pretty heavy and durable."
 	anchored = TRUE
@@ -105,6 +105,7 @@
 	. = ..()
 
 	if(istype(I, /obj/item/fd/quest_item/cutters))
+		visible_message("<span class='danger'>[usr] начинает разрезать стальные цепи при помощи [I].</span>")
 		if(do_after(user, 50))
 			qdel(src)
 
@@ -128,6 +129,7 @@
 	. = ..()
 
 	if(istype(I, /obj/item/material/knife/ritual/grim) && !cleared)
+		visible_message("<span class='danger'>[usr] размахивает [I], разрывая один слой растительности за другим.</span>")
 		if(do_after(user, 50))
 			cleared = TRUE
 			density = FALSE
@@ -244,7 +246,7 @@
 /obj/structure/fd/coin_grounded/attack_hand(mob/living/user)
 	if(!ishuman(user))
 		return 0
-	visible_message("<span class='notice'>[usr] takes [src] from the ground.</span>")
+	visible_message("<span class='notice'>[usr] подбирает [src].</span>")
 	var/obj/item/flame/candle/grim/B = new ticket(get_turf(src))
 	usr.put_in_hands(B)
 	qdel(src)

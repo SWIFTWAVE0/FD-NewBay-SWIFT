@@ -47,6 +47,9 @@
 
 /area/lovecraft/indoors/main
 	base_turf = /turf/simulated/floor/exoplanet/grim_dirt
+	ambience =  list(
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/TitleRollRain.wav'
+	)
 
 /area/lovecraft/indoors/main/adm
 	name = "Innsmouth Admiralty (MAIN)"
@@ -113,6 +116,9 @@
 
 /area/lovecraft/indoors/second
 	base_turf = /turf/simulated/open
+	ambience =  list(
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/TitleRollRain.wav'
+	)
 
 /area/lovecraft/indoors/second/adm
 	name = "Innsmouth Admiralty (ABOVE)"
@@ -158,6 +164,10 @@
 	base_turf = /turf/simulated/open
 	ambience =  list(
 		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_1.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_3.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_4.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/Docks.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/Rain_and_waves.ogg',
 		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_2.ogg'
 	)
 
@@ -180,6 +190,10 @@
 	base_turf = /turf/simulated/open
 	ambience =  list(
 		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_1.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_3.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_4.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/Docks.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/Rain_and_waves.ogg',
 		'mods/_fd/_maps/small_exoplanet_1/sounds/AAA_HP_2.ogg'
 	)
 
@@ -214,3 +228,9 @@
 /area/lovecraft/below_level/cave
 	name = "Innsmouth Mineshaft (BELOW)"
 	add_overlay = FALSE
+	ambience =  list(
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/Cave.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/cavewater_1.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/cavewater_2.ogg',
+		'mods/_fd/_maps/small_exoplanet_1/sounds/various/cavewater_3.ogg'
+	)
