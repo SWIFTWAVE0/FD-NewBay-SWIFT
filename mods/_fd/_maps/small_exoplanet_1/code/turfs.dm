@@ -30,24 +30,21 @@
 	icon_state = "water_deep"
 	alpha = 200
 
-
-/turf/simulated/ocean/grim
+/turf/simulated/floor/exoplanet/ocean
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/dirt.dmi'
 	icon_state = "shale0"
+	name = "sea floor"
+	desc = "Silty."
 
-/turf/simulated/ocean/grim/add_decal()
-	return 0
-
-/turf/simulated/ocean/grim/New()
+/turf/simulated/floor/exoplanet/ocean/New()
 	..()
 	icon_state = "shale[rand(0, 4)]"
 
-/turf/simulated/ocean/grim_windswept
+/turf/simulated/floor/exoplanet/windswept
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/dirt.dmi'
 	icon_state = "shale_windswept"
-
-/turf/simulated/ocean/grim_windswept/add_decal()
-	return 0
+	name = "sea floor"
+	desc = "Silty."
 
 /turf/simulated/floor/exoplanet/grim_seaport
 	name = "mossy bricks"
