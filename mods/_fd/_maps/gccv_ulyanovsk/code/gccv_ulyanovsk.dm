@@ -1165,6 +1165,7 @@
 	name = "hull edges"
 	icon = 'mods/_fd/_maps/gccv_ulyanovsk/icons/ulyanovsk.dmi'
 	icon_state = "hull_edges"
+	layer = 2.04
 
 /obj/floor_decal/hull/corner
 	name = "hull corner"
@@ -1183,6 +1184,38 @@
 	name = "watch your step"
 	icon = 'mods/_fd/_maps/gccv_ulyanovsk/icons/ulyanovsk2.dmi'
 	icon_state = "wys"
+	layer = 2.04
+
+/obj/floor_decal/ul_decals
+	name = "ulyanovsk decal"
+	icon = 'mods/_fd/_maps/gccv_ulyanovsk/icons/ulyanovsk.dmi'
+	icon_state = "decal"
+
+/obj/floor_decal/ul_decals/main_line
+	name = "main line"
+	icon_state = "main_line"
+
+/obj/floor_decal/ul_decals/arrow
+	name = "arrow"
+	icon_state = "arrow"
+
+/obj/floor_decal/ul_decals/iccg_floor
+	name = "iccg spray"
+	icon_state = "iccg_floor"
+	layer = 2.04
+
+/obj/floor_decal/ul_decals/outline
+	name = "outline"
+	icon_state = "outline"
+	layer = 2.04
+
+/obj/floor_decal/ul_decals/outline/yellow
+	name = "yellow outline"
+	color = "#cfcf55"
+
+/obj/floor_decal/ul_decals/outline/blood_red
+	name = "blood red outline"
+	color = "#940004"
 
 /obj/floor_decal/step
 	name = "step"
