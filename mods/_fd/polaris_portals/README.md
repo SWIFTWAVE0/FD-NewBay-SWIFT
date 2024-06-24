@@ -1,7 +1,7 @@
 
 #### Список PRов:
 
-- https://github.com/SierraBay/SierraBay12/pull/#####
+- https://github.com/RepoStash/FD-NewBay/pull/34
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
@@ -27,7 +27,7 @@ https://github.com/Baystation12/Baystation12/commit/0ce2431d7948c1d5cb6c77dbf629
 
 ### Изменения *кор кода*
 
-- `code/modules/mob/living.dm`: `proc/overriden_proc`, `var/overriden_var`
+- Отсутствуют
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -38,8 +38,7 @@ https://github.com/Baystation12/Baystation12/commit/0ce2431d7948c1d5cb6c77dbf629
 
 ### Оверрайды
 
-- `mods/_master_files/sound/my_cool_sound.ogg`
-- `mods/_master_files/code/my_modular_override.dm`: `proc/overriden_proc`, `var/overriden_var`
+- Отсутствуют
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
@@ -49,7 +48,7 @@ https://github.com/Baystation12/Baystation12/commit/0ce2431d7948c1d5cb6c77dbf629
 
 ### Дефайны
 
-- `code/__defines/~mods/polaris_portals.dm`: `POLARIS_PORTALS_SPEED_MULTIPLIER`, `POLARIS_PORTALS_SPEED_BASE`
+- Отсутствуют
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
@@ -60,7 +59,7 @@ https://github.com/Baystation12/Baystation12/commit/0ce2431d7948c1d5cb6c77dbf629
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- `mods/_master_files/icons/obj/alien.dmi`
+- Отсутствуют
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -70,7 +69,7 @@ https://github.com/Baystation12/Baystation12/commit/0ce2431d7948c1d5cb6c77dbf629
 
 ### Авторы:
 
-Твой никнейм
+CrimsonShrike(https://github.com/CrimsonShrike/Baystation12/tree/Portal) 
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
