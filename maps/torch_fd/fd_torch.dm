@@ -293,6 +293,8 @@
 	#include "../../mods/_fd/_maps/gccv_ulyanovsk/_ulyanovsk.dme"
 	#include "../../mods/_fd/_maps/dead_sea/_dead_sea.dme"
 
+	#include "../../mods/_fd/_maps/sfv_warspite/_warspite.dme"
+
 
 		// ~EXOPLANET RUINS~ //
 
