@@ -1,3 +1,13 @@
+/obj/structure/fake_zlvl
+	name = "open space"
+	density = TRUE
+	anchored = TRUE
+	opacity = FALSE
+
+	icon = 'mods/_fd/_maps/sfv_warspite/icons/shadow.dmi'
+	icon_state = "shadow"
+	layer = ABOVE_HUMAN_LAYER
+
 /datum/map_template/ruin/away_site/sfv_warspite
 	name = "SFV Warspite"
 	id = "awaysite_sfv_warspite"
@@ -14,8 +24,8 @@
 		/datum/shuttle/autodock/overmap/lifepod/four,
 		/datum/shuttle/autodock/overmap/lifepod/five,
 		/datum/shuttle/autodock/overmap/lifepod/six,
-		/datum/shuttle/autodock/ferry/wayspite,
-		/datum/shuttle/autodock/ferry/wayspite/engi
+		/datum/shuttle/autodock/ferry/warspite/from_bridge_to_hangar,
+		/datum/shuttle/autodock/ferry/warspite/from_dorms_to_bridge
 	)
 
 /obj/overmap/visitable/ship/sfv_warspite
@@ -39,6 +49,8 @@
 		/obj/overmap/visitable/ship/landable/lifepod/five,
 		/obj/overmap/visitable/ship/landable/lifepod/six
 	)
+	pixel_x = -16
+	pixel_y = -10
 /*	initial_restricted_waypoints = list(
 		"Sultan Landing Zone" = list("nav_sultan_start"),
 		"Lifepod One Landing Zone" = list("nav_lifepod_one_start"),
@@ -126,65 +138,81 @@
 	color = COLOR_BLACK
 	density = 1
 
-/datum/shuttle/autodock/ferry/lift/wayspite
-	name = "Bridge to Hangar Deck"
-	shuttle_area = /area/ship/scrap/shuttle/lift
-	warmup_time = 3	//give those below some time to get out of the way
-	waypoint_station = "nav_bearcat_lift_bottom"
-	waypoint_offsite = "nav_bearcat_lift_top"
+// ELEVATOR
+
+/area/wayspite/lift
+	name = "Warspite | Elevator - Bridge2Hangar"
+	requires_power = FALSE
+
+/area/wayspite/lift/engi
+	name = "Warspite | Elevator - Bridge2Engi"
+
+/obj/machinery/computer/shuttle_control/lift/warspite/from_bridge_to_hangar
+	name = "Bridge to Hangar"
+	shuttle_tag = "Bridge to Hangar"
+	ui_template = "shuttle_control_console_lift.tmpl"
+	icon_state = "tiny"
+	icon_keyboard = "tiny_keyboard"
+	icon_screen = "lift"
+	density = FALSE
+
+/datum/shuttle/autodock/ferry/warspite/from_bridge_to_hangar
+	name = "Bridge to Hangar"
+	shuttle_area = /area/wayspite/lift
+	warmup_time = 3
+	waypoint_station = "nav_warspite_bridge_hangar"
+	waypoint_offsite = "nav_warspite_hangar_bridge"
 	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
 	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
 	ceiling_type = null
 	knockdown = 0
 	defer_initialisation = TRUE
 
-/datum/shuttle/autodock/ferry/wayspite/engi
-	name = "Bridge to Engineering Deck"
-	shuttle_area = /area/ship/scrap/shuttle/lift
-	waypoint_station = "nav_bearcat_lift_bottom"
-	waypoint_offsite = "nav_bearcat_lift_top"
-	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
-	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
-
-/obj/machinery/computer/shuttle_control/lift/bridge2hangar
-	icon = 'icons/obj/structures/turbolift.dmi'
-	shuttle_tag = "Bridge to Hangar Deck"
-	icon_state = "panel"
-
-/obj/machinery/computer/shuttle_control/lift/bridge2engi
-	icon = 'icons/obj/structures/turbolift.dmi'
-	shuttle_tag = "Bridge to Engineering Deck"
-	icon_state = "panel"
-
-
-/obj/shuttle_landmark/lift/wayspite/hangar/bridge
+/obj/shuttle_landmark/lift/warspite/from_bridge_to_hangar
 	name = "Bridge Deck"
-	landmark_tag = "nav_wayspite_lift_hangar_bridge"
-	flags = SLANDMARK_FLAG_AUTOSET
+	landmark_tag = "nav_warspite_bridge_hangar"
 	base_area = /area/warspite/hallway
 	base_turf = /turf/unsimulated/floor/plating/void
 
-/obj/shuttle_landmark/lift/wayspite/hangar
+/obj/shuttle_landmark/lift/warspite/from_hangar_to_bridge
 	name = "Hangar Deck"
-	landmark_tag = "nav_wayspite_lift_hangar"
+	landmark_tag = "nav_warspite_hangar_bridge"
+	flags = SLANDMARK_FLAG_AUTOSET
 	base_area = /area/warspite/hangar
 	base_turf = /turf/simulated/floor/plating
 
-/area/wayspite/lift
-	name = "Warspite | Elevator - Bridge2Hangar"
+/obj/machinery/computer/shuttle_control/lift/warspite/from_dorms_to_bridge
+	name = "Dorms to Bridge"
+	shuttle_tag = "Dorms to Bridge"
+	ui_template = "shuttle_control_console_lift.tmpl"
+	icon_state = "tiny"
+	icon_keyboard = "tiny_keyboard"
+	icon_screen = "lift"
+	density = FALSE
 
-/area/wayspite/lift/engi
-	name = "Warspite | Elevator - Bridge2Engi"
+/datum/shuttle/autodock/ferry/warspite/from_dorms_to_bridge
+	name = "Dorms to Bridge"
+	shuttle_area = /area/wayspite/lift/engi
+	warmup_time = 3
+	waypoint_station = "nav_warspite_dorms_bridge"
+	waypoint_offsite = "nav_warspite_bridge_dorms"
+	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
+	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
+	ceiling_type = null
+	knockdown = 0
+	defer_initialisation = TRUE
 
-/obj/shuttle_landmark/lift/wayspite/engi/bridge
+/obj/shuttle_landmark/lift/warspite/from_dorms_to_bridge
+	name = "Dorms Deck"
+	landmark_tag = "nav_warspite_dorms_bridge"
+	base_area = /area/warspite/engibay
+	base_turf = /turf/simulated/floor/plating
+
+/obj/shuttle_landmark/lift/warspite/from_bridge_to_dorms
 	name = "Bridge Deck"
-	landmark_tag = "nav_wayspite_lift_engi_bridge"
+	landmark_tag = "nav_warspite_bridge_dorms"
+	flags = SLANDMARK_FLAG_AUTOSET
 	base_area = /area/warspite/hallway
 	base_turf = /turf/unsimulated/floor/plating/void
 
-/obj/shuttle_landmark/lift/wayspite/hangar
-	name = "Engineer Deck"
-	landmark_tag = "nav_wayspite_lift_engi"
-	flags = SLANDMARK_FLAG_AUTOSET
-	base_area = /area/warspite/engibay
-	base_turf = /turf/simulated/floor/plating
+//

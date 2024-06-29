@@ -323,7 +323,7 @@
 
 /mob/living/simple_animal/hostile/human/fleet/warspite/marshall
 	name = "\improper Fleet Air Controller"
-	icon_state = "engineer_marshall"
+	icon_state = "engineer_marsh"
 	desc = "An aircontroller wearing Fleet garbs. They have a Third Fleet patch on their uniform, and pride on their shoulders."
 	corpse = /obj/landmark/corpse/fleet/warspite/utility/engi/marshall
 	weapon1 = /obj/item/marshalling_wand
