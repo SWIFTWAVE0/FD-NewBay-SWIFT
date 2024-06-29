@@ -276,7 +276,7 @@
 /mob/living/simple_animal/hostile/human/fleet/warspite
 	name = "\improper Fleet Engineer"
 	desc = "An Engineer wearing Fleet garbs. They have a Third Fleet patch on their uniform, and pride on their shoulders."
-	icon = 'mods/_fd/_maps/sfv_warspite/icons/fleetcrew.dmi'
+	icon = 'maps/away/sfv_warspite/icons/fleetcrew.dmi'
 	icon_state = "engineer"
 	icon_dead = "fleetassault_dead"
 	icon_gib = "fleetarmsman_gib"

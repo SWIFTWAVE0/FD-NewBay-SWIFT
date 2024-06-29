@@ -215,6 +215,7 @@
 	#include "../away/miningstation/miningstation.dm"
 	#include "../away/mininghome/mininghome.dm"
 	#include "../away/scavver/scavver_gantry.dm"
+	#include "../away/sfv_warspite/code/core.dm"
 	#include "../away/abandoned_hotel/abandoned_hotel.dm"
 
 		// ~EVENT SHIPS~ //
@@ -292,8 +293,6 @@
 	#include "../../mods/_fd/_maps/yacht/_yacht.dme"
 	#include "../../mods/_fd/_maps/gccv_ulyanovsk/_ulyanovsk.dme"
 	#include "../../mods/_fd/_maps/dead_sea/_dead_sea.dme"
-
-	#include "../../mods/_fd/_maps/sfv_warspite/_warspite.dme"
 
 
 		// ~EXOPLANET RUINS~ //
