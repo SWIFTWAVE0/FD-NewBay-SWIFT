@@ -55,4 +55,6 @@
 #include "customs/kanaris/item.dm"
 #include "customs/kanaris/weapon.dm"
 
+#include "eventstuff/admintools.dm"
+
 #endif

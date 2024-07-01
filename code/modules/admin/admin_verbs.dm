@@ -102,6 +102,11 @@ var/global/list/admin_verbs_admin = list(
 	/client/proc/cmd_admin_notarget,
 	/datum/admins/proc/SetRoundLength,
 	/datum/admins/proc/ToggleContinueVote,
+// 	[FD-ADD]
+	/client/proc/remove_slot_crew_full,
+	/client/proc/allow_to_join,
+
+//	[/FD-ADD]
 	/datum/admins/proc/togglemoderequirementchecks,
 	/client/proc/delete_crew_record
 )
