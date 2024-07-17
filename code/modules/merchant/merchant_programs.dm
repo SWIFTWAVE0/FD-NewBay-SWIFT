@@ -248,15 +248,3 @@
 			if(href_list["PRG_sell_items"])
 				. = TOPIC_HANDLED
 				sell_items(T, user.get_skill_value(SKILL_FINANCE))
-			if(href_list["PRG_bribe"])
-				. = TOPIC_HANDLED
-				bribe(T, text2num(href_list["PRG_bribe"]))
-
-/datum/computer_file/program/merchant/no_id
-	available_on_ntnet = FALSE
-	required_access = null
-
-/datum/computer_file/program/merchant/ignore_distance
-	available_on_ntnet = FALSE
-	ignore_distance = TRUE
-	required_access = access_merchant

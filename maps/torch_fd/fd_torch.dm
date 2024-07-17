@@ -244,8 +244,6 @@
 
 		// ~NON-UPSTREAM MODS~ //
 
-	#include "../../mods/resomi_fd/_resomi.dme"
-
 	#include "../../mods/_fd/runechat/_runechat.dme"
 	#include "../../mods/_fd/fd_assets/_fd_assets.dme"
 	#include "../../mods/_fd/fd_guns/_fd_guns.dme"
@@ -266,6 +264,7 @@
 	#include "../../mods/_fd/multitile_vehicles/_multitile_vehicles.dme"
 	#include "../../mods/_fd/old_space_cannons/_old_space_cannons.dme"
 	#include "../../mods/_fd/random_rooms/_random_rooms.dme"
+	#include "../../mods/_fd/resomi_fd/_resomi.dme"
 	#include "../../mods/_fd/structure_storage/_structure_storage.dme"
 
 	#include "../../mods/_fd/_maps/airfield/_airfield.dme"
