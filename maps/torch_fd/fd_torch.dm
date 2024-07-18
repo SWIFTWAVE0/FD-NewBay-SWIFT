@@ -248,6 +248,8 @@
 	#include "../../mods/_fd/runechat/_runechat.dme"
 	#include "../../mods/_fd/fd_assets/_fd_assets.dme"
 	#include "../../mods/_fd/fd_guns/_fd_guns.dme"
+	#include "../../mods/_fd/fd_lore/_fd_lore.dme"
+	#include "../../mods/_fd/fd_species/_fd_species.dme"
 
 	#include "../../mods/_fd/accent_labels/_accent_labels.dme"
 	#include "../../mods/_fd/additional_biomods/_additional_biomods.dme"
@@ -257,7 +259,6 @@
 	#include "../../mods/_fd/combat_stances/_combat_stances.dme"
 	#include "../../mods/_fd/complementary_xeno_ablities/_complementary_xeno_ablities.dme"
 	#include "../../mods/_fd/conference_holopads/_conference_holopads.dme"
-	#include "../../mods/_fd/fd_species/_fd_species.dme"
 	#include "../../mods/_fd/hestia_missiles/_hestia_missiles.dme"
 	#include "../../mods/_fd/immersive_overmap/_immersive_overmap.dme"
 	#include "../../mods/_fd/landing_eye/_landing_eye.dme"
