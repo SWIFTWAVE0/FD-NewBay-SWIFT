@@ -13,6 +13,7 @@
 #include "code/machinery/autoaccess_machinery.dm"
 #include "code/machinery/big_engine.dm"
 #include "code/machinery/light_types.dm"
+#include "code/machinery/supply_console.dm"
 #include "code/machinery/telescreen_consoles.dm"
 #include "code/machinery/turret.dm"
 
@@ -22,6 +23,7 @@
 #include "code/obj/items/firstaid_indiv.dm"
 #include "code/obj/items/grown_food.dm"
 #include "code/obj/items/items.dm"
+#include "code/obj/items/music_tape.dm"
 #include "code/obj/items/storage_backpacks.dm"
 #include "code/obj/items/tile_types.dm"
 
@@ -56,5 +58,7 @@
 #include "customs/kanaris/weapon.dm"
 
 #include "eventstuff/admintools.dm"
+
+#include "code\trauma\code.dm"
 
 #endif
