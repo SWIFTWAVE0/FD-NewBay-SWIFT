@@ -248,6 +248,3 @@
 			if(href_list["PRG_sell_items"])
 				. = TOPIC_HANDLED
 				sell_items(T, user.get_skill_value(SKILL_FINANCE))
-			if(href_list["PRG_bribe"])
-				. = TOPIC_HANDLED
-				bribe(T, text2num(href_list["PRG_bribe"]))

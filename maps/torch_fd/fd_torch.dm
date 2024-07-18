@@ -231,6 +231,7 @@
 	#include "../../mods/guns/_guns.dme"
 	#include "../../mods/jukebox_tapes/_jukebox_tapes.dme"
 	#include "../../mods/legalese_language/_legalese.dme"
+	#include "../../mods/music_player/_music_player.dme"
 	#include "../../mods/petting_zoo/_petting_zoo.dme"
 	#include "../../mods/screentips/_screentips.dme"
 	#include "../../mods/tajara/_tajara.dme"
@@ -242,8 +243,6 @@
 	// #include "../../mods/_maps/hand/_map_hand.dme" // Тоже зависим от предметов с карты Стража (инклюд над фарфлитом)
 
 		// ~NON-UPSTREAM MODS~ //
-
-	#include "../../mods/resomi_fd/_resomi.dme"
 
 	#include "../../mods/_fd/runechat/_runechat.dme"
 	#include "../../mods/_fd/fd_assets/_fd_assets.dme"
@@ -265,6 +264,7 @@
 	#include "../../mods/_fd/multitile_vehicles/_multitile_vehicles.dme"
 	#include "../../mods/_fd/old_space_cannons/_old_space_cannons.dme"
 	#include "../../mods/_fd/random_rooms/_random_rooms.dme"
+	#include "../../mods/_fd/resomi_fd/_resomi.dme"
 	#include "../../mods/_fd/structure_storage/_structure_storage.dme"
 
 	#include "../../mods/_fd/_maps/airfield/_airfield.dme"
