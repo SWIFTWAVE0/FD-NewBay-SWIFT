@@ -17,6 +17,7 @@
 #include "code/machinery/telescreen_consoles.dm"
 
 #include "code/mobs/mobs.dm"
+#include "code/mobs/pureevil.dm"
 
 #include "code/obj/items/ancient_items.dm"
 #include "code/obj/items/disks.dm"
