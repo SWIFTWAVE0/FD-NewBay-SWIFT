@@ -120,7 +120,7 @@
 "ct" = (/obj/floor_decal/industrial/warning{dir = 1; icon_state = "warning"},/obj/machinery/door/blast/regular/escape_pod,/turf/simulated/floor/reinforced,/area/maintenance/fourthdeck/aft)
 "cu" = (/turf/simulated/wall/r_wall/prepainted,/area/maintenance/fourthdeck/aft)
 "cv" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/disposalpipe/segment,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/maintenance/fourthdeck/aft)
-"cw" = (/obj/shuttle_landmark/merchant/out,/turf/space,/area/space)
+"cw" = (/turf/space,/area/space)
 "cx" = (/obj/structure/railing/mapped,/turf/simulated/floor/reinforced{map_airless = 1; name = "vacuum reinforced floor"},/area/space)
 "cy" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/tiled/monotile,/area/maintenance/fourthdeck/forestarboard)
 "cz" = (/obj/catwalk_plated,/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 4},/turf/simulated/floor/plating,/area/maintenance/fourthdeck/forestarboard)
