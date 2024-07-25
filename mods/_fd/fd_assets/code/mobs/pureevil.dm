@@ -41,7 +41,7 @@
 
 /mob/living/simple_animal/hostile/boss/prime_soul/proc/meet_player(mob/player)
 	face_atom(player)
-	anchored = 1
+	anchored = TRUE
 	playsound(src, 'mods/_fd/fd_assets/sounds/prime_soul/Mp_intro2.ogg', 60, 0, extrarange = 13, falloff = 4)
 	playsound(src, 'mods/_fd/fd_assets/sounds/prime_soul/intro_music.ogg', 60, 0, extrarange = 13, falloff = 4)
 	ISay("Ah... Free... At last.")
@@ -64,7 +64,7 @@
 	face_atom(player)
 	ISay("And thy punishment... IS DEATH!")
 	sleep(54)
-	anchored = 0
+	anchored = FALSE
 	face_atom(player)
 	boss_theme = GLOB.sound_player.PlayLoopingSound(src, sound_id, 'mods/_fd/fd_assets/sounds/prime_soul/Heaven_Pierce_Her-ORDER.ogg', volume = 60, range = 20, falloff = 4, prefer_mute = TRUE)
 	ai_holder.hostile = TRUE
@@ -133,7 +133,7 @@
 /mob/living/simple_animal/hostile/boss/prime_soul/proc/DIE(atom/movable/target)
 	ai_holder.set_busy(TRUE)
 	sleep(5)
-	density = 0
+	density = FALSE
 	forceMove(get_step(target,get_dir(target,src)))
 	do_crush_animation(10, 160)
 	sleep(6)
@@ -141,7 +141,7 @@
 	ISay("DIE!")
 	sleep(4)
 	explosion(get_turf(src), 3, EX_ACT_LIGHT)
-	density = 1
+	density = TRUE
 	sleep(10)
 	ai_holder.forget_path()
 	ai_holder.set_busy(FALSE)
@@ -149,14 +149,14 @@
 
 /mob/living/simple_animal/hostile/boss/prime_soul/proc/CRUSH(atom/movable/target)
 	ai_holder.set_busy(TRUE)
-	density = 0
+	density = FALSE
 	do_crush_animation(10, 160)
 	sleep(6)
 	playsound(src, 'mods/_fd/fd_assets/sounds/prime_soul/Mp_crush.ogg', 80, 0, extrarange = 17, falloff = 4)
 	ISay("CRUSH!")
 	sleep(4)
 	explosion(get_turf(src), 3, EX_ACT_LIGHT)
-	density = 1
+	density = TRUE
 	sleep(10)
 	ai_holder.forget_path()
 	ai_holder.set_busy(FALSE)
@@ -190,9 +190,9 @@
 	throw_at(target, get_dist(src,target), get_dist(src,target) / 6)
 	face_atom(target)
 	sleep(6)
-	anchored = 1
+	anchored = TRUE
 	explosion(get_step(src,dir), 3, EX_ACT_LIGHT)
-	anchored = 0
+	anchored = FALSE
 	sleep(2)
 	dropckick = matrix(transform).Update(rotation = -rotation_angle)
 	animate(src, transform = dropckick, time = 2)
@@ -283,7 +283,7 @@
 /mob/living/simple_animal/hostile/boss/prime_soul/death(gibbed, deathmessage, show_dead_message)
 	if(gibbed)
 		return
-	anchored = 1
+	anchored = TRUE
 	deathscene()
 	..(gibbed, deathmessage, show_dead_message)
 	set_light(0)
