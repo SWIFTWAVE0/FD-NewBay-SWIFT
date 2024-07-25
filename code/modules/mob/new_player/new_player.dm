@@ -234,7 +234,6 @@
 	if(GAME_STATE != RUNLEVEL_GAME)
 		to_chat(usr, SPAN_WARNING("The round is either not ready, or has already finished..."))
 		return 0
-
 //	[FD-EDIT]
 	if(!config.enter_allowed)
 		if(!check_rights(, show_msg = FALSE) && !usr.client.enter_lock_bypass)
