@@ -279,11 +279,17 @@
 
 /mob/living/simple_animal/hostile/boss/prime_soul/New()
 	..()
-/*
+
 /mob/living/simple_animal/hostile/boss/prime_soul/death(gibbed, deathmessage, show_dead_message)
 	if(gibbed)
 		return
 	anchored = 1
+	deathscene()
+	..(gibbed, deathmessage, show_dead_message)
+	set_light(0)
+	qdel(src)
+
+/mob/living/simple_animal/hostile/boss/prime_soul/proc/deathscene()
 	ai_holder.set_busy(TRUE)
 	attacking = TRUE
 	QDEL_NULL(boss_theme)
@@ -300,14 +306,10 @@
 	set_light(1, 20, 25, 2, l_color = "#f2feff")
 	sleep(55)
 	explosion(get_turf(src), 8, EX_ACT_HEAVY)
-	..(gibbed, deathmessage, show_dead_message)
-	set_light(0)
-	qdel(src)
-*/
-// Эпичная сцена смерти вызывает кучу проблем. (целых семь жалоб ВСКода) из-за слипа.
-// Что гипотетически - может вызвать ЧТО БЛЯТЬ УГОДНО
-// (TO-DO: попробывать spawn или переделать структуру)
-// Увы, но я готов пренебреч сценкой, ради целостности билда
+
+// Это - костыль который спасает от кучи жалоб и, технически(?) проблем с смертью
+// С чем связано? DEATH имеет should_not_sleep из-за очереди в удалении.
+// В случае если не сработает и это вызовет кучу багов - вы знаете что резать :3
 
 /mob/living/simple_animal/hostile/boss/prime_soul/Destroy()
 	QDEL_NULL(boss_theme)
