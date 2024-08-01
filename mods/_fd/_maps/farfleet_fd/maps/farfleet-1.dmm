@@ -279,10 +279,13 @@
 /obj/floor_decal/industrial/warning,
 /obj/machinery/light/small/red{
 	name = "light fixture";
-	dir = 1
+	dir = 2
 	},
 /obj/machinery/ship_weapon/middle_part/autocannon{
 	dir = 8
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 1
 	},
 /turf/simulated/floor/reinforced{
 	map_airless = 1
@@ -612,6 +615,16 @@
 /obj/paint/dark_gunmetal,
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/maintenance/engine)
+"bW" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "bsapc"
+	},
+/obj/random/ship_ammo_autocannon{
+	spawn_nothing_percentage = 95
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/farfleet/command/launcher)
 "bX" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -762,6 +775,21 @@
 	map_airless = 1
 	},
 /area/ship/farfleet/engineering/fussion/control)
+"cr" = (
+/obj/floor_decal/industrial/warning,
+/obj/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/ship_weapon/front_part/harpoon_cannon{
+	dir = 8
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 2
+	},
+/turf/simulated/floor/reinforced{
+	map_airless = 1
+	},
+/area/ship/farfleet/command/launcher)
 "cs" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
@@ -1023,13 +1051,10 @@
 	pixel_x = 20;
 	pixel_y = -8
 	},
-/obj/floor_decal/hull{
-	dir = 9
-	},
 /obj/machinery/button/blast_door{
 	dir = 4;
 	id_tag = "iccg_space";
-	name = "Obstruction Field Disperser Space Shield"
+	name = "Cannons Space Shield"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -1788,8 +1813,20 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/farfleet/dock)
 "gs" = (
-/obj/floor_decal/industrial/warning/fulltile,
-/obj/structure/railing/mapped,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	dir = 4;
+	id_tag = "iccg_space";
+	name = "Autocannon Interior Hatch";
+	opacity = 0
+	},
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "bsapc"
+	},
+/obj/item/ammo_magazine/ammobox/harpoon_cannon{
+	layer = dddddd
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "gt" = (
@@ -2139,6 +2176,7 @@
 /turf/simulated/wall/ocp_wall,
 /area/ship/farfleet/engineering/atmospherics)
 "hM" = (
+/obj/structure/table/steel_reinforced,
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
@@ -2150,10 +2188,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
-	},
-/obj/machinery/computer/ship/ship_weapon/autocannon{
-	dir = 2;
-	link_range = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
@@ -2807,12 +2841,12 @@
 /obj/floor_decal/hull{
 	dir = 6
 	},
+/obj/machinery/computer/ship/ship_weapon/autocannon{
+	dir = 1;
+	link_range = 14
+	},
 /obj/floor_decal/techfloor/blood_red/corner{
 	dir = 4
-	},
-/obj/machinery/computer/ship/missiles{
-	pixel_y = 0;
-	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
@@ -3168,13 +3202,25 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/item/gun/projectile/pistol/iccgn,
-/obj/item/gun/projectile/pistol/iccgn,
-/obj/item/gun/projectile/pistol/iccgn,
-/obj/item/gun/projectile/pistol/iccgn,
 /obj/item/ammo_magazine/pistol/iccgn,
 /obj/item/ammo_magazine/pistol/iccgn,
 /obj/item/ammo_magazine/pistol/iccgn,
+/obj/item/ammo_magazine/pistol/iccgn,
+/obj/item/ammo_magazine/pistol/iccgn,
+/obj/item/ammo_magazine/pistol/iccgn,
+/obj/item/ammo_magazine/pistol/iccgn,
+/obj/item/gun/projectile/pistol/iccgn{
+	magazine_type = null
+	},
+/obj/item/gun/projectile/pistol/iccgn{
+	magazine_type = null
+	},
+/obj/item/gun/projectile/pistol/iccgn{
+	magazine_type = null
+	},
+/obj/item/gun/projectile/pistol/iccgn{
+	magazine_type = null
+	},
 /obj/item/ammo_magazine/pistol/iccgn,
 /obj/item/ammo_magazine/pistol/iccgn,
 /obj/item/ammo_magazine/pistol/iccgn,
@@ -3596,13 +3642,6 @@
 	icon_state = "4-8";
 	pixel_y = 0
 	},
-/obj/machinery/button/blast_door{
-	dir = 4;
-	id_tag = "iccg_space";
-	name = "Obstruction Field Disperser Space Shield";
-	pixel_x = -24;
-	pixel_y = -5
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -3610,7 +3649,6 @@
 	dir = 9
 	},
 /obj/floor_decal/industrial/outline/grey,
-/obj/random/ship_ammo_autocannon,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "nZ" = (
@@ -3654,12 +3692,11 @@
 /obj/floor_decal/hull{
 	dir = 10
 	},
-/obj/machinery/computer/ship/ship_weapon/autocannon{
-	dir = 1;
-	link_range = 8
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/machinery/computer/ship/ship_weapon/harpoon_gun{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
@@ -4071,6 +4108,26 @@
 /obj/floor_decal/corner/paleblue/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/ship/farfleet/medbay)
+"ra" = (
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/floor_decal/industrial/warning,
+/obj/machinery/light/small/red{
+	name = "light fixture";
+	dir = 1
+	},
+/obj/machinery/ship_weapon/middle_part/harpoon_cannon{
+	dir = 8
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 2
+	},
+/turf/simulated/floor/reinforced{
+	map_airless = 1
+	},
+/area/ship/farfleet/command/launcher)
 "rb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -4454,6 +4511,13 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/item/device/radio/intercom/interrogation{
+	dir = 1;
+	pixel_x = -33;
+	pixel_y = -48;
+	name = "intercom (Fire Control)";
+	broadcasting = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "tr" = (
@@ -4562,6 +4626,9 @@
 	dir = 10
 	},
 /obj/floor_decal/industrial/outline/grey,
+/obj/random/ship_ammo_autocannon{
+	spawn_nothing_percentage = 25
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "uI" = (
@@ -4801,6 +4868,12 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/item/device/radio/intercom/interrogation{
+	name = "intercom (Fire Control)";
+	pixel_x = -32;
+	pixel_y = 32;
+	broadcasting = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "wu" = (
@@ -5736,23 +5809,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/farfleet/crew/hallway)
-"ET" = (
-/obj/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
-/obj/floor_decal/industrial/warning,
-/obj/machinery/light/small/red{
-	name = "light fixture";
-	dir = 2
-	},
-/obj/machinery/ship_weapon/middle_part/autocannon{
-	dir = 8
-	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
-/area/ship/farfleet/command/launcher)
 "Fk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5823,6 +5879,11 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/plating,
 /area/ship/farfleet/maintenance/waste)
+"FP" = (
+/obj/floor_decal/industrial/warning/fulltile,
+/obj/structure/railing/mapped,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/farfleet/command/launcher)
 "FW" = (
 /obj/structure/table/rack,
 /obj/item/storage/box/freezer/blood/human,
@@ -6489,6 +6550,11 @@
 	dir = 1
 	},
 /obj/floor_decal/industrial/outline/grey,
+/obj/item/ammo_magazine/ammobox/harpoon_cannon,
+/obj/item/device/radio/intercom/interrogation{
+	name = "intercom (Fire Control)";
+	pixel_y = 20
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "Lf" = (
@@ -7157,6 +7223,27 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/farfleet/maintenance)
+"Qj" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/corner_steel_grid/diagonal,
+/obj/item/device/radio/intercom/interrogation{
+	dir = 1;
+	name = "intercom (Fire Control)";
+	pixel_y = -25
+	},
+/turf/simulated/floor/tiled,
+/area/ship/farfleet/crew/hallway/lower)
 "Qk" = (
 /obj/structure/table/standard,
 /obj/item/storage/toolbox/mechanical,
@@ -7740,6 +7827,30 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/farfleet/medbay/surgery)
+"UK" = (
+/obj/machinery/conveyor{
+	dir = 8;
+	id = "bsapc"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/floor_decal/industrial/warning,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/random/ship_ammo_autocannon,
+/obj/machinery/ship_weapon/back_part/autocannon{
+	dir = 8
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/ship/farfleet/command/launcher)
 "Vc" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/visible/green{
@@ -7821,9 +7932,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/random/ship_ammo_autocannon,
-/obj/machinery/ship_weapon/back_part/autocannon{
+/obj/machinery/ship_weapon/back_part/harpoon_cannon{
 	dir = 8
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 2
 	},
 /turf/simulated/floor/reinforced,
 /area/ship/farfleet/command/launcher)
@@ -8016,6 +8129,13 @@
 /area/ship/farfleet/engineering/atmospherics)
 "XE" = (
 /obj/floor_decal/iccglogo/top_left,
+/obj/item/device/radio/intercom/interrogation{
+	name = "intercom (Fire Control)";
+	pixel_x = -44;
+	pixel_y = 0;
+	broadcasting = 1;
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/farfleet/command/bridge)
 "XK" = (
@@ -8064,6 +8184,17 @@
 /obj/paint/dark_gunmetal,
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/maintenance)
+"Yc" = (
+/obj/floor_decal/techfloor{
+	dir = 4
+	},
+/obj/item/device/radio/intercom/interrogation{
+	dir = 8;
+	name = "intercom (Fire Control)";
+	pixel_x = 20
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/farfleet/command/launcher)
 "Ye" = (
 /obj/structure/table/steel_reinforced,
 /obj/floor_decal/borderfloorblack{
@@ -8228,6 +8359,9 @@
 	},
 /obj/machinery/ship_weapon/front_part/autocannon{
 	dir = 8
+	},
+/obj/structure/window/boron_reinforced{
+	dir = 1
 	},
 /turf/simulated/floor/reinforced{
 	map_airless = 1
@@ -12023,7 +12157,7 @@ aa
 aa
 aa
 gX
-Zt
+cr
 Zt
 gX
 aa
@@ -12145,8 +12279,8 @@ aa
 aa
 gE
 gX
+ra
 aU
-ET
 gX
 gE
 aa
@@ -12268,7 +12402,7 @@ gX
 MM
 mo
 VU
-VU
+UK
 lv
 Al
 gX
@@ -12389,7 +12523,7 @@ aa
 gX
 rR
 tZ
-xT
+gs
 xT
 rR
 rR
@@ -12512,7 +12646,7 @@ gX
 rR
 nY
 Wh
-Wh
+bW
 uH
 rR
 gX
@@ -12878,7 +13012,7 @@ rR
 hM
 Te
 Jy
-gs
+FP
 dm
 oi
 rR
@@ -13850,14 +13984,14 @@ EH
 YT
 uA
 Sf
-JY
+Yc
 eL
 rR
 te
 bL
 rR
 Na
-JY
+Yc
 Fl
 uA
 IR
@@ -14098,7 +14232,7 @@ ru
 JJ
 mm
 Ev
-He
+Qj
 ky
 nA
 hD
