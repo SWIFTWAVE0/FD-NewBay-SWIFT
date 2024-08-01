@@ -56,14 +56,3 @@
 /obj/floor_decal/industrial/outline/green
 	name = "green outline" //INF, WAS orange outline
 	color = COLOR_GREEN_GRAY //INF, WAS COLOR_GREEN
-
-
-//dogshit\\
-
-/obj/structure/ship_munition/disperser_charge/fire/military
-
-/obj/structure/ship_munition/disperser_charge/explosive/military
-
-/obj/structure/ship_munition/disperser_charge/emp/military
-
-/obj/machinery/computer/ship/disperser/military

@@ -48,8 +48,20 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/farfleet/barracks/armory)
 "aO" = (
-/obj/machinery/photocopier,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/floor_decal/corner/red{
+	dir = 8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 10
+	},
+/obj/structure/filingcabinet,
+/obj/structure/filingcabinet{
+	pixel_x = -10
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "aP" = (
 /obj/floor_decal/corner/grey_alt/diagonal{
@@ -267,13 +279,14 @@
 /area/ship/farfleet/crew/hallway/upper)
 "cD" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/device/flashlight/lamp{
-	pixel_y = 12
+/obj/floor_decal/corner/red{
+	dir = 6
 	},
-/obj/structure/flora/pottedplant/smallcactus{
-	pixel_y = 7
+/obj/item/modular_computer/laptop{
+	pixel_x = 0;
+	pixel_y = 5
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "cK" = (
 /obj/paint/dark_gunmetal,
@@ -284,14 +297,21 @@
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/crew/canteen)
 "cW" = (
-/obj/machinery/psi_meter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/structure/table/steel_reinforced,
+/obj/item/paper_bin{
+	pixel_y = 1
+	},
+/obj/item/device/flashlight/lamp{
+	pixel_y = 15;
+	pixel_x = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "cZ" = (
 /obj/catwalk_plated,
@@ -358,7 +378,13 @@
 	dir = 8;
 	icon_state = "tube_map"
 	},
-/turf/simulated/floor/carpet/purple,
+/obj/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/floor_decal/corner/red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "dy" = (
 /obj/paint/ocean,
@@ -448,6 +474,9 @@
 	dir = 8
 	},
 /obj/floor_decal/corner/red/three_quarters{
+	dir = 8
+	},
+/obj/structure/bed/chair{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
@@ -548,19 +577,34 @@
 /area/ship/farfleet/barracks)
 "ff" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/modular_computer/laptop,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/carpet/purple,
+/obj/item/folder/yellow{
+	pixel_x = -4
+	},
+/obj/item/folder/yellow{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/pen/fancy{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "fi" = (
 /obj/paint/ocean,
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/command/hangar_canisters)
 "fr" = (
-/obj/structure/bed/chair/comfy/red,
-/turf/simulated/floor/carpet/purple,
+/obj/structure/bed/chair/comfy/red{
+	dir = 1
+	},
+/obj/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "fu" = (
 /turf/simulated/floor/tiled/dark,
@@ -882,8 +926,14 @@
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/maintenance/anomaly)
 "iv" = (
-/obj/structure/closet/secure_closet/farfleet/css,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/floor_decal/corner/red/mono,
+/obj/structure/backup_server{
+	anchored = 1;
+	pixel_x = 3;
+	pixel_y = 0;
+	density = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "iG" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -1195,7 +1245,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "mc" = (
 /obj/floor_decal/industrial/hatch/yellow,
@@ -1590,7 +1640,10 @@
 /area/ship/snz)
 "pM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/carpet/purple,
+/obj/floor_decal/corner/red{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "pN" = (
 /obj/machinery/pointdefense{
@@ -1941,7 +1994,14 @@
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4;
+	pixel_y = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "tf" = (
 /obj/structure/handrail{
@@ -2366,7 +2426,10 @@
 	dir = 4;
 	pixel_x = 26
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/floor_decal/corner/red{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "xc" = (
 /obj/machinery/atmospherics/unary/engine{
@@ -2709,10 +2772,10 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/machinery/light/small,
 /obj/structure/sign/iccg{
 	pixel_x = 32
 	},
-/obj/machinery/light/small,
 /turf/simulated/floor/plating,
 /area/ship/snz)
 "Ab" = (
@@ -2907,7 +2970,10 @@
 /turf/simulated/wall,
 /area/ship/farfleet/crew/freezer)
 "BA" = (
-/turf/simulated/floor/carpet/purple,
+/obj/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "BI" = (
 /obj/floor_decal/industrial/hatch/yellow,
@@ -2933,7 +2999,8 @@
 "BP" = (
 /obj/structure/bed/chair,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/carpet/purple,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "Cm" = (
 /obj/paint/dark_gunmetal,
@@ -3831,8 +3898,15 @@
 /turf/simulated/floor/tiled/monotile,
 /area/ship/farfleet/crew/hydroponics)
 "Lf" = (
-/obj/machinery/papershredder,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/machinery/papershredder{
+	pixel_x = -8
+	},
+/obj/floor_decal/corner/red/mono,
+/obj/machinery/photocopier{
+	pixel_y = -3;
+	pixel_x = 11
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "Ll" = (
 /obj/paint/dark_gunmetal,
@@ -4186,8 +4260,17 @@
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/crew/freezer)
 "Po" = (
-/obj/machinery/psi_monitor,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/floor_decal/corner/red{
+	dir = 6
+	},
+/obj/floor_decal/corner/red{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 9;
+	pixel_y = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "Pr" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
@@ -4293,7 +4376,17 @@
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/floor_decal/corner/red{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5;
+	pixel_y = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "QR" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -4687,7 +4780,7 @@
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/terran{
-	name = "Consultant's Office"
+	name = "Interrogation room"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -4771,6 +4864,10 @@
 	},
 /obj/floor_decal/corner/red{
 	dir = 10
+	},
+/obj/structure/closet/secure_closet{
+	req_access = list("ACCESS_ICCGN");
+	anchored = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/farfleet/crew/brig)
@@ -5021,7 +5118,13 @@
 	pixel_x = -22;
 	req_access = list("ACCESS_ICCGN")
 	},
-/turf/simulated/floor/carpet/purple,
+/obj/floor_decal/corner/red{
+	dir = 10
+	},
+/obj/floor_decal/corner/red{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/crew/brig/css)
 "Wx" = (
 /obj/floor_decal/corner/red{
