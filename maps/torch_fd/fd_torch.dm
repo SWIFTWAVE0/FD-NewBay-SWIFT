@@ -241,9 +241,9 @@
 	#include "../../mods/sauna_props/_sauna_props.dme"
 	#include "../../mods/wyccbay_optimization/_wyccbay_optimization.dme"
 
-	// #include "../../mods/_maps/sentinel/_map_sentinel.dme" // К чёрту оверрайдит все ранги флота ЦПСС, ломает роль SEA
-	// #include "../../mods/_maps/farfleet/_map_farfleet.dme" // Не совсем работает без карты Стража (инклюд выше)
-	// #include "../../mods/_maps/hand/_map_hand.dme" // Тоже зависим от предметов с карты Стража (инклюд над фарфлитом)
+//	#include "../../mods/_maps/sentinel/_map_sentinel.dme" // К чёрту оверрайдит все ранги флота ЦПСС, ломает роль SEA
+//	#include "../../mods/_maps/farfleet/_map_farfleet.dme" // Не совсем работает без карты Стража (инклюд выше)
+//	#include "../../mods/_maps/hand/_map_hand.dme" // Тоже зависим от предметов с карты Стража (инклюд над фарфлитом)
 
 		// ~NON-UPSTREAM MODS~ //
 
@@ -283,6 +283,7 @@
 	#include "../../mods/_fd/_maps/drone_carrier/_drone_carrier.dme"
 	#include "../../mods/_fd/_maps/facility/_facility.dme"
 	#include "../../mods/_fd/_maps/fluffy_biscuit/_fluffy_biscuit.dme"
+	#include "../../mods/_fd/_maps/farfleet_fd/_map_farfleet.dme"
 	#include "../../mods/_fd/_maps/lighthouse/_lighthouse.dme"
 	#include "../../mods/_fd/_maps/new_blueriver/_new_blueriver.dme"
 	#include "../../mods/_fd/_maps/providence/_providence.dme"
@@ -290,6 +291,7 @@
 	#include "../../mods/_fd/_maps/smugglers_ship/_smugglers_ship.dme"
 	#include "../../mods/_fd/_maps/snow_cage/_snow_cage.dme"
 	#include "../../mods/_fd/_maps/sfv_dropship/_delman.dme"
+//	#include "../../mods/_fd/_maps/sentinel_fd/_sentinel.dme"
 	#include "../../mods/_fd/_maps/trader_ship/_trader_ship.dme"
 	#include "../../mods/_fd/_maps/yacht/_yacht.dme"
 	#include "../../mods/_fd/_maps/gccv_ulyanovsk/_ulyanovsk.dme"
