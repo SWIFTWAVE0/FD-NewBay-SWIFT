@@ -6,6 +6,7 @@
 #include "code/_defines.dm"
 
 #include "code/clothing/badges.dm"
+#include "code/clothing/battlewizards.dm"
 #include "code/clothing/clothing_under.dm"
 #include "code/clothing/ftu_voidsuits.dm"
 
