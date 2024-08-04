@@ -19,6 +19,3 @@
 /obj/submap_landmark/joinable_submap/khizriel
 	name = "IPV Khizriel"
 	archetype = /singleton/submap_archetype/khizriel
-
-/turf/simulated/wall/secret_passage
-	can_open = 1
