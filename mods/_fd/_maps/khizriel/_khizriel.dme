@@ -1,0 +1,25 @@
+#ifndef MODPACK_KHIZRIEL
+#define MODPACK_KHIZRIEL
+
+#include "_khizriel.dm"
+
+#include "code/_khizriel.dm"
+#include "code/khizriel_areas.dm"
+#include "code/khizriel_jobs.dm"
+#include "code/khizriel_shuttles.dm"
+
+#endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+#include "_khizriel.dm"
+#include "code\_khizriel.dm"
+#include "code\khizriel_areas.dm"
+#include "code\khizriel_jobs.dm"
+#include "code\khizriel_shuttles.dm"
+// END_INCLUDE
