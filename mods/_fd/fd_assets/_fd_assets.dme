@@ -19,6 +19,7 @@
 #include "code/machinery/turret.dm"
 
 #include "code/mobs/mobs.dm"
+#include "code/mobs/pureevil.dm"
 
 #include "code/obj/items/encryption_key_boxes.dm"
 #include "code/obj/items/firstaid_indiv.dm"
