@@ -1822,11 +1822,10 @@
 	},
 /obj/machinery/conveyor{
 	dir = 8;
-	id = "bsapc"
+	id = "bsapc";
+	layer = 2.21
 	},
-/obj/item/ammo_magazine/ammobox/harpoon_cannon{
-	layer = dddddd
-	},
+/obj/item/ammo_magazine/ammobox/harpoon_cannon,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "gt" = (
@@ -3737,17 +3736,17 @@
 /turf/simulated/wall/r_wall,
 /area/ship/farfleet/command/bridge)
 "or" = (
-/obj/structure/missile/he{
-	dir = 4
-	},
-/obj/structure/missile/he{
-	dir = 4;
-	pixel_y = 10
-	},
 /obj/floor_decal/techfloor{
 	dir = 1
 	},
 /obj/floor_decal/industrial/outline/dark_red,
+/obj/structure/missile/breacher/he{
+	pixel_y = 0
+	},
+/obj/structure/missile/breacher/he{
+	pixel_y = 10;
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "ow" = (
@@ -4607,7 +4606,7 @@
 /obj/machinery/door/blast/regular/open{
 	density = 0;
 	dir = 2;
-	id_tag = "iccg_space_missile";
+	id_tag = "iccgn_ship_missile";
 	name = "Missile Hatch";
 	opacity = 0
 	},
@@ -5222,15 +5221,15 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/farfleet/dock)
 "zJ" = (
-/obj/structure/missile/he{
-	dir = 4
-	},
-/obj/structure/missile/he{
-	dir = 4;
-	pixel_y = 10
-	},
 /obj/floor_decal/techfloor,
 /obj/floor_decal/industrial/outline/dark_red,
+/obj/structure/missile/breacher/he{
+	pixel_y = 10;
+	dir = 4
+	},
+/obj/structure/missile/breacher/he{
+	pixel_y = 0
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/farfleet/command/launcher)
 "zM" = (
@@ -5756,11 +5755,12 @@
 "EH" = (
 /obj/machinery/door/blast/regular/open{
 	dir = 2;
-	id_tag = "iccg_space_missile";
+	id_tag = "iccgn_ship_missile";
 	name = "Missile Hatch";
 	begins_closed = 1;
 	icon_state = "pdoor1"
 	},
+/obj/machinery/shield_diffuser,
 /turf/simulated/floor/reinforced{
 	map_airless = 1
 	},
@@ -6312,7 +6312,9 @@
 /turf/simulated/floor/tiled,
 /area/ship/farfleet/command/eva)
 "IR" = (
-/obj/machinery/mass_driver,
+/obj/machinery/mass_driver{
+	id_tag = "iccgn_ship_left"
+	},
 /turf/simulated/floor/reinforced{
 	map_airless = 1
 	},
@@ -7198,6 +7200,7 @@
 	id_tag = "iccg_space";
 	name = "Unknown Compartament Hatch"
 	},
+/obj/machinery/shield_diffuser,
 /turf/simulated/floor/reinforced{
 	map_airless = 1
 	},
@@ -7588,13 +7591,15 @@
 	pixel_x = 5;
 	name = "Starboart Launcher";
 	dir = 4;
-	pixel_y = 9
+	pixel_y = 9;
+	id_tag = "iccgn_ship_right"
 	},
 /obj/machinery/button/mass_driver{
 	pixel_x = 5;
 	name = "Port Launcher";
 	dir = 4;
-	pixel_y = -1
+	pixel_y = -1;
+	id_tag = "iccgn_ship_left"
 	},
 /obj/machinery/button/blast_door{
 	name = "Missile Hatch Control";
@@ -8303,7 +8308,8 @@
 "YT" = (
 /obj/machinery/mass_driver{
 	dir = 1;
-	icon_state = "mass_driver"
+	icon_state = "mass_driver";
+	id_tag = "iccgn_ship_right"
 	},
 /turf/simulated/floor/reinforced{
 	map_airless = 1
