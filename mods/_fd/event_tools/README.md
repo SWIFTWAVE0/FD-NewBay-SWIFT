@@ -1,8 +1,7 @@
 
 #### Список PRов:
 
-- Отсутствуют
-
+- https://github.com/RepoStash/FD-NewBay/pull/53
 ## Мод-пример
 
 ID мода: EVENT_TOOLS
