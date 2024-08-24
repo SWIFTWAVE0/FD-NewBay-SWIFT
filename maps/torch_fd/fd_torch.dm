@@ -21,7 +21,7 @@
 	#include "../torch/torch_machinery.dm"
 	#include "../torch/torch_map_templates.dm"
 	#include "../torch/torch_npcs.dm"
-	#include "../torch/torch_overmap.dm"
+	#include "torch_overmap.dm"
 	#include "../torch/torch_presets.dm"
 	#include "../torch/torch_procs.dm"
 	#include "torch_ranks.dm"
@@ -36,7 +36,7 @@
 	#include "torch_areas.dm"
 	#include "torch_cameras.dm"
 	#include "torch_decals.dm"
-	#include "torch_overmap.dm"
+
 
 	// --- INCLUDES FROM ANOTHER MAPS --- //
 	#include "../sierra/sierra_npcs.dm"
