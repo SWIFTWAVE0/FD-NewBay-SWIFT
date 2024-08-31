@@ -2,8 +2,6 @@
 #define EVENT_TOOLS
 
 #include "_event_tools.dm"
-
-#include "code/admintools.dm"
 #include "code/decorator.dm"
 
 #endif
