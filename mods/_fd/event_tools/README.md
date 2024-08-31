@@ -1,7 +1,8 @@
 
 #### Список PRов:
 
-- https://github.com/RepoStash/FD-NewBay/pull/53
+- Отсутствуют
+
 ## Мод-пример
 
 ID мода: EVENT_TOOLS
@@ -12,12 +13,11 @@ ID мода: EVENT_TOOLS
 
 ### Изменения *кор кода*
 
-- `/mob/new_player`: `proc/AttemptLateSpawn`
+- Отсутствуют
 
 ### Оверрайды
 
-- `/datum/controller/subsystem/jobs`: `proc/check_general_join_blockers`
-
+- Отсутствуют
 
 ### Дефайны
 
