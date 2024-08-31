@@ -27,7 +27,7 @@
 	#include "torch_ranks.dm"
 	#include "../torch/torch_security_state.dm"
 	#include "../torch/torch_setup.dm"
-	#include "../torch/torch_shuttles.dm"
+	#include "torch_shuttles.dm"
 	#include "../torch/torch_submaps.dm"
 	#include "../torch/torch_turfs.dm"
 	#include "../torch/torch_unit_testing.dm"
