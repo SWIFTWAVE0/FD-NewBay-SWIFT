@@ -23,7 +23,7 @@
 	spawn_positions = 12
 	supervisors = "orders of your Captain."
 	info = "You are a lawless crew member of pirate's Vessel - Khizriel. You have no mercy, no remorse or fear. Only greed."
-	whitelisted_species = list(SPECIES_HUMAN,SPECIES_IPC,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN,SPECIES_TRITONIAN)
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_IPC,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_VATGROWN,SPECIES_TRITONIAN,SPECIES_ALIEN,SPECIES_UNATHI, SPECIES_VOX)
 	is_semi_antagonist = TRUE
 	access = list(access_syndicate)
 	outfit_type = /singleton/hierarchy/outfit/job/khizriel/crewman
