@@ -4,7 +4,6 @@
 	layer = ABOVE_TILE_LAYER
 	mouse_opacity = FALSE // It's should be OFF
 	anchored = TRUE
-	air_blocked = TRUE
 
 // ----		WALLS		---- \\
 
@@ -48,7 +47,7 @@
 /turf/simulated/wall/use_weapon(obj/item/weapon, mob/living/user, list/click_params)
 	. = ..()
 	if(locate(/obj/overlay/diona/wall) in src)
-		if(!(weapon.force =< 25 || weapon.sharp == 1) && !IsHatchet(weapon))
+		if(!(weapon.force < 25 || weapon.sharp == 1) && !IsHatchet(weapon))
 			user.visible_message(SPAN_WARNING("[user] hit the [name], but cause no visible damage!"))
 			return
 		user.visible_message(SPAN_WARNING("[user] begins to chop down the [name]"))
@@ -79,14 +78,14 @@
 
 /obj/overlay/diona/decorator/use_weapon(obj/item/weapon, mob/living/user, list/click_params)
 	. = ..()
-	if(!(weapon.force =< 25 || weapon.sharp == 1) && !IsHatchet(weapon))
+	if(!(weapon.force < 25 || weapon.sharp == 1) && !IsHatchet(weapon))
 		user.visible_message(SPAN_WARNING("[user] hit the [name], but cause no visible damage!"))
 		return
 	user.visible_message(SPAN_WARNING("[user] begins to chop down the [name]"))
 	if(do_after(user, 5 SECONDS, src, DO_PUBLIC_UNIQUE | DO_BAR_OVER_USER))
 		decoratordeath(user)
 
-/obj/overlay/diona/wall/decorator/proc/derocatordeath(user)
+/obj/overlay/diona/decorator/proc/decoratordeath(mob/user)
 	for(var/obj/overlay/diona/decorator/diona in src)
 		if(isnull(user))
 			qdel(diona)
@@ -138,7 +137,7 @@
 /turf/simulated/floor/use_weapon(obj/item/weapon, mob/living/user, list/click_params)
 	. = ..()
 	if(locate(/obj/overlay/diona/wall) in src)
-		if(!(weapon.force =< 25 || weapon.sharp == 1) && !IsHatchet(weapon))
+		if(!(weapon.force < 25 || weapon.sharp == 1) && !IsHatchet(weapon))
 			user.visible_message(SPAN_WARNING("[user] hit [name], but cause no visible damage!"))
 			return
 		user.visible_message(SPAN_WARNING("[user] begins to chop down [name]!"), FONT_LARGE(SPAN_NOTICE("You begin to chop down [name]!")))
