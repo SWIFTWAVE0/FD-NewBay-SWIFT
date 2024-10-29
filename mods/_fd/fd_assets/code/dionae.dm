@@ -15,12 +15,14 @@
 
 /obj/overlay/diona/wall/Initialize()
 	. = ..()
-
-	var/turf/simulated/wall/wall
-	if(!locate(wall) in src)
+	var/turf/simulated/wall/wall = locate(/turf/simulated/wall) in locs
+	if(isnull(wall))
+		crash_at("Dionae Wall can't been spawned without the wall")
 		qdel(src) // We can't find - then we can't exist
 		return
-	wall.dionaze()
+
+	wall.name = name
+	wall.desc = desc
 
 /turf/simulated/wall/proc/dionaze()
 	if(locate(/obj/overlay/diona/wall) in src)
@@ -106,14 +108,16 @@
 /obj/overlay/diona/floor/Initialize()
 	. = ..()
 
-	var/turf/simulated/floor/floor
-	if(!locate(floor) in src)
+	var/turf/simulated/floor/floor = locate(/turf/simulated/floor) in locs
+	if(isnull(floor))
+		crash_at("Dionae Floor can't been spawned without the wall")
 		qdel(src) // We can't find - then we can't exist
 		return
-	floor.dionaze()
 
+	floor.name = name
+	floor.desc = desc
 /turf/simulated/floor/proc/dionaze()
-	if(locate(/obj/overlay/diona/wall) in src)
+	if(locate(/obj/overlay/diona/floor) in src)
 		return
 	var/obj/overlay/diona/floor/diona = new(src)
 	desc = diona.desc
@@ -132,7 +136,7 @@
 /turf/simulated/floor/on_death()
 	. = ..()
 	for(var/obj/overlay/diona/floor/diona in src)
-		qdel(diona)
+		dedionaze(diona)
 
 /turf/simulated/floor/use_weapon(obj/item/weapon, mob/living/user, list/click_params)
 	. = ..()
@@ -146,7 +150,7 @@
 
 /turf/simulated/floor/use_tool(obj/item/W, mob/living/user, list/click_params)
 	if(locate(/obj/overlay/diona/wall) in src)
-		to_chat(user, SPAN_NOTICE("It's seems  that you can't use tools to make something on organic wall..."))
+		to_chat(user, SPAN_NOTICE("It's seems that you can't use tools to make something on organic wall..."))
 		to_chat(user, FONT_SMALL(SPAN_NOTICE("If only you had some hatchet...")))
 		return // We can't dismantle it, if it DIONAE
 	. = ..()
