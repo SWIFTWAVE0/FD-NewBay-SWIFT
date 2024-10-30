@@ -68,69 +68,231 @@
 	descriptor = "SFMV Kitsune"
 	map = "SFMV Kitsune"
 	crew_jobs = list(
-		/datum/job/submap/kitsune_captain
-		//datum/job/submap/kitsune_engineer,
-		//datum/job/submap/kitsune_pilot,
-		//datum/job/submap/kitsune_cook,
-		//datum/job/submap/kitsune_doctor,
-		//datum/job/submap/kitsune_paramedic,
-		//datum/job/submap/kitsune_surgeon
+		/datum/job/submap/kitsune_captain,
+		/datum/job/submap/kitsune_roboticist,
+		/datum/job/submap/kitsune_pilot,
+		/datum/job/submap/kitsune_exec,
+		/datum/job/submap/kitsune_chief,
+		/datum/job/submap/kitsune_crew
 	)
 
 /obj/submap_landmark/spawnpoint/kitsune_captain
-	name = "Captain"
+	name = "Commanding Officer"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
-/obj/submap_landmark/spawnpoint/kitsune_engineer
-	name = "Engineer"
+/obj/submap_landmark/spawnpoint/kitsune_roboticist
+	name = "Roboticist"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/submap_landmark/spawnpoint/kitsune_pilot
 	name = "Pilot"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
-/obj/submap_landmark/spawnpoint/kitsune_cook
-	name = "Cook"
+/obj/submap_landmark/spawnpoint/kitsune_chief
+	name = "Chief"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
-/obj/submap_landmark/spawnpoint/kitsune_doctor
-	name = "Medical Doctor"
+/obj/submap_landmark/spawnpoint/kitsune_exec
+	name = "Executive Officer"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
-/obj/submap_landmark/spawnpoint/kitsune_paramedic
-	name = "Paramedic"
-	movable_flags = MOVABLE_FLAG_EFFECTMOVE
-
-/obj/submap_landmark/spawnpoint/kitsune_surgeon
-	name = "Surgeon"
+/obj/submap_landmark/spawnpoint/kitsune_crew
+	name = "Crewman"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /datum/job/submap/kitsune_captain
-	title = "Captain"
-	department = "SCG Fleet"
-	department_flag = CIV
+	title = "Commanding Officer"
+	department = "Command"
+	department_flag = COM
+	economic_power = 12
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "SCG Admiralty"
 	ideal_character_age = 35
 	minimal_player_age = 0
 	loadout_allowed = TRUE
-	outfit_type = /singleton/hierarchy/outfit/job/captain
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
 		/datum/mil_branch/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet
+		/datum/mil_rank/fleet/o5
 	)
 	access = list(access_captain,access_engine_equip,access_kitchen,access_pilot,access_medical)
 	announced = FALSE
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 	                    SKILL_PILOT	  = SKILL_BASIC,
 						SKILL_MEDICAL = SKILL_TRAINED)
-	skill_points = 32
+	skill_points = 40
 
-/singleton/hierarchy/outfit/job/kitsune_captain
-	name = "Captain"
-	id_slot = slot_wear_id
-	id_types = list(/obj/item/card/id/torch/gold)
-	pda_type = /obj/item/modular_computer/pda
+/datum/job/submap/kitsune_roboticist
+	title = "Roboticist"
+	supervisors = "Your husband"
+	total_positions = 1
+	spawn_positions = 1
+	economic_power = 12
+	minimal_player_age = 14
+	minimum_character_age = 0
+	ideal_character_age = 50
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o1
+	)
+
+	min_skill = list(   SKILL_CONSTRUCTION = SKILL_TRAINED,
+	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_ANATOMY     = SKILL_TRAINED,
+	                    SKILL_DEVICES     = SKILL_TRAINED,
+	                    SKILL_SCIENCE     = SKILL_TRAINED)
+
+	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
+	                    SKILL_DEVICES     = SKILL_MAX,
+	                    SKILL_CONSTRUCTION = SKILL_MAX,
+                        SKILL_ATMOS       = SKILL_MAX,
+	                    SKILL_ELECTRICAL  = SKILL_MAX,
+                        SKILL_ENGINES     = SKILL_MAX,
+                        SKILL_MEDICAL     = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX)
+	skill_points = 40
+
+	access = list(access_engine_equip,access_kitchen,access_pilot,access_medical)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/aidiag,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+/datum/job/submap/kitsune_pilot
+	title = "Pilot"
+	department = "Command"
+	department_flag = COM
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Your Wife"
+	selection_color = "#2f2f7f"
+	minimal_player_age = 0
+	economic_power = 8
+	ideal_character_age = 24
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/fleet/o1
+	)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_PILOT       = SKILL_MAX)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+		                SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX)
+	skill_points = 54
+
+
+	access = list(access_engine_equip,access_kitchen,access_pilot,access_medical)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/power_monitor,
+							 /datum/computer_file/program/supermatter_monitor,
+							 /datum/computer_file/program/alarm_monitor,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/shields_monitor,
+							 /datum/computer_file/program/reports,
+							 /datum/computer_file/program/deck_management)
+
+/datum/job/submap/kitsune_exec
+	title = "Executive Officer"
+	supervisors = "the Commanding Officer"
+	department = "Command"
+	department_flag = COM
+	minimal_player_age = 0
+	economic_power = 14
+	minimum_character_age = 0
+	ideal_character_age = 45
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o5,
+		/datum/mil_rank/fleet/o4,
+		/datum/mil_rank/fleet/o5
+	)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
+	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_PILOT       = SKILL_BASIC)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX)
+	skill_points = 36
+
+	access = list(access_captain,access_engine_equip,access_kitchen,access_pilot,access_medical)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/card_mod,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+
+/datum/job/submap/kitsune_chief
+	title = "Chief"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 1
+	spawn_positions = 1
+	minimum_character_age = 0
+	ideal_character_age = 35
+	economic_power = 6
+	minimal_player_age = 0
+	supervisors = "the Executive Officer"
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/chief_steward
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/service/chief_steward/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/e7,
+		/datum/mil_rank/fleet/e7,
+		/datum/mil_rank/fleet/e6
+	)
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_TRAINED,
+		SKILL_COOKING = SKILL_TRAINED,
+		SKILL_BOTANY = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_BASIC
+	)
+	skill_points = 36
+	access = list(access_captain,access_engine_equip,access_kitchen,access_pilot,access_medical)
+
+/datum/job/submap/kitsune_crew
+	title = "Crewman"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 16
+	spawn_positions = 16
+	supervisors = "the Commanding Officer"
+	minimum_character_age = 0
+	ideal_character_age = 20
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
+	skill_points = 32
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/service/crewman/fleet,
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4
+	)
+
+	access = list(access_medical)
