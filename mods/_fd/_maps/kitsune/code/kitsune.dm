@@ -11,7 +11,8 @@
 	skill_needed = SKILL_TRAINED
 	vessel_mass = 5000
 	initial_restricted_waypoints = list(
-		"Kitsune" = list("nav_kitsune_start")
+		"Kitsune" = list("nav_kitsune_start"),
+		"SFV Hotaru" = list("nav_hangar_hotaru")
 	)
 
 /obj/machinery/computer/shuttle_control/explore/hotaru
@@ -37,9 +38,7 @@
 	spawn_cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/hotaru)
 	area_usage_test_exempted_root_areas = list(/area/kitsune/med_shuttle)
-	initial_restricted_waypoints = list(
-		"SFV Hotaru" = list("nav_hangar_hotaru")
-	)
+
 
 /datum/shuttle/autodock/overmap/hotaru
 	name = "SFV Hotaru"
