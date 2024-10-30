@@ -37,6 +37,9 @@
 	spawn_cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/hotaru)
 	area_usage_test_exempted_root_areas = list(/area/kitsune/med_shuttle)
+	initial_restricted_waypoints = list(
+		"SFV Hotaru" = list("nav_hangar_hotaru")
+	)
 
 /datum/shuttle/autodock/overmap/hotaru
 	name = "SFV Hotaru"
@@ -47,9 +50,15 @@
 	current_location = "nav_kitsune_start"
 	dock_target = "kitsune_ship_dock"
 	range = 1
-	ceiling_type = /turf/simulated/floor/plating
+	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
+
+/obj/shuttle_landmark/hotaru
+	name = "Hotaru Hangar"
+	landmark_tag = "nav_hangar_hotaru"
+	base_area = /area/kitsune/hangar
+	base_turf = /turf/simulated/floor/plating
 
 /obj/submap_landmark/joinable_submap/kitsune
 	name = "SFMV Kitsune"
