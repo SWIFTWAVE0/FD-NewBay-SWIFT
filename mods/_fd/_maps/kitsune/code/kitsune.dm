@@ -112,12 +112,15 @@
 	loadout_allowed = TRUE
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
-		/datum/mil_branch/fleet
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/expeditionary_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o5
+		/datum/mil_rank/fleet/o6,
+		/datum/mil_rank/fleet/o5,
+		/datum/mil_rank/fleet/o4,
 	)
-	access = list(access_captain,access_engine_equip,access_kitchen,access_pilot,access_medical)
+	access = list(access_captain,access_engine,access_kitchen,access_bridge)
 	announced = FALSE
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 	                    SKILL_PILOT	  = SKILL_BASIC,
@@ -133,7 +136,7 @@
 	minimal_player_age = 14
 	minimum_character_age = 0
 	ideal_character_age = 50
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
 	)
@@ -157,7 +160,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 40
 
-	access = list(access_engine_equip,access_kitchen,access_pilot,access_medical)
+	access = list(access_engine,access_kitchen,access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/aidiag,
@@ -194,7 +197,7 @@
 	skill_points = 54
 
 
-	access = list(access_engine_equip,access_kitchen,access_pilot,access_medical)
+	access = list(access_engine,access_kitchen,access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/suit_sensors,
@@ -217,13 +220,12 @@
 	ideal_character_age = 45
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/expeditionary_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5
+		/datum/mil_rank/fleet/o5,
+		/datum/mil_rank/fleet/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -233,7 +235,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 36
 
-	access = list(access_captain,access_engine_equip,access_kitchen,access_pilot,access_medical)
+	access = list(access_captain,access_engine,access_kitchen,access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
@@ -269,7 +271,7 @@
 		SKILL_CHEMISTRY = SKILL_BASIC
 	)
 	skill_points = 36
-	access = list(access_captain,access_engine_equip,access_kitchen,access_pilot,access_medical)
+	access = list(access_kitchen)
 
 /datum/job/submap/kitsune_crew
 	title = "Crewman"
@@ -293,5 +295,3 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4
 	)
-
-	access = list(access_medical)
