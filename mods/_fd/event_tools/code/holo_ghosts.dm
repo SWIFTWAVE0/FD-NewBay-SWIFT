@@ -66,7 +66,8 @@
 		for(var/mob/living/L in orange(10,src))
 			if(L.key && L.client)
 				seen = TRUE
-				alpha = 50
+				animate(src, 3 SECONDS, alpha = 150)
+/*				alpha = 50
 				spawn(1 SECOND)
 					alpha = 80
 				spawn(2 SECONDS)
@@ -74,7 +75,7 @@
 				spawn(3 SECOND)
 					alpha = 120
 				spawn(4 SECONDS)
-					alpha = 150
+					alpha = 150 */
 				start_thinking()
 				break
 
@@ -87,8 +88,19 @@
 	icon_dead = "Caution"
 	color = "#ffffff"
 
+/mob/living/simple_animal/holo_npc/ai_announcer/Life()
+	..()
+
+	if(!seen)
+		for(var/mob/living/L in orange(10,src))
+			if(L.key && L.client)
+				seen = TRUE
+				start_thinking()
+				break
+
 /mob/living/simple_animal/holo_npc/ai_announcer/start_thinking()
 	alpha = 0
+	invisibility = 50
 	spawn(2 SECOND)
 		alpha = 0
 	spawn(3 SECONDS)
@@ -99,8 +111,9 @@
 		alpha = 0
 
 	spawn(195 SECOND)
-		alpha = 50
-	spawn(196 SECONDS)
+		invisibility = 0
+		animate(src, 5 SECONDS, alpha = 150)
+/*	spawn(196 SECONDS)
 		alpha = 80
 	spawn(197 SECOND)
 		alpha = 100
@@ -108,7 +121,7 @@
 		alpha = 120
 	spawn(199 SECOND)
 		alpha = 150
-
+*/
 	spawn(200 SECONDS)
 		ISay("|ВНИМАНИЕ| ЗАФИКСИРОВАНЫ СЕРЬЁЗНЫЕ СТРУКТУРНЫЕ ПОВРЕЖДЕНИЯ.")
 	spawn(204 SECONDS)
