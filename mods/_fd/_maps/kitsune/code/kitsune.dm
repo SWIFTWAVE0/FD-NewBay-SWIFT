@@ -11,7 +11,6 @@
 	skill_needed = SKILL_TRAINED
 	vessel_mass = 5000
 	initial_restricted_waypoints = list(
-		"Kitsune" = list("nav_kitsune_start"),
 		"SFV Hotaru" = list("nav_hangar_hotaru")
 	)
 
@@ -41,23 +40,38 @@
 
 
 /datum/shuttle/autodock/overmap/hotaru
-	name = "SFV Hotaru"
+	name = "Hotaru"
 	move_time = 10
 	shuttle_area = list(
 		/area/kitsune/med_shuttle
 	)
-	current_location = "nav_kitsune_start"
-	dock_target = "kitsune_ship_dock"
+	current_location = "nav_hangar_hotaru"
+	landmark_transition = "nav_transit_hotaru"
+	dock_target = "medical_shuttle_airlock"
 	range = 1
+	fuel_consumption = 4
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
+
+/obj/shuttle_landmark/transit/hotaru
+	name = "In transit"
+	landmark_tag = "nav_transit_hotaru"
 
 /obj/shuttle_landmark/hotaru
 	name = "Hotaru Hangar"
 	landmark_tag = "nav_hangar_hotaru"
 	base_area = /area/kitsune/hangar
 	base_turf = /turf/simulated/floor/plating
+
+/obj/shuttle_landmark/hotaru/torch
+	name = "4th Deck, Aft Starboard Airlock"
+	landmark_tag = "nav_torch_hotaru"
+	base_area = /area/space
+
+/obj/shuttle_landmark/hotaru/torch/fore
+	name = "4th Deck, Fore Starboard Airlock"
+	landmark_tag = "nav_torch_hotaru_fore"
 
 /obj/submap_landmark/joinable_submap/kitsune
 	name = "SFMV Kitsune"
