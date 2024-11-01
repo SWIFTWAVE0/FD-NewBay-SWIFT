@@ -101,14 +101,14 @@
 /mob/living/simple_animal/holo_npc/ai_announcer/start_thinking()
 	alpha = 0
 	invisibility = 50
-	spawn(2 SECOND)
+/*	spawn(2 SECOND)
 		alpha = 0
 	spawn(3 SECONDS)
 		alpha = 0
 	spawn(4 SECOND)
 		alpha = 0
 	spawn(5 SECONDS)
-		alpha = 0
+		alpha = 0*/
 
 	spawn(195 SECOND)
 		invisibility = 0
@@ -120,8 +120,8 @@
 	spawn(198 SECOND)
 		alpha = 120
 	spawn(199 SECOND)
-		alpha = 150
-*/
+		alpha = 150*/
+
 	spawn(200 SECONDS)
 		ISay("|ВНИМАНИЕ| ЗАФИКСИРОВАНЫ СЕРЬЁЗНЫЕ СТРУКТУРНЫЕ ПОВРЕЖДЕНИЯ.")
 	spawn(204 SECONDS)
@@ -165,7 +165,7 @@
 	spawn(22 SECOND)
 		ISay("Каков статус заряда?")
 	spawn(32 SECONDS) //Ждём ответ
-		ISay("Всего минуту, значит...сомневаюсь, что этого будет достаточно.")
+		ISay("Всего минута, значит...сомневаюсь, что этого будет достаточно.")
 	spawn(38 SECONDS)
 		ISay("Одни против двадцати четырёх. Нас должны были порвать как Тузик Грелку, и то, что этого до сих пор не произошло - УЖЕ чистая удача.")
 		visible_message(SPAN_NOTICE("[src] достаёт из пальто помятую сигарету, зажимая её в зубах."))
@@ -236,7 +236,7 @@
 	spawn(10 SECONDS)
 		ISay("Мне не хотелось бы разочаровывать вас, однако ещё одного подобного гамбита мы не переживём, господин главный командующий.")
 	spawn(25 SECONDS) //Ждём, пока Достоевский сядет
-		ISay("Оставшиеся юниты, Вавилон и Одиссей - уже переведены на защиту боеголовки. Капитан Минделеев практически закончил с его подготовкой.")
+		ISay("Оставшиеся юниты, Вавилон и Одиссей - уже переведены на защиту боеголовки. Капитан Минделеев практически закончил с её подготовкой.")
 	spawn(30 SECONDS)
 		ISay("Если очень сильно повезёт - у нас будет ещё около минуты времени.")
 	spawn(61 SECONDS)
@@ -285,7 +285,7 @@
 	spawn(162 SECONDS)
 		ISay("Будьте готовы 'выводить' нас сразу после ударного контакта, хорошо?")
 	spawn(167 SECONDS)
-		ISay("Пространственный изгиб - тридцать девять и пять десятых процентов!")
+		ISay("Пространственный изгиб - тридцать девять и пять десятых процентов.")
 	spawn(174 SECONDS)
 		visible_message(SPAN_NOTICE("[src] быстро бегает пальцами по приборной панели."))
 		ISay("Сигнал пойман, сэр! Стабилизируем туннель!")
@@ -329,4 +329,166 @@
 	spawn(195 SECONDS)
 		color = COLOR_DARK_BLUE_GRAY
 	spawn(225 SECONDS)
+		qdel(src)
+
+/mob/living/simple_animal/holo_npc/avgust_real
+	name = "Avgust Mindeleev"
+	desc = "Гениальный учёный былых лет. Так значит, его последние моменты были на Факеле?.."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "mindeleev"
+	icon_living = "mindeleev"
+	icon_dead = "mindeleev"
+
+/mob/living/simple_animal/holo_npc/avgust_real/start_thinking()
+	dir = turn(dir,-90)
+	ISay("Чтоб тебя черти в зад драли, Снигирь, блять!")
+	visible_message(SPAN_DANGER("[src] ударяет кулаком по консоли."))
+	spawn(3 SECONDS)
+		ISay("Если мы ошибёмся хотя бы на одну цифру...")
+	spawn(6 SECONDS)
+		ISay("...страшно даже представить, что с нами станет.")
+	spawn(10 SECONDS)
+		ISay("Ну и кто спиздил мой оптимизм?!")
+	spawn(12 SECONDS)
+		ISay("Неужели мне НАСТОЛЬКО страшно?...")
+	spawn(15 SECONDS)
+		dir = turn(dir,90)
+		visible_message(SPAN_NOTICE("[src] резко поднимает голову."))
+		ISay("А? Это ещё что за шум?!")
+	spawn(18 SECONDS)
+		visible_message(SPAN_NOTICE("[src] опускает взгляд к экрану."))
+		ISay("Нет...")
+	spawn(20 SECONDS)
+		ISay("...Твою же МАТЬ! НЕТ! Ну я же пошутил!")
+		visible_message(SPAN_NOTICE("[src] поднимается с кресла."))
+	spawn(22 SECONDS)
+		ISay("Срань...что же, блять, теперь делать!...")
+		visible_message(SPAN_NOTICE("[src] бегает глазами по комнате."))
+		forceMove(get_step(src, SOUTH))
+	spawn(28 SECONDS)
+		ISay("Похе-е-ер!...")
+		dir = turn(dir,-90)
+		forceMove(get_step(src, WEST))
+	spawn(30 SECONDS)
+		ISay("Похер!")
+		forceMove(get_step(src, WEST))
+	spawn(32 SECONDS)
+		ISay("ПОХЕР!")
+		forceMove(get_step(src, WEST))
+	spawn(33 SECONDS)
+		ISay("Похер?...")
+	spawn(35 SECONDS)
+		ISay("ТЫ ЧЁ ТАМ НАКРУТИЛ?!")
+	spawn(45 SECONDS)
+		ISay("...дабы занизить кол-во используемой отрицательной энергии?")
+	spawn(55 SECONDS)
+		ISay("А сам-то знаешь!?")
+	spawn(57 SECONDS)
+		ISay("СУКА-")
+		color = "#970000"
+		alpha = 200
+	spawn(58 SECONDS)
+		qdel(src)
+
+/mob/living/simple_animal/holo_npc/ai_announcer2
+	name = "-SYSTEM MAINFRAME-"
+	desc = "Alarm announcement system."
+	icon = 'packs/infinity/icons/mob/hologram.dmi'
+	icon_state = "Caution"
+	icon_living = "Caution"
+	icon_dead = "Caution"
+	color = "#ffffff"
+
+/mob/living/simple_animal/holo_npc/ai_announcer2/Life()
+	..()
+
+	if(!seen)
+		for(var/mob/living/L in orange(10,src))
+			if(L.key && L.client)
+				seen = TRUE
+				start_thinking()
+				break
+
+/mob/living/simple_animal/holo_npc/ai_announcer2/start_thinking()
+	alpha = 0
+	invisibility = 50
+
+	spawn(10 SECOND)
+		invisibility = 0
+		animate(src, 5 SECONDS, alpha = 150)
+
+	spawn(15 SECONDS)
+		playsound(src.loc, 'sound/ambience/bsd_alarm.ogg', 100, 1)
+		ISay("|ВНИМАНИЕ| ОБНАРУЖЕН ПЕРЕПАД ПРОСТРАНСТВЕННОЙ МАГНИТУДЫ.")
+	spawn(20 SECONDS)
+		ISay("|ВНИМАНИЕ| НЕМЕДЛЕННО ПОКИНЬТЕ СДЕРЖИВАЮЩУЮ КАМЕРУ.")
+	spawn(25 SECONDS)
+		playsound(src.loc, 'sound/ambience/bsd_alarm.ogg', 100, 1)
+		ISay("|ВНИМАНИЕ| ОТКЛОНЕНИЕ НОРМАЛИ СОСТАВЛЯЕТ 12.9%")
+	spawn(30 SECONDS)
+		ISay("|ВНИМАНИЕ| ОТКЛОНЕНИЕ НОРМАЛИ СОСТАВЛЯЕТ 21.3%")
+	spawn(35 SECONDS)
+		ISay("|ВНИМАНИЕ| ОТКАЗ ЯДРА ЦЕНТРИФУГИ")
+	spawn(40 SECONDS)
+		ISay("|ВНИМАНИЕ| ОТКАЗ СТАБИЛИЗИРУЮЩЕГО ПОЛЯ")
+	spawn(45 SECONDS)
+		playsound(src.loc, 'sound/ambience/bsd_alarm.ogg', 100, 1)
+		ISay("|ВНИМАНИЕ| РАССЛОЕНИЕ ПРОСТРАНСТВЕННЫХ ВЕТВЕЙ")
+	spawn(50 SECONDS)
+		ISay("|ВНИМАНИЕ| ОТКЛОНЕНИЕ НОРМАЛИ СОСТАВЛЯЕТ 56.4%")
+	spawn(55 SECONDS)
+		ISay("|ВНИМАНИЕ| НЕМЕДЛЕННО ПОКИНЬТЕ СДЕРЖИВАЮЩУЮ-")
+		playsound(src.loc, 'sound/machines/BSD_explosion.ogg', 100, 1)
+	spawn(58 SECONDS)
+		qdel(src)
+
+/mob/living/simple_animal/holo_npc/avgust_fantom
+	name = "Avgust Mindeleev"
+	desc = "Гениальный учёный былых лет. Так значит, его последние моменты были на Факеле?.."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "mindeleev"
+	icon_living = "mindeleev"
+	icon_dead = "mindeleev"
+
+/mob/living/simple_animal/holo_npc/avgust_fantom/start_thinking()
+	dir = turn(dir,180)
+	ISay("Давай же, Август, ты делал это сотни раз...сможешь и в сто первый!")
+	spawn(3 SECONDS)
+		ISay("Ну да, тебя никогда не просили сделать вполне физическое яблоко неосязаемым, но В ТЕОРИИ же...")
+	spawn(6 SECONDS)
+		visible_message(SPAN_NOTICE("[src] подкручивает какую-то плату на панели перед собой."))
+		ISay("...это не должно быть сложнее голограммы, верно?")
+	spawn(10 SECONDS)
+		visible_message(SPAN_DANGER("[src] бьёт себя по щеке."))
+		ISay("Соберись, последний из Киты, что на тебя вообще нашло?")
+	spawn(15 SECONDS)
+		ISay("На этом корабле нет никого умнее тебя. Конечно, если из воздуха случайно не материализуется моя точная копия-я-Я-Я-Я!-")
+		visible_message(SPAN_NOTICE("[src] в панике подбрасывает в воздух гаечный ключ, роняя его прямо внутрь устройства перед собой."))
+	spawn(20 SECONDS)
+		ISay("Бля-я-я-я-я-я...")
+		visible_message(SPAN_NOTICE("[src] разворачивается к монитору оповещения, его зрачки расширились до небывалых оняме масштабов."))
+	spawn(24 SECONDS)
+		ISay("Я думаю, что всё ещё не настолько плохо, я могу это-")
+	spawn(30 SECONDS)
+		ISay("...исправить. Правда же?")
+		visible_message(SPAN_NOTICE("[src] резко срывается с места, впопыхах вставая с четверенек на ноги."))
+		dir = turn(dir,90)
+		forceMove(get_step(src, EAST))
+	spawn(32 SECONDS)
+		forceMove(get_step(src, EAST))
+		ISay("Блять, блять, блять, Б-Л-Я-Т-Ь!")
+	spawn(33 SECONDS)
+		ISay("Блять?...")
+	spawn(35 SECONDS)
+		dir = turn(dir,90)
+		ISay("ТЫ ЧЁ ТАМ НАКРУТИЛ?!")
+	spawn(40 SECONDS)
+		ISay("Занизил мощность контроллирующих полей?")
+	spawn(49 SECONDS)
+		ISay("Нахуя?")
+	spawn(57 SECONDS)
+		color = "#970000"
+		alpha = 200
+	spawn(58 SECONDS)
+		visible_message(SPAN_WARNING("Резкая вспышка света засветила обе голограммы, расстворяя их подобно муляжу...Что это вообще было?"))
 		qdel(src)
