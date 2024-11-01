@@ -59,6 +59,8 @@
 
 #include "customs/kanaris/item.dm"
 #include "customs/kanaris/weapon.dm"
+#include "customs/zakterar/leather_folder.dm"
+#include "customs/zakterar/oversizejacket.dm"
 
 #include "eventstuff/admintools.dm"
 
