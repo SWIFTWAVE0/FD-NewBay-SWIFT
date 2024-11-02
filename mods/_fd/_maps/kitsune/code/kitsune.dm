@@ -1,7 +1,7 @@
 /obj/overmap/visitable/ship/kitsune
 	name = "SFMV Kitsune"
 	desc = "Sensor array is detecting a small Sol Fleet vessel."
-	color = "#005fed"
+	color = "#6385b8"
 	icon_state = "ship"
 	moving_state = "ship_moving"
 	fore_dir = NORTH
@@ -41,7 +41,7 @@
 
 /datum/shuttle/autodock/overmap/hotaru
 	name = "Hotaru"
-	move_time = 10
+	move_time = 30
 	shuttle_area = list(
 		/area/kitsune/med_shuttle
 	)
@@ -65,9 +65,10 @@
 	base_turf = /turf/simulated/floor/plating
 
 /obj/shuttle_landmark/hotaru/torch
-	name = "4th Deck, Aft Starboard Airlock"
+	name = "SEV Torch Hangar"
 	landmark_tag = "nav_torch_hotaru"
-	base_area = /area/space
+	base_area = /area/quartermaster/hangar
+	base_turf = /turf/simulated/floor/plating
 
 /obj/shuttle_landmark/hotaru/torch/fore
 	name = "4th Deck, Fore Starboard Airlock"
@@ -149,6 +150,7 @@
 	economic_power = 12
 	minimal_player_age = 14
 	minimum_character_age = 0
+	loadout_allowed = TRUE
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
@@ -190,6 +192,7 @@
 	supervisors = "Your Wife"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
+	loadout_allowed = TRUE
 	economic_power = 8
 	ideal_character_age = 24
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
@@ -231,6 +234,7 @@
 	minimal_player_age = 0
 	economic_power = 14
 	minimum_character_age = 0
+	loadout_allowed = TRUE
 	ideal_character_age = 45
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
@@ -238,8 +242,9 @@
 		/datum/mil_branch/expeditionary_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o5,
-		/datum/mil_rank/fleet/o4
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o4,
+		/datum/mil_rank/fleet/o3
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -267,6 +272,7 @@
 	ideal_character_age = 35
 	economic_power = 6
 	minimal_player_age = 0
+	loadout_allowed = TRUE
 	supervisors = "the Executive Officer"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/chief_steward
 	allowed_branches = list(
@@ -295,17 +301,46 @@
 	spawn_positions = 16
 	supervisors = "the Commanding Officer"
 	minimum_character_age = 0
+	loadout_allowed = TRUE
 	ideal_character_age = 20
+	skill_points = 42
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
-	skill_points = 32
+	max_skill = list(
+		SKILL_BUREAUCRACY = SKILL_MAX,
+		SKILL_FINANCE = SKILL_MAX,
+		SKILL_EVA = SKILL_MAX,
+		SKILL_PILOT = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_COMPUTER = SKILL_MAX,
+		SKILL_BOTANY = SKILL_MAX,
+		SKILL_COOKING = SKILL_MAX,
+		SKILL_COMBAT = SKILL_MAX,
+		SKILL_WEAPONS = SKILL_MAX,
+		SKILL_FORENSICS = SKILL_MAX,
+		SKILL_CONSTRUCTION = SKILL_MAX,
+		SKILL_ELECTRICAL = SKILL_MAX,
+		SKILL_ATMOS = SKILL_MAX,
+		SKILL_ENGINES = SKILL_MAX,
+		SKILL_DEVICES = SKILL_MAX,
+		SKILL_SCIENCE = SKILL_MAX,
+		SKILL_MEDICAL = SKILL_MAX,
+		SKILL_ANATOMY = SKILL_MAX,
+		SKILL_CHEMISTRY = SKILL_MAX
+	)
+
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/service/crewman/fleet,
+		/datum/mil_branch/fleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/fleet/e7,
+		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/fleet/e9,
+		/datum/mil_rank/civ/civ
 	)
