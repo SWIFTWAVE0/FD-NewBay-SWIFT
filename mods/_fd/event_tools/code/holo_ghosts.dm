@@ -905,7 +905,3 @@
 		ISay("У НАС П*!!@&#ОСЬ?!...АВГУСТ1!")
 	spawn(38 SECONDS)
 		qdel(src)
-
-//template for Void, so build can be compiled without removing a mob from deck4
-
-/mob/living/simple_animal/holo_npc/danil
