@@ -600,7 +600,7 @@
 	spawn(104 SECONDS)
 		ISay("Я не могу допустить того, что ты развалишься раньше меня, понял?")
 	spawn(108 SECONDS)
-		ISay("Всем сейчас нереально тяжело. И я как никто другой понимаю, что ты чувствуешь прямо сейчас.")
+		ISay("Нам всем тяжело. И я как никто другой понимаю, что ты чувствуешь прямо сейчас.")
 	spawn(114 SECONDS)
 		ISay("Моя команда...нет, моя семья - была для меня буквально всем. Как Лили для тебя.")
 	spawn(120 SECONDS)
@@ -723,10 +723,10 @@
 	spawn(56 SECONDS)
 		alpha = 0
 	spawn(57 SECONDS)
-		forceMove(get_step(src, NORTH))
-		forceMove(get_step(src, NORTH))
-		forceMove(get_step(src, NORTH))
-		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, SOUTH))
+		forceMove(get_step(src, SOUTH))
+		forceMove(get_step(src, SOUTH))
+		forceMove(get_step(src, SOUTH))
 		forceMove(get_step(src, WEST))
 		forceMove(get_step(src, WEST))
 		forceMove(get_step(src, WEST))
@@ -906,10 +906,236 @@
 	spawn(38 SECONDS)
 		qdel(src)
 
-// Шаблоны, чтобы билд компилился
+/mob/living/simple_animal/holo_npc/brown2
+	name = "Michael Brown"
+	desc = "Один из активистов, действия которого привели нас к тому, что мы имеем сегодня. Впрочем, ныне он является чуть ли не лидером человеческого сопротивления."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "brown"
+	icon_living = "brown"
+	icon_dead = "brown"
+
+/mob/living/simple_animal/holo_npc/brown2/start_thinking()
+	ISay("Не неси чепухи! Я не собираюсь тебя здесь бросать!")
+	spawn(5 SECONDS)
+		visible_message(SPAN_DANGER("[src] со всей силы ударяет по стене ногой."))
+		ISay("Кончай всё это, Мясо! Это несмешно!")
+	spawn(11 SECONDS)
+		ISay("Да чёрта с два!")
+	spawn(15 SECONDS)
+		visible_message(SPAN_DANGER("[src] продолжает колотить преграду."))
+		ISay("Всё не должно заканчиваться вот так! Пропусти меня!")
+	spawn(24 SECONDS)
+		ISay("Тогда чьё?! Покажи мне его морду - на нём целого места не останется!")
+	spawn(32 SECONDS)
+		visible_message(SPAN_NOTICE("[src] слегка поступился."))
+		ISay("Что?...")
+	spawn(54 SECONDS)
+		ISay("Да о чём ты вообще...Мясо?...")
+	spawn(60 SECONDS)
+		ISay("Ты не можешь просто взять, и...решить это за меня!")
+	spawn(64 SECONDS)
+		ISay("Это МОЙ бой! Я должен быть с ними! Со СВОИМИ людьми, блять!")
+	spawn(72 SECONDS)
+		visible_message(SPAN_DANGER("Внезапно, огромное бионическое щупальце вырывается из пола, хлыстом отбрасывая [src] на несколько метров назад."))
+		ISay("АРГ-Х!")
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+	spawn(74 SECONDS)
+		visible_message(SPAN_WARNING("[src] шипит от боли."))
+	spawn(140 SECONDS)
+		qdel(src)
 
 /mob/living/simple_animal/holo_npc/danil
+	name = "Danil Bassow"
+	desc = "Бывший пират, каким-то волшебным образом оказавшийся в управленческих рядах ЦПСС. Известен одновременно как убийца воров, так и их защитник."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "danil_withgun"
+	icon_living = "danil_withgun"
+	icon_dead = "danil_withgun"
 
-/mob/living/simple_animal/holo_npc/brown2
+/mob/living/simple_animal/holo_npc/danil/start_thinking()
+	alpha = 0
+	invisibility = 50
+
+	spawn(65 SECOND)
+		invisibility = 0
+		animate(src, 5 SECONDS, alpha = 150)
+	spawn(72 SECONDS)
+		ISay("Майк!")
+		forceMove(get_step(src, SOUTH))
+		dir = turn(dir,-90)
+	spawn(76 SECONDS)
+		ISay("Какого хрена, Мясо?!")
+		dir = turn(dir,90)
+	spawn(79 SECONDS)
+		ISay("У тебя там с концами крыша поехала?!")
+	spawn(116 SECONDS)
+		ISay("Да какой же ты друг, если тебе наплевать на его решения?!")
+	spawn(124 SECONDS)
+		visible_message(SPAN_WARNING("[src] скалится."))
+	spawn(128 SECONDS)
+		ISay("Да чтоб тебя...")
+	spawn(132 SECONDS)
+		visible_message(SPAN_NOTICE("[src] подхватывает Майкла на плечо, помогая ему подняться на ноги."))
+		dir = turn(dir,180)
+	spawn(138 SECONDS)
+		ISay("...Давай, здоровяк. Нам стоит поспешить.")
+	spawn(140 SECONDS)
+		qdel(src)
 
 /mob/living/simple_animal/holo_npc/meat2
+	name = "Mr. Meat"
+	desc = "Диона...в костюме? Говорящая как человек?...Впервые вижу подобное."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "meat"
+	icon_living = "meat"
+	icon_dead = "meat"
+
+/mob/living/simple_animal/holo_npc/meat2/Life()
+	..()
+
+	if(!seen)
+		for(var/mob/living/L in orange(10,src))
+			if(L.key && L.client)
+				seen = TRUE
+				start_thinking()
+				break
+
+/mob/living/simple_animal/holo_npc/meat2/start_thinking()
+	alpha = 0
+	invisibility = 50
+	spawn(8 SECONDS)
+		ISay("Так будет лучше, поверь мне.")
+	spawn(20 SECONDS)
+		ISay("Это не моё решение.")
+	spawn(28 SECONDS)
+		ISay("Наше.")
+	spawn(36 SECONDS)
+		ISay("Адмирал, Адамиди, Рузвельт. Мы все солидарны в том, что твоё время ещё не пришло.")
+	spawn(42 SECONDS)
+		ISay("Я прошу прощения, мой старый друг, но дальше эту ношу тебе придётся нести самому.")
+	spawn(48 SECONDS)
+		ISay("Возвращайся к своей семье. Живи, чтобы наша жертва не была напрасна.")
+	spawn(52 SECONDS)
+		ISay("Помнишь ведь?")
+	spawn(70 SECONDS)
+		ISay("Мне жаль.")
+	spawn(84 SECONDS)
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, EAST))
+		ISay("У нас нет на это времени. Пожалуйста, уходите.")
+	spawn(92 SECONDS)
+		ISay("Данил, взови к голосу своего разума.")
+	spawn(98 SECONDS)
+		ISay("Это билет в один конец. Никто из нас не выберется с Факела живым, стоит ему только подняться в воздух.")
+	spawn(104 SECONDS)
+		ISay("Всё, чего я хочу - это счастья для единственного дорого человека, который у меня остался.")
+	spawn(110 SECONDS)
+		ISay("Чтобы его дочка росла с отцом. Чтобы у людей был лидер.")
+	spawn(120 SECONDS)
+		ISay("Я не заставляю тебя соглашаться со мной. Но и шансов прорваться через меня у вас не шибко много.")
+	spawn(127 SECONDS)
+		ISay("Не заставляй меня применять силу снова.")
+	spawn(140 SECONDS)
+		qdel(src)
+
+/mob/living/simple_animal/holo_npc/adamidi
+	name = "Andreas Adamidi"
+	desc = "Не безизвестный адмирал Второго Флота ЦПСС. Видимо, и он нашёл здесь свой конец."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "adamidi"
+	icon_living = "adamidi"
+	icon_dead = "adamidi"
+
+/mob/living/simple_animal/holo_npc/adamidi/Life()
+	dir = turn(dir,90)
+	spawn(6 SECONDS)
+		ISay("Что-то не так?")
+	spawn(14 SECONDS)
+		ISay("Сложно сказать.")
+	spawn(29 SECONDS)
+		ISay("А чего бояться? Смерть - вещь неизбежная. Да и к тому же не самая пугающая.")
+	spawn(36 SECONDS)
+		ISay("Я слишком...часто оказывался на грани для того, чтобы переживать.")
+	spawn(42 SECONDS)
+		ISay("Куда больше я переживаю о том, что будет с теми, кто остался на земле.")
+	spawn(46 SECONDS)
+		ISay("...за нашими спинами.")
+	spawn(52 SECONDS)
+		ISay("Если мы провалимся - у них не будет ни единого шанса.")
+	spawn(82 SECONDS)
+		visible_message(SPAN_NOTICE("[src] усмехается."))
+	spawn(87 SECONDS)
+		ISay("Мир карает инициативу.")
+	spawn(88 SECONDS)
+		alpha = 0
+	spawn(89 SECONDS)
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, EAST))
+		forceMove(get_step(src, EAST))
+		icon_state = "adamidi_combat"
+	spawn(95 SECONDS)
+		alpha = 150
+	spawn(97 SECONDS)
+		ISay("Смотри на меня! Рузвельт, слышишь?! Не закрывай глаза!")
+	spawn(115 SECONDS)
+		ISay("Тише, капитан! Помощь скоро придёт! Экономьте силы!")
+		visible_message(SPAN_NOTICE("[src] придерживает кровоточащую рану на животе девушки."))
+	spawn(122 SECONDS)
+		visible_message(SPAN_WARNING("Издали слышны разговоры пришельцев и топот..."))
+	spawn(125 SECONDS)
+		qdel(src)
+
+/mob/living/simple_animal/holo_npc/nancy
+	name = "Nancy Roosevelt"
+	desc = "Героиня одноимённого сериала довоенных лет. Медийное лицо Сола, дочь одного из Сенаторов и действующий капитан Третьего Флота. Большой послужной список, и всё ради...подобной отвратительной кончины."
+	icon = 'mods/_fd/event_tools/icons/holo_npc.dmi'
+	icon_state = "nancy"
+	icon_living = "nancy"
+	icon_dead = "nancy"
+
+/mob/living/simple_animal/holo_npc/nancy/Life()
+	dir = turn(dir,-90)
+	ISay("Этот должен быть последним.")
+	spawn(2 SECONDS)
+		visible_message(SPAN_NOTICE("[src] опускает голову вниз, с характерным звуком застёгивая замок чёрного мешка."))
+	spawn(4 SECONDS)
+		visible_message(SPAN_NOTICE("[src] вздыхает."))
+		dir = turn(dir,-90)
+	spawn(10 SECONDS)
+		ISay("Примерно...всё? Вас это вообще не гложит, адмирал?")
+	spawn(18 SECONDS)
+		ISay("Я имею в виду-")
+	spawn(24 SECONDS)
+		ISay("Блять, да кого я обманываю? Вам не капельки не страшно? Мы же буквально летим на убой.")
+	spawn(57 SECONDS)
+		ISay("Человечество попросту перестанет существовать...ага, паршивая перспектива.")
+	spawn(66 SECONDS)
+		visible_message(SPAN_NOTICE("[src] вытирает пот с лица."))
+	spawn(74 SECONDS)
+		ISay("Но почему...это всегда должны быть мы? Неужели больше некому спасать галактику?")
+	spawn(88 SECONDS)
+		alpha = 0
+	spawn(89 SECONDS)
+		forceMove(get_step(src, NORTH))
+		forceMove(get_step(src, NORTH))
+		icon_state = "nancy_wounded"
+	spawn(95 SECONDS)
+		alpha = 150
+	spawn(102 SECONDS)
+		visible_message(SPAN_DANGER("[src] с трудом поднимает голову, выплёвывая кровь."))
+		ISay("Адмирал...я-я...о-они-")
+	spawn(110 SECONDS)
+		visible_message(SPAN_NOTICE("[src] хнычет."))
+		ISay("П-папа-")
+	spawn(125 SECONDS)
+		qdel(src)
