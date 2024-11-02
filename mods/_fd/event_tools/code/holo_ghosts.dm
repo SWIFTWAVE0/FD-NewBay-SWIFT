@@ -905,3 +905,11 @@
 		ISay("У НАС П*!!@&#ОСЬ?!...АВГУСТ1!")
 	spawn(38 SECONDS)
 		qdel(src)
+
+// Шаблоны, чтобы билд компилился
+
+/mob/living/simple_animal/holo_npc/danil
+
+/mob/living/simple_animal/holo_npc/brown2
+
+/mob/living/simple_animal/holo_npc/meat2
