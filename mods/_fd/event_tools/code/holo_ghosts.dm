@@ -1055,7 +1055,7 @@
 	icon_living = "adamidi"
 	icon_dead = "adamidi"
 
-/mob/living/simple_animal/holo_npc/adamidi/Life()
+/mob/living/simple_animal/holo_npc/adamidi/start_thinking()
 	dir = turn(dir,90)
 	spawn(6 SECONDS)
 		ISay("Что-то не так?")
@@ -1103,7 +1103,7 @@
 	icon_living = "nancy"
 	icon_dead = "nancy"
 
-/mob/living/simple_animal/holo_npc/nancy/Life()
+/mob/living/simple_animal/holo_npc/nancy/start_thinking()
 	dir = turn(dir,-90)
 	ISay("Этот должен быть последним.")
 	spawn(2 SECONDS)
