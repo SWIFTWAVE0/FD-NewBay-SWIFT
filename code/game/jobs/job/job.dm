@@ -73,6 +73,7 @@
 /datum/job/dd_SortValue()
 	return title
 
+// [FD-ADD]
 /datum/job/proc/give_psi(mob/living/carbon/human/H)
 	if(!(all_species[H.client.prefs.species].type in psi_allowed_species))
 		return
@@ -114,6 +115,7 @@
 		affected.implants += imp
 		imp.part = affected
 	to_chat(H, SPAN_DANGER("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
+// [/FD-ADD]
 
 /datum/job/proc/equip(mob/living/carbon/human/H, alt_title, datum/mil_branch/branch, datum/mil_rank/grade)
 
