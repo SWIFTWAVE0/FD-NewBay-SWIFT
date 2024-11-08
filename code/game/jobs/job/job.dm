@@ -73,6 +73,7 @@
 /datum/job/dd_SortValue()
 	return title
 
+// [FD-ADD]
 /datum/job/proc/give_psi(mob/living/carbon/human/H)
 	if(!(all_species[H.client.prefs.species].type in psi_allowed_species))
 		return
@@ -85,15 +86,17 @@
 	if(!H.client.prefs.psi_threat_level)
 		return
 
-	LAZYINITLIST(psi_faculties)
+	var/list/person_psi_faculties = list()
+	person_psi_faculties |= psi_faculties
+
 	for(var/faculty_name in psi_abilities_by_name)
 		var/singleton/psionic_faculty/faculty = SSpsi.faculties_by_name[faculty_name]
 		var/faculty_id = faculty.id
-		psi_faculties |= list("[faculty_id]" = psi_abilities_by_name[faculty_name] - 1)
+		person_psi_faculties |= list("[faculty_id]" = psi_abilities_by_name[faculty_name] - 1)
 
-	for(var/psi in psi_faculties)
-		if(psi_faculties[psi] > 0)
-			H.set_psi_rank(psi, psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
+	for(var/psi in person_psi_faculties)
+		if(person_psi_faculties[psi] > 0)
+			H.set_psi_rank(psi, person_psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
 
 	H.psi.update()
 
@@ -112,6 +115,7 @@
 		affected.implants += imp
 		imp.part = affected
 	to_chat(H, SPAN_DANGER("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
+// [/FD-ADD]
 
 /datum/job/proc/equip(mob/living/carbon/human/H, alt_title, datum/mil_branch/branch, datum/mil_rank/grade)
 
