@@ -313,6 +313,9 @@
 	#include "../random_ruins/exoplanet_ruins/shelters/shelters_alt.dm"
 	#include "../random_ruins/exoplanet_ruins/warehouse/warehouse.dm"
 
+//УДАЛИТЬ ПОСЛЕ ЗАПУСКА
+	#include "../../mods/_fd/_maps/perci_nightmare/_perci_nightmare.dme"
+//УДАЛИТЬ ПОСЛЕ ЗАПУСКА
 
 	#define using_map_DATUM /datum/map/torch
 
