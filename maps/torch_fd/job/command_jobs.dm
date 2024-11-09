@@ -1,16 +1,18 @@
 /datum/job/captain
 	title = "Commanding Officer"
 	supervisors = "the Sol Central Government and the Sol Code of Uniform Justice"
-	minimal_player_age = 14
+	minimal_player_age = 0
 	economic_power = 16
-	minimum_character_age = list(SPECIES_HUMAN = 40)
+	minimum_character_age = 0
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o6
+		/datum/mil_rank/ec/o6,
+		/datum/mil_rank/fleet/o7
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_TRAINED,
@@ -18,7 +20,7 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 30
+	skill_points = 40
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
@@ -26,7 +28,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/captain/get_description_blurb()
-	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
+	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] survives it's journey."
 
 /datum/job/captain/post_equip_rank(mob/person, alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
@@ -40,7 +42,7 @@
 	department_flag = COM
 	minimal_player_age = 14
 	economic_power = 14
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	minimum_character_age = 0
 	ideal_character_age = 45
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
@@ -91,6 +93,8 @@
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -140,6 +144,8 @@
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -185,6 +191,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 40
 	minimal_player_age = 14
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -239,6 +247,8 @@
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -287,6 +297,8 @@
 	selection_color = "#2f2f7f"
 	economic_power = 16
 	minimal_player_age = 0
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/representative
 	allowed_branches = list(/datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/sol/gov)
@@ -310,8 +322,8 @@
 	title = "Senior Enlisted Advisor"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Commanding Officer and the Executive Officer"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
@@ -359,8 +371,8 @@
 	title = "Bridge Officer"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Commanding Officer and heads of staff"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
@@ -380,7 +392,7 @@
 	                    SKILL_PILOT       = SKILL_TRAINED)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-	skill_points = 20
+	skill_points = 48
 
 
 	access = list(

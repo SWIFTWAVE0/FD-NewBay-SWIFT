@@ -2,8 +2,8 @@
 	title = "Deck Chief"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Executive Officer"
 	economic_power = 5
 	minimal_player_age = 0
@@ -45,8 +45,8 @@
 	title = "Deck Technician"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Deck Chief"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
@@ -84,8 +84,8 @@
 	title = "Prospector"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Deck Chief"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)

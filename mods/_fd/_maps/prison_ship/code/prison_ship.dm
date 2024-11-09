@@ -13,7 +13,10 @@
 	vessel_mass = 12000
 
 /area/prison_ship/
-	name = "\improper &%#@!**!%#"
+	name = "\improper &%#@!*!%#"
+
+/area/prison_ship/interior
+	name = "\improper &%#@!&*!%#"
 
 /datum/map_template/ruin/away_site/prison_ship
 	name = "Unknown damaged transport ship"

@@ -3,8 +3,8 @@
 	department = "Science"
 	department_flag = SCI
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Science Officer"
 	selection_color = "#633d63"
 	economic_power = 12
@@ -45,8 +45,8 @@
 
 /datum/job/scientist
 	title = "Scientist"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Science Officer"
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -94,8 +94,8 @@
 	title = "Research Assistant"
 	department = "Science"
 	department_flag = SCI
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Science Officer and science personnel"
 	selection_color = "#633d63"
 	economic_power = 3
@@ -136,8 +136,8 @@
 	title = "Research Guard"
 	department = "Science"
 	department_flag = SCI
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Science Officer"
 	selection_color = "#473d63"
 	economic_power = 5

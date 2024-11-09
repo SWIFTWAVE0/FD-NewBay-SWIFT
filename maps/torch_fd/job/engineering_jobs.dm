@@ -2,8 +2,8 @@
 	title = "Senior Engineer"
 	department = "Engineering"
 	department_flag = ENG
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Engineer"
 	selection_color = "#5b4d20"
 	economic_power = 7
@@ -53,8 +53,8 @@
 
 /datum/job/engineer
 	title = "Engineer"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Engineer"
 	economic_power = 5
 	minimal_player_age = 0
@@ -114,8 +114,8 @@
 	title = "Engineer Trainee"
 	department = "Engineering"
 	department_flag = ENG
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Engineer and Engineering Personnel"
 	selection_color = "#5b4d20"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
@@ -169,8 +169,8 @@
 	department = "Engineering"
 	department_flag = ENG|ROB
 
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	supervisors = "the Chief Engineer."
@@ -204,7 +204,7 @@
 	                    SKILL_DEVICES      = SKILL_MAX,
 	                    SKILL_MEDICAL      = SKILL_EXPERIENCED,
 	                    SKILL_ANATOMY      = SKILL_EXPERIENCED)
-	skill_points = 20
+	skill_points = 48
 
 	access = list(
 		access_robotics, access_engine, access_solgov_crew, access_network, access_radio_eng
