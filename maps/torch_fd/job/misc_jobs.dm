@@ -103,8 +103,6 @@ Civilian
 		/datum/mil_rank/scga/e9,
 		/datum/mil_rank/scga/o1,
 		/datum/mil_rank/scga/o2
-
-
 	)
 
 /datum/job/assistant

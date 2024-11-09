@@ -2,8 +2,8 @@
 	title = "Chief Steward"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	minimum_character_age = 0
 	ideal_character_age = 35
 	economic_power = 6
@@ -109,9 +109,9 @@
 	title = "Steward"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 0
-	spawn_positions = 0
-	minimum_character_age = list(SPECIES_HUMAN = 20)
+	total_positions = 1
+	spawn_positions = 1
+	minimum_character_age = 0
 	supervisors = "the Chief Steward"
 	alt_titles = list(
 		"Bartender",
@@ -138,6 +138,7 @@
 		SKILL_CHEMISTRY = SKILL_BASIC,
 		SKILL_COOKING = SKILL_TRAINED
 	)
+	skill_points = 40
 	access = list(
 		access_commissary,
 		access_hydroponics,
