@@ -12,7 +12,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o6,
-		/datum/mil_rank/fleet/o7
+		/datum/mil_rank/fleet/o6 = /singleton/hierarchy/outfit/job/torch/crew/command/CO/fleet,
+		/datum/mil_rank/fleet/o7 = /singleton/hierarchy/outfit/job/torch/crew/command/CO/fleet
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_TRAINED,
