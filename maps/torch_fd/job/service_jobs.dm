@@ -153,8 +153,8 @@
 	title = "Crewman"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Chief Steward"
 	loadout_allowed = TRUE
 	minimum_character_age = 0
@@ -162,9 +162,11 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/service/crewman/fleet,
-		/datum/mil_branch/scga = /singleton/hierarchy/outfit/job/torch/crew/service/crewman/army
+		/datum/mil_branch/scga = /singleton/hierarchy/outfit/job/torch/crew/service/crewman/army,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,

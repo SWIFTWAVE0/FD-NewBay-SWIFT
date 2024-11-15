@@ -45,8 +45,8 @@
 
 /datum/job/scientist
 	title = "Scientist"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Chief Science Officer"
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -87,7 +87,7 @@
 		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control, access_torch_fax,
 		access_petrov_maint, access_radio_sci, access_radio_exp, access_research_storage
 	)
-	skill_points = 20
+	skill_points = 30
 	possible_goals = list(/datum/goal/achievement/notslimefodder)
 
 /datum/job/scientist_assistant

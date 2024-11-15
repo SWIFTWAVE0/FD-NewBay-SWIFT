@@ -91,21 +91,23 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/officer
-	title = "Master at Arms"
-	total_positions = 0
-	spawn_positions = 0
+	title = "Armsman"
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Chief of Security"
 	economic_power = 4
 	minimal_player_age = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 25
-	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
+	alt_titles = list("Gunner") // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/maa/fleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,

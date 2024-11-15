@@ -53,8 +53,8 @@
 
 /datum/job/engineer
 	title = "Engineer"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Chief Engineer"
 	economic_power = 5
 	minimal_player_age = 0
@@ -91,7 +91,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 20
+	skill_points = 34
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,

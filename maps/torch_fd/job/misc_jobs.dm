@@ -107,25 +107,14 @@ Civilian
 
 /datum/job/assistant
 	title = "Passenger"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	loadout_allowed = TRUE
 	announced = FALSE
-	alt_titles = list(
-		"Journalist" = /singleton/hierarchy/outfit/job/torch/passenger/passenger/journalist,
-		"Historian",
-		"Botanist",
-		"Investor" = /singleton/hierarchy/outfit/job/torch/passenger/passenger/investor,
-		"Naturalist",
-		"Ecologist",
-		"Entertainer",
-		"Independent Observer",
-		"Sociologist",
-		"Trainer",
-		"Off-Duty"
-		)
+	alt_titles = list("Gardener")
+	skill_points = 44
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(

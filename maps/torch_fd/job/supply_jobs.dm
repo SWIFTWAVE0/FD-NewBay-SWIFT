@@ -7,14 +7,16 @@
 	supervisors = "the Executive Officer"
 	economic_power = 5
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 27)
+	minimum_character_age = 0
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/supply/deckofficer/fleet,
+		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/ec/e7,
 		/datum/mil_rank/fleet/e7,
@@ -28,7 +30,7 @@
 						SKILL_MECH        =	SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-	skill_points = 18
+	skill_points = 36
 
 	access = list(
 		access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,

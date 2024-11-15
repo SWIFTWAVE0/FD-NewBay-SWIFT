@@ -89,8 +89,8 @@
 
 /datum/job/doctor
 	title = "Medical Technician"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "physicians and the Chief Medical Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
@@ -131,7 +131,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	skill_points = 22
+	skill_points = 36
 
 /datum/job/medical_trainee
 	title = "Trainee Medical Technician"
