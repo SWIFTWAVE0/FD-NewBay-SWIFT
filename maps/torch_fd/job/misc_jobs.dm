@@ -56,7 +56,7 @@ Civilian
 		SKILL_ANATOMY = SKILL_MAX,
 		SKILL_CHEMISTRY = SKILL_MAX
 	)
-	skill_points = 44
+	skill_points = 48
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/service/crewman/fleet,

@@ -61,7 +61,7 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 30
+	skill_points = 40 // 30
 
 	access = list(
 		access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
@@ -119,7 +119,7 @@
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 30
+	skill_points = 40 // 30
 
 	access = list(
 		access_tox, access_tox_storage, access_emergency_storage, access_teleporter, access_bridge, access_rd,
@@ -170,7 +170,7 @@
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
-	skill_points = 30
+	skill_points = 40 //30
 
 	access = list(
 		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -222,7 +222,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 30
+	skill_points = 40 //30
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -388,10 +388,12 @@
 	ideal_character_age = 24
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
+		/datum/mil_branch/civilian,
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/ec/o1,
 		/datum/mil_rank/fleet/o1
 	)
@@ -399,7 +401,7 @@
 	                    SKILL_PILOT       = SKILL_TRAINED)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-	skill_points = 48
+	skill_points = 40
 
 
 	access = list(

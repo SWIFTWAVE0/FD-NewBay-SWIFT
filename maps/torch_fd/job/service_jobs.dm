@@ -126,6 +126,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/ec/e5,
 		/datum/mil_rank/fleet/e2,
@@ -197,7 +198,7 @@
 		SKILL_ANATOMY = SKILL_MAX,
 		SKILL_CHEMISTRY = SKILL_MAX
 	)
-	skill_points = 44
+	skill_points = 40
 
 	access = list(
 		access_maint_tunnels, access_emergency_storage,

@@ -78,7 +78,8 @@
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/civ/civ
 	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_BASIC,
@@ -91,7 +92,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 34
+	skill_points = 40 // 34
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -187,7 +188,8 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/civ/civ
 	)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_TRAINED,
 	                    SKILL_DEVICES		= SKILL_EXPERIENCED,
@@ -204,7 +206,7 @@
 	                    SKILL_DEVICES      = SKILL_MAX,
 	                    SKILL_MEDICAL      = SKILL_EXPERIENCED,
 	                    SKILL_ANATOMY      = SKILL_EXPERIENCED)
-	skill_points = 48
+	skill_points = 40
 
 	access = list(
 		access_robotics, access_engine, access_solgov_crew, access_network, access_radio_eng

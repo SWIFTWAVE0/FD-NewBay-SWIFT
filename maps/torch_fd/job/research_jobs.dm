@@ -77,7 +77,8 @@
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o1,
 		/datum/mil_rank/civ/contractor = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/sol/scientist = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
+		/datum/mil_rank/sol/scientist = /singleton/hierarchy/outfit/job/torch/passenger/research/scientist/solgov,
+		/datum/mil_rank/civ/civ
 	)
 
 	access = list(
@@ -87,7 +88,7 @@
 		access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_control, access_torch_fax,
 		access_petrov_maint, access_radio_sci, access_radio_exp, access_research_storage
 	)
-	skill_points = 30
+	skill_points = 40 // 30
 	possible_goals = list(/datum/goal/achievement/notslimefodder)
 
 /datum/job/scientist_assistant
