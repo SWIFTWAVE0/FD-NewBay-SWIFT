@@ -314,6 +314,8 @@
 	#include "../random_ruins/exoplanet_ruins/shelters/shelters_alt.dm"
 	#include "../random_ruins/exoplanet_ruins/warehouse/warehouse.dm"
 
+	#include "../../mods/_fd/_maps/lab_campaign/_lab_campaign.dme"
+
 //УДАЛИТЬ ПОСЛЕ ЗАПУСКА
 	#include "../../mods/_fd/_maps/perci_nightmare/_perci_nightmare.dme"
 //УДАЛИТЬ ПОСЛЕ ЗАПУСКА
