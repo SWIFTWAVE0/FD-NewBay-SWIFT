@@ -300,6 +300,8 @@
 	#include "../../mods/_fd/_maps/dead_sea/_dead_sea.dme"
 	#include "../../mods/_fd/_maps/kitsune/_kitsune.dme"
 	#include "../../mods/_fd/_maps/prison_ship/_prison_ship.dme"
+	#include "../../mods/_fd/_maps/a_destroyer/_a_destroyer.dme"
+
 
 
 		// ~EXOPLANET RUINS~ //
