@@ -1,7 +1,7 @@
 
 #### Список PRов:
 
-`https://github.com/RepoStash/FD-NewBay/pull/68`
+`https://github.com/RepoStash/FD-NewBay/pull/69`
 
 <!--
   Ссылки на PRы, связанные с модом:
