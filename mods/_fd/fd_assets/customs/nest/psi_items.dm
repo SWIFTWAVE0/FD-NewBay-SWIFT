@@ -8,6 +8,9 @@
 	icon = 'mods/_fd/fd_assets/customs/nest/nest.dmi'
 	icon_state = "uroboros_ring"
 	w_class = ITEM_SIZE_SMALL
+	light_power = 1
+	light_range = 2
+	light_color = COLOR_GREEN
 
 /obj/item/fd/tulpan
 
@@ -16,7 +19,9 @@
 	icon = 'mods/_fd/fd_assets/customs/nest/nest.dmi'
 	icon_state = "tulpan"
 	w_class = ITEM_SIZE_SMALL
-
+	light_power = 1
+	light_range = 2
+	light_color = COLOR_BLUE
 
 /obj/item/fd/star
 
@@ -25,7 +30,9 @@
 	icon = 'mods/_fd/fd_assets/customs/nest/nest.dmi'
 	icon_state = "star"
 	w_class = ITEM_SIZE_SMALL
-
+	light_power = 1
+	light_range = 2
+	light_color = COLOR_YELLOW
 
 /obj/item/fd/pistol
 
@@ -34,3 +41,6 @@
 	icon = 'mods/_fd/fd_assets/customs/nest/nest.dmi'
 	icon_state = "family_pistol_empty"
 	w_class = ITEM_SIZE_SMALL
+	light_power = 1
+	light_range = 2
+	light_color = COLOR_RED
