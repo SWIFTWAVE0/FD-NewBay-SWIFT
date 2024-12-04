@@ -270,12 +270,6 @@
 		/singleton/emote/audible/ascent_hiss,
 		/singleton/emote/audible/ascent_purr,
 		/singleton/emote/audible/ascent_snarl,
-		/singleton/emote/visible/ascent_dazzle,
-		/singleton/emote/visible/ascent_flicker,
-		/singleton/emote/visible/ascent_glimmer,
-		/singleton/emote/visible/ascent_glint,
-		/singleton/emote/visible/ascent_pulse,
-		/singleton/emote/visible/ascent_shine,
 	)
 
 /datum/species/nabber/monarch_worker/skills_from_age(age)
@@ -358,12 +352,6 @@
 		/singleton/emote/audible/ascent_hiss,
 		/singleton/emote/audible/ascent_purr,
 		/singleton/emote/audible/ascent_snarl,
-		/singleton/emote/visible/ascent_dazzle,
-		/singleton/emote/visible/ascent_flicker,
-		/singleton/emote/visible/ascent_glimmer,
-		/singleton/emote/visible/ascent_glint,
-		/singleton/emote/visible/ascent_pulse,
-		/singleton/emote/visible/ascent_shine,
 	)
 
 /datum/species/nabber/monarch_queen/New()
