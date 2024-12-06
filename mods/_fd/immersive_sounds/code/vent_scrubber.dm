@@ -1,6 +1,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber
 	working_sounds = list('sound/machines/scrubber-active.ogg')
-	working_volume = 3
+	working_volume = 1
 
 /obj/machinery/atmospherics/unary/vent_scrubber/Process()
 	if (hibernate > world.time) //lummox forgive me
