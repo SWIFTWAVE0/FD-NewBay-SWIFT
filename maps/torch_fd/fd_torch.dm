@@ -178,6 +178,7 @@
 	#include "../torch/loadout/loadout_uniform.dm"
 	#include "../torch/loadout/loadout_xeno.dm"
 	#include "../torch/loadout/~defines.dm"
+	#include "loadout/overrides.dm"
 
 	// --- MAP FILES --- //
 
