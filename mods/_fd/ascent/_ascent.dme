@@ -29,6 +29,7 @@
 #include "code/culture_ascent.dm"
 #include "code/location_ascent.dm"
 #include "code/religion_ascent.dm"
+#include "code/yummy_organs.dm"
 #include "code/~ascent.dm"
 
 #endif

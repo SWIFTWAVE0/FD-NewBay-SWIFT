@@ -104,6 +104,18 @@
 		/datum/mob_descriptor/body_length = -2
 		)
 
+	default_emotes = list(
+		/singleton/emote/audible/ascent_hiss,
+		/singleton/emote/audible/ascent_purr,
+		/singleton/emote/audible/ascent_snarl,
+		/singleton/emote/visible/ascent_dazzle,
+		/singleton/emote/visible/ascent_flicker,
+		/singleton/emote/visible/ascent_glimmer,
+		/singleton/emote/visible/ascent_glint,
+		/singleton/emote/visible/ascent_pulse,
+		/singleton/emote/visible/ascent_shine,
+	)
+
 	pain_emotes_with_pain_level = list(
 			list(/singleton/emote/visible/ascent_shine, /singleton/emote/visible/ascent_dazzle) = 80,
 			list(/singleton/emote/visible/ascent_glimmer, /singleton/emote/visible/ascent_pulse) = 50,
@@ -254,6 +266,12 @@
 		TAG_RELIGION =  RELIGION_KHARMAANI
 	)
 
+	default_emotes = list(
+		/singleton/emote/audible/ascent_hiss,
+		/singleton/emote/audible/ascent_purr,
+		/singleton/emote/audible/ascent_snarl,
+	)
+
 /datum/species/nabber/monarch_worker/skills_from_age(age)
 	. = 0
 
@@ -323,13 +341,18 @@
 		/datum/mob_descriptor/body_length = -1
 		)
 
-
 	force_cultural_info = list(
 		TAG_CULTURE =   CULTURE_ASCENT,
 		TAG_HOMEWORLD = HOME_SYSTEM_KHARMAANI,
 		TAG_FACTION =   FACTION_ASCENT_SERPENTID,
 		TAG_RELIGION =  RELIGION_KHARMAANI
 		)
+
+	default_emotes = list(
+		/singleton/emote/audible/ascent_hiss,
+		/singleton/emote/audible/ascent_purr,
+		/singleton/emote/audible/ascent_snarl,
+	)
 
 /datum/species/nabber/monarch_queen/New()
 	equip_adjust = list(
