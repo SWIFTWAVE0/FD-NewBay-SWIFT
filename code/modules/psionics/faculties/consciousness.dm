@@ -372,8 +372,10 @@
 
 /mob/living/proc/run_timer_invisibility()
 	var/invis_timer = 30
+	var/con_rank_user = psi.get_rank(PSI_CONSCIOUSNESS)
+
 	set waitfor = 0
-	var/T = invis_timer
+	var/T = invis_timer*con_rank_user
 	while(T > 0)
 		sleep(1 SECOND)
 		T--
