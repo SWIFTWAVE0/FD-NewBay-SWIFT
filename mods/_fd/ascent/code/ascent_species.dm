@@ -171,9 +171,9 @@
 
 	spawn_flags =             SPECIES_IS_RESTRICTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_IS_WHITELISTED//INF
 
-	pixel_offset_x =        -4
+	pixel_offset_x =         -4
 	antaghud_offset_y =      18
-	antaghud_offset_x =      4
+	antaghud_offset_x =       4
 
 	bump_flag =               HEAVY
 	push_flags =              ALLMOBS
@@ -247,7 +247,8 @@
 	icobase = 'icons/mob/human_races/species/nabber/body_msw.dmi'
 	deform = 'icons/mob/human_races/species/nabber/body_msw.dmi'
 	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_IS_WHITELISTED
-	appearance_flags = 0
+	appearance_flags = SPECIES_APPEARANCE_HAS_SKIN_COLOR | SPECIES_APPEARANCE_HAS_EYE_COLOR
+	base_color = COLOR_WHITE
 	base_skin_colours = null
 	has_organ = list(
 		BP_BRAIN =             /obj/item/organ/internal/brain/insectoid/nabber,
@@ -307,7 +308,8 @@
 	breath_pressure = 21
 	blood_volume = 600
 
-	appearance_flags = 0
+	appearance_flags = SPECIES_APPEARANCE_HAS_SKIN_COLOR | SPECIES_APPEARANCE_HAS_EYE_COLOR
+	base_color = COLOR_WHITE
 	base_skin_colours = null
 	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_IS_WHITELISTED
 
@@ -319,7 +321,7 @@
 		BP_HEART =             /obj/item/organ/internal/heart/open,
 		BP_STOMACH =           /obj/item/organ/internal/stomach,
 		BP_SYSTEM_CONTROLLER = /obj/item/organ/internal/controller,
-		BP_VOICE =    /obj/item/organ/internal/voicebox/nabber/ascent
+		BP_VOICE =             /obj/item/organ/internal/voicebox/nabber/ascent
 		)
 
 	has_limbs = list(

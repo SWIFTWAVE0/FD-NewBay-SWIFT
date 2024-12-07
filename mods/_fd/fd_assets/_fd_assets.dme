@@ -18,6 +18,7 @@
 #include "code/machinery/telescreen_consoles.dm"
 #include "code/machinery/turret.dm"
 
+#include "code/mobs/Defiler.dm"
 #include "code/mobs/mobs.dm"
 #include "code/mobs/psi_spiders.dm"
 #include "code/mobs/pureevil.dm"
@@ -57,6 +58,7 @@
 #include "code/dionae.dm"
 #include "code/psistuff.dm"
 #include "code/skills.dm"
+#include "code/ssinput_vent_fix.dm"
 #include "code/~TO_MAKE.dm"
 
 #include "customs/doctoralex/memes.dm"
