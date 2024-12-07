@@ -69,6 +69,8 @@
 #include "customs/zakterar/oversizejacket.dm"
 #include "customs/gero/shothammer.dm"
 #include "customs/nest/psi_items.dm"
+#include "customs/tech/tech_box.dm"
+#include "customs/evil/evil_box.dm"
 
 #include "eventstuff/admintools.dm"
 
