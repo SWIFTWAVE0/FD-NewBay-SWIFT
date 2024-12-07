@@ -12,7 +12,7 @@
 	var/levitation = FALSE
 
 /mob/living/carbon/human/Life()
-	if(src.levitation)
+	if(src.levitation && !GLOB.paramounts.is_antagonist(mind))
 		src.psi.spend_power(8)
 	..()
 
