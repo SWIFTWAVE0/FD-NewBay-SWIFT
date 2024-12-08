@@ -64,7 +64,6 @@
 #include "customs/doctoralex/memes.dm"
 #include "customs/kanaris/item.dm"
 #include "customs/kanaris/weapon.dm"
-#include "customs/kanaris/jesus-crist/holy.dm"
 #include "customs/lobster/null-clock.dm"
 #include "customs/zakterar/leather_folder.dm"
 #include "customs/zakterar/oversizejacket.dm"
