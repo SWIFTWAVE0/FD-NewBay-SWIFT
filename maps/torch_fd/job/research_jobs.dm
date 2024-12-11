@@ -45,8 +45,8 @@
 
 /datum/job/scientist
 	title = "Scientist"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Chief Science Officer"
 	economic_power = 10
 	minimum_character_age = 0

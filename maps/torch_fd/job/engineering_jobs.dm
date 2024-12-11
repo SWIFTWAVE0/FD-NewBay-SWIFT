@@ -53,8 +53,8 @@
 
 /datum/job/engineer
 	title = "Engineer"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 8
+	spawn_positions = 8
 	supervisors = "the Chief Engineer"
 	economic_power = 5
 	minimal_player_age = 0

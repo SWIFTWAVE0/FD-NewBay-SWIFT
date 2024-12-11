@@ -21,8 +21,8 @@
 #undef HUMAN_ONLY_JOBS
 
 	allowed_jobs = list(
-		/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /* /datum/job/hos,
-		/datum/job/liaison, /datum/job/representative, /datum/job/sea, */
+		/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
+		/* /datum/job/liaison, /datum/job/representative, /datum/job/sea, */
 		/datum/job/bridgeofficer, /* /datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer,
 		/datum/job/expeng, /datum/job/expmed,
 		/datum/job/senior_engineer, */ /datum/job/roboticist, /datum/job/engineer,// /datum/job/engineer_trainee,
