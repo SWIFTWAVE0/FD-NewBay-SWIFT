@@ -1194,7 +1194,7 @@
 "Sj" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/light,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/floor_decal/corner/black{dir = 10},/turf/simulated/floor/tiled/dark,/area/crew_quarters/heads/office/rd)
 "Sn" = (/obj/floor_decal/corner/blue{dir = 6},/obj/machinery/newscaster/security_unit{pixel_x = 32},/turf/simulated/floor/tiled/dark,/area/bridge/meeting_room)
 "Sp" = (/obj/machinery/computer/modular/preset/aislot/research{dir = 8},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/tiled/techmaint,/area/bridge)
-"Sv" = (/obj/floor_decal/industrial/warning/fulltile,/obj/structure/table/standard,/obj/item/card/id/ascent,/obj/item/card/id/torch/crew{job_access_type = /datum/job/captain; pixel_x = -5; pixel_y = 8; registered_name = "Full access"},/turf/simulated/floor/tiled/techmaint,/area/bridge)
+"Sv" = (/obj/floor_decal/industrial/warning/fulltile,/obj/structure/table/standard,/obj/item/card/id/ascent,/obj/item/card/id/torch/crew{job_access_type = /datum/job/captain; pixel_x = -5; pixel_y = 8; registered_name = "S.W.I.F.T"},/turf/simulated/floor/tiled/techmaint,/area/bridge)
 "Sx" = (/obj/floor_decal/techfloor{dir = 1},/obj/floor_decal/corner/blue/border,/obj/machinery/computer/ship/engines,/turf/simulated/floor/tiled/techfloor,/area/bridge)
 "Sy" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall/hull,/area/turret_protected/ai_outer_chamber)
 "Sz" = (/obj/structure/sign/kiddieplaque{pixel_x = -32},/obj/machinery/tele_projector{dir = 6},/turf/simulated/floor/tiled/techfloor/grid,/area/turret_protected/ai_foyer)
