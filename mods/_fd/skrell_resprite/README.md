@@ -1,7 +1,7 @@
 
 #### Список PRов:
 
-- https://github.com/SierraBay/SierraBay12/pull/####
+- https://github.com/RepoStash/FD-NewBay/pull/73
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
@@ -38,7 +38,8 @@ ID мода: SKRELL_RESPRITE
 
 ### Оверрайды
 
-- Отсутствуют
+- `code/modules/sprite_accessories/accessory_hair_fade.dm`
+  - `/datum/sprite_accessory/marking/hair_fade/New()`
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
