@@ -49,6 +49,7 @@
 #include "code/weapons/rsh21.dm"
 #include "code/weapons/sledgehammer.dm"
 
+#include "code/accessory.dm"
 #include "code/fd_sofa_override.dm"
 #include "code/floor_decals.dm"
 #include "code/fullscreen.dm"
