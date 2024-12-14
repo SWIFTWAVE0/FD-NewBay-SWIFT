@@ -121,6 +121,7 @@
 	#include "job/security_jobs.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
+	#include "job/posttorch/misc_job.dm"
 
 	#include "../torch/outfits/scgec.dm"
 	#include "../torch/robot/module_flying_surveyor.dm"
