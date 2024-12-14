@@ -30,3 +30,20 @@
 	. = ..()
 	if(!hiding)
 		layer = LYING_HUMAN_LAYER
+
+/obj/landmark/Defiler
+	name = "Defiler spawn"
+	icon_state = "x"
+
+/obj/landmark/Defiler/Initialize()
+	..()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/landmark/Defiler/LateInitialize(mapload, ...)
+	. = ..()
+	var/mob/living/carbon/human/ascent_monarch/Defiler/mob = new(loc)
+	mob.ckey = "1"
+	mob.SetSleeping(10)
+	mob.stat = 1
+	mob.lay_down()
+	qdel(src)
