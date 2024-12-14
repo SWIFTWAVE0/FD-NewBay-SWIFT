@@ -26,13 +26,6 @@
 
 	mob_size = MOB_MEDIUM
 
-	name = ""
-
-/mob/living/carbon/human/ascent_monarch/Defiler/get_visible_name()
-	if(!length(name))
-		return ""
-	return ..()
-
 /mob/living/carbon/human/ascent_monarch/Defiler/reset_layer()
 	. = ..()
 	if(!hiding)
