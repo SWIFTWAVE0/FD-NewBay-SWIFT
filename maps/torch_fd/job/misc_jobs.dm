@@ -107,8 +107,8 @@ Civilian
 
 /datum/job/assistant
 	title = "Passenger"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = -1
+	spawn_positions = -1
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	loadout_allowed = TRUE

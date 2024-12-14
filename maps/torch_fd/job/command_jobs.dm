@@ -4,6 +4,8 @@
 	minimal_player_age = 0
 	economic_power = 16
 	minimum_character_age = 0
+	total_positions = 0
+	spawn_positions = 0
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
@@ -62,6 +64,8 @@
 	economic_power = 14
 	minimum_character_age = 0
 	ideal_character_age = 45
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
