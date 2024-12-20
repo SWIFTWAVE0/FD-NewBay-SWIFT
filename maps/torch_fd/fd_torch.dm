@@ -279,6 +279,7 @@
 	#include "../../mods/_fd/old_space_cannons/_old_space_cannons.dme"
 	#include "../../mods/_fd/skrell_resprite/_skrell_resprite.dme"
 	#include "../../mods/_fd/structure_storage/_structure_storage.dme"
+	#include "../../mods/_fd/v_posters/_v_posters.dme"
 	#include "../../mods/_fd/random_rooms/_random_rooms.dme"
 	#include "../../mods/_fd/resomi_fd/_resomi.dme"
 
