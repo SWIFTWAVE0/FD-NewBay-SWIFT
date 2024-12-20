@@ -4,5 +4,6 @@
 #include "_a_destroyer.dm"
 
 #include "code/a_destroyer.dm"
+#include "code/a_drones.dm"
 
 #endif
