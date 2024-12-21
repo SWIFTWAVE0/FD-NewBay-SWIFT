@@ -80,3 +80,49 @@
 	icon_state = "oversize_shirt"
 	item_icons = list(
 		slot_wear_suit_str = 'mods/_fd/fd_assets/customs/doctoralex/clothing_mob.dmi')
+
+/obj/item/gun/energy/amelia_bfg
+	name = "gigantic laser cannon"
+	desc = "An Frankenstein of a weapon, impossible to normally fire without 3 meters recoil. It has some pretty fearsome design, lacking any consisting due to used details being old parts of various deconstructed guns and tech. It has a name, scratched on a side - Calculator."
+	icon_state = "Bspace_cleaner_deployed"
+	icon = 'mods/_fd/fd_assets/customs/doctoralex/bspace.dmi'
+	item_icons = list(
+		slot_r_hand_str = 'mods/_fd/fd_assets/customs/doctoralex/bspace.dmi',
+		slot_l_hand_str = 'mods/_fd/fd_assets/customs/doctoralex/bspace.dmi'
+		)
+	item_state = "right_doble"
+	slot_flags = SLOT_BACK
+	one_hand_penalty = 6 //large and heavy
+	w_class = ITEM_SIZE_HUGE
+	projectile_type = /obj/item/projectile/beam/pulse/bfg
+	cell_type = /obj/item/cell/super
+	charge_cost = 1000
+	max_shots = 2
+	accuracy = 2
+	fire_delay = 60 SECONDS
+	wielded_item_state = "right_doble"
+
+/obj/item/projectile/beam/pulse/bfg
+	name = "heavy laser"
+	icon_state = "heavylaser"
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	damage = 100 //badmins be badmins I don't give a fuck
+	armor_penetration = 100
+	damage_falloff_list = list(
+		list(6, 0.99),
+		list(9, 0.98),
+		list(11, 0.97),
+	)
+
+	muzzle_type = /obj/projectile/laser/heavy/muzzle
+	tracer_type = /obj/projectile/laser/heavy/tracer
+	impact_type = /obj/projectile/laser/heavy/impact
+
+/obj/item/projectile/beam/pulse/bfg/on_hit(atom/target, blocked = 0)
+	if(isturf(target))
+		explosion(get_turf(target), 3, EX_ACT_HEAVY)
+		target.ex_act(EX_ACT_DEVASTATING)
+	if(ismob(target))
+		var/mob/A = target
+		A.gib()
+	..()
