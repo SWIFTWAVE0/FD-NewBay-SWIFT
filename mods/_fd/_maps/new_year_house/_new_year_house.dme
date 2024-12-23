@@ -1,0 +1,17 @@
+#ifndef MODPACK_NEW_YEAR_FD
+#define MODPACK_NEW_YEAR_FD
+
+#include "_new_year_house.dm"
+
+#include "code/new_year_house.dm"
+
+#endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+// END_INCLUDE
