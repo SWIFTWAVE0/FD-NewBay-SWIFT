@@ -1,0 +1,5 @@
+/obj/machinery/light/Initialize(mapload, obj/machinery/light_construct/construct = null)
+	. = ..(mapload, construct)
+	if(light_color)
+		set_color(light_color)
+		update_icon(FALSE)
