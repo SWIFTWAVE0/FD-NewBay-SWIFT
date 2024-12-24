@@ -134,9 +134,9 @@
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
 	icon_state = "dirt"
 
-/turf/simulated/floor/exoplanet/grim_dirt/New()
+/*/turf/simulated/floor/exoplanet/grim_dirt/New()
 	..()
-	icon_state = "dirt_[rand(1, 16)]"
+	icon_state = "dirt_[rand(1, 16)]"*/
 
 /turf/simulated/floor/exoplanet/wet_stone
 	name = "wet stone pile"

@@ -310,6 +310,7 @@
 	#include "../../mods/_fd/_maps/capsule/_capsule.dme"
 	#include "../../mods/_fd/_maps/biodome/_biodome.dme"
 	#include "../../mods/_fd/_maps/cascade/_cascade.dme"
+	#include "../../mods/_fd/_maps/new_year_house/_new_year_house.dme"
 
 
 

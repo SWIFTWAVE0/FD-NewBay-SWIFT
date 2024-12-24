@@ -18,7 +18,7 @@
 			lightmain -= A
 	update_daynight()
 
-/obj/overmap/visitable/sector/ny_house/proc/update_daynight(light = 0.5, light_color_m = "#5ab6b1")
+/obj/overmap/visitable/sector/ny_house/proc/update_daynight(light = 0.3, light_color_m = "#0f1f3b")
 	for(var/turf/T as anything in lightmain)
 		T.set_light(1, light, l_color = light_color_m)
 
@@ -38,11 +38,56 @@
 		/area/ny_house = NO_SCRUBBER|NO_VENT|NO_APC
 	)
 
+/turf/simulated/floor/exoplanet/grim_asphalt1/on_update_icon(update_neighbors)
+	return FALSE
+
+/turf/simulated/floor/exoplanet/grim_dirt/on_update_icon(update_neighbors)
+	return FALSE
+
 /area/ny_house
 	name = "///"
 	requires_power = FALSE
 
 /area/ny_house/outer
 
+/area/ny_house/outer/forest
+	name = "Outside - SWIFT's residence"
+
+/area/ny_house/outer/bus
+	name = "Outside - BUS station(SWIFT's residence)"
+	lighting_tone = "#dbc14a"
+
 /area/ny_house/inner
 	name = "///"
+
+/area/ny_house/inner/train_station1
+	name = "Inside - Tram Station(SWIFT's residence)"
+	lighting_tone = "#a1d2d6"
+
+/area/ny_house/inner/house
+	name = "Inside - SWIFT's residence"
+
+/area/ny_house/inner/house/main_floor
+
+/area/ny_house/inner/house/main_floor/hall
+	name = "Inside - Hall(SWIFT's residence)"
+	lighting_tone = "#c38f3f"
+
+/area/ny_house/inner/house/main_floor/lounge
+	name = "Inside - Lounge(SWIFT's residence)"
+	lighting_tone = "#800b0b"
+
+/area/ny_house/inner/house/main_floor/bar
+	name = "Inside - Bar(SWIFT's residence)"
+
+/area/ny_house/inner/house/main_floor/restaurant
+	name = "Inside - Restaurant(SWIFT's residence)"
+
+/area/ny_house/inner/house/main_floor/bathroom
+	name = "Inside - Bathroom(SWIFT's residence)"
+
+/area/ny_house/inner/house/main_floor/storage
+	name = "Inside - Storage(SWIFT's residence)"
+
+/area/ny_house/inner/house/main_floor/cloakroom
+	name = "Inside - Cloakroom(SWIFT's residence)"
