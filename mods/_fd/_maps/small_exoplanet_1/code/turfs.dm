@@ -298,10 +298,6 @@
 	icon = 'mods/_fd/_maps/small_exoplanet_1/icons/turf_floor_grim.dmi'
 	icon_state = "ceramic_cross"
 
-/turf/simulated/floor/exoplanet/grim_ceramic_indoor/New()
-	..()
-	icon_state = "ceramic_cross_[rand(1, 4)]"
-
 /turf/simulated/floor/exoplanet/grim_ceramic_indoor2
 	name = "ceramic tile"
 	desc = "Just an old, molded bricky plate."

@@ -38,12 +38,6 @@
 		/area/ny_house = NO_SCRUBBER|NO_VENT|NO_APC
 	)
 
-/turf/simulated/floor/exoplanet/grim_asphalt1/on_update_icon(update_neighbors)
-	return FALSE
-
-/turf/simulated/floor/exoplanet/grim_dirt/on_update_icon(update_neighbors)
-	return FALSE
-
 /area/ny_house
 	name = "///"
 	requires_power = FALSE
