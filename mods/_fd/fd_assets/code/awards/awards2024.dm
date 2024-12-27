@@ -125,6 +125,10 @@
 	icon = 'mods/_fd/fd_assets/code/awards/awards2024.dmi'
 	icon_state = "fork"
 	item_state = "fork"
+	base_icon = "fork"
+	material = null
+	applies_material_colour = FALSE
+	applies_material_name = FALSE
 	item_icons = list(
 		slot_r_hand_str = 'mods/_fd/fd_assets/code/awards/awardonmob.dmi',
 		slot_l_hand_str = 'mods/_fd/fd_assets/code/awards/awardonmob.dmi'
