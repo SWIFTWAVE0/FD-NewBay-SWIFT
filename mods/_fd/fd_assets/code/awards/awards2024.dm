@@ -1,12 +1,12 @@
 /obj/item/fd/award
-	name = ""
-	desc = "A cinema "
+	name = "golden cinema tape"
+	desc = "A golden cinema tape. This one is award for the greatest episodic character "
 	icon = 'mods/_fd/fd_assets/code/awards/awards2024.dmi'
 	icon_state = "episode"
 
 /obj/item/fd/award/comic
-	name = ""
-	desc = ""
+	name = "golden comic statue"
+	desc = "A golden comic statue. This one is award for the greatest comic character"
 	force = 20 // it's gonna hurt
 	attack_cooldown = 21
 	icon_state = "comic"
@@ -14,8 +14,8 @@
 //
 
 /obj/item/fd/award/drama
-	name = ""
-	desc = ""
+	name = "golden drama statue"
+	desc = "A golden drama statue. This one is award for the greatest drama character"
 	force = 20
 	attack_cooldown = 21
 	icon_state = "drama"
@@ -23,16 +23,16 @@
 //
 
 /obj/item/fd/award/charisma
-	name = ""
-	desc = ""
+	name = "golden sheet"
+	desc = "A golden sheet with some text on it. This one is award for the greatest charisma"
 	icon_state = "charisma"
 
 //
 
 
 /obj/item/fd/award/father
-	name = ""
-	desc = ""
+	name = "golden sheet"
+	desc = "A golden sheet with some text on it. This one is award for the greatest father character"
 	icon_state = "father"
 
 
@@ -85,15 +85,15 @@
 //
 
 /obj/item/fd/award/male
-	name = ""
-	desc = ". "
+	name = "golden male statue"
+	desc = "A golden male statue. This one is award for the greatest male character"
 	force = 20
 	attack_cooldown = 21
 	icon_state = "male"
 
 /obj/item/fd/award/female
-	name = ""
-	desc = ". "
+	name = "golden female statue"
+	desc = "A golden female statue. This one is award for the greatest female character"
 	force = 20
 	attack_cooldown = 21
 	icon_state = "female"
