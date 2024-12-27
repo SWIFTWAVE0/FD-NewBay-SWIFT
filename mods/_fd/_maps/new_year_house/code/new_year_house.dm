@@ -1,6 +1,6 @@
 /obj/overmap/visitable/sector/ny_house
 	name = "NY House"
-	desc = "..."
+	desc = "S.W.I.F.T. House (NY Event)"
 	sector_flags = OVERMAP_SECTOR_KNOWN
 	icon_state = "globe"
 	color = "#268f2c"
@@ -30,7 +30,7 @@
 	name = "S.W.I.F.T. House (NY Event)"
 	id = "awaysite_ny_house"
 	spawn_cost = 2
-	description = "..."
+	description = "S.W.I.F.T. House (NY Event)"
 	prefix = "mods/_fd/_maps/new_year_house/maps/"
 	suffixes = list("ny_house.dmm")
 	area_usage_test_exempted_root_areas = list(/area/ny_house)

@@ -3,6 +3,7 @@
 
 #include "_new_year_house.dm"
 
+#include "code/jobs.dm"
 #include "code/new_year_house.dm"
 
 #endif
