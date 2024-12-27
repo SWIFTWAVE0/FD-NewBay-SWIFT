@@ -99,7 +99,7 @@
 	warmup_time = 5
 	move_time = 10
 	range = 1
-	shuttle_area = list(/area/a_drone1)
+	shuttle_area = list(/area/a_drone1, /area/a_drone1/eng)
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_BASIC
@@ -111,7 +111,7 @@
 	warmup_time = 5
 	move_time = 10
 	range = 1
-	shuttle_area = list(/area/a_drone2)
+	shuttle_area = list(/area/a_drone2, /area/a_drone2/eng)
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_BASIC
@@ -123,7 +123,7 @@
 	warmup_time = 5
 	move_time = 10
 	range = 1
-	shuttle_area = list(/area/a_drone3)
+	shuttle_area = list(/area/a_drone3, /area/a_drone3/eng)
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_BASIC
