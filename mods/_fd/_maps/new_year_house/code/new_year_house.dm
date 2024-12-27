@@ -18,7 +18,7 @@
 			lightmain -= A
 	update_daynight()
 
-/obj/overmap/visitable/sector/ny_house/proc/update_daynight(light = 0.3, light_color_m = "#0f1f3b")
+/obj/overmap/visitable/sector/ny_house/proc/update_daynight(light = 0.5, light_color_m = "#b068e0")
 	for(var/turf/T as anything in lightmain)
 		T.set_light(1, light, l_color = light_color_m)
 
@@ -58,8 +58,13 @@
 	name = "Inside - Tram Station(SWIFT's residence)"
 	lighting_tone = "#a1d2d6"
 
+/area/ny_house/inner/banya
+	name = "Inside - Bathhouse(SWIFT's residence)"
+
 /area/ny_house/inner/house
 	name = "Inside - SWIFT's residence"
+
+/area/ny_house/inner/house/second_floor
 
 /area/ny_house/inner/house/main_floor
 
