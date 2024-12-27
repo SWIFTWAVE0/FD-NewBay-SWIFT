@@ -18,7 +18,7 @@
 			lightmain -= A
 	update_daynight()
 
-/obj/overmap/visitable/sector/ny_house/proc/update_daynight(light = 0.5, light_color_m = "#b068e0")
+/obj/overmap/visitable/sector/ny_house/proc/update_daynight(light = 0.6, light_color_m = "#b068e0")
 	for(var/turf/T as anything in lightmain)
 		T.set_light(1, light, l_color = light_color_m)
 
@@ -47,6 +47,9 @@
 /area/ny_house/outer/forest
 	name = "Outside - SWIFT's residence"
 
+/area/ny_house/outer/city
+	name = "Outside - City"
+
 /area/ny_house/outer/bus
 	name = "Outside - BUS station(SWIFT's residence)"
 	lighting_tone = "#dbc14a"
@@ -58,6 +61,27 @@
 	name = "Inside - Tram Station(SWIFT's residence)"
 	lighting_tone = "#a1d2d6"
 
+/area/ny_house/inner/train_station2
+	name = "Inside - Tram Station(City)"
+
+/area/ny_house/inner/restroom
+	name = "Inside - Toilet(City)"
+
+/area/ny_house/inner/shaurma
+	name = "Inside - Street-Food(City)"
+
+/area/ny_house/inner/laundry
+	name = "Inside - Laundry(City)"
+
+/area/ny_house/inner/store
+	name = "Inside - Road-Shop(City)"
+
+/area/ny_house/inner/house1
+	name = "Inside - Low-life House 1(City)"
+
+/area/ny_house/inner/house2
+	name = "Inside - Low-life House 2(City)"
+
 /area/ny_house/inner/banya
 	name = "Inside - Bathhouse(SWIFT's residence)"
 
@@ -65,6 +89,27 @@
 	name = "Inside - SWIFT's residence"
 
 /area/ny_house/inner/house/second_floor
+
+/area/ny_house/inner/house/second_floor/hall
+	name = "Inside - Hall 2ND(SWIFT's residence)"
+
+/area/ny_house/inner/house/second_floor/wbed
+	name = "Inside - Workers Bedroom(SWIFT's residence)"
+
+/area/ny_house/inner/house/second_floor/bedroom1
+	name = "Inside - Bedroom 1(SWIFT's residence)"
+
+/area/ny_house/inner/house/second_floor/bedroom2
+	name = "Inside - Bedroom 2(SWIFT's residence)"
+
+/area/ny_house/inner/house/second_floor/bedroom3
+	name = "Inside - Bedroom 3(SWIFT's residence)"
+
+/area/ny_house/inner/house/second_floor/bedroom4
+	name = "Inside - Bedroom 4(SWIFT's residence)"
+
+/area/ny_house/inner/house/second_floor/swiftcab
+	name = "Inside - Office(SWIFT's residence)"
 
 /area/ny_house/inner/house/main_floor
 
@@ -90,3 +135,6 @@
 
 /area/ny_house/inner/house/main_floor/cloakroom
 	name = "Inside - Cloakroom(SWIFT's residence)"
+
+/area/ny_house/inner/house/main_floor/kitchen
+	name = "Inside - Kitchen(SWIFT's residence)"
