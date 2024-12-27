@@ -82,5 +82,6 @@
 #include "eventstuff/admintools.dm"
 
 #include "code\trauma\code.dm"
+#include "code/awards/awards2024.dm"
 
 #endif
