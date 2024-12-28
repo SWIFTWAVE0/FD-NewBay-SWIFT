@@ -37,6 +37,7 @@
 "ad" = (
 /obj/structure/closet/crate,
 /obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "ae" = (
@@ -123,11 +124,11 @@
 "ao" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "options";
 	layer = 4.09;
-	name = "holosign";
+	name = "emergency console";
 	pixel_x = 0;
 	pixel_y = 31
 	},
@@ -230,7 +231,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/ny_house/inner/train_station2)
 "ay" = (
-/obj/structure/table/reinforced,
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "hotdogs"
 	},
@@ -238,6 +238,7 @@
 	pixel_x = -5;
 	pixel_y = 0
 	},
+/obj/structure/table/marble,
 /turf/simulated/floor/tiled/steel_grid,
 /area/ny_house/inner/shaurma)
 "az" = (
@@ -632,6 +633,7 @@
 /area/ny_house/outer/forest)
 "bA" = (
 /obj/structure/towel/fitness,
+/obj/machinery/light/spot,
 /turf/simulated/floor/carpet/red,
 /area/ny_house/inner/house1)
 "bB" = (
@@ -856,6 +858,23 @@
 	icon_state = "carpet_red"
 	},
 /area/ny_house/inner/house/main_floor/bar)
+"bY" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 4
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = null;
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 0;
+	pixel_x = 9;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt2,
+/area/ny_house/outer/city)
 "bZ" = (
 /obj/floor_decal/spline/plain/blue{
 	dir = 4
@@ -1087,11 +1106,19 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "emergency_stop";
 	layer = 4.09;
-	name = "holosign";
+	name = "road sign";
 	pixel_x = 16;
 	pixel_y = -16
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
+"cB" = (
+/obj/random/junk,
+/turf/simulated/floor/exoplanet/grim_dirt{
+	color = "#4b5a46";
+	icon = 'icons/turf/jungle.dmi';
+	icon_state = "greygrass"
+	},
 /area/ny_house/outer/city)
 "cD" = (
 /obj/floor_decal/spline/plain/black{
@@ -1646,6 +1673,20 @@
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/bus)
+"dM" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -8;
+	pixel_x = -3;
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "dN" = (
 /obj/floor_decal/spline/plain{
 	dir = 1
@@ -1663,12 +1704,12 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/vehiclesexpanded2.dmi';
 	icon_state = "SUV5";
 	layer = 4.09;
-	name = "holosign";
+	name = "SUV";
 	pixel_x = -32;
 	pixel_y = -3
 	},
@@ -1937,6 +1978,9 @@
 /obj/structure/hygiene/toilet{
 	dir = 8
 	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house2)
 "ek" = (
@@ -1961,6 +2005,19 @@
 	icon = 'icons/turf/jungle.dmi';
 	icon_state = "greygrass"
 	},
+/area/ny_house/outer/city)
+"em" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 3.99;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/city)
 "en" = (
 /obj/structure/table/woodentable_reinforced/ebony,
@@ -2085,6 +2142,19 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ny_house/inner/train_station1)
+"eF" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 3.99;
+	name = "street light";
+	pixel_y = 13;
+	pixel_x = -9
+	},
+/turf/simulated/floor/exoplanet/gravel,
+/area/ny_house/outer/forest)
 "eH" = (
 /obj/floor_decal/borderfloor{
 	dir = 9
@@ -2123,7 +2193,7 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "pedestrian_crossing";
 	layer = 4.09;
-	name = "holosign";
+	name = "road sign";
 	pixel_y = -6
 	},
 /obj/floor_decal/industrial/fire/corner{
@@ -2295,6 +2365,20 @@
 	},
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house2)
+"eZ" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 41;
+	pixel_x = -34;
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "fa" = (
 /obj/floor_decal/borderfloorblack/corner{
 	dir = 1
@@ -2411,13 +2495,13 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/vehiclesexpanded.dmi';
 	icon_state = "zentruck3";
 	icon_width = 64;
 	layer = 4.09;
-	name = "holosign";
+	name = "truck";
 	pixel_x = -32;
 	pixel_y = -3
 	},
@@ -2735,7 +2819,7 @@
 	desc = "Fancy holo-projection.";
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "med-right";
-	layer = 3;
+	layer = 4.09;
 	name = "holosign";
 	pixel_x = -30;
 	pixel_y = -6
@@ -2771,6 +2855,13 @@
 	pixel_x = -8;
 	pixel_y = -3
 	},
+/obj/structure/holoplant{
+	pixel_x = 11;
+	pixel_y = 0
+	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "ga" = (
@@ -2838,7 +2929,7 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "stop";
 	layer = 4.09;
-	name = "holosign";
+	name = "road sign";
 	pixel_y = -6
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
@@ -2941,6 +3032,21 @@
 	icon_state = "greygrass"
 	},
 /area/ny_house/outer/city)
+"gw" = (
+/obj/floor_decal/borderfloorwhite{
+	dir = 5
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/turf/simulated/floor/tiled/freezer,
+/area/ny_house/inner/shaurma)
 "gx" = (
 /obj/floor_decal/spline/plain/blue{
 	dir = 8
@@ -3045,6 +3151,12 @@
 /turf/simulated/floor/exoplanet/grim_wood_good2,
 /area/ny_house/inner/house/main_floor/cloakroom)
 "gJ" = (
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	pixel_x = 4;
+	pixel_y = 1
+	},
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
@@ -3220,12 +3332,12 @@
 /obj/decal/cleanable/dirt,
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/32x64_hybrisabillboards.dmi';
 	icon_state = "billboard2";
-	layer = 4;
-	name = "holosign";
+	layer = 3.99;
+	name = "billboard";
 	pixel_x = -2;
 	pixel_y = 37
 	},
@@ -3302,7 +3414,8 @@
 	icon_state = "pedestrian_crossing";
 	layer = 4.09;
 	name = "holosign";
-	pixel_y = -6
+	pixel_y = -5;
+	pixel_x = 10
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/forest)
@@ -3850,6 +3963,23 @@
 	icon_state = "wood_broken0"
 	},
 /area/ny_house/inner/house2)
+"iy" = (
+/obj/floor_decal/borderfloorwhite{
+	dir = 9
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/drinks/small_milk,
+/obj/item/reagent_containers/food/drinks/small_milk,
+/obj/item/reagent_containers/food/drinks/small_milk,
+/obj/item/reagent_containers/food/drinks/small_milk,
+/obj/item/reagent_containers/food/drinks/small_milk,
+/obj/item/reagent_containers/food/drinks/small_milk_choc,
+/obj/item/reagent_containers/food/drinks/small_milk_choc,
+/obj/item/reagent_containers/food/drinks/small_milk_choc,
+/obj/item/reagent_containers/food/drinks/small_milk_choc,
+/obj/item/reagent_containers/food/drinks/small_milk_choc,
+/turf/simulated/floor/tiled/freezer,
+/area/ny_house/inner/shaurma)
 "iz" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/floor_decal/spline/plain/black{
@@ -3989,6 +4119,7 @@
 	pixel_x = 11;
 	pixel_y = 28
 	},
+/obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
@@ -4589,6 +4720,20 @@
 /obj/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/exoplanet/grim_wood2,
 /area/ny_house/inner/house/main_floor/lounge)
+"kd" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -6;
+	pixel_x = -50;
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "ke" = (
 /obj/structure/bed/sauna_bench,
 /turf/simulated/floor/exoplanet/grim_wood_log,
@@ -4937,11 +5082,11 @@
 "kT" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "train";
 	layer = 2.02;
-	name = "holosign";
+	name = "billboard";
 	pixel_y = 26
 	},
 /obj/structure/flora/ausbushes/ywflowers,
@@ -6537,6 +6682,19 @@
 	icon_state = "wood_pattern_alt"
 	},
 /area/ny_house/inner/house/second_floor/bedroom2)
+"og" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 3.99;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/forest)
 "oh" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -7114,6 +7272,15 @@
 /obj/floor_decal/hull/corner,
 /turf/simulated/floor/exoplanet/grim_ceramic,
 /area/ny_house/outer/forest)
+"py" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/skele_stand{
+	pixel_x = 1;
+	pixel_y = 17
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/wood/walnut,
+/area/ny_house/inner/house2)
 "pz" = (
 /obj/structure/bed/grim/big,
 /obj/floor_decal/spline/fancy/black{
@@ -7499,6 +7666,23 @@
 	icon_state = "concrete_roof"
 	},
 /area/ny_house/inner/house/main_floor)
+"qo" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 8
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 7;
+	pixel_x = -32;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/gravel,
+/area/ny_house/outer/city)
 "qp" = (
 /obj/floor_decal/spline/plain/black{
 	dir = 6
@@ -7661,6 +7845,10 @@
 	},
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
+/obj/structure/storage{
+	pixel_x = 7;
+	pixel_y = 1
+	},
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house2)
 "qJ" = (
@@ -8166,10 +8354,17 @@
 	},
 /area/ny_house/inner/house/main_floor/storage)
 "rK" = (
-/obj/machinery/disposal{
+/obj/decal/cleanable/dirt,
+/obj/structure/showcase{
 	density = 0;
-	pixel_x = -7;
-	pixel_y = -4
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -23;
+	pixel_x = -27;
+	dir = 4
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/city)
@@ -8200,7 +8395,7 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "ianhi";
 	layer = 4;
-	name = "holosign";
+	name = "store";
 	pixel_x = -61;
 	pixel_y = -24
 	},
@@ -8295,6 +8490,20 @@
 	icon_state = "carpet_green"
 	},
 /area/ny_house/inner/banya)
+"rX" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 3.99;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "rY" = (
 /obj/floor_decal/hull/corner{
 	dir = 8
@@ -8468,16 +8677,19 @@
 /turf/simulated/floor/exoplanet/wet_stone,
 /area/ny_house/outer/city)
 "sq" = (
-/obj/machinery/disposal{
+/obj/structure/showcase{
 	density = 0;
-	pixel_y = 14
-	},
-/obj/floor_decal/industrial/outline/yellow{
-	pixel_x = 0;
-	pixel_y = 9
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -8;
+	pixel_x = -3;
+	dir = 1
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
-/area/ny_house/outer/city)
+/area/ny_house/outer/forest)
 "sr" = (
 /obj/floor_decal/spline/plain/blue{
 	dir = 8
@@ -8611,14 +8823,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ny_house/inner/house/main_floor/lounge)
 "sF" = (
-/obj/machinery/disposal{
-	density = 0;
-	pixel_y = 14
-	},
-/obj/floor_decal/industrial/outline/yellow{
-	pixel_x = 0;
-	pixel_y = 8
-	},
+/obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/disposal,
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/city)
 "sG" = (
@@ -8644,6 +8850,20 @@
 "sJ" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/exoplanet/water/shallow/grim,
+/area/ny_house/outer/forest)
+"sK" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 15;
+	pixel_x = 8;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/concrete_pavement,
 /area/ny_house/outer/forest)
 "sL" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -9497,6 +9717,11 @@
 	},
 /turf/simulated/floor/exoplanet/grim_wood2,
 /area/ny_house/inner/house/main_floor/hall)
+"uC" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/exoplanet/gravel,
+/area/ny_house/inner/house2)
 "uD" = (
 /obj/machinery/button/blast_door{
 	id_tag = "store_city";
@@ -9707,12 +9932,12 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 1;
 	icon = 'mods/_fd/_maps/new_year_house/icons/box_van_white.dmi';
 	icon_state = "box_van_white";
 	layer = 4.09;
-	name = "holosign";
+	name = "maintenance vehicle";
 	pixel_x = -13;
 	pixel_y = -4
 	},
@@ -9764,13 +9989,13 @@
 "vf" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "transit";
 	layer = 2.02;
-	name = "holosign";
-	pixel_x = 1;
-	pixel_y = 50
+	name = "billboard";
+	pixel_x = 3;
+	pixel_y = 31
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/city)
@@ -10421,6 +10646,12 @@
 	pixel_x = -6;
 	pixel_y = 1
 	},
+/obj/structure/reagent_dispensers/water_cooler{
+	pixel_x = 10;
+	pixel_y = 1
+	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house2)
 "wE" = (
@@ -10546,6 +10777,14 @@
 	icon_state = "carpet_grey_side"
 	},
 /area/ny_house/outer/forest)
+"wP" = (
+/obj/floor_decal/borderfloorwhite{
+	dir = 10
+	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/old_tile,
+/area/ny_house/inner/house2)
 "wQ" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -10865,6 +11104,14 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/ny_house/outer/forest)
+"xy" = (
+/obj/structure/closet/crate/trashcart,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/exoplanet/gravel,
+/area/ny_house/outer/city)
 "xz" = (
 /obj/machinery/disposal,
 /turf/simulated/floor/exoplanet/grim_concrete_tile4,
@@ -10990,6 +11237,20 @@
 	icon_state = "greygrass"
 	},
 /area/ny_house/outer/forest)
+"xM" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -7;
+	pixel_x = -2;
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "xN" = (
 /obj/structure/table/standard,
 /obj/machinery/fabricator/micro{
@@ -11882,6 +12143,20 @@
 	icon_state = "plating_reinforced"
 	},
 /area/ny_house/inner/house/main_floor/cloakroom)
+"zG" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -5;
+	pixel_x = -42;
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "zH" = (
 /turf/simulated/floor/exoplanet/grim_asphalt2,
 /area/ny_house/outer/city)
@@ -12373,11 +12648,11 @@
 "AQ" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/phonebox.dmi';
 	icon_state = "phonebox_on_open";
-	layer = 4.09;
-	name = "holosign";
+	layer = 3.99;
+	name = "phone cabin";
 	pixel_x = -5;
 	pixel_y = -1
 	},
@@ -12470,8 +12745,8 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "emergency_stop";
 	layer = 4.09;
-	name = "holosign";
-	pixel_x = 2;
+	name = "road sign";
+	pixel_x = -5;
 	pixel_y = 6
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
@@ -12486,27 +12761,11 @@
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house/main_floor/bathroom)
 "Bc" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/milk,
-/obj/item/reagent_containers/food/drinks/small_milk,
-/obj/item/reagent_containers/food/drinks/small_milk,
-/obj/item/reagent_containers/food/drinks/small_milk,
-/obj/item/reagent_containers/food/drinks/small_milk,
-/obj/item/reagent_containers/food/drinks/small_milk,
-/obj/item/reagent_containers/food/drinks/small_milk,
 /obj/floor_decal/borderfloorwhite{
 	dir = 4
 	},
 /obj/machinery/light/spot,
+/obj/machinery/smartfridge/foods,
 /turf/simulated/floor/tiled/freezer,
 /area/ny_house/inner/shaurma)
 "Bd" = (
@@ -12836,6 +13095,20 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ny_house/train)
+"BM" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/concrete_pavement,
+/area/ny_house/outer/city)
 "BN" = (
 /obj/floor_decal/borderfloor/corner{
 	dir = 1
@@ -12904,9 +13177,9 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "transit";
 	layer = 2.02;
-	name = "holosign";
+	name = "billboard";
 	pixel_x = 0;
-	pixel_y = 49
+	pixel_y = 31
 	},
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/grim_asphalt1,
@@ -13010,7 +13283,7 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "pedestrian_crossing";
 	layer = 4.09;
-	name = "holosign";
+	name = "road sign";
 	pixel_y = -6
 	},
 /obj/floor_decal/industrial/fire/corner{
@@ -13025,8 +13298,8 @@
 	dir = 9;
 	icon = 'mods/_fd/_maps/new_year_house/icons/32x64_zenithbillboards.dmi';
 	icon_state = "billboard1";
-	layer = 4;
-	name = "holosign";
+	layer = 3.99;
+	name = "billboard";
 	pixel_x = -31;
 	pixel_y = 35
 	},
@@ -13064,8 +13337,8 @@
 	desc = "Fancy holo-projection.";
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "pedestrian_crossing";
-	layer = 4.09;
-	name = "holosign";
+	layer = 4.10;
+	name = "road sign";
 	pixel_y = -6
 	},
 /obj/floor_decal/industrial/fire/corner,
@@ -13268,6 +13541,21 @@
 	icon_state = "ceramic_yellow_alt"
 	},
 /area/ny_house/outer/forest)
+"CG" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/concrete_pavement,
+/area/ny_house/outer/city)
 "CH" = (
 /obj/paint/iccgn,
 /turf/simulated/wall/titanium,
@@ -13374,7 +13662,7 @@
 "CW" = (
 /obj/structure/holosign{
 	name = "warning";
-	pixel_x = 6;
+	pixel_x = 14;
 	pixel_y = 2
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
@@ -13423,6 +13711,23 @@
 	icon_state = "tile_dark"
 	},
 /area/ny_house/inner/house/main_floor/storage)
+"Df" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 4
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 23;
+	pixel_x = 10;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt2,
+/area/ny_house/outer/city)
 "Dg" = (
 /obj/floor_decal/spline/fancy/black{
 	dir = 6
@@ -13457,13 +13762,13 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/vehiclesexpanded.dmi';
 	icon_state = "SUV4_damaged";
 	icon_width = 64;
 	layer = 4.09;
-	name = "holosign";
+	name = "SUV";
 	pixel_x = -32;
 	pixel_y = -3
 	},
@@ -13632,13 +13937,13 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 1;
 	icon = 'mods/_fd/_maps/new_year_house/icons/meridian_orange.dmi';
 	icon_state = "meridian_orange";
 	icon_width = 64;
 	layer = 4.09;
-	name = "holosign";
+	name = "car";
 	pixel_x = -3;
 	pixel_y = -6
 	},
@@ -13706,13 +14011,10 @@
 /turf/simulated/floor/carpet,
 /area/ny_house/inner/house1)
 "DF" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/drinks/small_milk_choc,
-/obj/item/reagent_containers/food/drinks/small_milk_choc,
-/obj/item/reagent_containers/food/drinks/small_milk_choc,
 /obj/floor_decal/borderfloorwhite{
 	dir = 4
 	},
+/obj/machinery/smartfridge/foods,
 /turf/simulated/floor/tiled/freezer,
 /area/ny_house/inner/shaurma)
 "DG" = (
@@ -13862,6 +14164,15 @@
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/forest)
+"DY" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/random/junk,
+/turf/simulated/floor/exoplanet/grim_dirt{
+	color = "#4b5a46";
+	icon = 'icons/turf/jungle.dmi';
+	icon_state = "greygrass"
+	},
+/area/ny_house/outer/city)
 "DZ" = (
 /obj/structure/flora/tree{
 	icon = 'mods/_fd/_maps/new_year_house/icons/pinetrees.dmi';
@@ -13967,6 +14278,23 @@
 /obj/machinery/door/unpowered/simple/plastic,
 /turf/simulated/floor/tiled/kafel_full,
 /area/ny_house/inner/house1)
+"Eo" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 8
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 3;
+	pixel_x = -29;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/gravel,
+/area/ny_house/outer/city)
 "Ep" = (
 /obj/floor_decal/spline/fancy/wood{
 	dir = 9
@@ -14056,13 +14384,13 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/meridian_green.dmi';
 	icon_state = "meridian_green_damage_5";
 	icon_width = 64;
 	layer = 4.09;
-	name = "holosign";
+	name = "wrecked car";
 	pixel_x = -32;
 	pixel_y = -3
 	},
@@ -14823,6 +15151,20 @@
 /obj/machinery/door/window/brigdoor/southleft,
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house/second_floor/bedroom3)
+"Gb" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -17;
+	pixel_x = -42;
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete_pavement,
+/area/ny_house/outer/forest)
 "Gd" = (
 /obj/floor_decal/borderfloorwhite,
 /obj/floor_decal/corner/paleblue/border,
@@ -14835,6 +15177,10 @@
 "Gf" = (
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
+"Gg" = (
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/exoplanet/gravel,
 /area/ny_house/outer/city)
 "Gh" = (
 /obj/floor_decal/spline/plain/black{
@@ -14958,7 +15304,7 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "stop";
 	layer = 4.09;
-	name = "holosign";
+	name = "road sign";
 	pixel_y = -6
 	},
 /obj/structure/railing/mapped,
@@ -15062,6 +15408,8 @@
 	dir = 1
 	},
 /obj/machinery/door/unpowered/simple/plastic,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "GD" = (
@@ -15502,7 +15850,7 @@
 	desc = "Fancy holo-projection.";
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs.dmi';
 	icon_state = "techshop2";
-	layer = 4.09;
+	layer = 3;
 	name = "holosign";
 	pixel_x = -3;
 	pixel_y = 0
@@ -16079,6 +16427,8 @@
 	dir = 1
 	},
 /obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house2)
 "II" = (
@@ -16108,15 +16458,15 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/meridian_shell.dmi';
 	icon_state = "meridian_shell";
 	icon_width = 64;
 	layer = 4.09;
-	name = "holosign";
+	name = "wrecked car";
 	pixel_x = -32;
-	pixel_y = -3
+	pixel_y = 1
 	},
 /turf/simulated/floor/exoplanet/gravel,
 /area/ny_house/outer/city)
@@ -16210,6 +16560,8 @@
 	dir = 4
 	},
 /obj/decal/cleanable/dirt,
+/obj/machinery/disposal,
+/obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/shaurma)
 "IX" = (
@@ -16308,8 +16660,17 @@
 	},
 /area/ny_house/outer/city)
 "Je" = (
-/obj/structure/bigDelivery/package,
 /obj/decal/cleanable/dirt,
+/obj/structure/safe{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/decal/cleanable/ash{
+	pixel_x = -5;
+	pixel_y = 0;
+	name = "???";
+	desc = null
+	},
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "Jf" = (
@@ -16617,12 +16978,12 @@
 	},
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 1;
 	icon = 'mods/_fd/_maps/new_year_house/icons/32x64_hybrisabillboards.dmi';
 	icon_state = "billboard2";
-	layer = 4;
-	name = "holosign";
+	layer = 3.99;
+	name = "billboard";
 	pixel_x = -2;
 	pixel_y = 37
 	},
@@ -16661,6 +17022,19 @@
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
 /area/ny_house/outer/forest)
+"JR" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = null;
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "trafficlightleft";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 1;
+	pixel_x = -10
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "JS" = (
 /obj/structure/bed/grim/big,
 /obj/structure/showcase{
@@ -16857,6 +17231,9 @@
 	desc = "A heavy box used for storing stuff.";
 	name = "box"
 	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "Kq" = (
@@ -16937,6 +17314,12 @@
 /area/ny_house/outer/forest)
 "Kx" = (
 /obj/structure/mattress,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/flour{
+	name = "some liquid";
+	desc = null
+	},
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house2)
 "Ky" = (
@@ -17210,10 +17593,10 @@
 /turf/simulated/floor/plating,
 /area/ny_house/inner/house/main_floor)
 "Lb" = (
-/obj/structure/closet/crate/freezer/meat,
 /obj/floor_decal/borderfloorwhite{
 	dir = 8
 	},
+/obj/machinery/smartfridge/foods,
 /turf/simulated/floor/tiled/freezer,
 /area/ny_house/inner/shaurma)
 "Lc" = (
@@ -17282,11 +17665,11 @@
 "Li" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "train";
 	layer = 2.02;
-	name = "holosign";
+	name = "billboard";
 	pixel_y = 26
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt1,
@@ -17434,12 +17817,12 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 1;
 	icon = 'mods/_fd/_maps/new_year_house/icons/meridian_orange.dmi';
 	icon_state = "meridian_orange";
 	layer = 4.09;
-	name = "holosign";
+	name = "car";
 	pixel_x = 0;
 	pixel_y = -1
 	},
@@ -17550,10 +17933,10 @@
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house1)
 "LI" = (
-/obj/structure/table/reinforced,
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "hotdogs"
 	},
+/obj/structure/table/marble,
 /turf/simulated/floor/tiled/steel_grid,
 /area/ny_house/inner/shaurma)
 "LJ" = (
@@ -17603,6 +17986,23 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ny_house/inner/house/second_floor/swiftcab)
+"LO" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 4
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.20;
+	name = "street light";
+	pixel_y = 15;
+	pixel_x = 8;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt2,
+/area/ny_house/outer/city)
 "LP" = (
 /obj/paint/black,
 /obj/paint_stripe/yellow,
@@ -18110,7 +18510,12 @@
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house/main_floor/hall)
 "MS" = (
-/obj/structure/table/marble,
+/obj/machinery/disposal{
+	density = 0;
+	pixel_x = 0;
+	pixel_y = -3
+	},
+/obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/old_cargo,
 /area/ny_house/inner/shaurma)
 "MT" = (
@@ -18204,6 +18609,8 @@
 	pixel_x = 0;
 	pixel_y = 5
 	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house2)
 "Ne" = (
@@ -18331,6 +18738,21 @@
 	},
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house/main_floor/kitchen)
+"Nt" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 13;
+	pixel_x = -42;
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "Nu" = (
 /obj/floor_decal/borderfloor{
 	dir = 1
@@ -18467,6 +18889,13 @@
 	pixel_x = -7;
 	pixel_y = -14
 	},
+/obj/structure/reagent_dispensers/beerkeg{
+	pixel_x = 6;
+	pixel_y = -4
+	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/greenglow,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "NL" = (
@@ -19110,7 +19539,6 @@
 /obj/structure/fd/campfire{
 	fuel = 200
 	},
-/obj/item/reagent_containers/food/snacks/variable/kebab,
 /turf/simulated/floor/exoplanet/wet_stone,
 /area/ny_house/outer/city)
 "OX" = (
@@ -19309,6 +19737,22 @@
 	},
 /turf/simulated/floor/exoplanet/grim_asphalt2,
 /area/ny_house/outer/city)
+"Pq" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 5
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 3.99;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt2,
+/area/ny_house/outer/forest)
 "Pr" = (
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -19389,12 +19833,12 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/armored_truck_teal.dmi';
 	icon_state = "armored_truck_teal";
 	layer = 4.09;
-	name = "holosign";
+	name = "truck";
 	pixel_x = -46;
 	pixel_y = 2
 	},
@@ -19416,6 +19860,20 @@
 	},
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house/main_floor/kitchen)
+"PB" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "trafficlightright";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 8;
+	pixel_x = -23;
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "PC" = (
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -19567,6 +20025,20 @@
 	},
 /turf/simulated/floor/plating,
 /area/ny_house/inner/train_station1)
+"PT" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = null;
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 31;
+	pixel_x = -43;
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/city)
 "PU" = (
 /obj/structure/table/marble,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
@@ -19889,11 +20361,11 @@
 "QF" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs.dmi';
 	icon_state = "bathroom_unisex";
 	layer = 4.09;
-	name = "holosign";
+	name = "unisex toilet";
 	pixel_x = -5;
 	pixel_y = 7
 	},
@@ -19958,6 +20430,8 @@
 /area/ny_house/outer/city)
 "QP" = (
 /obj/structure/closet/grim/wood_crate,
+/obj/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "QQ" = (
@@ -19967,6 +20441,20 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/ny_house/inner/house1)
+"QR" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 14;
+	pixel_x = -41;
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete_pavement,
+/area/ny_house/outer/forest)
 "QS" = (
 /obj/machinery/floor_light/mapped_on{
 	default_light_colour = "#36c3a7"
@@ -20349,13 +20837,13 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 2;
 	icon = 'mods/_fd/_maps/new_year_house/icons/meridian_black.dmi';
 	icon_state = "meridian_black";
 	icon_width = 64;
 	layer = 4.09;
-	name = "holosign";
+	name = "car";
 	pixel_x = -3;
 	pixel_y = -6
 	},
@@ -20866,6 +21354,23 @@
 /obj/item/stool/wood,
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house/main_floor/bathroom)
+"SH" = (
+/obj/floor_decal/spline/plain/black{
+	dir = 4
+	},
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 15;
+	pixel_x = 8;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt2,
+/area/ny_house/outer/city)
 "SI" = (
 /obj/floor_decal/spline/plain/white,
 /obj/structure/table/rack/dark,
@@ -20985,7 +21490,7 @@
 	icon = 'mods/_fd/_maps/new_year_house/icons/road_signs.dmi';
 	icon_state = "pedestrian_crossing";
 	layer = 4.09;
-	name = "holosign";
+	name = "road sign";
 	pixel_y = -6
 	},
 /obj/floor_decal/industrial/fire/corner{
@@ -21477,6 +21982,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/ny_house/inner/house/main_floor)
+"TV" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/storage/grim1{
+	pixel_x = 0;
+	pixel_y = 13;
+	density = 0
+	},
+/turf/simulated/floor/wood/walnut,
+/area/ny_house/inner/house2)
 "TW" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -21576,7 +22090,9 @@
 /area/ny_house/inner/house/main_floor/lounge)
 "Uk" = (
 /obj/structure/fd/junk{
-	icon_state = "4,4"
+	icon_state = "4,4";
+	pixel_x = 8;
+	pixel_y = -4
 	},
 /obj/structure/fd/junk{
 	icon_state = "4,1";
@@ -21823,12 +22339,12 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 1;
 	icon = 'mods/_fd/_maps/new_year_house/icons/box_van_pizza.dmi';
 	icon_state = "box_van_pizza";
 	layer = 4.09;
-	name = "holosign";
+	name = "pizza van";
 	pixel_x = 2;
 	pixel_y = -1
 	},
@@ -22328,6 +22844,7 @@
 	pixel_y = 4
 	},
 /obj/decal/cleanable/dirt,
+/obj/decal/cleanable/filth,
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house2)
 "VW" = (
@@ -22490,8 +23007,8 @@
 	desc = "Fancy holo-projection.";
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "randomshit2";
-	layer = 4;
-	name = "holosign";
+	layer = 4.09;
+	name = "laundry";
 	pixel_x = -61;
 	pixel_y = 20
 	},
@@ -22577,11 +23094,11 @@
 	},
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/phonebox.dmi';
 	icon_state = "phonebox_bloody_off_broken";
 	layer = 4.09;
-	name = "holosign";
+	name = "???";
 	pixel_y = -6
 	},
 /turf/simulated/floor/exoplanet/grim_dirt{
@@ -22743,6 +23260,20 @@
 	},
 /turf/simulated/floor/exoplanet/grim_wood_good2,
 /area/ny_house/inner/banya)
+"WW" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = -19;
+	pixel_x = 8;
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/concrete_pavement,
+/area/ny_house/outer/forest)
 "WY" = (
 /obj/floor_decal/corner/black/half,
 /turf/simulated/floor/tiled/steel_grid,
@@ -22813,6 +23344,7 @@
 /obj/structure/hygiene/shower{
 	pixel_y = 20
 	},
+/obj/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house2)
 "Xh" = (
@@ -23009,12 +23541,12 @@
 /obj/structure/showcase{
 	bound_width = 64;
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 4;
 	icon = 'mods/_fd/_maps/new_year_house/icons/meridian_brown.dmi';
 	icon_state = "meridian_brown";
 	layer = 4.09;
-	name = "holosign";
+	name = "car";
 	pixel_x = -32;
 	pixel_y = -3
 	},
@@ -23159,6 +23691,19 @@
 	icon_state = "greygrass"
 	},
 /area/ny_house/outer/forest)
+"XW" = (
+/obj/structure/showcase{
+	density = 0;
+	desc = "Fancy holo-projection.";
+	icon = 'mods/_fd/_maps/new_year_house/icons/streetpoles.dmi';
+	icon_state = "streetlight";
+	layer = 4.09;
+	name = "street light";
+	pixel_y = 12;
+	pixel_x = -2
+	},
+/turf/simulated/floor/exoplanet/grim_asphalt1,
+/area/ny_house/outer/forest)
 "XX" = (
 /obj/machinery/smartfridge/foods,
 /obj/floor_decal/corner/grey/border{
@@ -23182,6 +23727,7 @@
 /area/ny_house/outer/forest)
 "XZ" = (
 /obj/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/wood/walnut,
 /area/ny_house/inner/house2)
 "Ya" = (
@@ -23276,12 +23822,12 @@
 /obj/floor_decal/spline/plain/black,
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 6;
 	icon = 'mods/_fd/_maps/new_year_house/icons/32x64_hybrisabillboards.dmi';
 	icon_state = "billboard2";
-	layer = 4;
-	name = "holosign";
+	layer = 3.99;
+	name = "billboard";
 	pixel_x = -2;
 	pixel_y = 37
 	},
@@ -23487,6 +24033,9 @@
 /area/ny_house/inner/house/main_floor/lounge)
 "YH" = (
 /obj/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/old_tile,
 /area/ny_house/inner/house1)
 "YI" = (
@@ -23557,11 +24106,11 @@
 "YN" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	icon = 'mods/_fd/_maps/new_year_house/icons/signs_large.dmi';
 	icon_state = "options";
 	layer = 4.09;
-	name = "holosign";
+	name = "emergency console";
 	pixel_x = -28;
 	pixel_y = 8
 	},
@@ -23699,12 +24248,12 @@
 "Zg" = (
 /obj/structure/showcase{
 	density = 0;
-	desc = "Fancy holo-projection.";
+	desc = null;
 	dir = 10;
 	icon = 'mods/_fd/_maps/new_year_house/icons/32x64_hybrisabillboards.dmi';
 	icon_state = "billboard2";
-	layer = 4;
-	name = "holosign";
+	layer = 3.99;
+	name = "billboard";
 	pixel_x = -2;
 	pixel_y = 37
 	},
@@ -23931,12 +24480,11 @@
 /turf/simulated/floor/exoplanet/grim_wood_log,
 /area/ny_house/inner/house/second_floor/hall)
 "ZG" = (
-/obj/structure/closet/crate/freezer/meat,
-/obj/structure/closet/crate/freezer/meat,
 /obj/floor_decal/borderfloorwhite{
 	dir = 8
 	},
 /obj/machinery/light/spot,
+/obj/machinery/smartfridge/foods,
 /turf/simulated/floor/tiled/freezer,
 /area/ny_house/inner/shaurma)
 "ZH" = (
@@ -25093,13 +25641,13 @@ ga
 YQ
 ga
 qh
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 tM
 ga
 ga
@@ -26179,13 +26727,13 @@ mx
 Rt
 CY
 Oa
-Ud
+em
 hP
 zH
 JB
 zH
 pp
-Ud
+dM
 nZ
 mx
 Id
@@ -27113,13 +27661,13 @@ uF
 ga
 ga
 zM
-SE
+XW
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 ir
 nl
 nl
@@ -27795,13 +28343,13 @@ Rt
 pU
 Rt
 Oa
-Ud
+em
 hP
 zH
 JB
 zH
 pp
-Ud
+xM
 nZ
 Ct
 CY
@@ -28390,7 +28938,7 @@ ya
 ya
 Ce
 Hq
-Gf
+rK
 OM
 Rt
 Rt
@@ -28729,13 +29277,13 @@ ga
 ga
 ga
 bI
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 uc
 PQ
 tX
@@ -28819,19 +29367,19 @@ Ct
 Ct
 Ct
 Ct
-Ct
+Gg
 Zj
 Ct
 Ct
 Ct
 Ct
-Ct
+Gg
 Zj
 ju
 Ct
 Ct
 Ct
-Ct
+xy
 Zj
 Ct
 Ct
@@ -29426,25 +29974,25 @@ AE
 AE
 Zj
 Zj
-Zj
-Zj
-AE
-AE
-AE
-AE
-AE
-AE
-AE
-AE
-Zj
-Zj
-Zj
-Zj
+BM
 Zj
 AE
 AE
 AE
 AE
+CG
+AE
+AE
+AE
+Zj
+Zj
+BM
+Zj
+Zj
+AE
+AE
+AE
+CG
 AE
 Zj
 Ct
@@ -29620,7 +30168,7 @@ zH
 zH
 pp
 Uf
-Ud
+sF
 Ud
 Ct
 Ct
@@ -29630,13 +30178,13 @@ ju
 Ct
 Ct
 Ct
-Ct
+Gg
 Zj
 Ct
 Ct
 Ct
 Ct
-Ct
+xy
 Zj
 Ct
 ju
@@ -29822,7 +30370,7 @@ JB
 zH
 pp
 Gf
-sq
+Ud
 Xb
 Rt
 Rt
@@ -29840,7 +30388,7 @@ mx
 mx
 Rt
 Zj
-Rt
+cB
 mx
 mx
 mx
@@ -30040,7 +30588,7 @@ mx
 mx
 Rt
 mx
-mx
+DY
 Zj
 mx
 Rt
@@ -30219,13 +30767,13 @@ FO
 bu
 CY
 Oa
-Ud
+em
 hP
 zH
 JB
 zH
 pp
-Ud
+xM
 nZ
 mx
 pU
@@ -30345,13 +30893,13 @@ Sj
 FL
 Sj
 dL
-uT
+eF
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 yo
 oB
 qf
@@ -30617,7 +31165,7 @@ nZ
 CY
 bu
 Tm
-nG
+iy
 Lb
 ZG
 bu
@@ -30850,7 +31398,7 @@ KN
 Kx
 qI
 Je
-XZ
+uC
 fY
 KN
 mk
@@ -31052,7 +31600,7 @@ KN
 KN
 KN
 KN
-XZ
+TV
 gJ
 KN
 KN
@@ -31223,7 +31771,7 @@ nZ
 CY
 bu
 Tm
-Hs
+gw
 DF
 Bc
 bu
@@ -31252,7 +31800,7 @@ bb
 Qh
 KN
 IH
-eY
+wP
 GC
 XZ
 zg
@@ -31456,7 +32004,7 @@ KN
 Xf
 ei
 KN
-XZ
+py
 ad
 KN
 Xe
@@ -31835,13 +32383,13 @@ Hb
 bu
 Rt
 pR
-Gf
+rX
 hP
 zH
 JB
 zH
 pp
-Ud
+xM
 Jc
 jY
 zI
@@ -31961,13 +32509,13 @@ dz
 sx
 sx
 sx
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 QL
 QL
 QL
@@ -33431,7 +33979,7 @@ Ct
 Ct
 Rt
 fs
-Ud
+PB
 Gf
 OM
 Pj
@@ -33441,7 +33989,7 @@ Ud
 Gf
 Gf
 Ud
-sq
+sF
 Ud
 OM
 JV
@@ -33451,13 +33999,13 @@ el
 Gh
 Ud
 Gf
-Ud
+eZ
 hP
 zH
 JB
 zH
 pp
-Ud
+kd
 Sh
 xh
 xh
@@ -33625,7 +34173,7 @@ Ud
 Ud
 Ud
 Ud
-Ud
+PT
 Ud
 Ud
 uX
@@ -33637,7 +34185,7 @@ Hq
 Ud
 Ud
 Gf
-Ud
+zG
 Ud
 Cj
 MN
@@ -33645,7 +34193,7 @@ MN
 MN
 tV
 Ud
-Gf
+Nt
 Ud
 Ud
 Ud
@@ -33779,13 +34327,13 @@ ga
 ga
 ga
 zM
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 zo
 CV
 ga
@@ -34064,7 +34612,7 @@ zH
 zH
 pp
 Ud
-rK
+sF
 xh
 nQ
 ij
@@ -34634,7 +35182,7 @@ Pp
 Pp
 Pp
 Pp
-Pp
+bY
 Pp
 Pp
 Pp
@@ -34648,21 +35196,21 @@ Pp
 Pp
 Pp
 Pp
-Pp
+Df
 Pp
 bL
 bL
 bL
 Pp
 Pp
+LO
 Pp
 Pp
 Pp
 Pp
 Pp
 Pp
-Pp
-Pp
+SH
 Pp
 Pp
 Pp
@@ -34839,7 +35387,7 @@ Ud
 Ud
 Ud
 Ud
-Ud
+JR
 uX
 uX
 uX
@@ -34872,7 +35420,7 @@ Ud
 Ud
 Ud
 Ud
-fG
+rz
 xh
 wp
 vR
@@ -35070,11 +35618,11 @@ HR
 Gf
 zP
 Rt
-Qk
-Qk
-Qk
-Qk
-Rt
+mW
+Ha
+Ha
+Ha
+mx
 xh
 xh
 xh
@@ -35272,7 +35820,7 @@ Xj
 Ud
 JP
 mA
-Rt
+CY
 Rt
 SL
 Rt
@@ -35395,13 +35943,13 @@ uF
 ga
 ga
 zM
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 cK
 YQ
 YQ
@@ -35879,7 +36427,7 @@ Ud
 JP
 Ct
 Ct
-Rt
+mx
 Ct
 Ct
 Ct
@@ -36079,9 +36627,9 @@ Qv
 Xj
 Ud
 vu
-JV
+el
 Mc
-Rt
+mx
 CY
 CY
 Ct
@@ -37011,13 +37559,13 @@ YQ
 ga
 du
 wv
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 EX
 vM
 XO
@@ -37082,14 +37630,14 @@ CH
 CH
 Rt
 Qk
-qS
+qo
 NL
 qS
 qS
 Ha
 Ha
 Ha
-qS
+Eo
 Rb
 jH
 Ct
@@ -38627,13 +39175,13 @@ PV
 IU
 qc
 wv
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 EX
 HM
 IU
@@ -40445,13 +40993,13 @@ CV
 ny
 EU
 GW
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 Na
 hE
 ga
@@ -42061,13 +42609,13 @@ YQ
 ga
 ga
 zM
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 Qn
 ga
 hZ
@@ -43879,13 +44427,13 @@ ga
 YQ
 YQ
 zM
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 zo
 CV
 uT
@@ -45495,13 +46043,13 @@ CV
 ga
 ga
 bI
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 cK
 ga
 ga
@@ -47111,13 +47659,13 @@ CF
 gO
 CF
 CF
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 cK
 Nk
 YQ
@@ -47693,13 +48241,13 @@ gO
 SE
 ZL
 ZL
-sx
+Gb
 sx
 JC
 OG
 vU
 sx
-sx
+QR
 ZL
 ZL
 gO
@@ -48525,13 +49073,13 @@ SE
 ZL
 ZL
 SE
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 cK
 ga
 YQ
@@ -50141,13 +50689,13 @@ CF
 CF
 zd
 sx
-ES
+Pq
 lZ
 lZ
 lZ
 lZ
 SW
-SE
+sq
 cK
 xL
 ga
@@ -51127,13 +51675,13 @@ CF
 SE
 SE
 sx
-sx
+WW
 ES
 lZ
 lZ
 lZ
 Uh
-sx
+sK
 sx
 SE
 gO
@@ -51555,13 +52103,13 @@ Tl
 PF
 Is
 ns
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 cK
 ga
 ga
@@ -53171,13 +53719,13 @@ uT
 uT
 CV
 vB
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 cK
 YQ
 ga
@@ -54989,13 +55537,13 @@ ga
 ga
 RN
 zM
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 cK
 YQ
 YQ
@@ -56807,13 +57355,13 @@ uF
 ga
 YQ
 zM
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 tM
 ga
 ga
@@ -58423,13 +58971,13 @@ ga
 ga
 Ii
 Ir
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 zo
 ga
 YQ
@@ -60241,13 +60789,13 @@ YQ
 YQ
 zY
 zM
-SE
+og
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 cK
 YQ
 ga
@@ -62059,13 +62607,13 @@ YQ
 ga
 ga
 zM
-SE
+og
 Ix
 lZ
 gY
 lZ
 SW
-SE
+sq
 cK
 RN
 ga
@@ -63877,13 +64425,13 @@ YQ
 YQ
 ga
 zM
-SE
+XW
 Ix
 lZ
 lZ
 lZ
 SW
-SE
+sq
 cK
 ga
 zY
