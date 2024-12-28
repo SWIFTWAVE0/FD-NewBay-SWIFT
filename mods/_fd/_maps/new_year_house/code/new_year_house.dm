@@ -29,7 +29,7 @@
 /datum/map_template/ruin/away_site/ny_house
 	name = "S.W.I.F.T. House (NY Event)"
 	id = "awaysite_ny_house"
-	spawn_cost = 2
+	spawn_cost = 20000000 // пожалуйста не надо пожалейте котят
 	description = "S.W.I.F.T. House (NY Event)"
 	prefix = "mods/_fd/_maps/new_year_house/maps/"
 	suffixes = list("ny_house.dmm")
@@ -37,12 +37,22 @@
 	apc_test_exempt_areas = list(
 		/area/ny_house = NO_SCRUBBER|NO_VENT|NO_APC
 	)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/multi/antag/train)
 
 /area/ny_house
 	name = "///"
 	requires_power = FALSE
 
 /area/ny_house/outer
+	base_turf = /turf/simulated/floor/exoplanet/gravel
+	ambience = list(
+		'sound/effects/wind/wind_2_1.ogg',
+		'sound/effects/wind/wind_2_2.ogg',
+		'sound/effects/wind/wind_3_1.ogg',
+		'sound/effects/wind/wind_4_1.ogg',
+		'sound/effects/wind/wind_4_2.ogg',
+		'sound/effects/wind/wind_5_1.ogg'
+	)
 
 /area/ny_house/outer/forest
 	name = "Outside - SWIFT's residence"
