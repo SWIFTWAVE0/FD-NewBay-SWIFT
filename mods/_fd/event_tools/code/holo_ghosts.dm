@@ -11,11 +11,14 @@
 
 /obj/structure/holo_starter/attack_hand(mob/user)
 	if(do_after(user, 5 SECONDS, src, DO_PUBLIC_UNIQUE | DO_BAR_OVER_USER))
-		for(var/obj/holo_spawner/mobs in orange(10, src))
-			if(mobs.character_id == cutscene_id)
-				if(mobs.next_play > 0)
-					continue
-				mobs.start_scene()
+		start_playing()
+
+/obj/structure/holo_starter/proc/start_playing()
+	for(var/obj/holo_spawner/mobs in orange(10, src))
+		if(mobs.character_id == cutscene_id)
+			if(mobs.next_play > 0)
+				continue
+			mobs.start_scene()
 
 /obj/holo_spawner
 	name = "ТЫ НЕ ДОЛЖЕН ЭТОГО ВИДЕТЬ"
@@ -113,26 +116,10 @@
 /mob/living/simple_animal/holo_npc/ai_announcer/start_thinking()
 	alpha = 0
 	invisibility = 50
-/*	spawn(2 SECOND)
-		alpha = 0
-	spawn(3 SECONDS)
-		alpha = 0
-	spawn(4 SECOND)
-		alpha = 0
-	spawn(5 SECONDS)
-		alpha = 0*/
 
 	spawn(195 SECOND)
 		invisibility = 0
 		animate(src, 5 SECONDS, alpha = 150)
-/*	spawn(196 SECONDS)
-		alpha = 80
-	spawn(197 SECOND)
-		alpha = 100
-	spawn(198 SECOND)
-		alpha = 120
-	spawn(199 SECOND)
-		alpha = 150*/
 
 	spawn(200 SECONDS)
 		ISay("|ВНИМАНИЕ| ЗАФИКСИРОВАНЫ СЕРЬЁЗНЫЕ СТРУКТУРНЫЕ ПОВРЕЖДЕНИЯ.")
