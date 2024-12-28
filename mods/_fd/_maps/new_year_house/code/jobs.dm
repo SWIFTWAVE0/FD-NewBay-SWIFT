@@ -77,3 +77,7 @@
 		/datum/job/submap/ny_house/service/bar,
 		/datum/job/submap/ny_house/service/waiter
 	)
+
+/obj/submap_landmark/joinable_submap/ny_house
+	name = "NY Party House"
+	archetype = /singleton/submap_archetype/ny_house
