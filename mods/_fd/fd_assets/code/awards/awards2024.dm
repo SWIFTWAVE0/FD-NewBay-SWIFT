@@ -35,6 +35,14 @@
 	desc = "A golden sheet with some text on it. This one is award for the greatest father character"
 	icon_state = "father"
 
+// Tulip
+
+/obj/item/fd/award/mother
+	name = "golden tulip statue"
+	desc = "A golden tulip statue. This one is award for the greatest mother character"
+	force = 20
+	attack_cooldown = 21
+	icon_state = "tulip"
 
 //
 
@@ -142,6 +150,14 @@
 	icon_state = "salat"
 	item_state = "salat"
 
+/obj/item/fd/award/viewers
+	name = "golden star"
+	desc = "A golden star. This one is award for the viewers love"
+	force = 20
+	attack_cooldown = 21
+	icon_state = "tulip"
+
+
 // Gonna make it in one case
 
 /obj/item/storage/secure/briefcase/awards
@@ -152,6 +168,7 @@
 		/obj/item/fd/award/drama,
 		/obj/item/fd/award/charisma,
 		/obj/item/fd/award/father,
+		/obj/item/fd/award/mother,
 		/obj/item/storage/medalbox/awards
 	)
 
@@ -162,7 +179,8 @@
 		/obj/item/clothing/head/award,
 		/obj/item/clothing/head/award/asshole,
 		/obj/item/material/twohanded/spear/asshole,
-		/obj/item/clothing/head/award/salat
+		/obj/item/clothing/head/award/salat,
+		/obj/item/fd/award/viewers
 	)
 
 /obj/item/storage/secure/briefcase/awards/Initialize()
